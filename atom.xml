@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2024-05-27T14:11:09.709Z</updated>
+  <updated>2024-05-28T03:46:01.040Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2024/05/27/demo/"/>
     <id>http://example.com/2024/05/27/demo/</id>
     <published>2024-05-27T14:07:34.713Z</published>
-    <updated>2024-05-27T14:11:09.709Z</updated>
+    <updated>2024-05-28T03:46:01.040Z</updated>
     
     <content type="html"><![CDATA[<p>摘要</p><span id="more"></span><p>正文</p>]]></content>
     
@@ -30,12 +30,10 @@
     
     
     
-    <category term="Diary" scheme="http://example.com/categories/Diary/"/>
+    <category term="测试" scheme="http://example.com/categories/%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="PS3" scheme="http://example.com/tags/PS3/"/>
-    
-    <category term="Games" scheme="http://example.com/tags/Games/"/>
+    <category term="测试" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -44,18 +42,20 @@
     <link href="http://example.com/2024/05/27/Test/"/>
     <id>http://example.com/2024/05/27/Test/</id>
     <published>2024-05-27T14:04:20.000Z</published>
-    <updated>2024-05-27T14:06:34.342Z</updated>
+    <updated>2024-05-28T03:45:46.119Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="学成在线"><a href="#学成在线" class="headerlink" title="学成在线"></a>学成在线</h1><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>本项目基于<strong>黑马程序员</strong>的 <em>《学成在线》</em> 项目搭建 仅供学习参考<br>在线教育行业是一个有着极强的广度和深度的行业，从校内到校外；从早幼教到职业培训；从教育工具到全信息化平台等等。</p><p>学成在线项目是本公司自研的一个专门针对成人职业技能教育的网络课堂系统，网站提供了成人职业技能培训的相关课程，如：软件开发培训、职业资格证书培训、成人学历教育培训等课程。项目基于B2B2C的业务模式，培训机构可以在平台入驻、发布课程，运营人员对发布的课程进行审核，审核通过后课程才可以发布成功，课程包括免费和收费两种形式，对于免费课程可以直接选课学习，对于收费课程在选课后需要支付成功才可以继续学习。</p><h4 id="软件架构"><a href="#软件架构" class="headerlink" title="软件架构"></a>软件架构</h4><p>本项目包括了用户端、机构端、运营端。</p><p>核心模块包括：内容管理、媒资管理、课程搜索、订单支付、选课管理、认证授权等。</p><p>下图是项目的功能模块图：</p><img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97%E5%9B%BE.png" style="zoom:150%;" /><p>本项目采用前后端分离架构，后端采用SpringBoot、SpringCloud技术栈开发，数据库使用了MySQL，还使用的Redis、消息队列、分布式文件系统、Elasticsearch等中间件系统。</p><p>划分的微服务包括：内容管理服务、媒资管理服务、搜索服务、订单支付服务、 学习中心服务、系统管理服务、认证授权服务、网关服务、注册中心服务、配置中心服务等。</p><p>下图是项目的技术架构图：</p><img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE.png" style="zoom:150%;" /><h4 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h4><ol><li>项目基于JDK1.8环境开发，使用Mavne构建项目工程</li></ol><h4 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h4><ol><li><p>教学机构的老师登录教学管理平台，编辑课程信息，发布自己的课程。</p></li><li><p>平台运营人员登录运营平台审核课程、视频等信息，审核通过后课程方可发布。</p></li><li><p>课程发布后学生登录平台进行选课、在线学习。免费课程可直接学习，收费课程需要下单购买。</p></li></ol><h4 id="参与贡献"><a href="#参与贡献" class="headerlink" title="参与贡献"></a>参与贡献</h4><ol><li>Fork 本仓库</li><li>新建分支</li><li>提交代码</li></ol><h4 id="特技"><a href="#特技" class="headerlink" title="特技"></a>特技</h4><ol><li>使用 Readme_XXX.md 来支持不同的语言，例如 Readme_en.md, Readme_zh.md</li><li>Gitee 官方博客 <a href="https://blog.gitee.com/">blog.gitee.com</a></li><li>你可以 <a href="https://gitee.com/explore">https://gitee.com/explore</a> 这个地址来了解 Gitee 上的优秀开源项目</li><li><a href="https://gitee.com/gvp">GVP</a> 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目</li><li>Gitee 官方提供的使用手册 <a href="https://gitee.com/help">https://gitee.com/help</a></li><li>Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 <a href="https://gitee.com/gitee-stars/">https://gitee.com/gitee-stars/</a></li></ol>]]></content>
+    <content type="html"><![CDATA[<h1 id="学成在线"><a href="#学成在线" class="headerlink" title="学成在线"></a>学成在线</h1><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>本项目基于<strong>黑马程序员</strong>的 <em>《学成在线》</em> 项目搭建 仅供学习参考<br>在线教育行业是一个有着极强的广度和深度的行业，从校内到校外；从早幼教到职业培训；从教育工具到全信息化平台等等。</p><p>学成在线项目是本公司自研的一个专门针对成人职业技能教育的网络课堂系统，网站提供了成人职业技能培训的相关课程，如：软件开发培训、职业资格证书培训、成人学历教育培训等课程。项目基于B2B2C的业务模式，培训机构可以在平台入驻、发布课程，运营人员对发布的课程进行审核，审核通过后课程才可以发布成功，课程包括免费和收费两种形式，对于免费课程可以直接选课学习，对于收费课程在选课后需要支付成功才可以继续学习。</p><span id="more"></span><h4 id="软件架构"><a href="#软件架构" class="headerlink" title="软件架构"></a>软件架构</h4><p>本项目包括了用户端、机构端、运营端。</p><p>核心模块包括：内容管理、媒资管理、课程搜索、订单支付、选课管理、认证授权等。</p><p>下图是项目的功能模块图：</p><img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97%E5%9B%BE.png" style="zoom:150%;" /><p>本项目采用前后端分离架构，后端采用SpringBoot、SpringCloud技术栈开发，数据库使用了MySQL，还使用的Redis、消息队列、分布式文件系统、Elasticsearch等中间件系统。</p><p>划分的微服务包括：内容管理服务、媒资管理服务、搜索服务、订单支付服务、 学习中心服务、系统管理服务、认证授权服务、网关服务、注册中心服务、配置中心服务等。</p><p>下图是项目的技术架构图：</p><img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE.png" style="zoom:150%;" /><h4 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h4><ol><li>项目基于JDK1.8环境开发，使用Mavne构建项目工程</li></ol><h4 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h4><ol><li><p>教学机构的老师登录教学管理平台，编辑课程信息，发布自己的课程。</p></li><li><p>平台运营人员登录运营平台审核课程、视频等信息，审核通过后课程方可发布。</p></li><li><p>课程发布后学生登录平台进行选课、在线学习。免费课程可直接学习，收费课程需要下单购买。</p></li></ol><h4 id="参与贡献"><a href="#参与贡献" class="headerlink" title="参与贡献"></a>参与贡献</h4><ol><li>Fork 本仓库</li><li>新建分支</li><li>提交代码</li></ol><h4 id="特技"><a href="#特技" class="headerlink" title="特技"></a>特技</h4><ol><li>使用 Readme_XXX.md 来支持不同的语言，例如 Readme_en.md, Readme_zh.md</li><li>Gitee 官方博客 <a href="https://blog.gitee.com/">blog.gitee.com</a></li><li>你可以 <a href="https://gitee.com/explore">https://gitee.com/explore</a> 这个地址来了解 Gitee 上的优秀开源项目</li><li><a href="https://gitee.com/gvp">GVP</a> 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目</li><li>Gitee 官方提供的使用手册 <a href="https://gitee.com/help">https://gitee.com/help</a></li><li>Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 <a href="https://gitee.com/gitee-stars/">https://gitee.com/gitee-stars/</a></li></ol>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;学成在线&quot;&gt;&lt;a href=&quot;#学成在线&quot; class=&quot;headerlink&quot; title=&quot;学成在线&quot;&gt;&lt;/a&gt;学成在线&lt;/h1&gt;&lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;学成在线&quot;&gt;&lt;a href=&quot;#学成在线&quot; class=&quot;headerlink&quot; title=&quot;学成在线&quot;&gt;&lt;/a&gt;学成在线&lt;/h1&gt;&lt;h4 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h4&gt;&lt;p&gt;本项目基于&lt;strong&gt;黑马程序员&lt;/strong&gt;的 &lt;em&gt;《学成在线》&lt;/em&gt; 项目搭建 仅供学习参考&lt;br&gt;在线教育行业是一个有着极强的广度和深度的行业，从校内到校外；从早幼教到职业培训；从教育工具到全信息化平台等等。&lt;/p&gt;
+&lt;p&gt;学成在线项目是本公司自研的一个专门针对成人职业技能教育的网络课堂系统，网站提供了成人职业技能培训的相关课程，如：软件开发培训、职业资格证书培训、成人学历教育培训等课程。项目基于B2B2C的业务模式，培训机构可以在平台入驻、发布课程，运营人员对发布的课程进行审核，审核通过后课程才可以发布成功，课程包括免费和收费两种形式，对于免费课程可以直接选课学习，对于收费课程在选课后需要支付成功才可以继续学习。&lt;/p&gt;</summary>
     
     
     
+    <category term="项目" scheme="http://example.com/categories/%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+    <category term="项目介绍" scheme="http://example.com/tags/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/"/>
     
   </entry>
   
