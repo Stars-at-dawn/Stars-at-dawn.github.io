@@ -1,0 +1,7 @@
+http://example.com/2024/05/27/demo/
+http://example.com/2024/05/27/Test/
+http://example.com/2024/05/27/hello-world/
+http://example.com/
+http://example.com/tags/PS3/
+http://example.com/tags/Games/
+http://example.com/categories/Diary/
