@@ -1,4 +1,4 @@
-https://rkdkxvnn.github.io/2024/05/29/%E6%8E%A8%E8%8D%90%E5%85%B3%E6%B3%A8/
+https://rkdkxvnn.github.io/2024/05/27/%E6%8E%A8%E8%8D%90%E5%85%B3%E6%B3%A8/
 https://rkdkxvnn.github.io/tags/index.html
 https://rkdkxvnn.github.io/categories/index.html
 https://rkdkxvnn.github.io/2024/05/27/%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/
@@ -7,4 +7,6 @@ https://rkdkxvnn.github.io/about.html
 https://rkdkxvnn.github.io/2024/05/27/hello-world/
 https://rkdkxvnn.github.io/
 https://rkdkxvnn.github.io/tags/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/
+https://rkdkxvnn.github.io/tags/%E6%8E%A8%E8%8D%90%E5%8D%9A%E4%B8%BB%E5%85%B3%E6%B3%A8/
 https://rkdkxvnn.github.io/categories/%E9%A1%B9%E7%9B%AE/
+https://rkdkxvnn.github.io/categories/%E6%8E%A8%E8%8D%90/
