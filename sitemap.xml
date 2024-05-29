@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://rkdkxvnn.github.io/2024/05/27/%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/</loc>
+    
+    <lastmod>2024-05-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://rkdkxvnn.github.io/Email.html</loc>
+    
+    <lastmod>2024-05-29</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://rkdkxvnn.github.io/categories.html</loc>
     
     <lastmod>2024-05-29</lastmod>
@@ -23,24 +41,6 @@
     <loc>https://rkdkxvnn.github.io/about.html</loc>
     
     <lastmod>2024-05-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://rkdkxvnn.github.io/2024/05/27/demo/</loc>
-    
-    <lastmod>2024-05-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://rkdkxvnn.github.io/2024/05/27/Test/</loc>
-    
-    <lastmod>2024-05-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -71,24 +71,10 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://rkdkxvnn.github.io/tags/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2024-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
     <loc>https://rkdkxvnn.github.io/categories/%E9%A1%B9%E7%9B%AE/</loc>
-    <lastmod>2024-05-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://rkdkxvnn.github.io/categories/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2024-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
