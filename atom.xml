@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>辰星的博客</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://rkdkxvnn.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://rkdkxvnn.github.io/"/>
   <updated>2024-05-28T03:46:01.040Z</updated>
-  <id>http://example.com/</id>
+  <id>https://rkdkxvnn.github.io/</id>
   
   <author>
-    <name>RZF</name>
+    <name>长夜有辰星</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Demo</title>
-    <link href="http://example.com/2024/05/27/demo/"/>
-    <id>http://example.com/2024/05/27/demo/</id>
+    <link href="https://rkdkxvnn.github.io/2024/05/27/demo/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/27/demo/</id>
     <published>2024-05-27T14:07:34.713Z</published>
     <updated>2024-05-28T03:46:01.040Z</updated>
     
@@ -30,17 +30,17 @@
     
     
     
-    <category term="测试" scheme="http://example.com/categories/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="https://rkdkxvnn.github.io/categories/%E6%B5%8B%E8%AF%95/"/>
     
     
-    <category term="测试" scheme="http://example.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    <category term="测试" scheme="https://rkdkxvnn.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>Test</title>
-    <link href="http://example.com/2024/05/27/Test/"/>
-    <id>http://example.com/2024/05/27/Test/</id>
+    <link href="https://rkdkxvnn.github.io/2024/05/27/Test/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/27/Test/</id>
     <published>2024-05-27T14:04:20.000Z</published>
     <updated>2024-05-28T03:45:46.119Z</updated>
     
@@ -52,17 +52,17 @@
     
     
     
-    <category term="项目" scheme="http://example.com/categories/%E9%A1%B9%E7%9B%AE/"/>
+    <category term="项目" scheme="https://rkdkxvnn.github.io/categories/%E9%A1%B9%E7%9B%AE/"/>
     
     
-    <category term="项目介绍" scheme="http://example.com/tags/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/"/>
+    <category term="项目介绍" scheme="https://rkdkxvnn.github.io/tags/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2024/05/27/hello-world/"/>
-    <id>http://example.com/2024/05/27/hello-world/</id>
+    <link href="https://rkdkxvnn.github.io/2024/05/27/hello-world/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/27/hello-world/</id>
     <published>2024-05-27T13:49:58.027Z</published>
     <updated>2024-05-27T13:49:58.027Z</updated>
     

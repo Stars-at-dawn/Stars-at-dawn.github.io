@@ -1,8 +1,9 @@
-http://example.com/2024/05/27/demo/
-http://example.com/2024/05/27/Test/
-http://example.com/2024/05/27/hello-world/
-http://example.com/
-http://example.com/tags/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/
-http://example.com/tags/%E6%B5%8B%E8%AF%95/
-http://example.com/categories/%E9%A1%B9%E7%9B%AE/
-http://example.com/categories/%E6%B5%8B%E8%AF%95/
+https://rkdkxvnn.github.io/about.html
+https://rkdkxvnn.github.io/2024/05/27/demo/
+https://rkdkxvnn.github.io/2024/05/27/Test/
+https://rkdkxvnn.github.io/2024/05/27/hello-world/
+https://rkdkxvnn.github.io/
+https://rkdkxvnn.github.io/tags/%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/
+https://rkdkxvnn.github.io/tags/%E6%B5%8B%E8%AF%95/
+https://rkdkxvnn.github.io/categories/%E9%A1%B9%E7%9B%AE/
+https://rkdkxvnn.github.io/categories/%E6%B5%8B%E8%AF%95/
