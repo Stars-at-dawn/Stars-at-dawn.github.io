@@ -6,7 +6,7 @@
   <link href="https://rkdkxvnn.github.io/atom.xml" rel="self"/>
   
   <link href="https://rkdkxvnn.github.io/"/>
-  <updated>2024-05-30T03:39:32.625Z</updated>
+  <updated>2024-05-30T06:19:46.827Z</updated>
   <id>https://rkdkxvnn.github.io/</id>
   
   <author>
@@ -17,9 +17,97 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>本地与云端不一致</title>
+    <link href="https://rkdkxvnn.github.io/2024/05/30/9abbdcf45753/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/30/9abbdcf45753/</id>
+    <published>2024-05-30T06:19:38.000Z</published>
+    <updated>2024-05-30T06:19:46.827Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>前面碰到过地测试正常但是上传后的页面错误</strong></p><p>解决方法：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line">前者清除站点文件，后者重新生成并将之推送到指定的库分支。</span><br></pre></td></tr></table></figure><p>**建议每次更新都需要hexo clean **</p><p>当然<strong>游览器缓存</strong>也可能是一个问题，不过过一会就会正常。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;前面碰到过地测试正常但是上传后的页面错误&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;解决方法：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class</summary>
+      
+    
+    
+    
+    <category term="博客搭建的一些问题汇总我" scheme="https://rkdkxvnn.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB%E6%88%91/"/>
+    
+    
+    <category term="butterflyx主题" scheme="https://rkdkxvnn.github.io/tags/butterflyx%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="博客搭建" scheme="https://rkdkxvnn.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="问题汇总" scheme="https://rkdkxvnn.github.io/tags/%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>创建特殊文档</title>
+    <link href="https://rkdkxvnn.github.io/2024/05/30/24ea1e5e17c2/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/30/24ea1e5e17c2/</id>
+    <published>2024-05-30T05:40:11.000Z</published>
+    <updated>2024-05-30T06:10:50.392Z</updated>
+    
+    <content type="html"><![CDATA[<p>创建分类总览页代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure><p>创建标签总览页代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure><p>创建About总览页代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure><p><strong>注</strong>：</p><p>网址路径结尾是“&#x2F;”的话 会自动加载对应目录的index.html</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">也就是  http://localhost:4000/tags/ 加载的是tags目录下的index.html 而不是tags.html </span><br></pre></td></tr></table></figure><p>上面前两个文档文件需要手动生成，但里面的内容会自动生成 。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;创建分类总览页代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class</summary>
+      
+    
+    
+    
+    <category term="博客搭建的一些问题汇总" scheme="https://rkdkxvnn.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    
+    
+    <category term="butterflyx主题" scheme="https://rkdkxvnn.github.io/tags/butterflyx%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="博客搭建" scheme="https://rkdkxvnn.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="问题汇总" scheme="https://rkdkxvnn.github.io/tags/%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客config配置</title>
+    <link href="https://rkdkxvnn.github.io/2024/05/30/af41399204cc/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/30/af41399204cc/</id>
+    <published>2024-05-30T05:38:01.000Z</published>
+    <updated>2024-05-30T06:15:49.047Z</updated>
+    
+    <content type="html"><![CDATA[<p>初始配置文件（config那个没有别的后缀）</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="comment"># 网站显示的标题 随意填</span></span><br><span class="line"><span class="attr">author:</span> <span class="comment"># 你的名字 随意填</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:username/username.github.io.git</span>  <span class="comment"># 要是GitHub改名了，记得这里改一下</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> <span class="comment"># 仓库名称</span></span><br></pre></td></tr></table></figure><p> 主题配置文件常见配置（我所有是butterflyx主题）：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Avatar (头像设置)</span></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">img:</span>  <span class="comment"># url</span></span><br><span class="line">  <span class="attr">effect:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon（网站的图标）</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/img/myFavicon.png</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="comment"># display the cover or not (是否顯示文章封面)</span></span><br><span class="line">  <span class="attr">default_cover:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">/img/***.***</span>  <span class="comment"># 默认封面 对应文档的cover参数 可以是GIF</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Menu 目錄</span></span><br><span class="line"><span class="attr">menu:</span> <span class="comment"># 右上角的选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">---     </span></span><br><span class="line"><span class="comment"># Sponsor/reward</span></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">text:</span></span><br><span class="line">  <span class="attr">QR_code:</span> <span class="comment">#二维码设置</span></span><br><span class="line">     <span class="bullet">-</span> <span class="attr">img:</span> <span class="string">/img/***.png</span></span><br><span class="line">       <span class="attr">link:</span> <span class="comment"># 链接</span></span><br><span class="line">       <span class="attr">text:</span> <span class="comment"># 图片下面显示的文本</span></span><br><span class="line">       </span><br><span class="line"> <span class="string">---</span></span><br><span class="line"><span class="comment"># 网站优化</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># canvas_ribbon:  背景彩帶设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Mouse click effects 鼠标点击效果设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Loading Animation (加载动画设置)</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;初始配置文件（config那个没有别的后缀）&lt;/p&gt;
+&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</summary>
+      
+    
+    
+    
+    <category term="博客搭建的一些问题汇总" scheme="https://rkdkxvnn.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    
+    
+    <category term="butterflyx主题" scheme="https://rkdkxvnn.github.io/tags/butterflyx%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="博客搭建" scheme="https://rkdkxvnn.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="问题汇总" scheme="https://rkdkxvnn.github.io/tags/%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>打印汉诺塔过程</title>
-    <link href="https://rkdkxvnn.github.io/2024/05/30/%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98/"/>
-    <id>https://rkdkxvnn.github.io/2024/05/30/%E6%B1%89%E8%AF%BA%E5%A1%94%E9%97%AE%E9%A2%98/</id>
+    <link href="https://rkdkxvnn.github.io/2024/05/30/fe3b771b04c1/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/30/fe3b771b04c1/</id>
     <published>2024-05-30T03:37:03.000Z</published>
     <updated>2024-05-30T03:39:32.625Z</updated>
     
@@ -47,8 +135,8 @@
   
   <entry>
     <title>推荐关注</title>
-    <link href="https://rkdkxvnn.github.io/2024/05/27/%E6%8E%A8%E8%8D%90%E5%85%B3%E6%B3%A8/"/>
-    <id>https://rkdkxvnn.github.io/2024/05/27/%E6%8E%A8%E8%8D%90%E5%85%B3%E6%B3%A8/</id>
+    <link href="https://rkdkxvnn.github.io/2024/05/27/357482bc696c/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/27/357482bc696c/</id>
     <published>2024-05-27T14:04:20.000Z</published>
     <updated>2024-05-29T12:53:36.159Z</updated>
     
@@ -73,10 +161,10 @@
   
   <entry>
     <title>学成在线项目介绍</title>
-    <link href="https://rkdkxvnn.github.io/2024/05/27/%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/"/>
-    <id>https://rkdkxvnn.github.io/2024/05/27/%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D/</id>
+    <link href="https://rkdkxvnn.github.io/2024/05/27/24fb4a4f74ee/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/27/24fb4a4f74ee/</id>
     <published>2024-05-27T14:04:20.000Z</published>
-    <updated>2024-05-29T06:48:51.485Z</updated>
+    <updated>2024-05-30T05:54:16.571Z</updated>
     
     <content type="html"><![CDATA[<h1 id="学成在线"><a href="#学成在线" class="headerlink" title="学成在线"></a>学成在线</h1><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>本项目基于<strong>黑马程序员</strong>的 <em>《学成在线》</em> 项目搭建 仅供学习参考<br>在线教育行业是一个有着极强的广度和深度的行业，从校内到校外；从早幼教到职业培训；从教育工具到全信息化平台等等。</p><p>学成在线项目是本公司自研的一个专门针对成人职业技能教育的网络课堂系统，网站提供了成人职业技能培训的相关课程，如：软件开发培训、职业资格证书培训、成人学历教育培训等课程。项目基于B2B2C的业务模式，培训机构可以在平台入驻、发布课程，运营人员对发布的课程进行审核，审核通过后课程才可以发布成功，课程包括免费和收费两种形式，对于免费课程可以直接选课学习，对于收费课程在选课后需要支付成功才可以继续学习。</p><span id="more"></span><h4 id="软件架构"><a href="#软件架构" class="headerlink" title="软件架构"></a>软件架构</h4><p>本项目包括了用户端、机构端、运营端。</p><p>核心模块包括：内容管理、媒资管理、课程搜索、订单支付、选课管理、认证授权等。</p><p>下图是项目的功能模块图：</p><img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97%E5%9B%BE.png" style="zoom:150%;" /><p>本项目采用前后端分离架构，后端采用SpringBoot、SpringCloud技术栈开发，数据库使用了MySQL，还使用的Redis、消息队列、分布式文件系统、Elasticsearch等中间件系统。</p><p>划分的微服务包括：内容管理服务、媒资管理服务、搜索服务、订单支付服务、 学习中心服务、系统管理服务、认证授权服务、网关服务、注册中心服务、配置中心服务等。</p><p>下图是项目的技术架构图：</p><img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE.png" style="zoom:150%;" /><h4 id="安装教程"><a href="#安装教程" class="headerlink" title="安装教程"></a>安装教程</h4><ol><li>项目基于JDK1.8环境开发，使用Mavne构建项目工程</li></ol><h4 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h4><ol><li><p>教学机构的老师登录教学管理平台，编辑课程信息，发布自己的课程。</p></li><li><p>平台运营人员登录运营平台审核课程、视频等信息，审核通过后课程方可发布。</p></li><li><p>课程发布后学生登录平台进行选课、在线学习。免费课程可直接学习，收费课程需要下单购买。</p></li></ol>]]></content>
     
@@ -94,9 +182,39 @@
   </entry>
   
   <entry>
+    <title>文档上的注释</title>
+    <link href="https://rkdkxvnn.github.io/2024/05/27/8ca29ff6a406/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/27/8ca29ff6a406/</id>
+    <published>2024-05-27T14:04:20.000Z</published>
+    <updated>2024-05-30T06:10:20.469Z</updated>
+    
+    <content type="html"><![CDATA[<p>Front-matter 采用 YAML  格式</p><p>源码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: # 标题</span><br><span class="line">date: # 日期</span><br><span class="line">tags: # 标签</span><br><span class="line">- </span><br><span class="line">categories: # 分类</span><br><span class="line">-</span><br><span class="line">cover: /img/***.jpg # 封面 相对路径或者使用网址</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>可以参考<a href="https://hexo.io/zh-cn/docs/front-matter">官方文档</a></p><p><strong>注意事项</strong>：</p><p>title 不建议写中文或者网站采用hash算法（避免网址中文乱码）</p><p>采用hash算法设置（主路径下的_config配置中的下面位置）：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://***.github.io</span></span><br><span class="line"><span class="comment"># 改这里 原先是 :year/:month/:day/:title/ -&gt; :year/:month/:day/:hash/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:hash/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;.html&#x27; from permalinks</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><strong>小技巧</strong>：</p><p>微软输入法快速输入日期的方法：</p><p>可以去右下角输入法的地方右键点击设置 –&gt; 找到词库 –&gt; 然后添加自定义短语 –&gt;</p><p>关键词自己定义  映射短语设置：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%</p><p>就可以快速输入时间了</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Front-matter 采用 YAML  格式&lt;/p&gt;
+&lt;p&gt;源码：&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span</summary>
+      
+    
+    
+    
+    <category term="博客搭建的一些问题汇总" scheme="https://rkdkxvnn.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    
+    
+    <category term="butterflyx主题" scheme="https://rkdkxvnn.github.io/tags/butterflyx%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="博客搭建" scheme="https://rkdkxvnn.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    <category term="问题汇总" scheme="https://rkdkxvnn.github.io/tags/%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="https://rkdkxvnn.github.io/2024/05/27/hello-world/"/>
-    <id>https://rkdkxvnn.github.io/2024/05/27/hello-world/</id>
+    <link href="https://rkdkxvnn.github.io/2024/05/27/4765b619cd78/"/>
+    <id>https://rkdkxvnn.github.io/2024/05/27/4765b619cd78/</id>
     <published>2024-05-27T13:49:58.027Z</published>
     <updated>2024-05-27T13:49:58.027Z</updated>
     
