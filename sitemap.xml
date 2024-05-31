@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://stars-at-dawn.github.io/about.html</loc>
+    
+    <lastmod>2024-05-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://stars-at-dawn.github.io/2024/05/30/9abbdcf45753/</loc>
     
     <lastmod>2024-05-30</lastmod>
@@ -84,15 +93,6 @@
   
   <url>
     <loc>https://stars-at-dawn.github.io/Email.html</loc>
-    
-    <lastmod>2024-05-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://stars-at-dawn.github.io/about.html</loc>
     
     <lastmod>2024-05-29</lastmod>
     
