@@ -1,217 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>学成在线项目介绍</title>
-    <url>/2024/05/27/24fb4a4f74ee/</url>
-    <content><![CDATA[<h1>学成在线</h1>
-<h4 id="介绍">介绍</h4>
-<p>本项目基于<strong>黑马程序员</strong>的 <em>《学成在线》</em> 项目搭建 仅供学习参考<br>
-在线教育行业是一个有着极强的广度和深度的行业，从校内到校外；从早幼教到职业培训；从教育工具到全信息化平台等等。</p>
-<p>学成在线项目是本公司自研的一个专门针对成人职业技能教育的网络课堂系统，网站提供了成人职业技能培训的相关课程，如：软件开发培训、职业资格证书培训、成人学历教育培训等课程。项目基于B2B2C的业务模式，培训机构可以在平台入驻、发布课程，运营人员对发布的课程进行审核，审核通过后课程才可以发布成功，课程包括免费和收费两种形式，对于免费课程可以直接选课学习，对于收费课程在选课后需要支付成功才可以继续学习。</p>
-<span id="more"></span>
-<h4 id="软件架构">软件架构</h4>
-<p>本项目包括了用户端、机构端、运营端。</p>
-<p>核心模块包括：内容管理、媒资管理、课程搜索、订单支付、选课管理、认证授权等。</p>
-<p>下图是项目的功能模块图：</p>
-<img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97%E5%9B%BE.png" style="zoom:150%;" />
-<p>本项目采用前后端分离架构，后端采用SpringBoot、SpringCloud技术栈开发，数据库使用了MySQL，还使用的Redis、消息队列、分布式文件系统、Elasticsearch等中间件系统。</p>
-<p>划分的微服务包括：内容管理服务、媒资管理服务、搜索服务、订单支付服务、 学习中心服务、系统管理服务、认证授权服务、网关服务、注册中心服务、配置中心服务等。</p>
-<p>下图是项目的技术架构图：</p>
-<img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE.png" style="zoom:150%;" />
-<h4 id="安装教程">安装教程</h4>
-<ol>
-<li>项目基于JDK1.8环境开发，使用Mavne构建项目工程</li>
-</ol>
-<h4 id="使用说明">使用说明</h4>
-<ol>
-<li>
-<p>教学机构的老师登录教学管理平台，编辑课程信息，发布自己的课程。</p>
-</li>
-<li>
-<p>平台运营人员登录运营平台审核课程、视频等信息，审核通过后课程方可发布。</p>
-</li>
-<li>
-<p>课程发布后学生登录平台进行选课、在线学习。免费课程可直接学习，收费课程需要下单购买。</p>
-</li>
-</ol>
-]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>本地与云端不一致</title>
+      <link href="/2024/05/30/9abbdcf45753/"/>
+      <url>/2024/05/30/9abbdcf45753/</url>
+      
+        <content type="html"><![CDATA[<p><strong>前面碰到过地测试正常但是上传后的页面错误</strong></p><p>解决方法：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line">前者清除站点文件，后者重新生成并将之推送到指定的库分支。</span><br></pre></td></tr></table></figure><p>**建议每次更新都需要hexo clean **</p><p>当然<strong>游览器缓存</strong>也可能是一个问题，不过过一会就会正常。</p>]]></content>
+      
+      
       <categories>
-        <category>项目</category>
+          
+          <category> 博客搭建的一些问题汇总 </category>
+          
       </categories>
-      <tags>
-        <tag>项目介绍</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2024/05/27/4765b619cd78/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>创建特殊文档</title>
-    <url>/2024/05/30/24ea1e5e17c2/</url>
-    <content><![CDATA[<p>创建分类总览页代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>创建标签总览页代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>创建About总览页代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
-<p><strong>注</strong>：</p>
-<p>网址路径结尾是“/”的话 会自动加载对应目录的index.html</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">也就是  http://localhost:4000/tags/ 加载的是tags目录下的index.html 而不是tags.html </span><br></pre></td></tr></table></figure>
-<p>上面前两个文档文件需要手动生成，但里面的内容会自动生成 。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> butterflyx主题 </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+            <tag> 问题汇总 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>创建特殊文档</title>
+      <link href="/2024/05/30/24ea1e5e17c2/"/>
+      <url>/2024/05/30/24ea1e5e17c2/</url>
+      
+        <content type="html"><![CDATA[<p>创建分类总览页代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure><p>创建标签总览页代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure><p>创建About总览页代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure><p><strong>注</strong>：</p><p>网址路径结尾是“/”的话 会自动加载对应目录的index.html</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">也就是  http://localhost:4000/tags/ 加载的是tags目录下的index.html 而不是tags.html </span><br></pre></td></tr></table></figure><p>上面前两个文档文件需要手动生成，但里面的内容会自动生成 。</p>]]></content>
+      
+      
       <categories>
-        <category>博客搭建的一些问题汇总</category>
+          
+          <category> 博客搭建的一些问题汇总 </category>
+          
       </categories>
-      <tags>
-        <tag>butterflyx主题</tag>
-        <tag>博客搭建</tag>
-        <tag>问题汇总</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客config配置</title>
-    <url>/2024/05/30/af41399204cc/</url>
-    <content><![CDATA[<p>初始配置文件（config那个没有别的后缀）</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="comment"># 网站显示的标题 随意填</span></span><br><span class="line"><span class="attr">author:</span> <span class="comment"># 你的名字 随意填</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:username/username.github.io.git</span>  <span class="comment"># 要是GitHub改名了，记得这里改一下</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> <span class="comment"># 仓库名称</span></span><br></pre></td></tr></table></figure>
-<p>主题配置文件常见配置（我所有是butterflyx主题）：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Avatar (头像设置)</span></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">img:</span>  <span class="comment"># url</span></span><br><span class="line">  <span class="attr">effect:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon（网站的图标）</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/img/myFavicon.png</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="comment"># display the cover or not (是否顯示文章封面)</span></span><br><span class="line">  <span class="attr">default_cover:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">/img/***.***</span>  <span class="comment"># 默认封面 对应文档的cover参数 可以是GIF</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Menu 目錄</span></span><br><span class="line"><span class="attr">menu:</span> <span class="comment"># 右上角的选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">---     </span></span><br><span class="line"><span class="comment"># Sponsor/reward</span></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">text:</span></span><br><span class="line">  <span class="attr">QR_code:</span> <span class="comment">#二维码设置</span></span><br><span class="line">     <span class="bullet">-</span> <span class="attr">img:</span> <span class="string">/img/***.png</span></span><br><span class="line">       <span class="attr">link:</span> <span class="comment"># 链接</span></span><br><span class="line">       <span class="attr">text:</span> <span class="comment"># 图片下面显示的文本</span></span><br><span class="line">       </span><br><span class="line"> <span class="string">---</span></span><br><span class="line"><span class="comment"># 网站优化</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># canvas_ribbon:  背景彩帶设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Mouse click effects 鼠标点击效果设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Loading Animation (加载动画设置)</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> butterflyx主题 </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+            <tag> 问题汇总 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客config配置</title>
+      <link href="/2024/05/30/af41399204cc/"/>
+      <url>/2024/05/30/af41399204cc/</url>
+      
+        <content type="html"><![CDATA[<p>初始配置文件（config那个没有别的后缀）</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="comment"># 网站显示的标题 随意填</span></span><br><span class="line"><span class="attr">author:</span> <span class="comment"># 你的名字 随意填</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:username/username.github.io.git</span>  <span class="comment"># 要是GitHub改名了，记得这里改一下</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> <span class="comment"># 仓库名称</span></span><br></pre></td></tr></table></figure><p>主题配置文件常见配置（我所有是butterflyx主题）：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Avatar (头像设置)</span></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">img:</span>  <span class="comment"># url</span></span><br><span class="line">  <span class="attr">effect:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon（网站的图标）</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/img/myFavicon.png</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="comment"># display the cover or not (是否顯示文章封面)</span></span><br><span class="line">  <span class="attr">default_cover:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">/img/***.***</span>  <span class="comment"># 默认封面 对应文档的cover参数 可以是GIF</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Menu 目錄</span></span><br><span class="line"><span class="attr">menu:</span> <span class="comment"># 右上角的选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">---     </span></span><br><span class="line"><span class="comment"># Sponsor/reward</span></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">text:</span></span><br><span class="line">  <span class="attr">QR_code:</span> <span class="comment">#二维码设置</span></span><br><span class="line">     <span class="bullet">-</span> <span class="attr">img:</span> <span class="string">/img/***.png</span></span><br><span class="line">       <span class="attr">link:</span> <span class="comment"># 链接</span></span><br><span class="line">       <span class="attr">text:</span> <span class="comment"># 图片下面显示的文本</span></span><br><span class="line">       </span><br><span class="line"> <span class="string">---</span></span><br><span class="line"><span class="comment"># 网站优化</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># canvas_ribbon:  背景彩帶设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Mouse click effects 鼠标点击效果设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Loading Animation (加载动画设置)</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
       <categories>
-        <category>博客搭建的一些问题汇总</category>
+          
+          <category> 博客搭建的一些问题汇总 </category>
+          
       </categories>
-      <tags>
-        <tag>butterflyx主题</tag>
-        <tag>博客搭建</tag>
-        <tag>问题汇总</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>本地与云端不一致</title>
-    <url>/2024/05/30/9abbdcf45753/</url>
-    <content><![CDATA[<p><strong>前面碰到过地测试正常但是上传后的页面错误</strong></p>
-<p>解决方法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line">前者清除站点文件，后者重新生成并将之推送到指定的库分支。</span><br></pre></td></tr></table></figure>
-<p>**建议每次更新都需要hexo clean **</p>
-<p>当然<strong>游览器缓存</strong>也可能是一个问题，不过过一会就会正常。</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> butterflyx主题 </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+            <tag> 问题汇总 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>打印汉诺塔过程</title>
+      <link href="/2024/05/30/50b1c2312317/"/>
+      <url>/2024/05/30/50b1c2312317/</url>
+      
+        <content type="html"><![CDATA[<p><strong>用代码实现 打印汉诺塔最优解的过程</strong></p><p>废话少说咱们直接开始(‾◡◝)</p><p>首先先来看看汉诺塔问题的定义：</p><p>汉诺塔（Tower of Hanoi），又称河内塔，是一个源于<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E5%8D%B0%E5%BA%A6/121904%3FfromModule%3Dlemma_inlink">印度</a>古老传说的<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E7%9B%8A%E6%99%BA%E7%8E%A9%E5%85%B7/223159%3FfromModule%3Dlemma_inlink">益智玩具</a>。大<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E6%A2%B5%E5%A4%A9/2453640%3FfromModule%3Dlemma_inlink">梵天</a>创造世界的时候做了三根<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E9%87%91%E5%88%9A%E7%9F%B3/80698%3FfromModule%3Dlemma_inlink">金刚石</a>柱子，在一根柱子上从下往上按照大小顺序摞着64片黄金圆盘。<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E5%A4%A7%E6%A2%B5%E5%A4%A9/711550%3FfromModule%3Dlemma_inlink">大梵天</a>命令婆罗门把圆盘从下面开始按大小顺序重新摆放在另一根柱子上。并且规定，在小圆盘上不能放大圆盘，在三根柱子之间一次只能移动一个圆盘。[<a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_1">1]</a></p><p>那我们简化一下问题：变成三个圆盘，毕竟我们也买不起这么多黄金圆盘</p><p>（才不是我懒~(￣▽￣)~*）</p><p>如图我们要移动三个圆盘到最边上，而且小圆盘上不能放大圆盘</p><p><img src="https://pic3.zhimg.com/80/v2-be4e82ef46d6c2569a68d49a34311806_1440w.webp" alt="img"></p><p>那我们分析要让所用圆盘移到右边，很显然根据规则可以知道<strong>最下面的圆盘</strong>肯定要<strong>先移到最右边</strong>，不然移动别的大的就放不下了；</p><p>同时也可以看出：</p><p>要让最下面的圆盘移到最右边，就要让<strong>它上面的圆盘移到中间</strong>（就像把大象塞进冰箱要怎么办的问题一样）</p><p>顺着思路也就可以分析它上面的圆盘移到中间的问题，如果把<strong>中间的杆子当成右边的（即目标杆）</strong>，那问题就变成两层的汉诺塔问题了（底层的那个金盘你会发现有没有都无所谓），那就很显然是一个递归问题了，下面直接写代码（本文采用java）：</p><p>（写递归就写过程，不要去太纠结结果）</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//让所用圆盘移到右边    </span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">leftToRight</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="comment">//basecase</span></span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;left to right&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        leftToMid(n - <span class="number">1</span>);<span class="comment">//让它上面的圆盘移到中间</span></span><br><span class="line">        System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;left to right&quot;</span>);</span><br><span class="line">        midToRight(n - <span class="number">1</span>);<span class="comment">//让它上面的圆盘从中间移到右边完成整个过程</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>同理写出 leftToMid(n -1) midToRight(n -1)的过程</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">leftToMid</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">       <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">           System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;left to mid&quot;</span>);</span><br><span class="line">           <span class="keyword">return</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       leftToRight(n - <span class="number">1</span>);<span class="comment">//都是一样的</span></span><br><span class="line">       System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;left to mid&quot;</span>);</span><br><span class="line">       rightToMid(n - <span class="number">1</span>);<span class="comment">//完成整个过程</span></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">rightToMid</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">       <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">           System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;right to mid&quot;</span>);</span><br><span class="line">           <span class="keyword">return</span>;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       rightToLeft(n - <span class="number">1</span>);<span class="comment">//都是一样的</span></span><br><span class="line">       System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;right to mid&quot;</span>);</span><br><span class="line">       leftToMid(n - <span class="number">1</span>);<span class="comment">//完成整个过程</span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure><p>其它的从左从中间。。。我想应该不用我写了把（才不是我懒o(^▽^)o）</p><p>但这么长显然代码并不好看，而且能发现递归过程有大量共性，考虑优化一下</p><p>将当前位置和目标位置抽象出来</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//当前位置和目标位置 还有剩余位置抽象出来   </span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">fromTo</span><span class="params">(String from, String other, String to, <span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;move&quot;</span> + n + from + <span class="string">&quot; to &quot;</span> + to);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        fromTo(from, to, other, n - <span class="number">1</span>);<span class="comment">//other 和 to交换位置 代表当前圆盘的上面的圆盘移到剩余位置</span></span><br><span class="line">        System.out.println(<span class="string">&quot;move&quot;</span> + n + from + <span class="string">&quot; to &quot;</span> + to);</span><br><span class="line">        fromTo(other, from, to, n - <span class="number">1</span>);<span class="comment">//代表当前圆盘的上面的圆盘移到目标位置</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>大功告成，我相信你也对递归有了更好的理解了吧</p><p>不过有个小彩蛋，那就是你会发现这个递归次数成指数增长</p><p><strong>因为</strong>从递归式可以看出</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(n)=2f(n-1)+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span></p><p>推出----&gt;</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(n)+1=2(f(n)+1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>k</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>k</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k(n)=2k(n-1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p><p>有了<strong>递推式</strong>就可以写出 <strong>f(n)</strong></p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mi>k</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(n)=k(n)-1=2^n-1 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7977em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span></p><p>也就是n层汉诺塔至少需要这么多步</p><p>也就是说<strong>64片黄金</strong>圆盘需要移动 <strong>18446744073709551615</strong>次？？？那故事里的金盘移动完怕不是地球都没了</p><p>( ‵▽′)ψ</p><p>（ps：第一次写，如果有什么不好的欢迎指出( •̀ ω •́ )y）下次见</p><p>每日一句：</p><p>上善若水，水善利万物而不争。[<a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_2">2]</a></p><h2 id="参考">参考</h2><ol><li><a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_1_0">^</a>百度百科</li><li><a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_2_0">^</a>老子《道德经》</li></ol>]]></content>
+      
+      
       <categories>
-        <category>博客搭建的一些问题汇总</category>
+          
+          <category> 算法 </category>
+          
       </categories>
-      <tags>
-        <tag>butterflyx主题</tag>
-        <tag>博客搭建</tag>
-        <tag>问题汇总</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>推荐关注</title>
-    <url>/2024/05/27/f900ef9ae788/</url>
-    <content><![CDATA[<p>B站</p>
-<p><strong>老陌Ss</strong> UID：1343324216</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 经典算法 </tag>
+            
+            <tag> 汉诺塔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学成在线项目介绍</title>
+      <link href="/2024/05/27/24fb4a4f74ee/"/>
+      <url>/2024/05/27/24fb4a4f74ee/</url>
+      
+        <content type="html"><![CDATA[<h1>学成在线</h1><h4 id="介绍">介绍</h4><p>本项目基于<strong>黑马程序员</strong>的 <em>《学成在线》</em> 项目搭建 仅供学习参考<br>在线教育行业是一个有着极强的广度和深度的行业，从校内到校外；从早幼教到职业培训；从教育工具到全信息化平台等等。</p><p>学成在线项目是本公司自研的一个专门针对成人职业技能教育的网络课堂系统，网站提供了成人职业技能培训的相关课程，如：软件开发培训、职业资格证书培训、成人学历教育培训等课程。项目基于B2B2C的业务模式，培训机构可以在平台入驻、发布课程，运营人员对发布的课程进行审核，审核通过后课程才可以发布成功，课程包括免费和收费两种形式，对于免费课程可以直接选课学习，对于收费课程在选课后需要支付成功才可以继续学习。</p><span id="more"></span><h4 id="软件架构">软件架构</h4><p>本项目包括了用户端、机构端、运营端。</p><p>核心模块包括：内容管理、媒资管理、课程搜索、订单支付、选课管理、认证授权等。</p><p>下图是项目的功能模块图：</p><img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97%E5%9B%BE.png" style="zoom:150%;" /><p>本项目采用前后端分离架构，后端采用SpringBoot、SpringCloud技术栈开发，数据库使用了MySQL，还使用的Redis、消息队列、分布式文件系统、Elasticsearch等中间件系统。</p><p>划分的微服务包括：内容管理服务、媒资管理服务、搜索服务、订单支付服务、 学习中心服务、系统管理服务、认证授权服务、网关服务、注册中心服务、配置中心服务等。</p><p>下图是项目的技术架构图：</p><img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE.png" style="zoom:150%;" /><h4 id="安装教程">安装教程</h4><ol><li>项目基于JDK1.8环境开发，使用Mavne构建项目工程</li></ol><h4 id="使用说明">使用说明</h4><ol><li><p>教学机构的老师登录教学管理平台，编辑课程信息，发布自己的课程。</p></li><li><p>平台运营人员登录运营平台审核课程、视频等信息，审核通过后课程方可发布。</p></li><li><p>课程发布后学生登录平台进行选课、在线学习。免费课程可直接学习，收费课程需要下单购买。</p></li></ol>]]></content>
+      
+      
       <categories>
-        <category>推荐</category>
+          
+          <category> 项目 </category>
+          
       </categories>
-      <tags>
-        <tag>推荐博主关注</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>文档上的注释</title>
-    <url>/2024/05/27/8ca29ff6a406/</url>
-    <content><![CDATA[<p>Front-matter 采用 YAML  格式</p>
-<p>源码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: # 标题</span><br><span class="line">date: # 日期</span><br><span class="line">tags: # 标签</span><br><span class="line">- </span><br><span class="line">categories: # 分类</span><br><span class="line">-</span><br><span class="line">cover: /img/***.jpg # 封面 相对路径或者使用网址</span><br><span class="line">indexing: false #  生成的搜素（此功能需要手动开启）结果将不包含此帖子或页面</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<p>可以参考<a href="https://hexo.io/zh-cn/docs/front-matter">官方文档</a></p>
-<p><strong>注意事项</strong>：</p>
-<p>title 不建议写中文或者网站采用hash算法（避免网址中文乱码）</p>
-<p>采用hash算法设置（主路径下的_config配置中的下面位置）：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://***.github.io</span></span><br><span class="line"><span class="comment"># 改这里 原先是 :year/:month/:day/:title/ -&gt; :year/:month/:day/:hash/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:hash/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;.html&#x27; from permalinks</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><strong>小技巧</strong>：</p>
-<p>微软输入法快速输入日期的方法：</p>
-<p>可以去右下角输入法的地方右键点击设置 --&gt; 找到词库 --&gt; 然后添加自定义短语 --&gt;</p>
-<p>关键词自己定义  映射短语设置：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%</p>
-<p>就可以快速输入时间了</p>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> 项目介绍 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>文档上的注释</title>
+      <link href="/2024/05/27/8ca29ff6a406/"/>
+      <url>/2024/05/27/8ca29ff6a406/</url>
+      
+        <content type="html"><![CDATA[<p>Front-matter 采用 YAML  格式</p><p>源码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: # 标题</span><br><span class="line">date: # 日期</span><br><span class="line">tags: # 标签</span><br><span class="line">- </span><br><span class="line">categories: # 分类</span><br><span class="line">-</span><br><span class="line">cover: /img/***.jpg # 封面 相对路径或者使用网址</span><br><span class="line">indexing: false #  生成的搜素（此功能需要手动开启）结果将不包含此帖子或页面</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>可以参考<a href="https://hexo.io/zh-cn/docs/front-matter">官方文档</a></p><p><strong>注意事项</strong>：</p><p>title 不建议写中文或者网站采用hash算法（避免网址中文乱码）</p><p>采用hash算法设置（主路径下的_config配置中的下面位置）：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://***.github.io</span></span><br><span class="line"><span class="comment"># 改这里 原先是 :year/:month/:day/:title/ -&gt; :year/:month/:day/:hash/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:hash/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;.html&#x27; from permalinks</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><strong>小技巧</strong>：</p><p>微软输入法快速输入日期的方法：</p><p>可以去右下角输入法的地方右键点击设置 --&gt; 找到词库 --&gt; 然后添加自定义短语 --&gt;</p><p>关键词自己定义  映射短语设置：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%</p><p>就可以快速输入时间了</p>]]></content>
+      
+      
       <categories>
-        <category>博客搭建的一些问题汇总</category>
+          
+          <category> 博客搭建的一些问题汇总 </category>
+          
       </categories>
-      <tags>
-        <tag>butterflyx主题</tag>
-        <tag>博客搭建</tag>
-        <tag>问题汇总</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>打印汉诺塔过程</title>
-    <url>/2024/05/30/50b1c2312317/</url>
-    <content><![CDATA[<p><strong>用代码实现 打印汉诺塔最优解的过程</strong></p>
-<p>废话少说咱们直接开始(‾◡◝)</p>
-<p>首先先来看看汉诺塔问题的定义：</p>
-<p>汉诺塔（Tower of Hanoi），又称河内塔，是一个源于<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E5%8D%B0%E5%BA%A6/121904%3FfromModule%3Dlemma_inlink">印度</a>古老传说的<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E7%9B%8A%E6%99%BA%E7%8E%A9%E5%85%B7/223159%3FfromModule%3Dlemma_inlink">益智玩具</a>。大<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E6%A2%B5%E5%A4%A9/2453640%3FfromModule%3Dlemma_inlink">梵天</a>创造世界的时候做了三根<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E9%87%91%E5%88%9A%E7%9F%B3/80698%3FfromModule%3Dlemma_inlink">金刚石</a>柱子，在一根柱子上从下往上按照大小顺序摞着64片黄金圆盘。<a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%E5%A4%A7%E6%A2%B5%E5%A4%A9/711550%3FfromModule%3Dlemma_inlink">大梵天</a>命令婆罗门把圆盘从下面开始按大小顺序重新摆放在另一根柱子上。并且规定，在小圆盘上不能放大圆盘，在三根柱子之间一次只能移动一个圆盘。[<a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_1">1]</a></p>
-<p>那我们简化一下问题：变成三个圆盘，毕竟我们也买不起这么多黄金圆盘</p>
-<p>（才不是我懒~(￣▽￣)~*）</p>
-<p>如图我们要移动三个圆盘到最边上，而且小圆盘上不能放大圆盘</p>
-<p><img src="https://pic3.zhimg.com/80/v2-be4e82ef46d6c2569a68d49a34311806_1440w.webp" alt="img"></p>
-<p>那我们分析要让所用圆盘移到右边，很显然根据规则可以知道<strong>最下面的圆盘</strong>肯定要<strong>先移到最右边</strong>，不然移动别的大的就放不下了；</p>
-<p>同时也可以看出：</p>
-<p>要让最下面的圆盘移到最右边，就要让<strong>它上面的圆盘移到中间</strong>（就像把大象塞进冰箱要怎么办的问题一样）</p>
-<p>顺着思路也就可以分析它上面的圆盘移到中间的问题，如果把<strong>中间的杆子当成右边的（即目标杆）</strong>，那问题就变成两层的汉诺塔问题了（底层的那个金盘你会发现有没有都无所谓），那就很显然是一个递归问题了，下面直接写代码（本文采用java）：</p>
-<p>（写递归就写过程，不要去太纠结结果）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//让所用圆盘移到右边    </span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">leftToRight</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="comment">//basecase</span></span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;left to right&quot;</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        leftToMid(n - <span class="number">1</span>);<span class="comment">//让它上面的圆盘移到中间</span></span><br><span class="line">        System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;left to right&quot;</span>);</span><br><span class="line">        midToRight(n - <span class="number">1</span>);<span class="comment">//让它上面的圆盘从中间移到右边完成整个过程</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>同理写出 leftToMid(n -1) midToRight(n -1)的过程</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">leftToMid</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">       <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">           System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;left to mid&quot;</span>);</span><br><span class="line">           <span class="keyword">return</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       leftToRight(n - <span class="number">1</span>);<span class="comment">//都是一样的</span></span><br><span class="line">       System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;left to mid&quot;</span>);</span><br><span class="line">       rightToMid(n - <span class="number">1</span>);<span class="comment">//完成整个过程</span></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">rightToMid</span><span class="params">(<span class="type">int</span> n)</span> &#123;</span><br><span class="line">       <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">           System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;right to mid&quot;</span>);</span><br><span class="line">           <span class="keyword">return</span>;</span><br><span class="line">       &#125;</span><br><span class="line"></span><br><span class="line">       rightToLeft(n - <span class="number">1</span>);<span class="comment">//都是一样的</span></span><br><span class="line">       System.out.println(<span class="string">&quot;move&quot;</span> + n + <span class="string">&quot;right to mid&quot;</span>);</span><br><span class="line">       leftToMid(n - <span class="number">1</span>);<span class="comment">//完成整个过程</span></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-<p>其它的从左从中间。。。我想应该不用我写了把（才不是我懒o(^▽^)o）</p>
-<p>但这么长显然代码并不好看，而且能发现递归过程有大量共性，考虑优化一下</p>
-<p>将当前位置和目标位置抽象出来</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//当前位置和目标位置 还有剩余位置抽象出来   </span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">fromTo</span><span class="params">(String from, String other, String to, <span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;move&quot;</span> + n + from + <span class="string">&quot; to &quot;</span> + to);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        fromTo(from, to, other, n - <span class="number">1</span>);<span class="comment">//other 和 to交换位置 代表当前圆盘的上面的圆盘移到剩余位置</span></span><br><span class="line">        System.out.println(<span class="string">&quot;move&quot;</span> + n + from + <span class="string">&quot; to &quot;</span> + to);</span><br><span class="line">        fromTo(other, from, to, n - <span class="number">1</span>);<span class="comment">//代表当前圆盘的上面的圆盘移到目标位置</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>大功告成，我相信你也对递归有了更好的理解了吧</p>
-<p>不过有个小彩蛋，那就是你会发现这个递归次数成指数增长</p>
-<p><strong>因为</strong>从递归式可以看出</p>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(n)=2f(n-1)+1
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span></p>
-<p>推出----&gt;</p>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(n)+1=2(f(n)+1)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>k</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>k</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k(n)=2k(n-1)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
-<p>有了<strong>递推式</strong>就可以写出 <strong>f(n)</strong></p>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mi>k</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(n)=k(n)-1=2^n-1
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7977em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span></p>
-<p>也就是n层汉诺塔至少需要这么多步</p>
-<p>也就是说<strong>64片黄金</strong>圆盘需要移动 <strong>18446744073709551615</strong>次？？？那故事里的金盘移动完怕不是地球都没了</p>
-<p>( ‵▽′)ψ</p>
-<p>（ps：第一次写，如果有什么不好的欢迎指出( •̀ ω •́ )y）下次见</p>
-<p>每日一句：</p>
-<p>上善若水，水善利万物而不争。[<a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_2">2]</a></p>
-<h2 id="参考">参考</h2>
-<ol>
-<li><a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_1_0">^</a>百度百科</li>
-<li><a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_2_0">^</a>老子《道德经》</li>
-</ol>
-]]></content>
+      
+      
+        <tags>
+            
+            <tag> butterflyx主题 </tag>
+            
+            <tag> 博客搭建 </tag>
+            
+            <tag> 问题汇总 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>推荐关注</title>
+      <link href="/2024/05/27/f900ef9ae788/"/>
+      <url>/2024/05/27/f900ef9ae788/</url>
+      
+        <content type="html"><![CDATA[<p>B站</p><p><strong>老陌Ss</strong> UID：1343324216</p>]]></content>
+      
+      
       <categories>
-        <category>算法</category>
+          
+          <category> 推荐 </category>
+          
       </categories>
-      <tags>
-        <tag>经典算法</tag>
-        <tag>汉诺塔</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 推荐博主关注 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2024/05/27/4765b619cd78/"/>
+      <url>/2024/05/27/4765b619cd78/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start">Quick Start</h2><h3 id="Create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
 </search>
