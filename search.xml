@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/posts/16107.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>学成在线项目介绍</title>
     <url>/posts/42876.html</url>
     <content><![CDATA[<h1>学成在线</h1>
@@ -43,23 +62,21 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/posts/16107.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>博客config配置</title>
+    <url>/posts/8702.html</url>
+    <content><![CDATA[<p>初始配置文件（config那个没有别的后缀）</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="comment"># 网站显示的标题 随意填</span></span><br><span class="line"><span class="attr">author:</span> <span class="comment"># 你的名字 随意填</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:username/username.github.io.git</span>  <span class="comment"># 要是GitHub改名了，记得这里改一下</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> <span class="comment"># 仓库名称</span></span><br></pre></td></tr></table></figure>
+<p>主题配置文件常见配置（我所有是butterflyx主题）：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Avatar (头像设置)</span></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">img:</span>  <span class="comment"># url</span></span><br><span class="line">  <span class="attr">effect:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon（网站的图标）</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/img/myFavicon.png</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="comment"># display the cover or not (是否顯示文章封面)</span></span><br><span class="line">  <span class="attr">default_cover:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">/img/***.***</span>  <span class="comment"># 默认封面 对应文档的cover参数 可以是GIF</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Menu 目錄</span></span><br><span class="line"><span class="attr">menu:</span> <span class="comment"># 右上角的选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">---     </span></span><br><span class="line"><span class="comment"># Sponsor/reward</span></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">text:</span></span><br><span class="line">  <span class="attr">QR_code:</span> <span class="comment">#二维码设置</span></span><br><span class="line">     <span class="bullet">-</span> <span class="attr">img:</span> <span class="string">/img/***.png</span></span><br><span class="line">       <span class="attr">link:</span> <span class="comment"># 链接</span></span><br><span class="line">       <span class="attr">text:</span> <span class="comment"># 图片下面显示的文本</span></span><br><span class="line">       </span><br><span class="line"> <span class="string">---</span></span><br><span class="line"><span class="comment"># 网站优化</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># canvas_ribbon:  背景彩帶设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Mouse click effects 鼠标点击效果设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Loading Animation (加载动画设置)</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 ]]></content>
+      <categories>
+        <category>博客搭建的一些问题汇总</category>
+      </categories>
+      <tags>
+        <tag>butterflyx主题</tag>
+        <tag>博客搭建</tag>
+        <tag>问题汇总</tag>
+      </tags>
   </entry>
   <entry>
     <title>创建特殊文档</title>
@@ -111,12 +128,13 @@
       </tags>
   </entry>
   <entry>
-    <title>博客config配置</title>
-    <url>/posts/8702.html</url>
-    <content><![CDATA[<p>初始配置文件（config那个没有别的后缀）</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="comment"># 网站显示的标题 随意填</span></span><br><span class="line"><span class="attr">author:</span> <span class="comment"># 你的名字 随意填</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:username/username.github.io.git</span>  <span class="comment"># 要是GitHub改名了，记得这里改一下</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> <span class="comment"># 仓库名称</span></span><br></pre></td></tr></table></figure>
-<p>主题配置文件常见配置（我所有是butterflyx主题）：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Avatar (头像设置)</span></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">img:</span>  <span class="comment"># url</span></span><br><span class="line">  <span class="attr">effect:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon（网站的图标）</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/img/myFavicon.png</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="comment"># display the cover or not (是否顯示文章封面)</span></span><br><span class="line">  <span class="attr">default_cover:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">/img/***.***</span>  <span class="comment"># 默认封面 对应文档的cover参数 可以是GIF</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Menu 目錄</span></span><br><span class="line"><span class="attr">menu:</span> <span class="comment"># 右上角的选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">---     </span></span><br><span class="line"><span class="comment"># Sponsor/reward</span></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">text:</span></span><br><span class="line">  <span class="attr">QR_code:</span> <span class="comment">#二维码设置</span></span><br><span class="line">     <span class="bullet">-</span> <span class="attr">img:</span> <span class="string">/img/***.png</span></span><br><span class="line">       <span class="attr">link:</span> <span class="comment"># 链接</span></span><br><span class="line">       <span class="attr">text:</span> <span class="comment"># 图片下面显示的文本</span></span><br><span class="line">       </span><br><span class="line"> <span class="string">---</span></span><br><span class="line"><span class="comment"># 网站优化</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># canvas_ribbon:  背景彩帶设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Mouse click effects 鼠标点击效果设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Loading Animation (加载动画设置)</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <title>本地与云端不一致</title>
+    <url>/posts/41171.html</url>
+    <content><![CDATA[<p><strong>前面碰到过地测试正常但是上传后的页面错误</strong></p>
+<p>解决方法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line">前者清除站点文件，后者重新生成并将之推送到指定的库分支。</span><br></pre></td></tr></table></figure>
+<p>**建议每次更新都需要hexo clean **</p>
+<p>当然<strong>游览器缓存</strong>也可能是一个问题，不过过一会就会正常。</p>
 ]]></content>
       <categories>
         <category>博客搭建的一些问题汇总</category>
@@ -191,24 +209,6 @@
       <tags>
         <tag>推荐</tag>
         <tag>博主</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>本地与云端不一致</title>
-    <url>/posts/41171.html</url>
-    <content><![CDATA[<p><strong>前面碰到过地测试正常但是上传后的页面错误</strong></p>
-<p>解决方法：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line">前者清除站点文件，后者重新生成并将之推送到指定的库分支。</span><br></pre></td></tr></table></figure>
-<p>**建议每次更新都需要hexo clean **</p>
-<p>当然<strong>游览器缓存</strong>也可能是一个问题，不过过一会就会正常。</p>
-]]></content>
-      <categories>
-        <category>博客搭建的一些问题汇总</category>
-      </categories>
-      <tags>
-        <tag>butterflyx主题</tag>
-        <tag>博客搭建</tag>
-        <tag>问题汇总</tag>
       </tags>
   </entry>
   <entry>
@@ -369,6 +369,55 @@
       </tags>
   </entry>
   <entry>
+    <title>排序算法大总结</title>
+    <url>/posts/6666.html</url>
+    <content><![CDATA[<h1><em>简单的排序：</em>*</h1>
+<h2 id="选择排序"><strong>选择排序</strong></h2>
+<h2 id="插入排序"><strong>插入排序</strong></h2>
+<h2 id="冒泡排序"><strong>冒泡排序</strong></h2>
+<h3 id="时间复杂度"><strong>时间复杂度</strong></h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<h3 id="空间复杂度："><strong>空间复杂度：</strong></h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
+<h1><strong>经典的排序：</strong></h1>
+<h3 id="时间复杂度-2"><strong>时间复杂度</strong></h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo>∗</mo><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N*log(N))
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">))</span></span></span></span></span></p>
+<h2 id="快排："><a href="https://stars-at-dawn.github.io/posts/123.html"><strong>快排：</strong></a></h2>
+<h3 id="无稳定性（指是否能保留原来的顺序）"><strong>无稳定性</strong>（<strong>指是否能保留原来的顺序</strong>）</h3>
+<h3 id="快排空间复杂度："><strong>快排空间复杂度：</strong></h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(logN)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>
+<h2 id="堆排："><a href="https://stars-at-dawn.github.io/posts/40634.html"><strong>堆排：</strong></a></h2>
+<h3 id="无稳定性"><strong>无稳定性</strong></h3>
+<h3 id="堆排空间复杂度："><strong>堆排空间复杂度：</strong></h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
+<h2 id="归并排序："><strong>归并排序：</strong></h2>
+<h3 id="有稳定性"><strong>有稳定性</strong></h3>
+<h3 id="归并排序空间复杂度："><strong>归并排序空间复杂度：</strong></h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>
+<h1><strong>其它 根据实际条件限制的排序算法：</strong></h1>
+<h2 id="桶排"><strong>桶排</strong></h2>
+<h2 id="基数排序"><strong>基数排序</strong></h2>
+<h3 id="时间复杂度-3"><strong>时间复杂度</strong></h3>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>
+]]></content>
+      <categories>
+        <category>算法</category>
+        <category>经典</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>排序</tag>
+        <tag>经典</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>打印汉诺塔过程</title>
     <url>/posts/11859.html</url>
     <content><![CDATA[<p><strong>用代码实现 打印汉诺塔最优解的过程</strong></p>
@@ -422,55 +471,6 @@
       <tags>
         <tag>经典算法</tag>
         <tag>汉诺塔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>排序算法大总结</title>
-    <url>/posts/6847.html</url>
-    <content><![CDATA[<h1><em>简单的排序：</em>*</h1>
-<h2 id="选择排序"><strong>选择排序</strong></h2>
-<h2 id="插入排序"><strong>插入排序</strong></h2>
-<h2 id="冒泡排序"><strong>冒泡排序</strong></h2>
-<h3 id="时间复杂度"><strong>时间复杂度</strong></h3>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
-<h3 id="空间复杂度："><strong>空间复杂度：</strong></h3>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
-<h1><strong>经典的排序：</strong></h1>
-<h3 id="时间复杂度-2"><strong>时间复杂度</strong></h3>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo>∗</mo><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N*log(N))
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">))</span></span></span></span></span></p>
-<h2 id="快排："><a href="https://stars-at-dawn.github.io/posts/123"><strong>快排：</strong></a></h2>
-<h3 id="无稳定性（指是否能保留原来的顺序）"><strong>无稳定性</strong>（<strong>指是否能保留原来的顺序</strong>）</h3>
-<h3 id="快排空间复杂度："><strong>快排空间复杂度：</strong></h3>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(logN)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>
-<h2 id="堆排："><a href="https://stars-at-dawn.github.io/posts/40634"><strong>堆排：</strong></a></h2>
-<h3 id="无稳定性"><strong>无稳定性</strong></h3>
-<h3 id="堆排空间复杂度："><strong>堆排空间复杂度：</strong></h3>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p>
-<h2 id="归并排序："><strong>归并排序：</strong></h2>
-<h3 id="有稳定性"><strong>有稳定性</strong></h3>
-<h3 id="归并排序空间复杂度："><strong>归并排序空间复杂度：</strong></h3>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>
-<h1><strong>其它 根据实际条件限制的排序算法：</strong></h1>
-<h2 id="桶排"><strong>桶排</strong></h2>
-<h2 id="基数排序"><strong>基数排序</strong></h2>
-<h3 id="时间复杂度-3"><strong>时间复杂度</strong></h3>
-<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>
-]]></content>
-      <categories>
-        <category>算法</category>
-        <category>经典</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
-        <tag>排序</tag>
-        <tag>经典</tag>
       </tags>
   </entry>
 </search>
