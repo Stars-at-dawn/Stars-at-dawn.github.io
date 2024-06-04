@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/6847.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/6847</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/11859.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/123</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/40634.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/11859</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/62923.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/40634</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/22031.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/62923</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/33714.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/22031</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/8702.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/33714</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/41171.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/8702</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/15129.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/41171</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/16107.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/15129</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/42876.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/16107</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/posts/123.html</loc>
+    <loc>https://stars-at-dawn.github.io/posts/42876</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/about.html</loc>
+    <loc>https://stars-at-dawn.github.io/about</loc>
     
     <lastmod>2024-06-01</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/Email.html</loc>
+    <loc>https://stars-at-dawn.github.io/Email</loc>
     
     <lastmod>2024-05-29</lastmod>
     
@@ -183,27 +183,6 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/tags/%E4%B9%A6%E7%B1%8D/</loc>
-    <lastmod>2024-06-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/</loc>
-    <lastmod>2024-06-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://stars-at-dawn.github.io/tags/%E5%8D%9A%E4%B8%BB/</loc>
-    <lastmod>2024-06-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://stars-at-dawn.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -238,6 +217,27 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://stars-at-dawn.github.io/tags/%E4%B9%A6%E7%B1%8D/</loc>
+    <lastmod>2024-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/</loc>
+    <lastmod>2024-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://stars-at-dawn.github.io/tags/%E5%8D%9A%E4%B8%BB/</loc>
+    <lastmod>2024-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -255,14 +255,14 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/categories/%E6%8E%A8%E8%8D%90/</loc>
+    <loc>https://stars-at-dawn.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://stars-at-dawn.github.io/categories/%E6%8E%A8%E8%8D%90/</loc>
     <lastmod>2024-06-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

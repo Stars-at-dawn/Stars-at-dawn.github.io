@@ -6,7 +6,7 @@
   <link href="https://stars-at-dawn.github.io/atom.xml" rel="self"/>
   
   <link href="https://stars-at-dawn.github.io/"/>
-  <updated>2024-06-04T05:17:48.258Z</updated>
+  <updated>2024-06-04T05:20:51.427Z</updated>
   <id>https://stars-at-dawn.github.io/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>排序算法大总结</title>
-    <link href="https://stars-at-dawn.github.io/posts/6847.html"/>
-    <id>https://stars-at-dawn.github.io/posts/6847.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/6847"/>
+    <id>https://stars-at-dawn.github.io/posts/6847</id>
     <published>2024-06-02T13:11:32.544Z</published>
-    <updated>2024-06-04T05:17:48.258Z</updated>
+    <updated>2024-06-04T05:20:51.427Z</updated>
     
-    <content type="html"><![CDATA[<h1><em>简单的排序：</em>*</h1><h2 id="选择排序"><strong>选择排序</strong></h2><h2 id="插入排序"><strong>插入排序</strong></h2><h2 id="冒泡排序"><strong>冒泡排序</strong></h2><h3 id="时间复杂度"><strong>时间复杂度</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p><h3 id="空间复杂度："><strong>空间复杂度：</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p><h1><strong>经典的排序：</strong></h1><h3 id="时间复杂度-2"><strong>时间复杂度</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo>∗</mo><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N*log(N))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">))</span></span></span></span></span></p><h2 id="快排："><a href="https://stars-at-dawn.github.io/2024/06/01/61c689ca420a/"><strong>快排：</strong></a></h2><h3 id="无稳定性（指是否能保留原来的顺序）"><strong>无稳定性</strong>（<strong>指是否能保留原来的顺序</strong>）</h3><h3 id="快排空间复杂度："><strong>快排空间复杂度：</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(logN)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p><h2 id="堆排："><strong>堆排：</strong></h2><h3 id="无稳定性"><strong>无稳定性</strong></h3><h3 id="堆排空间复杂度："><strong>堆排空间复杂度：</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p><h2 id="归并排序："><strong>归并排序：</strong></h2><h3 id="有稳定性"><strong>有稳定性</strong></h3><h3 id="归并排序空间复杂度："><strong>归并排序空间复杂度：</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p><h1><strong>其它 根据实际条件限制的排序算法：</strong></h1><h2 id="桶排"><strong>桶排</strong></h2><h2 id="基数排序"><strong>基数排序</strong></h2><h3 id="时间复杂度-3"><strong>时间复杂度</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>]]></content>
+    <content type="html"><![CDATA[<h1><em>简单的排序：</em>*</h1><h2 id="选择排序"><strong>选择排序</strong></h2><h2 id="插入排序"><strong>插入排序</strong></h2><h2 id="冒泡排序"><strong>冒泡排序</strong></h2><h3 id="时间复杂度"><strong>时间复杂度</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p><h3 id="空间复杂度："><strong>空间复杂度：</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p><h1><strong>经典的排序：</strong></h1><h3 id="时间复杂度-2"><strong>时间复杂度</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo>∗</mo><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N*log(N))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">))</span></span></span></span></span></p><h2 id="快排："><a href="https://stars-at-dawn.github.io/posts/123"><strong>快排：</strong></a></h2><h3 id="无稳定性（指是否能保留原来的顺序）"><strong>无稳定性</strong>（<strong>指是否能保留原来的顺序</strong>）</h3><h3 id="快排空间复杂度："><strong>快排空间复杂度：</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>l</mi><mi>o</mi><mi>g</mi><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(logN)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p><h2 id="堆排："><a href="https://stars-at-dawn.github.io/posts/40634"><strong>堆排：</strong></a></h2><h3 id="无稳定性"><strong>无稳定性</strong></h3><h3 id="堆排空间复杂度："><strong>堆排空间复杂度：</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p><h2 id="归并排序："><strong>归并排序：</strong></h2><h3 id="有稳定性"><strong>有稳定性</strong></h3><h3 id="归并排序空间复杂度："><strong>归并排序空间复杂度：</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p><h1><strong>其它 根据实际条件限制的排序算法：</strong></h1><h2 id="桶排"><strong>桶排</strong></h2><h2 id="基数排序"><strong>基数排序</strong></h2><h3 id="时间复杂度-3"><strong>时间复杂度</strong></h3><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p>]]></content>
     
     
       
@@ -50,38 +50,9 @@
   </entry>
   
   <entry>
-    <title>推荐书籍</title>
-    <link href="https://stars-at-dawn.github.io/posts/62923.html"/>
-    <id>https://stars-at-dawn.github.io/posts/62923.html</id>
-    <published>2024-06-01T05:03:58.000Z</published>
-    <updated>2024-06-04T05:17:48.254Z</updated>
-    
-    <content type="html"><![CDATA[<p>记录一下一些我看完的书籍，以后有空的话可能会写写推荐语什么的♪(´▽｀)嘿嘿</p><p>排名不分先后，后面是推荐指数：</p><h3 id="历史："><strong>历史</strong>：</h3><p>《全球通史》（推荐指数★★★★★⚝，个人觉得上册比较好看 ）</p><p>《人类的故事》（推荐指数★★★★★⚝，书不是很枯燥，值得一看 ）</p><p>《红星照耀中国》（推荐指数★★★★⚝⚝）</p><p>《人类简史》（太久之前看的，不太记得了ψ(._. )&gt;暂时：★★★★⚝⚝）</p><h3 id="经济，政治，心理："><strong>经济</strong>，政治，心理：</h3><p>《乌合之众》（推荐指数★★★★★⚝）</p><p>《娱乐至死》（推荐指数★★★★★⚝）</p><p>《极简主义》（推荐指数★★★⚝⚝⚝）</p><p>《工作，消费主义和新穷人》（推荐指数★★★★★⚝）</p><h3 id="文学："><strong>文学</strong>：</h3><p>《1984》（值得细细回味，另外，他的一个短篇小说《动物庄园》）（推荐指数★★★★★★）</p><p>《局外人》（推荐指数★★★★★⚝）</p><p>《老人与海》（推荐指数★★★★★★）</p><p>《野性的呼唤》（推荐指数★★★★★★）</p><p>《牧羊少年奇幻之旅》（推荐指数★★★★★★，“马克图布” ）</p><p>《钢铁是怎样炼成的》（推荐指数★★★★★★）</p><p>《一个人的朝圣》（推荐指数★★★★★★）</p><p>《苏菲的世界》（推荐指数★★★★★⚝）</p><p>《西游记》《水浒传》（推荐指数★★★★★★）</p><p>《我是猫》（推荐指数★★★★⚝⚝）</p><p>《杀死一只知更鸟》（推荐指数★★★★★⚝）</p><h3 id="计算机相关："><strong>计算机相关</strong>：</h3><p>《Java并发编程的艺术》（推荐指数★★★★⚝⚝）</p><p>《Spring实战》（推荐指数★★★★⚝⚝）</p><p>《redis设计与实战》（推荐指数★★★★⚝⚝）</p><h3 id="其它：">其它：</h3><p>《催眠师手记》（推荐指数★★★★★★）</p><p>《天才在左，疯子在右》（推荐指数★★★★★★）</p><p>《三体》（推荐指数★★★★★★）</p><p>《福尔摩斯》（推荐指数★★★★★★）</p><p>《人生的智慧》（推荐指数★★★★★⚝）</p><p>《契诃夫小说集》（推荐指数★★★★★★）</p><h3 id=""></h3>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;记录一下一些我看完的书籍，以后有空的话可能会写写推荐语什么的♪(´▽｀)嘿嘿&lt;/p&gt;
-&lt;p&gt;排名不分先后，后面是推荐指数：&lt;/p&gt;
-&lt;h3 id=&quot;历史：&quot;&gt;&lt;strong&gt;历史&lt;/strong&gt;：&lt;/h3&gt;
-&lt;p&gt;《全球通史》（推荐指数★★★★★⚝，个人觉得上册比较好看 </summary>
-      
-    
-    
-    
-    <category term="推荐" scheme="https://stars-at-dawn.github.io/categories/%E6%8E%A8%E8%8D%90/"/>
-    
-    
-    <category term="书籍" scheme="https://stars-at-dawn.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
-    
-    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
-    
-  </entry>
-  
-  <entry>
     <title>堆排</title>
-    <link href="https://stars-at-dawn.github.io/posts/40634.html"/>
-    <id>https://stars-at-dawn.github.io/posts/40634.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/40634"/>
+    <id>https://stars-at-dawn.github.io/posts/40634</id>
     <published>2024-06-01T05:03:58.000Z</published>
     <updated>2024-06-04T05:17:48.255Z</updated>
     
@@ -114,10 +85,10 @@
   
   <entry>
     <title>快速排序</title>
-    <link href="https://stars-at-dawn.github.io/posts/123.html"/>
-    <id>https://stars-at-dawn.github.io/posts/123.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/123"/>
+    <id>https://stars-at-dawn.github.io/posts/123</id>
     <published>2024-06-01T05:03:58.000Z</published>
-    <updated>2024-06-04T05:17:17.050Z</updated>
+    <updated>2024-06-04T05:20:35.377Z</updated>
     
     <content type="html"><![CDATA[<p><strong>一个比较经典的的排序算法</strong></p><h2 id="快速排序的由来">快速排序的由来</h2><p>快速排序（英语：Quicksort），又称分区交换排序（英语：partition-exchange sort），简称「快排」</p><p>英国计算机科学家Tony Hoare在1960年为了解决计算机上的排序问题，提出了快速排序的算法，最初是为了在英国的英尔兰电子公司（ELLIOTT Brothers）的快速硬件上实现高效的排序算法。[1]</p><h2 id="基本原理">基本原理</h2><p>快速排序的工作原理是通过递归中的<strong>分治</strong>思想的方式来将一个数组排序。</p><ol><li><p>从待排序的数组中选择一个元素，称之为枢纽元（pivot）。</p></li><li><p>将数组中小于枢纽元的元素移到枢纽元的左边，将大于枢纽元的元素移到枢纽元的右边，这个过程称为分区（partition）。</p></li><li><p>递归地对枢纽元左边的子数组和右边的子数组进行排序。</p></li><li><p>当所有子数组都有序时，整个数组就自然有序了。</p></li></ol><h2 id="代码实现">代码实现</h2><p>整个流程最重要的就是<strong>partition过程</strong>了：</p><p>从待排序的数组中选择一个元素当作基准；</p><p>左右分别设置一个指针（也就是小于和大于那个基准的范围）；</p><p>再建立一个当前指针进行遍历：</p><p>当大于基准时：当前位置与左边界的前一个交换，左边界右移加一，当前指针++；</p><p>当小于基准时：当前位置与右边界的前一个交换，右边界左移减一，当前指针++；</p><p>当等于基准时：当前指针++；</p><p>接着对两边的数组在进行<strong>partition过程</strong>，相当于进行<strong>递归调用</strong></p><p>代码如下</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] partition(<span class="type">int</span>[] arr, <span class="type">int</span> num) &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">right</span> <span class="operator">=</span> arr.length;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; right; ) &#123;</span><br><span class="line">            <span class="keyword">if</span> (arr[i] &gt; num) &#123;</span><br><span class="line">                swap(arr, i, right - <span class="number">1</span>);</span><br><span class="line">                right--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (arr[i] &lt; num) &#123;</span><br><span class="line">                swap(arr, i, left + <span class="number">1</span>);</span><br><span class="line">                i++;</span><br><span class="line">                left++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> (arr[i] == num) i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//返回左右边界 下次递归需要使用</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;left + <span class="number">1</span>, right&#125;;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//数组元素交换</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">swap</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> i, <span class="type">int</span> j)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (i == j) <span class="keyword">return</span>;</span><br><span class="line">        arr[i] = arr[i] ^ arr[j];</span><br><span class="line">        arr[j] = arr[i] ^ arr[j];</span><br><span class="line">        arr[i] = arr[i] ^ arr[j];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="随即快排（优化）">随即快排（优化）</h2><p>但是num的选择有一点讲究，</p><p>如果我们每次都选固定的位置会造成：数据情况会对时间复杂度造成影响</p><p>比如 <strong>1，2，3，4，5，6，7，8，9</strong> 这样的数据</p><p>那每次我们都选<strong>最后一个做基准</strong>就会发现每次只能排好最后一个数</p><p>时间复杂度将<strong>退化为N平方</strong></p><p>所以我们引入一个随机快排的概念，即随机选一个数做基准，经过概率计算得出期望时间复杂度的函数为</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>N</mi><mo>∗</mo><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">N*log(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span></span></p><p>代码如下：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">   </span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">quickSort</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> l, <span class="type">int</span> r)</span> &#123;</span><br><span class="line">       <span class="keyword">if</span> (arr == <span class="literal">null</span> || arr.length == <span class="number">0</span> || arr.length == <span class="number">1</span>) <span class="keyword">return</span>;</span><br><span class="line">       <span class="keyword">if</span> (l &gt;= r) <span class="keyword">return</span>;</span><br><span class="line">       <span class="type">int</span>[] partition = partition(arr, l, r);</span><br><span class="line">      <span class="comment">//对两边的数组在进行partition过程，递归调用</span></span><br><span class="line">       quickSort(arr, l, partition[<span class="number">0</span>] - <span class="number">1</span>);</span><br><span class="line">       quickSort(arr, partition[<span class="number">1</span>] + <span class="number">1</span>, r);</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span>[] partition(<span class="type">int</span>[] arr, <span class="type">int</span> l, <span class="type">int</span> r) &#123;</span><br><span class="line">       <span class="keyword">if</span> (l &gt; r) <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;-<span class="number">1</span>, -<span class="number">1</span>&#125;;</span><br><span class="line">       <span class="keyword">if</span> (l == r) <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;l, r&#125;;</span><br><span class="line">       <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> l - <span class="number">1</span>;</span><br><span class="line">       <span class="type">int</span> <span class="variable">right</span> <span class="operator">=</span> r;</span><br><span class="line">       <span class="type">Random</span> <span class="variable">random</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Random</span>();</span><br><span class="line">       <span class="comment">//随机选值</span></span><br><span class="line">       <span class="type">int</span> <span class="variable">randomNum</span> <span class="operator">=</span> random.nextInt(r - l + <span class="number">1</span>) + l;</span><br><span class="line">       <span class="comment">//放到最后 避免影响排序</span></span><br><span class="line">       swap(arr, randomNum, r);</span><br><span class="line">       <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> l; i &lt; right; ) &#123;</span><br><span class="line">           <span class="keyword">if</span> (arr[i] &gt; arr[r]) swap(arr, i, --right);</span><br><span class="line">           <span class="keyword">if</span> (arr[i] &lt; arr[r]) swap(arr, i++, ++left);</span><br><span class="line">           <span class="keyword">if</span> (arr[i] == arr[r]) i++;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="comment">//选的值进行插入</span></span><br><span class="line">       swap(arr, right, r);</span><br><span class="line">       <span class="comment">//返回左右边界 下次递归需要使用</span></span><br><span class="line">       <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;left + <span class="number">1</span>, right&#125;;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//数组元素交换</span></span><br><span class="line">   <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">swap</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> i, <span class="type">int</span> j)</span> &#123;</span><br><span class="line">       <span class="keyword">if</span> (i == j) <span class="keyword">return</span>;</span><br><span class="line">       arr[i] = arr[i] ^ arr[j];</span><br><span class="line">       arr[j] = arr[i] ^ arr[j];</span><br><span class="line">       arr[i] = arr[i] ^ arr[j];</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure><p>当然实际 排序时可以<strong>根据数据情况</strong>来进行选择使用排序方式</p><p>如短数据采用插入排序等；</p><h2 id="总结">总结</h2><p>时间复杂度的函数为</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo>∗</mo><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N*log(N))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">))</span></span></span></span></span></p><p>空间复杂度 即递归栈的空间复杂度</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>l</mi><mi>o</mi><mi>g</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(log(N))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mclose">))</span></span></span></span></span></p><p>由于随机选择的特性不能保证原先的顺序所以是一个不稳定的排序算法</p><h2 id="每日一句">每日一句</h2><p><em><strong>多数人在25岁时就死了，一直到75岁才埋葬   —— 富兰克林</strong></em> [2]</p><h2 id="参考">参考</h2><ol><li>Wiki百科</li></ol>]]></content>
     
@@ -146,9 +117,38 @@
   </entry>
   
   <entry>
+    <title>推荐书籍</title>
+    <link href="https://stars-at-dawn.github.io/posts/62923"/>
+    <id>https://stars-at-dawn.github.io/posts/62923</id>
+    <published>2024-06-01T05:03:58.000Z</published>
+    <updated>2024-06-04T05:17:48.254Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录一下一些我看完的书籍，以后有空的话可能会写写推荐语什么的♪(´▽｀)嘿嘿</p><p>排名不分先后，后面是推荐指数：</p><h3 id="历史："><strong>历史</strong>：</h3><p>《全球通史》（推荐指数★★★★★⚝，个人觉得上册比较好看 ）</p><p>《人类的故事》（推荐指数★★★★★⚝，书不是很枯燥，值得一看 ）</p><p>《红星照耀中国》（推荐指数★★★★⚝⚝）</p><p>《人类简史》（太久之前看的，不太记得了ψ(._. )&gt;暂时：★★★★⚝⚝）</p><h3 id="经济，政治，心理："><strong>经济</strong>，政治，心理：</h3><p>《乌合之众》（推荐指数★★★★★⚝）</p><p>《娱乐至死》（推荐指数★★★★★⚝）</p><p>《极简主义》（推荐指数★★★⚝⚝⚝）</p><p>《工作，消费主义和新穷人》（推荐指数★★★★★⚝）</p><h3 id="文学："><strong>文学</strong>：</h3><p>《1984》（值得细细回味，另外，他的一个短篇小说《动物庄园》）（推荐指数★★★★★★）</p><p>《局外人》（推荐指数★★★★★⚝）</p><p>《老人与海》（推荐指数★★★★★★）</p><p>《野性的呼唤》（推荐指数★★★★★★）</p><p>《牧羊少年奇幻之旅》（推荐指数★★★★★★，“马克图布” ）</p><p>《钢铁是怎样炼成的》（推荐指数★★★★★★）</p><p>《一个人的朝圣》（推荐指数★★★★★★）</p><p>《苏菲的世界》（推荐指数★★★★★⚝）</p><p>《西游记》《水浒传》（推荐指数★★★★★★）</p><p>《我是猫》（推荐指数★★★★⚝⚝）</p><p>《杀死一只知更鸟》（推荐指数★★★★★⚝）</p><h3 id="计算机相关："><strong>计算机相关</strong>：</h3><p>《Java并发编程的艺术》（推荐指数★★★★⚝⚝）</p><p>《Spring实战》（推荐指数★★★★⚝⚝）</p><p>《redis设计与实战》（推荐指数★★★★⚝⚝）</p><h3 id="其它：">其它：</h3><p>《催眠师手记》（推荐指数★★★★★★）</p><p>《天才在左，疯子在右》（推荐指数★★★★★★）</p><p>《三体》（推荐指数★★★★★★）</p><p>《福尔摩斯》（推荐指数★★★★★★）</p><p>《人生的智慧》（推荐指数★★★★★⚝）</p><p>《契诃夫小说集》（推荐指数★★★★★★）</p><h3 id=""></h3>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;记录一下一些我看完的书籍，以后有空的话可能会写写推荐语什么的♪(´▽｀)嘿嘿&lt;/p&gt;
+&lt;p&gt;排名不分先后，后面是推荐指数：&lt;/p&gt;
+&lt;h3 id=&quot;历史：&quot;&gt;&lt;strong&gt;历史&lt;/strong&gt;：&lt;/h3&gt;
+&lt;p&gt;《全球通史》（推荐指数★★★★★⚝，个人觉得上册比较好看 </summary>
+      
+    
+    
+    
+    <category term="推荐" scheme="https://stars-at-dawn.github.io/categories/%E6%8E%A8%E8%8D%90/"/>
+    
+    
+    <category term="书籍" scheme="https://stars-at-dawn.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
+    
+  </entry>
+  
+  <entry>
     <title>本地与云端不一致</title>
-    <link href="https://stars-at-dawn.github.io/posts/41171.html"/>
-    <id>https://stars-at-dawn.github.io/posts/41171.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/41171"/>
+    <id>https://stars-at-dawn.github.io/posts/41171</id>
     <published>2024-05-30T06:19:38.000Z</published>
     <updated>2024-06-04T05:17:48.252Z</updated>
     
@@ -177,8 +177,8 @@
   
   <entry>
     <title>创建特殊文档</title>
-    <link href="https://stars-at-dawn.github.io/posts/15129.html"/>
-    <id>https://stars-at-dawn.github.io/posts/15129.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/15129"/>
+    <id>https://stars-at-dawn.github.io/posts/15129</id>
     <published>2024-05-30T05:40:11.000Z</published>
     <updated>2024-06-04T05:17:48.251Z</updated>
     
@@ -206,8 +206,8 @@
   
   <entry>
     <title>博客config配置</title>
-    <link href="https://stars-at-dawn.github.io/posts/8702.html"/>
-    <id>https://stars-at-dawn.github.io/posts/8702.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/8702"/>
+    <id>https://stars-at-dawn.github.io/posts/8702</id>
     <published>2024-05-30T05:38:01.000Z</published>
     <updated>2024-06-04T05:17:48.252Z</updated>
     
@@ -235,8 +235,8 @@
   
   <entry>
     <title>打印汉诺塔过程</title>
-    <link href="https://stars-at-dawn.github.io/posts/11859.html"/>
-    <id>https://stars-at-dawn.github.io/posts/11859.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/11859"/>
+    <id>https://stars-at-dawn.github.io/posts/11859</id>
     <published>2024-05-30T03:37:03.000Z</published>
     <updated>2024-06-04T05:17:48.257Z</updated>
     
@@ -264,8 +264,8 @@
   
   <entry>
     <title>学成在线项目介绍</title>
-    <link href="https://stars-at-dawn.github.io/posts/42876.html"/>
-    <id>https://stars-at-dawn.github.io/posts/42876.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/42876"/>
+    <id>https://stars-at-dawn.github.io/posts/42876</id>
     <published>2024-05-27T14:04:20.000Z</published>
     <updated>2024-06-04T05:17:48.247Z</updated>
     
@@ -289,8 +289,8 @@
   
   <entry>
     <title>文档上的注释</title>
-    <link href="https://stars-at-dawn.github.io/posts/33714.html"/>
-    <id>https://stars-at-dawn.github.io/posts/33714.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/33714"/>
+    <id>https://stars-at-dawn.github.io/posts/33714</id>
     <published>2024-05-27T14:04:20.000Z</published>
     <updated>2024-06-04T05:17:48.253Z</updated>
     
@@ -319,8 +319,8 @@
   
   <entry>
     <title>推荐关注</title>
-    <link href="https://stars-at-dawn.github.io/posts/22031.html"/>
-    <id>https://stars-at-dawn.github.io/posts/22031.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/22031"/>
+    <id>https://stars-at-dawn.github.io/posts/22031</id>
     <published>2024-05-27T14:04:20.000Z</published>
     <updated>2024-06-04T05:17:48.254Z</updated>
     
@@ -348,8 +348,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://stars-at-dawn.github.io/posts/16107.html"/>
-    <id>https://stars-at-dawn.github.io/posts/16107.html</id>
+    <link href="https://stars-at-dawn.github.io/posts/16107"/>
+    <id>https://stars-at-dawn.github.io/posts/16107</id>
     <published>2024-05-27T13:49:58.027Z</published>
     <updated>2024-06-04T05:17:48.250Z</updated>
     
