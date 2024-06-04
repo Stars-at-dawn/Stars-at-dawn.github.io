@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://stars-at-dawn.github.io/2024/06/01/9a879bc76d00/</loc>
+    <loc>https://stars-at-dawn.github.io/posts/6847.html</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/2024/06/01/61c689ca420a/</loc>
+    <loc>https://stars-at-dawn.github.io/posts/11859.html</loc>
     
     <lastmod>2024-06-04</lastmod>
     
@@ -20,36 +20,90 @@
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/2024/06/02/9c25986d2672/</loc>
+    <loc>https://stars-at-dawn.github.io/posts/40634.html</loc>
     
-    <lastmod>2024-06-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://stars-at-dawn.github.io/2024/05/27/f900ef9ae788/</loc>
-    
-    <lastmod>2024-06-02</lastmod>
+    <lastmod>2024-06-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/2024/06/01/e78bb364fe10/</loc>
+    <loc>https://stars-at-dawn.github.io/posts/62923.html</loc>
     
-    <lastmod>2024-06-02</lastmod>
+    <lastmod>2024-06-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://stars-at-dawn.github.io/2024/05/30/50b1c2312317/</loc>
+    <loc>https://stars-at-dawn.github.io/posts/22031.html</loc>
     
-    <lastmod>2024-06-01</lastmod>
+    <lastmod>2024-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://stars-at-dawn.github.io/posts/33714.html</loc>
+    
+    <lastmod>2024-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://stars-at-dawn.github.io/posts/8702.html</loc>
+    
+    <lastmod>2024-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://stars-at-dawn.github.io/posts/41171.html</loc>
+    
+    <lastmod>2024-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://stars-at-dawn.github.io/posts/15129.html</loc>
+    
+    <lastmod>2024-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://stars-at-dawn.github.io/posts/16107.html</loc>
+    
+    <lastmod>2024-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://stars-at-dawn.github.io/posts/42876.html</loc>
+    
+    <lastmod>2024-06-04</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://stars-at-dawn.github.io/posts/123.html</loc>
+    
+    <lastmod>2024-06-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -59,51 +113,6 @@
     <loc>https://stars-at-dawn.github.io/about.html</loc>
     
     <lastmod>2024-06-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://stars-at-dawn.github.io/2024/05/30/9abbdcf45753/</loc>
-    
-    <lastmod>2024-05-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://stars-at-dawn.github.io/2024/05/27/8ca29ff6a406/</loc>
-    
-    <lastmod>2024-05-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://stars-at-dawn.github.io/2024/05/30/af41399204cc/</loc>
-    
-    <lastmod>2024-05-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://stars-at-dawn.github.io/2024/05/30/24ea1e5e17c2/</loc>
-    
-    <lastmod>2024-05-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://stars-at-dawn.github.io/2024/05/27/24fb4a4f74ee/</loc>
-    
-    <lastmod>2024-05-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -131,15 +140,6 @@
     <loc>https://stars-at-dawn.github.io/Email.html</loc>
     
     <lastmod>2024-05-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://stars-at-dawn.github.io/2024/05/27/4765b619cd78/</loc>
-    
-    <lastmod>2024-05-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
