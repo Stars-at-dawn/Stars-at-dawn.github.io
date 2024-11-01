@@ -491,7 +491,7 @@
 <p>最重要的就是<strong>合并（merge）过程</strong></p>
 <p>我们需要两边数组的范围进行合并排序<br>
 代码如下</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//l左起点 r右边界 mid左边界</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">merge</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> l, <span class="type">int</span> r, <span class="type">int</span> mid)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> <span class="variable">length</span> <span class="operator">=</span> r - l + <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span>[] arrHelp = <span class="keyword">new</span> <span class="title class_">int</span>[length];<span class="comment">//存放排序的数组</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">index</span> <span class="operator">=</span> <span class="number">0</span>; <span class="comment">//拷贝计数</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">right</span> <span class="operator">=</span> mid + <span class="number">1</span>; <span class="comment">//右指针</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> l; <span class="comment">//左指针</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (left &lt;= mid &amp;&amp; right &lt;= r) &#123;</span><br><span class="line">            arrHelp[index++] = </span><br><span class="line">                <span class="comment">//那边数组小 拷贝 指针加一</span></span><br><span class="line">                arr[left] &lt; arr[right] ? arr[left++] : arr[right++];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (left &lt;= mid) &#123;</span><br><span class="line">            <span class="comment">//右数组空了 左数组剩下的全部拷贝</span></span><br><span class="line">            arrHelp[index++] = arr[left++];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (right &lt;= r) &#123;</span><br><span class="line">             <span class="comment">//左数组空了 同理</span></span><br><span class="line">            arrHelp[index++] = arr[right++];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> l; i &lt;= r; i++) &#123;</span><br><span class="line">            arr[i] = arrHelp[i - l]; <span class="comment">//拷贝到原数组</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//l左起点 r右边界 mid左边界</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">merge</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> l, <span class="type">int</span> r, <span class="type">int</span> mid)</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="type">int</span> <span class="variable">length</span> <span class="operator">=</span> r - l + <span class="number">1</span>;</span><br><span class="line">        <span class="type">int</span>[] arrHelp = <span class="keyword">new</span> <span class="title class_">int</span>[length];<span class="comment">//存放排序的数组</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">index</span> <span class="operator">=</span> <span class="number">0</span>; <span class="comment">//拷贝计数</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">right</span> <span class="operator">=</span> mid + <span class="number">1</span>; <span class="comment">//右指针</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">left</span> <span class="operator">=</span> l; <span class="comment">//左指针</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (left &lt;= mid &amp;&amp; right &lt;= r) &#123;</span><br><span class="line">            arrHelp[index++] = </span><br><span class="line">                <span class="comment">//哪边数组小 拷贝 指针加一</span></span><br><span class="line">                arr[left] &lt; arr[right] ? arr[left++] : arr[right++];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (left &lt;= mid) &#123;</span><br><span class="line">            <span class="comment">//右数组空了 左数组剩下的全部拷贝</span></span><br><span class="line">            arrHelp[index++] = arr[left++];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> (right &lt;= r) &#123;</span><br><span class="line">             <span class="comment">//左数组空了 同理</span></span><br><span class="line">            arrHelp[index++] = arr[right++];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> l; i &lt;= r; i++) &#123;</span><br><span class="line">            arr[i] = arrHelp[i - l]; <span class="comment">//拷贝到原数组</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 <p>递归调用</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">mergeSort</span><span class="params">(<span class="type">int</span>[] arr, <span class="type">int</span> l, <span class="type">int</span> r)</span> &#123;</span><br><span class="line">      <span class="keyword">if</span> (arr.length == <span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">      <span class="keyword">if</span> (l == r) <span class="keyword">return</span>; <span class="comment">//basecase</span></span><br><span class="line">      </span><br><span class="line"><span class="comment">//防止数据越界的求中值的写法</span></span><br><span class="line">  	<span class="comment">//等于 （l + r）/2</span></span><br><span class="line">      <span class="type">int</span> <span class="variable">mid</span> <span class="operator">=</span> l + ((r - l) &gt;&gt; <span class="number">1</span>);</span><br><span class="line">      <span class="comment">//排序左边</span></span><br><span class="line">      mergeSort(arr, l, mid);</span><br><span class="line">      <span class="comment">//排序右边</span></span><br><span class="line">      mergeSort(arr, mid + <span class="number">1</span>, r);</span><br><span class="line">      <span class="comment">//左右合并</span></span><br><span class="line">      merge(arr, l, r, mid);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 <h3 id="非递归版本（优化空间复杂度）">非递归版本（优化空间复杂度）</h3>
@@ -520,6 +520,220 @@
         <tag>算法</tag>
         <tag>排序</tag>
         <tag>经典</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>书籍阅读记录</title>
+    <url>/posts/71.html</url>
+    <content><![CDATA[<h2 id="目录："><strong>目录：</strong></h2>
+<p>[TOC]</p>
+<h2 id="2024年"><strong>2024年</strong></h2>
+<h2 id="10月《宏观经济学原理》">10月《宏观经济学原理》</h2>
+<h3 id="10月《小狗钱钱》">10月《小狗钱钱》</h3>
+<h3 id="9月《穷爸爸富爸爸》"><strong>9月《穷爸爸富爸爸》</strong></h3>
+<h3 id="8月《被讨厌的勇气》"><strong>8月《被讨厌的勇气》</strong></h3>
+<p>**弗洛伊德（因果论 最终会向决定论发展）| 阿德勒（目的论）**的心理学说</p>
+<p>​	<strong>个人：</strong></p>
+<p>不要评价他人<br>
+<strong>人人都是我的伙伴</strong><br>
+<strong>能够改变自己的只有自己</strong><br>
+<strong>自大</strong>是自卑的<strong>另一种表现</strong><br>
+你并不是为了满足别人的期待而活着的<br>
+健全的自卑感不是来自与他人比较，而是<strong>来自与“理想的自己”的比较</strong><br>
+<strong>毫不在意别人的评价、不害怕被别人讨厌、不追求被他人认可，如果不付出以上这些代价，那就无法贯彻自己的生活方式，也就是不能获得自由。</strong></p>
+<p>​	<strong>看法：</strong></p>
+<p>我们要想<strong>体会到孤独</strong>那也需要<strong>有他人的存在</strong><br>
+表扬<strong>这种行为含有</strong>“有能力者对没能力者所做的评价”<br>
+<strong>以自己的不幸作为武器来支配对方</strong>；在我们这个社会弱势有特权</p>
+<p>​	<strong>阿德勒心理学：</strong></p>
+<p><strong>一切烦恼皆来自与人际关系</strong><br>
+基本上，一切人际关系矛盾都起因于对<strong>别人的课题</strong>妄加干涉。<br>
+阿德勒说过：<strong>“要想消除烦恼，只有一个人在宇宙中生存。”</strong><br>
+阿德勒说过：“<strong>没有学会直面困难的孩子会想要逃避一切困难。”</strong><br>
+别人如何评价你的选择，那是<strong>别人的课题</strong>，<strong>你根本无法左右。</strong><br>
+心理创伤并不存在！<strong>决定我们自身的不是过去的经历，而是我们自己赋予经历的意义。</strong><br>
+<strong>阿德勒心理学</strong>反对<strong>一切</strong>“纵向关系”<strong>（上下关系），<strong>提倡</strong>把所有的人际关系都看作</strong>“横向关系”<strong>（平等关系）。</strong><br>
+只要没有迷失**“他者贡献”**这颗引导之星，那么你就不会迷失，而且做什么都可以。即使被讨厌自己的人讨厌着也可以自由地生活。</p>
+<p>个人觉得和《催眠师手记》挺像的，读起来感觉也挺像的，<strong>通过另一个角度来思考确实很不一样</strong>，将<strong>因果论改为了目的论</strong>确实很有心理学的感觉，但还是纸上谈兵，真正还是要有强大的内心，像书中所说的，还要我们每个人都开始行动才行，这样世界才会变得美好。</p>
+<h3 id="8月《说话的艺术》">8月《说话的艺术》</h3>
+<p>：美国知名人际交往领域专家罗莎莉·马吉欧创作</p>
+<p>​        价值不大的一本书，没有多少有价值的东西；看起来许多内容都是重复，就像是凑字数的儿童读物，价值不大。聊天的诀窍其实就只有“<strong>换位思考，察言观色</strong>”这几个字吧，<strong>平时多注意收集话题和多关注关注对方</strong>，这样才能有话可聊，同时向察言观色这些技巧也是难以言传，只可意会，所以还是要保持好的态度不管是对谁，<strong>真心随和</strong>才是最重要的!</p>
+<h3 id="7月-《社会性动物》">7月**《社会性动物》**</h3>
+<p>：美国社会心理学家<a href="https://baike.baidu.com/item/%E8%89%BE%E7%95%A5%E7%89%B9%C2%B7%E9%98%BF%E4%BC%A6%E6%A3%AE/0?fromModule=lemma_inlink">艾略特·阿伦森</a> 创作的社会心理学著作 出版于1972年。</p>
+<p>被称为“美国社会心理学的《圣经》”</p>
+<p>“那些自身具有<strong>安全感</strong>的人，“需求”并不强烈，也就是说，他们不大可能去接受某个不期而遇的人主动示好。”<br>
+“社会性动物 从本质上讲<strong>人</strong>是一种<strong>社会性动物</strong>；那些生来离群索居的个体，要么不值得我们关注，要么不是人类。<strong>社会从本质上看是先于个体而存在的</strong>。那些不能过公共生活，或者可以自给自足不需要过公共生活，因而不参与社会的，要么是兽类，要么是<strong>上帝</strong>。 ”（<strong>亚里士多德</strong> 《政治学》，公元前328年）</p>
+<p>​        作者采用大量的实验案例力求严谨，用科学的方法揭示人们的行为和心理的背后成因，涉及情感、<a href="https://baike.baidu.com/item/%E7%A7%BB%E6%83%85/2047916?fromModule=lemma_inlink">移情</a>、偏见、攻击性、<strong>从众性</strong>和利他行为等诸多方面，因此对于人们日常生活中的困惑，本书提供了科学的答案。<strong>人们总是高估自己的独特，却又永远逃不出自己的人性。</strong><a href="%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91">^2</a></p>
+<h3 id="7月《金字塔原理》">7月《金字塔原理》</h3>
+<p>：美国<a href="https://baike.baidu.com/item/%E8%8A%AD%E8%8A%AD%E6%8B%89%C2%B7%E6%98%8E%E6%89%98/12742636?fromModule=lemma_inlink">芭芭拉·明托</a>创作</p>
+<p>“在组织思想时，<strong>归纳</strong>和<strong>演绎</strong>是仅有的两种可能的逻辑关系。 ”<br>
+“人类还有一个共同的特点，即只有用某种方式将思想表达出来——<strong>说出来或者写下来</strong>，我们才能够准确地把握自己的思想。”</p>
+<p>​        <strong>概括</strong> <strong>总结</strong> 始终贯穿着写作，不管是作文抑或是报告都始终离不开这两个词，就像书中所说，写作就像金字塔，由下到上，概括性越来越强；由上到下，行文流畅，阅读顺滑，前文概括好内容就不会正文出现脱离主题的迷茫。</p>
+<h3 id="6月-《杀死一只知更鸟》">6月**《杀死一只知更鸟》**</h3>
+<p>：美国女作家<a href="https://baike.baidu.com/item/%E5%93%88%E7%8F%80%C2%B7%E6%9D%8E/5428757?fromModule=lemma_inlink">哈珀·李 </a> 创作的长篇小说 发表于1960年。</p>
+<p><strong>“你永远不可能真正了解一个人，除非你从他的角度去看问题。”</strong><br>
+“就是有那么一些人，他们——他们太担心来世了，以至于都没学会怎样在这个世界上生活。”<br>
+“当然了。斯库特，不要叫‘黑鬼’，那是个蔑称。” “在学校里，所有人都这么叫。” “从现在起，从所有人里减掉一个好啦……”<br>
+“我想让你见识一下什么是真正的勇敢，而不要错误地认为一个人手握枪支就是勇敢。勇敢是：当你还未开始就已知道自己会输，可你依然要去做，而且无论如何都要把它坚持到底。你很少能赢，但有时也会。”</p>
+<p>​        题目“杀死一只知更鸟”，对杀死知更鸟的故事作者只用了一点笔墨，就是阿蒂克斯给孩子讲述了自己因童年射杀了一只知更鸟，从而使他总有一种负罪感的故事。从内容上看，知更鸟似乎与主题没有直接关系，但其象征意义，<strong>知更鸟</strong>贯穿了整部作品，细读作品，不难感受到<strong>知更鸟</strong>象征着天真无辜和<strong>善良的人</strong>，当你杀死它的时候，就好像在杀死善良无辜的人。知更鸟什么都没做，只不过是一种最早报晓的鸟儿，又是最后唱小夜曲的鸟儿。它鸣声婉转，曲调多变，它既不毁坏别人的花园，也不在玉米地里做窝，除了专心歌唱，什么都不做。而人们却对其无端的残害。小说中的许多人物都和知更鸟的命运一样，并没有做过任何坏事却被人伤害。不难理解作者在告诉我们发生在美国南方梅冈镇的这个故事就是一个罪恶地毁灭像知更鸟一样的天真善良的无辜者的故事。[^4]<br>
+​        《杀死一只知更鸟》的可贵之处在于，它塑造了人类<strong>家庭教育</strong>的典范，并提供了极具可操作性的实例与示范：如何去鉴别<strong>孩子的问题</strong>，那些是年龄造成的，应该给他们时间去成长，哪些问题又是成长中的关键，是原则问题，必须及时干预；<strong>父母</strong>应该是什么样一个形象，在复杂的社会中，哪些方面应该去适应去顺应，哪些方面应该坚持自己的立场，哪怕要为此付出代价。它着力<strong>教导孩子</strong>如何在<strong>磨难中历练风度</strong>，在<strong>不公平中积累正气</strong>，如何在充满丑陋与问题的世界中<strong>塑造自己的道德底线</strong>，保持精神的体面。<a href="%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91">^2</a></p>
+<h3 id="5月《人生的智慧》">5月《人生的智慧》</h3>
+<p>：德国著名哲学家<a href="https://baike.baidu.com/item/%E5%8F%94%E6%9C%AC%E5%8D%8E/224844?fromModule=lemma_inlink">叔本华</a> ，<a href="https://baike.baidu.com/item/%E5%94%AF%E6%84%8F%E5%BF%97%E4%B8%BB%E4%B9%89/1433578?fromModule=lemma_inlink">唯意志主义</a>和现代<a href="https://baike.baidu.com/item/%E6%82%B2%E8%A7%82%E4%B8%BB%E4%B9%89/10353733?fromModule=lemma_inlink">悲观主义</a>创始人。 写于1850年的晚期著作</p>
+<p><strong>“理性的人寻求的不是快乐，而只是没有痛苦。”</strong>（亚里士多德 《伦理学》）<br>
+“把部分的孤独带进社会人群中去，学会在人群中保持一定程度上的孤独。……对于别人的看法，他应锻炼出一副淡漠、无动于衷的态度，因为这是培养值得称道的宽容的一个最切实可行的手段。”<br>
+“<strong>闲暇是人生的精华</strong>，除此之外，人的整个一生就只是辛苦和劳作而已。……凡夫俗子只关心如何打发时间，而略具才华的人却考虑如何利用时间。头脑思想狭隘的人容易受到无聊的侵袭，其原因就是他们的智力纯粹服务于他们的意欲，是意欲的工具。”</p>
+<p>​        这本书讨论的事情与我们的世俗生活至为接近，诸如<strong>健康、财富、名声、荣誉、养生</strong>和<strong>待人接物</strong>所应遵守的原则等。正如叔本华所说的，在这本书里他尽量以世俗、实用的角度考虑问题。<strong>人生的智慧就是如何尽量幸福、愉快地度过一生这样的一门艺术。</strong>[^4]</p>
+<h3 id="5月-《工作、消费主义和新穷人》">5月**《工作、消费主义和新穷人》**</h3>
+<p>：英国社会学家<a href="https://baike.baidu.com/item/%E9%BD%90%E6%A0%BC%E8%92%99%E7%89%B9%C2%B7%E9%B2%8D%E6%9B%BC/7117017?fromModule=lemma_inlink">齐格蒙特·鲍曼</a> 创作 。被誉为“当今用英文写作的最伟大社会学家”“后现代性预言家”。</p>
+<p>“消费市场通过诱惑性的<strong>消费文化</strong>而非强制性的国家权力来实现社会整合。”<br>
+“当代的教育理念和体制都强调<strong>对人的驯化</strong>，并宣称，劳动力市场的不景气只是由于个人没有掌握先进的技能和文化知识，而不是<strong>结构性的经济因素和制度安排的矛盾</strong>所造成的。”<br>
+“雇用临时工制度深刻影响了饱受这一制度之苦的人们：未来变得非常不确定，它阻止了所有理性的预测，尤其是人们对未来的基本信念和希望，而这正是人们团结一致反抗最不能容忍的现状所必须的。”</p>
+<p>​        在生产者和普遍就业的社会中，贫穷是一回事。在消费者社会中，贫穷是另一回事。在后者社会中，<strong>生活项目围绕消费者的选择而建立</strong>，而不是围绕工作、专业技能而建立。“贫穷”曾经与失业联系在一起，如今，它主要指向有缺陷消费者的困境。这种差异改变了贫穷的体验方式，对于拯救苦难产生重大影响。<a href="%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91">^2</a><br>
+​        人为什么必须要工作？穷人阶层是如何被制造出来的？现代社会的内在逻辑有没有不堪一击的链条？如果有，那么如何在个体身上对抗它？鲍曼讲得明白极了：<strong>工作之体面、道德、崇高化</strong>，是一场事关控制和服从的权力斗争的结果，它和社会规训、父权制、经济收益牢牢捆绑在一起。从<strong>生产社会到消费社会的转变</strong>，让经济水平成了评判人价值和尊严的标准，让具有使命感的工作成为少数<strong>精英阶层的特权</strong>，再将穷人说成是懒惰、无能、危险的他者，贫穷是他们咎由自取，将结构性困境个体化，以此<strong>逃避道德的责难</strong>。最终更加庞大的底层被制造出来，作为过剩的“人类废弃物”被抛弃、驱逐、分类处理。<strong>西方世界的危机在于不再质疑自己</strong>。[^4]</p>
+<h3 id="4月《狂人日记》-鲁迅短篇小说集">4月《狂人日记》<strong>(鲁迅短篇小说集)</strong></h3>
+<p>：鲁迅 原名周树人，字豫才 浙江绍兴人。</p>
+<p><strong>“从来如此，便对么？”</strong>(《狂人日记》)</p>
+<p><strong>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字是“吃人”！</strong>(《狂人日记》)</p>
+<h3 id="4月《java并发编程的艺术》">4月《java并发编程的艺术》</h3>
+<h3 id="4月-《一个人的朝圣》">4月**《一个人的朝圣》**</h3>
+<p>：英国作家<a href="https://baike.baidu.com/item/%E8%95%BE%E7%A7%8B%C2%B7%E4%B9%94%E4%BC%8A%E6%96%AF/0?fromModule=lemma_inlink">蕾秋·乔伊斯</a> 创作的长篇小说  出版于2012年。</p>
+<p><strong>”给予和接受都是一份馈赠，既需要谦逊，也需要勇气。“</strong><br>
+“如果我们都不趁着现在偶尔疯狂一下，日子就没什么盼头了。”</p>
+<p>​        如果没有今年一年的行走，我想我不会有这么深的感触，其实在外行走不是为了看多少风景遇见多少人，而是通过满载的回忆沉淀过目跳脱原来那个世界，跳脱已经习惯的生活模式去<strong>感悟真正的自己</strong>，找到真正想要的生活方式与状态。感谢这本书，让我有无以言说的共鸣。[^4]个人觉得与《牧羊少年奇幻之旅》有异曲同工之妙，不管目标是什么，前进的路上总是需要他人的帮助与陪同。</p>
+<h3 id="4月-《乌合之众》">4月**《乌合之众》**</h3>
+<p>：法国 社会心理学家 <a href="https://baike.baidu.com/item/%E5%8F%A4%E6%96%AF%E5%A1%94%E5%A4%AB%C2%B7%E5%8B%92%E5%BA%9E/6486008?fromModule=lemma_inlink">古斯塔夫·勒庞</a> 创作的<a href="https://baike.baidu.com/item/%E7%A4%BE%E4%BC%9A%E5%BF%83%E7%90%86%E5%AD%A6/80310?fromModule=lemma_inlink">社会心理学</a>著作 出版于1895年。</p>
+<p><strong>“群体喜欢的英雄，永远像个恺撒。”</strong><br>
+“<strong>为了那些想象中的离奇故事，观众奉献了太多的笑声和泪水。</strong>”<br>
+“在集体心理中，个人的才智被削弱了，从而他们的个性也被削弱了。异质性被同质性所吞没，无意识的品质占了上风。”</p>
+<p>​        本书揭示了当人们聚集在一起，成为一个群体时的行为以及个人的人性为什么会发生变化，此时人们好像会<strong>失去</strong>自己的个性，取而代之的是被群体的氛围所裹挟的主义；具备足够强大的能力来抵挡情感暗示的人寥寥无几，造成这种现象的社会心理的特点可以总结为三点原因：心理<strong>趋同</strong>、情绪感染、心理暗示。因此在群体中易于在趋同的洪流中<strong>迷失自我</strong>。<br>
+​        而在乔治·<strong>奥威尔</strong>的《1984》与《动物农场》里更将领袖的动员手段描写的细致入微，从语言上讲主要有断言法、重复法、传染法。再看现代传销与邪教的发展便是歪曲的利用了这几种动员手段，鼓动群体无意识行为，给人们的身心健康造成极大破坏，也扰乱了正常的社会秩序。<a href="%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91">^2</a></p>
+<h3 id="4月-《娱乐至死》">4月**《娱乐至死》**</h3>
+<p>：美国 媒体文化研究者、批判家 <a href="https://baike.baidu.com/item/%E5%B0%BC%E5%B0%94%C2%B7%E6%B3%A2%E5%85%B9%E6%9B%BC/0?fromModule=lemma_inlink">尼尔·波兹曼</a>     出版于1985年</p>
+<p>“<strong>毁掉我们的不是我们所憎恨的，恰恰是我们所热爱的。</strong>”<br>
+“有两种方法可以让文化精神枯萎，一种是<strong>奥威尔式</strong>的——文化成为一个监狱，另一种是<strong>赫胥黎式</strong>的——文化成为一场滑稽戏。”</p>
+<p>​       在《娱乐至死》在书名中，作者提出了<strong>娱乐至死</strong>的深刻预见。“一切公众话语日渐以娱乐的方式出现，并成为一种文化精神，我们的宗教、政治、新闻、体育、教育和商业都是心甘情愿成为<strong>娱乐的附庸</strong>，毫无怨言，甚至无声无息，其结果是我们成为一个娱乐至死的物种。”那个时代电视才兴起，网络还未出现，他即看到电视对人的生存方式、生存状态的一种准备概括，即一种娱乐至死的状态。现在是手机等新媒体的时代，人们的依赖和沉迷远胜于前，以至形成了人本身的一种生存状态和生存方式。[^3]</p>
+<h3 id="3月《极简主义》">3月《极简主义》</h3>
+<p><strong>“我们不是自己的财物本身。 我们的价值并不局限于自己所拥有的财产。”</strong><br>
+“人生中的根本性转变，只有在人们<strong>将“应该做”的事情变为“必须做”<strong>时才会发生。”<br>
+“<strong>你唯一能改变的人是你自己。<strong>当你以身作则时，与你走得最近的人往往也会跟着效仿。”<br>
+“生活中主要有四道枷锁，让我们无法寻找热情，它们分别是</strong>身份、地位、确定性和金钱</strong>。”<br>
+“通往财务自由的第一步就是</strong>建立书面的每月预算</strong>。注意，这里有三个关键词：<strong>书面、每月以及预算</strong>。”<br>
+<strong>“幸福源于有意义的人生。幸福的人生充满热情和自由，可以实现个人成长，为他人做出贡献。成长和奉献才是幸福的基石，而非身外之物。”</strong><br>
+“<strong>不要把时间耗费在没完没了的计划未来上</strong>。或是没完没了的担忧烦恼中。抑或是没完没了的其他任何事里。而要享受当下。<strong>留意你的那些努力成就了什么</strong>。毕竟，它们使你行至山顶。在山上，就在那儿。”</p>
+<p>​       极简主义是一种<strong>消除生活过剩、关注本质、寻找幸福、满足和自由的工具</strong><br>
+​       简单成功方程：<strong>成功=快乐+持续进步</strong></p>
+<h3 id="3月《局外人》">3月《局外人》</h3>
+<h3 id="3月《动物庄园》-奥威尔短篇小说集">3月《动物庄园》<strong>(奥威尔短篇小说集)</strong></h3>
+<p>：<a href="https://zh.wikipedia.org/wiki/%E8%8B%B1%E5%9C%8B">英国</a>作家<a href="https://zh.wikipedia.org/wiki/%E5%96%AC%E6%B2%BB%C2%B7%E6%AD%90%E5%A8%81%E7%88%BE">乔治·奥威尔 </a>   短篇小说集  1945年《动物农场》出版</p>
+<p>“<a href="https://zh.wikipedia.org/wiki/%E5%81%87%E5%85%A9%E9%9B%A3%E6%8E%A8%E7%90%86">四条腿好，两条腿坏</a>”<strong>假两难（推理、论证）</strong>(英语：又称<strong>非黑即白</strong>（black-or-white)</p>
+<p>​        动物庄园作为其中最有名的小说，原标题为《动物庄园：一个童话故事》 （<em>Animal Farm: A Fairy Story</em>）<br>
+极具讽刺的指出了历史上的革命之后，英雄死去或是陷害人民却拥护一位暴君上台，他们却不知问题所在，以为革命成功，其实只不过<strong>另一个轮回</strong>罢了，历史的影像重新倒带而已，整篇文章映射苏联的整个历程，从共产主义学说创立到十月革命，从苏联建立到美苏冷战都包含其中。</p>
+<h3 id="3月《1984》"><strong>3月《1984》</strong></h3>
+<p>： <a href="https://zh.wikipedia.org/wiki/%E8%8B%B1%E5%9C%8B">英国</a>作家<a href="https://zh.wikipedia.org/wiki/%E5%96%AC%E6%B2%BB%C2%B7%E6%AD%90%E5%A8%81%E7%88%BE">乔治·奥威尔 </a>    反乌托邦小说  出版于1949年</p>
+<p>“<strong>老大哥在看着你</strong>”  同时无处不在的“<strong>电幕</strong>”在私密和公开场合监视着公众。</p>
+<p>​        该作揭示了社会在政府的完全操控下的是什么样的，不仅仅是政府的可怕 还有人们的愚昧无知以及丧失了对真的感悟和对假的批判，值得我们深深思考现今的政府以及社会的舆论是否还是真实亦或者是有失偏颇，阻碍和平的是什么？是<strong>民族主义</strong>还是<strong>政府洗脑</strong>？</p>
+<h2 id="2023及以前："><strong>2023及以前：</strong></h2>
+<h3 id="高中-《老人与海》">高中**《老人与海》**</h3>
+<p>： 美国作家<a href="https://baike.baidu.com/item/%E6%B5%B7%E6%98%8E%E5%A8%81/285543?fromModule=lemma_inlink">海明威</a> 于1951年在<a href="https://baike.baidu.com/item/%E5%8F%A4%E5%B7%B4/290824?fromModule=lemma_inlink">古巴</a>写的一篇<a href="https://baike.baidu.com/item/%E4%B8%AD%E7%AF%87%E5%B0%8F%E8%AF%B4/6573555?fromModule=lemma_inlink">中篇小说</a>，于1952年出版。</p>
+<p>“不过，人可不是为失败而生，他说，<strong>人可以被毁灭，但不能被打败</strong>。”<br>
+“也不知道为什么，上了年纪的人都醒的很早，大概是想多拥有一点时间吧。”</p>
+<p>​        该作围绕一位老年古巴渔夫，与一条巨大的<a href="https://baike.baidu.com/item/%E9%A9%AC%E6%9E%97%E9%B1%BC/10407850?fromModule=lemma_inlink">马林鱼</a>在离岸很远的湾流中搏斗而展开故事的讲述。尽管海明威笔下的老人是悲剧性的，但他身上却有着尼采“超人”的品质，<strong>泰然自若地接受失败，沉着勇敢地面对死亡</strong>，这些“硬汉子”体现了海明威的人生哲学和道德理想，即<strong>人类不向命运低头，永不服输的斗士精神</strong>和<strong>积极向上的乐观人生态度</strong>。[^5]</p>
+<h3 id="高中-《野性的呼唤》">高中**《野性的呼唤》**</h3>
+<p>： 美国作家<a href="https://baike.baidu.com/item/%E6%9D%B0%E5%85%8B%C2%B7%E4%BC%A6%E6%95%A6/1277793?fromModule=lemma_inlink">杰克·伦敦</a> 创作的中篇小说。</p>
+<p><strong>“道德本性是一种虚荣，在残酷的生存竞争中是一种障碍”</strong>（译者序）<br>
+“他认为自己有权得到这个地位。那是他自己挣来的，要是得不到，他绝不肯善罢甘休。 他身上有一种相当特别的弹性或弹力，像猫似的，特别警觉，生活在看得见和看不见的永久危险中的人，才会有这种警觉。”</p>
+<p>​        在现实主义这一点上，《野性的呼唤》具有更深刻的揭示作用。生存环境的变迁，使巴克从一个文明社会的宠物变成了一个荒野深处的狼群之王，这是巴克的本性使然；同时这也是美国社会现实生活的真实写照。<strong>人与人之间尔虞我诈，弱肉强食，适者才能生存，<strong>竞争无处不在。这就是美国社会的现实。杰克·伦敦在这方面，对这一社会现实进行了无情的鞭挞。由于</strong>他对人类文明的失望与冷漠</strong>。在小说中他毫不宽恕他笔下亦即巴克眼中的红衣人、哈尔等两条腿的“人们”道德原则的丢失和“人性”的沦丧。对<strong>资产阶级的虚伪道德</strong>进行了无情地<strong>揭露和批判</strong>。把狗眼中的世界、人类的本质特别是美国社会的现实本质刻画得淋漓尽致。[^6]</p>
+<h3 id="高中-《契诃夫小说精选》">高中**《契诃夫小说精选》**</h3>
+<p>：安东·巴甫洛维奇·契诃夫   俄国作家，剧作家</p>
+<p><strong>“蚜虫吃青草，锈吃铁，虚伪吃灵魂。”</strong><br>
+“幸福的人之所以会自我感觉良好，显然只是因为那些不幸的人沉默地背着他们的重负。”</p>
+<p>​        加缪说，“<strong>想认识一座城市，要看那里的人如何相爱和死亡</strong>。”契诃夫几乎都在讲述生活在俄罗斯这片寒冷大地上的人们，是如何相爱和死亡的。契诃夫的伟大在于他关照卑贱的、高贵的、狭隘的、愚蠢的<strong>每一个灵魂</strong>，<strong>又像上帝一样不近人情</strong>。</p>
+<h3 id="高中《三体-三部曲》">高中《三体  三部曲》</h3>
+<p>： 是<a href="https://baike.baidu.com/item/%E5%88%98%E6%85%88%E6%AC%A3/142084?fromModule=lemma_inlink">刘慈欣</a> 创作的长篇科幻小说系列</p>
+<p>“**猜疑链”**和“技术爆炸”<br>
+“毁灭你，与你有何相干？”<br>
+<strong>“给岁月以文明，而不是给文明以岁月。”</strong><br>
+<strong>“给时光以生命，而不是给生命以时光。”</strong><br>
+“<strong>我们都是阴沟里的虫子，但总还是得有人仰望星空。”</strong></p>
+<p>​        星空如此浩瀚，人们却只能为蜗居浪费一生。与浩瀚的宇宙相比我们就像一只软弱无力的虫豸，可我们却互相背叛，那人类文明又该何去何从呢？</p>
+<h3 id="高中-《福尔摩斯-上中下》">高中**《福尔摩斯  上中下》**</h3>
+<p>： <a href="https://baike.baidu.com/item/%E6%9F%AF%E5%8D%97%C2%B7%E9%81%93%E5%B0%94/978103?fromModule=lemma_inlink">柯南·道尔</a> 所著的侦探小说</p>
+<p><strong>“勇敢是愚蠢最好听的代言词”</strong><br>
+“<strong>笑骂由你，我自为之</strong>；家藏万贯，唯我独赏”<br>
+“在我得到这些事实之前就加以推测，那是最大的错误。”<br>
+“一个蠢货，往往会得到一个比他更蠢的家伙的仰慕和赞美。”<br>
+“Where there is no imagination, there is no horror. ”<strong>（没有想象，就没有恐惧。）</strong><br>
+<strong>“除去所有不可能的因素，不管剩下的是什么——无论是多么难以置信的——那就是真相。”</strong><br>
+“看，它是何等地光彩夺目呀！当然，它又是罪恶的渊薮。<strong>每颗珍贵的宝石无不如此。它们是魔鬼最得意的诱饵。</strong>”<br>
+“他对她轻声说的不过是他曾经对上百个女人说过的同一些誓言，可她却沾沾自喜，以为就她一个人真正打动了他的心。”<br>
+“亲爱的雷斯垂德，我认为，**当法律无法给当事人带来正义时，私人报复从这一刻开始就是正当甚至高尚的。**所以说，这次我决定不受理这个案件。”</p>
+<h3 id="高中《催眠师手记-第一季》">高中《催眠师手记 第一季》</h3>
+<p>： 是<a href="https://baike.baidu.com/item/%E9%AB%98%E9%93%AD/3797864?fromModule=lemma_inlink">高铭</a> 创作的心理推理纪实档案（推理小说）</p>
+<p><strong>“观察这个世界用一只眼睛就够了，另一只则用来多看看自己。”</strong><br>
+“你喜欢钱？ 非常喜欢。 为什么？ 它能让你体会到舒适，远离很多不爽的东西。<strong>钱不脏，脏的是人。”</strong></p>
+<h3 id="高中-《催眠师手记-第二季》">高中**《催眠师手记 第二季》**</h3>
+<p><strong>“能够独处的，不是神明就是野兽。”</strong><br>
+“他们剪掉我的翅膀，却又要我飞翔！”<br>
+“鬼和爱情：大多数人都信，但谁都没见过。”<br>
+“那些看上去对每个人都好的人，其实最无情。”<br>
+<strong>“打破幻想的那个人，最容易成为幻想的替代品。”</strong><br>
+“人这辈子都在证明自己，几乎没有一刻是停下来的。”<br>
+<strong>“独处的时候是离上帝最近的时候。”</strong> ——英国谚语</p>
+<p>​        <strong>心理咨询师能够做的，只是疏导，而不是治愈。最终，要驱除心魔，还得靠自己。</strong></p>
+<h3 id="高中-《天才在左疯子在右》">高中**《天才在左疯子在右》**</h3>
+<p>： 是<a href="https://baike.baidu.com/item/%E9%AB%98%E9%93%AD/3797864?fromModule=lemma_inlink">高铭</a> 创作的访谈录（本质还是一本小说），首版时间为2010年2月。</p>
+<p><strong>“真理属于人类，谬误属于时代”</strong><br>
+“时间不是流逝的，流逝的是我们”<br>
+“想看到真正的世界，就要用天的眼睛去看天，用云的眼睛去看云，用风的眼睛去看风”<br>
+“<strong>经历、知识都是客观</strong>，客观影响了你，组成了你的思想，所以最终又成了你的主观 **当你知道得越来越多，你就和别人越来越不一样。**实际上，每个人都是越来越和别人不一样的。 后来我想到这个就开始好奇，别人眼中的世界，是什么样子的呢？”<br>
+“其实，我想通了很多很多。<strong>生和死，不重要，重要的是去尊重生命</strong>；生命是否高贵不重要，重要的是尊重自己的存在；在自己还有生命的时候，在自己好存在的时候，带着自己那颗人类的心，永不停息地追寻那个答案。<strong>有没有答案，不重要，重要的是要充满期待</strong>。”</p>
+<h3 id="初中《水浒传》">初中《水浒传》</h3>
+<p>：</p>
+<h3 id="初中《西游记》">初中《西游记》</h3>
+<p>：</p>
+<h3 id="初中-《牧羊少年奇幻之旅》">初中**《牧羊少年奇幻之旅》**</h3>
+<p>：巴西作家保罗·科埃略 创作的长篇小说  出版于1988年。</p>
+<p><strong>”马克图布“</strong>（意为命中注定）<br>
+<strong>”只有一样东西令梦想无法成真，那就是担心失败。“</strong><br>
+”万物皆为一物。当你想要某种东西时，整个宇宙会合力助你实现愿望。“<br>
+”幸福的秘密就在于，既要看到世上的奇珍异宝，又要永远不忘记勺里的那两滴油。“<br>
+”我已经开始做十年前就可以开始做的事情了。但是我很高兴，因为毕竟没登上二十年才做这件事。“</p>
+<p>​        《牧羊少年奇幻之旅》是一部象征性作品，旨在启示人们实现梦想要经历一个艰难的过程，需要<strong>勇气、智慧、执着和经受考验</strong>。小说通过圣地亚哥在寻梦旅途中学到的许多教导，展示了精神追求与现实冲突的一种融合。<a href="%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91">^2</a><br>
+​        <strong>《小王子》教你放下执念，而《牧羊少年奇幻之旅》是教你寻找执念</strong>；两种不同的方法，确有着相同的目的。重点不是你在这个世界上寻找什么，而是在过程中明白什么是不可丢弃的，那将是你生命的意义所在，超越一切，一旦了白于心，就将于永恒同在。<strong>追随天命，倾听心灵</strong>，关注预兆，学会语言！<strong>你的心在哪里，你的宝藏就会在哪里！</strong>[^4]</p>
+<h3 id="初中《钢铁是怎样炼成的》">初中《钢铁是怎样炼成的》</h3>
+<p>： <a href="https://baike.baidu.com/item/%E5%89%8D%E8%8B%8F%E8%81%94/4742231?fromModule=lemma_inlink">前苏联</a>作家<a href="https://baike.baidu.com/item/%E5%B0%BC%E5%8F%A4%E6%8B%89%C2%B7%E5%A5%A5%E6%96%AF%E7%89%B9%E6%B4%9B%E5%A4%AB%E6%96%AF%E5%9F%BA/7871233?fromModule=lemma_inlink">尼古拉·奥斯特洛夫斯基</a> 所著的一部长篇小说，于1933年完成。</p>
+<p><strong>“人最宝贵的是生命。生命属于人只有一次。人的一生应当这样度过：当他回首往事的时候，不会因为碌碌无为、虚度年华而悔恨，也不会因为为人卑劣、生活庸俗而愧疚。这样，在临终的时候，他就能够说：‘我已把自己整个的生命和全部的精力献给了世界上最壮丽的事业——为人类的解放而奋斗”</strong></p>
+<p>​        一个有坚定意识的人值得赞赏，但不是一个有固执的政治意识的人。</p>
+<h3 id="初中-《全球通史-上下》">初中**《全球通史  上下》**</h3>
+<p>：美国历史学家<a href="https://baike.baidu.com/item/L%C2%B7S%C2%B7%E6%96%AF%E5%A1%94%E5%A4%AB%E9%87%8C%E9%98%BF%E8%AF%BA%E6%96%AF/2648135?fromModule=lemma_inlink">L·S·斯塔夫里阿诺斯</a>创作的历史著作，首次出版于1970年</p>
+<p><strong>“文明是诅咒还是福音？”</strong><br>
+<strong>“由于他们依赖大自然，所以就为大自然所支配。”</strong><br>
+“语言的使用和工具制造是大脑发展的原因，也是大脑发展的结果。 ”<br>
+“<strong>自由</strong>是一种比僵化的宗教仪式和死板的教义更富有意义且令人满意的东西。”<br>
+“我们真正继承的是<strong>塑造和完善自身的能力</strong>，我们不是被动地接受塑造，而是<strong>自己命运的主宰</strong>。”<br>
+<strong>“Every city is two cities, a city of the many poor and a city of the few rich; and these two cities are always at war. ”(Plato)</strong><br>
+“人类的本性是：一种能被社会影响塑造成许多表现形式的潜在能力…<strong>侵略性不是人类与生俱来和不可变更的特性</strong>，而是一个鼓励侵略的社会环境的产物。”<br>
+“中国人总是将家族的姓氏放在个人的名字之前，而不像西方那样将其放在个人的名字之后，这反映出了在<strong>中国社会中历来起主要作用的是家庭，而不是个人，国家或教会</strong>”<br>
+“人类作为一个种群所面临的问题是，如何解决<strong>自身知识的不断增长和如何运用这些知识的智慧相对滞后之间的矛盾</strong>。人类迫切需要学会在获得知识与运用知识的智慧之间达成平衡。”</p>
+<h3 id="初中《人类的故事》">初中《人类的故事》</h3>
+<p>：荷裔美国人，学者，作家，历史地理学家<a href="https://book.douban.com/author/4502151">亨德里克·威廉·房龙</a>创作</p>
+<p><strong>“历史就像人生，许多东西不断改变，也有许多东西永远不变。”</strong><br>
+“好坏绝对分明的事情，在我们的历史上是鲜有的，纯粹的黑、白两色不可能构建起我们的世界。 ”<br>
+“繁荣意味着悠闲的时间，而闲暇则给了人们机会，让他们去购买书籍，培养对文学、艺术和音乐的兴趣。”<br>
+<strong>“革命舞台上出现的经常是暴民，但毫无例外是中产阶级专业人士在背后煽风点火，他们利用饥饿的群众作为自己有力的盟军，向国王及其朝臣开战。”</strong></p>
+<hr>
+<h2 id="参考资料">参考资料</h2>
+<p>[^3]:程姗姗. 《娱乐至死》的贡献及启示[J]. 文艺生活(文海艺苑), 2017, (10)<br>
+[^4]:豆瓣网<br>
+[^5]:吕黛，张煜著．解读英美文学中的智慧．哈尔滨工程大学出版社．2016.07．99<br>
+[^6]:现实主义、自然主义和浪漫主义相融合的巅峰之作——《野性的呼唤》浅析 李爱群 - 《时代文学》- 2011年16期</p>
+]]></content>
+      <categories>
+        <category>推荐</category>
+      </categories>
+      <tags>
+        <tag>书籍</tag>
+        <tag>推荐</tag>
       </tags>
   </entry>
 </search>
