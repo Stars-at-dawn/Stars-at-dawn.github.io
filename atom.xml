@@ -6,7 +6,7 @@
   <link href="https://stars-at-dawn.github.io/atom.xml" rel="self"/>
   
   <link href="https://stars-at-dawn.github.io/"/>
-  <updated>2025-04-18T00:59:48.506Z</updated>
+  <updated>2025-04-18T01:51:05.749Z</updated>
   <id>https://stars-at-dawn.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>力扣80 删除有序数组中的重复项 II</title>
+    <link href="https://stars-at-dawn.github.io/posts/leetcode80"/>
+    <id>https://stars-at-dawn.github.io/posts/leetcode80</id>
+    <published>2025-04-18T01:51:04.000Z</published>
+    <updated>2025-04-18T01:51:05.749Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>题目描述：</strong></p><ul><li><p>给你一个有序数组 <code>nums</code> ，请你**<a href="http://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95"> 原地</a>** 删除重复出现的元素，使得出现次数超过两次的元素<strong>只出现两次</strong> ，返回删除后数组的新长度。</p><p>不要使用额外的数组空间，你必须在 <strong><a href="https://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95">原地 </a>修改输入数组</strong> 并在使用 O(1) 额外空间的条件下完成。</p></li></ul><hr><p>与leetcode26优化后的结果差不多：<br>我们看看能不能优化一下，依旧是大小不重要，所以依旧在原数组上进行修改遍历，我们可以通过<strong>记录当前应该去重的数据数量</strong>来确定当前数据<strong>如果不重复应该移动的位置</strong>，不过题目要求是重复两次以上，所以额外再加一个变量记录重复次数。</p><p>这样分析会有三种情况</p><p><strong>当前数据位置与索引位置相等：重复次数+1</strong></p><p>​<strong>且数据重复次数大于两次：则应该去重的数量+1</strong><br>​<strong>否则少于两次应该保留：即需要移动数据</strong></p><p><strong>当前数据位置与索引位置不相等：重复次数重置为1，保留（移动）数据</strong></p><p><strong><u>注意的是：移动数据的目的就是为了保留此数据</u></strong>，因为后面的数据不参与答案校验</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码如下</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">removeDuplicates</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">res</span> <span class="operator">=</span> <span class="number">0</span>;<span class="comment">//重复的数据数</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> <span class="number">1</span>;<span class="comment">//重复次数</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] == nums[i - res - <span class="number">1</span>]) &#123;</span><br><span class="line">                count++;<span class="comment">//重复次数+1</span></span><br><span class="line">                <span class="keyword">if</span> (count &gt; <span class="number">2</span>) &#123;</span><br><span class="line">                    res++;<span class="comment">//重复次数大于两次：要去重的数量+1</span></span><br><span class="line">                &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">                    nums[i - res] = nums[i];<span class="comment">//少于两次重复次数应该移动数据进行保留</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span>&#123;</span><br><span class="line">                nums[i - res] = nums[i];<span class="comment">//不相等，移动数据进行保留</span></span><br><span class="line">                count = <span class="number">1</span>;<span class="comment">//重置重复次数</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> nums.length - res;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;题目描述：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;给你一个有序数组 &lt;code&gt;nums&lt;/code&gt; ，请你**&lt;a href=&quot;http://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%</summary>
+      
+    
+    
+    
+    <category term="力扣" scheme="https://stars-at-dawn.github.io/categories/%E5%8A%9B%E6%89%A3/"/>
+    
+    
+    <category term="算法" scheme="https://stars-at-dawn.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="力扣" scheme="https://stars-at-dawn.github.io/tags/%E5%8A%9B%E6%89%A3/"/>
+    
+    <category term="数组" scheme="https://stars-at-dawn.github.io/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>力扣26 合并两个有序数组</title>
+    <link href="https://stars-at-dawn.github.io/posts/leetcode26"/>
+    <id>https://stars-at-dawn.github.io/posts/leetcode26</id>
+    <published>2025-04-18T01:21:12.000Z</published>
+    <updated>2025-04-18T01:21:14.021Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>题目描述：</strong></p><p>给你一个 <strong>非严格递增排列</strong> 的数组 <code>nums</code> ，请你**<a href="http://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95"> 原地</a>** 删除重复出现的元素，使每个元素 <strong>只出现一次</strong> ，返回删除后数组的新长度。元素的 <strong>相对顺序</strong> 应该保持 <strong>一致</strong> 。然后返回 <code>nums</code> 中唯一元素的个数。</p><p>考虑 <code>nums</code> 的唯一元素的数量为 <code>k</code> ，你需要做以下事情确保你的题解可以被通过：</p><ul><li>更改数组 <code>nums</code> ，使 <code>nums</code> 的前 <code>k</code> 个元素包含唯一元素，并按照它们最初在 <code>nums</code> 中出现的顺序排列。<code>nums</code> 的其余元素与 <code>nums</code> 的大小不重要。</li><li>返回 <code>k</code> 。</li></ul><hr><p>创建一个新数组遍历去重就不多说啦<br>我们看看能不能优化一下，依旧是大小不重要，所以依旧在原数组上进行修改遍历，我们可以通过记录当前重复的数据数量来确定当前数据如果不重复应该移动的位置，比如重复了两个数，那么这个位置未重复的数应该前移两个</p><p><strong>注意的是：</strong><br>记录的是当前重复的数据数所以返回时应该用总数减去</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码如下</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">removeDuplicates</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> <span class="number">0</span>;<span class="comment">//重复的数据数</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nums[i] == nums[i - count - <span class="number">1</span>]) count++;<span class="comment">//重复+1</span></span><br><span class="line">            <span class="keyword">else</span> nums[i - count] = nums[i];<span class="comment">//非重复移动（没有重复数则原地赋值也不会出错）</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> nums.length - count; <span class="comment">//总数减去重复数即为非重复数</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;题目描述：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;给你一个 &lt;strong&gt;非严格递增排列&lt;/strong&gt; 的数组 &lt;code&gt;nums&lt;/code&gt; ，请你**&lt;a href=&quot;http://baike.baidu.com/item/%E5%8E%9F%E5%</summary>
+      
+    
+    
+    
+    <category term="力扣" scheme="https://stars-at-dawn.github.io/categories/%E5%8A%9B%E6%89%A3/"/>
+    
+    
+    <category term="算法" scheme="https://stars-at-dawn.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="力扣" scheme="https://stars-at-dawn.github.io/tags/%E5%8A%9B%E6%89%A3/"/>
+    
+    <category term="数组" scheme="https://stars-at-dawn.github.io/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
   
   <entry>
     <title>力扣27 移除元素</title>
@@ -456,35 +516,6 @@
   </entry>
   
   <entry>
-    <title>推荐书籍</title>
-    <link href="https://stars-at-dawn.github.io/posts/62923"/>
-    <id>https://stars-at-dawn.github.io/posts/62923</id>
-    <published>2024-06-01T05:03:58.000Z</published>
-    <updated>2024-06-04T05:17:48.254Z</updated>
-    
-    <content type="html"><![CDATA[<p>记录一下一些我看完的书籍，以后有空的话可能会写写推荐语什么的♪(´▽｀)嘿嘿</p><p>排名不分先后，后面是推荐指数：</p><h3 id="历史："><strong>历史</strong>：</h3><p>《全球通史》（推荐指数★★★★★⚝，个人觉得上册比较好看 ）</p><p>《人类的故事》（推荐指数★★★★★⚝，书不是很枯燥，值得一看 ）</p><p>《红星照耀中国》（推荐指数★★★★⚝⚝）</p><p>《人类简史》（太久之前看的，不太记得了ψ(._. )&gt;暂时：★★★★⚝⚝）</p><h3 id="经济，政治，心理："><strong>经济</strong>，政治，心理：</h3><p>《乌合之众》（推荐指数★★★★★⚝）</p><p>《娱乐至死》（推荐指数★★★★★⚝）</p><p>《极简主义》（推荐指数★★★⚝⚝⚝）</p><p>《工作，消费主义和新穷人》（推荐指数★★★★★⚝）</p><h3 id="文学："><strong>文学</strong>：</h3><p>《1984》（值得细细回味，另外，他的一个短篇小说《动物庄园》）（推荐指数★★★★★★）</p><p>《局外人》（推荐指数★★★★★⚝）</p><p>《老人与海》（推荐指数★★★★★★）</p><p>《野性的呼唤》（推荐指数★★★★★★）</p><p>《牧羊少年奇幻之旅》（推荐指数★★★★★★，“马克图布” ）</p><p>《钢铁是怎样炼成的》（推荐指数★★★★★★）</p><p>《一个人的朝圣》（推荐指数★★★★★★）</p><p>《苏菲的世界》（推荐指数★★★★★⚝）</p><p>《西游记》《水浒传》（推荐指数★★★★★★）</p><p>《我是猫》（推荐指数★★★★⚝⚝）</p><p>《杀死一只知更鸟》（推荐指数★★★★★⚝）</p><h3 id="计算机相关："><strong>计算机相关</strong>：</h3><p>《Java并发编程的艺术》（推荐指数★★★★⚝⚝）</p><p>《Spring实战》（推荐指数★★★★⚝⚝）</p><p>《redis设计与实战》（推荐指数★★★★⚝⚝）</p><h3 id="其它：">其它：</h3><p>《催眠师手记》（推荐指数★★★★★★）</p><p>《天才在左，疯子在右》（推荐指数★★★★★★）</p><p>《三体》（推荐指数★★★★★★）</p><p>《福尔摩斯》（推荐指数★★★★★★）</p><p>《人生的智慧》（推荐指数★★★★★⚝）</p><p>《契诃夫小说集》（推荐指数★★★★★★）</p><h3 id=""></h3>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;记录一下一些我看完的书籍，以后有空的话可能会写写推荐语什么的♪(´▽｀)嘿嘿&lt;/p&gt;
-&lt;p&gt;排名不分先后，后面是推荐指数：&lt;/p&gt;
-&lt;h3 id=&quot;历史：&quot;&gt;&lt;strong&gt;历史&lt;/strong&gt;：&lt;/h3&gt;
-&lt;p&gt;《全球通史》（推荐指数★★★★★⚝，个人觉得上册比较好看 </summary>
-      
-    
-    
-    
-    <category term="推荐" scheme="https://stars-at-dawn.github.io/categories/%E6%8E%A8%E8%8D%90/"/>
-    
-    
-    <category term="书籍" scheme="https://stars-at-dawn.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
-    
-    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
-    
-  </entry>
-  
-  <entry>
     <title>堆排</title>
     <link href="https://stars-at-dawn.github.io/posts/40634"/>
     <id>https://stars-at-dawn.github.io/posts/40634</id>
@@ -552,61 +583,31 @@
   </entry>
   
   <entry>
-    <title>本地与云端不一致</title>
-    <link href="https://stars-at-dawn.github.io/posts/41171"/>
-    <id>https://stars-at-dawn.github.io/posts/41171</id>
-    <published>2024-05-30T06:19:38.000Z</published>
-    <updated>2024-06-04T05:17:48.252Z</updated>
+    <title>推荐书籍</title>
+    <link href="https://stars-at-dawn.github.io/posts/62923"/>
+    <id>https://stars-at-dawn.github.io/posts/62923</id>
+    <published>2024-06-01T05:03:58.000Z</published>
+    <updated>2024-06-04T05:17:48.254Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>前面碰到过地测试正常但是上传后的页面错误</strong></p><p>解决方法：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo deploy</span><br><span class="line"></span><br><span class="line">前者清除站点文件，后者重新生成并将之推送到指定的库分支。</span><br></pre></td></tr></table></figure><p>**建议每次更新都需要hexo clean **</p><p>当然<strong>游览器缓存</strong>也可能是一个问题，不过过一会就会正常。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;strong&gt;前面碰到过地测试正常但是上传后的页面错误&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;解决方法：&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class</summary>
-      
-    
-    
-    
-    <category term="博客搭建的一些问题汇总" scheme="https://stars-at-dawn.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
-    
-    
-    <category term="butterflyx主题" scheme="https://stars-at-dawn.github.io/tags/butterflyx%E4%B8%BB%E9%A2%98/"/>
-    
-    <category term="博客搭建" scheme="https://stars-at-dawn.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="问题汇总" scheme="https://stars-at-dawn.github.io/tags/%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>创建特殊文档</title>
-    <link href="https://stars-at-dawn.github.io/posts/15129"/>
-    <id>https://stars-at-dawn.github.io/posts/15129</id>
-    <published>2024-05-30T05:40:11.000Z</published>
-    <updated>2024-06-04T05:17:48.251Z</updated>
-    
-    <content type="html"><![CDATA[<p>创建分类总览页代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure><p>创建标签总览页代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure><p>创建About总览页代码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure><p><strong>注</strong>：</p><p>网址路径结尾是“/”的话 会自动加载对应目录的index.html</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">也就是  http://localhost:4000/tags/ 加载的是tags目录下的index.html 而不是tags.html </span><br></pre></td></tr></table></figure><p>上面前两个文档文件需要手动生成，但里面的内容会自动生成 。</p>]]></content>
+    <content type="html"><![CDATA[<p>记录一下一些我看完的书籍，以后有空的话可能会写写推荐语什么的♪(´▽｀)嘿嘿</p><p>排名不分先后，后面是推荐指数：</p><h3 id="历史："><strong>历史</strong>：</h3><p>《全球通史》（推荐指数★★★★★⚝，个人觉得上册比较好看 ）</p><p>《人类的故事》（推荐指数★★★★★⚝，书不是很枯燥，值得一看 ）</p><p>《红星照耀中国》（推荐指数★★★★⚝⚝）</p><p>《人类简史》（太久之前看的，不太记得了ψ(._. )&gt;暂时：★★★★⚝⚝）</p><h3 id="经济，政治，心理："><strong>经济</strong>，政治，心理：</h3><p>《乌合之众》（推荐指数★★★★★⚝）</p><p>《娱乐至死》（推荐指数★★★★★⚝）</p><p>《极简主义》（推荐指数★★★⚝⚝⚝）</p><p>《工作，消费主义和新穷人》（推荐指数★★★★★⚝）</p><h3 id="文学："><strong>文学</strong>：</h3><p>《1984》（值得细细回味，另外，他的一个短篇小说《动物庄园》）（推荐指数★★★★★★）</p><p>《局外人》（推荐指数★★★★★⚝）</p><p>《老人与海》（推荐指数★★★★★★）</p><p>《野性的呼唤》（推荐指数★★★★★★）</p><p>《牧羊少年奇幻之旅》（推荐指数★★★★★★，“马克图布” ）</p><p>《钢铁是怎样炼成的》（推荐指数★★★★★★）</p><p>《一个人的朝圣》（推荐指数★★★★★★）</p><p>《苏菲的世界》（推荐指数★★★★★⚝）</p><p>《西游记》《水浒传》（推荐指数★★★★★★）</p><p>《我是猫》（推荐指数★★★★⚝⚝）</p><p>《杀死一只知更鸟》（推荐指数★★★★★⚝）</p><h3 id="计算机相关："><strong>计算机相关</strong>：</h3><p>《Java并发编程的艺术》（推荐指数★★★★⚝⚝）</p><p>《Spring实战》（推荐指数★★★★⚝⚝）</p><p>《redis设计与实战》（推荐指数★★★★⚝⚝）</p><h3 id="其它：">其它：</h3><p>《催眠师手记》（推荐指数★★★★★★）</p><p>《天才在左，疯子在右》（推荐指数★★★★★★）</p><p>《三体》（推荐指数★★★★★★）</p><p>《福尔摩斯》（推荐指数★★★★★★）</p><p>《人生的智慧》（推荐指数★★★★★⚝）</p><p>《契诃夫小说集》（推荐指数★★★★★★）</p><h3 id=""></h3>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;创建分类总览页代码：&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class</summary>
+    <summary type="html">&lt;p&gt;记录一下一些我看完的书籍，以后有空的话可能会写写推荐语什么的♪(´▽｀)嘿嘿&lt;/p&gt;
+&lt;p&gt;排名不分先后，后面是推荐指数：&lt;/p&gt;
+&lt;h3 id=&quot;历史：&quot;&gt;&lt;strong&gt;历史&lt;/strong&gt;：&lt;/h3&gt;
+&lt;p&gt;《全球通史》（推荐指数★★★★★⚝，个人觉得上册比较好看 </summary>
       
     
     
     
-    <category term="博客搭建的一些问题汇总" scheme="https://stars-at-dawn.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    <category term="推荐" scheme="https://stars-at-dawn.github.io/categories/%E6%8E%A8%E8%8D%90/"/>
     
     
-    <category term="butterflyx主题" scheme="https://stars-at-dawn.github.io/tags/butterflyx%E4%B8%BB%E9%A2%98/"/>
+    <category term="书籍" scheme="https://stars-at-dawn.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
     
-    <category term="博客搭建" scheme="https://stars-at-dawn.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="问题汇总" scheme="https://stars-at-dawn.github.io/tags/%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
+    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
     
   </entry>
   
