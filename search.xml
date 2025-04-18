@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Excel笔记</title>
+    <url>/posts/62923.html</url>
+    <content><![CDATA[<h2 id="快捷键："><strong>快捷键：</strong></h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ctrl + E 快速填充</span><br><span class="line">ctrl + Q 快速分析</span><br><span class="line">ctrl + T 对普通区域创建表</span><br><span class="line">ctrl + N 新建工作簿</span><br><span class="line"></span><br><span class="line">ctrl + shift + 上下 快速选中左右列</span><br><span class="line">ctrl + shift + 左右 快速选中左右行</span><br><span class="line">上面两个组合使用也可以快速选中整个表或者多行多列</span><br><span class="line"></span><br><span class="line">ctrl + ； 生成日期</span><br><span class="line">ctrl + shift + ； 生成时间</span><br><span class="line"></span><br><span class="line">tab 下一个单元格</span><br><span class="line">shift + tab 上一个单元格</span><br><span class="line">Enter 下一行（指向上一行最初选中的单元格列）</span><br><span class="line">shift + Enter 上一行</span><br><span class="line">ctrl  + Enter 停留原始单元格光标不再往下 / 原位填充 填充相同内容到所选单元格</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">f4 输入公式时 选择单元格可以设置锁定列或行</span><br><span class="line">alt + = 快速求和</span><br></pre></td></tr></table></figure>
+<h2 id="输入格式">输入格式</h2>
+<p>分数输入 可以使用小数 或者 以下格式输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0 1/5  -----&gt; 这样会输入分数 </span><br><span class="line">1/5    -----&gt; 否则就会变成日期</span><br></pre></td></tr></table></figure>
+<p>文本格式输入数字</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#x27;123456789012345678  -----&gt; 最长只有15位 像身份证18位的就无法存储了</span><br><span class="line"> 123456789012345678  -----&gt; 变成123456789012345000 </span><br><span class="line">                     -----&gt; 抹去后面的位数精度 并采用科学计数法显示</span><br></pre></td></tr></table></figure>
+<h2 id="格式">格式</h2>
+<p>**开始组 ** <strong>格式选项</strong> <strong>中可以调整</strong>   <strong>列宽和行宽</strong></p>
+<p>文本<strong>多列居中</strong>一般不采用合并居中 采用<strong>跨列居中</strong> 在开始组 <strong>对齐选项卡的小三角</strong> 里可以找到</p>
+<p>双击<strong>顶部字母中间</strong>自动调整<strong>宽度</strong> 或者在开始组<strong>单元格格式</strong>下的选项中找到调整<strong>宽度</strong></p>
+<h3 id="自定义数字格式：">自定义数字格式：</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0 代表必须占位符 无则会添加0补齐</span><br><span class="line"># 代表弱占位符， 无则不会填充</span><br><span class="line">？特殊占位符，   无则会补空格</span><br><span class="line">小数位数不够时会自动四舍五入</span><br></pre></td></tr></table></figure>
+<h3 id="文本自定义格式：">文本自定义格式：</h3>
+<p><strong>@表示当前字符串</strong></p>
+<p><strong>可以同时设定四个区域格式</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0;-0;0;@  正数;负数;零值;文本</span><br><span class="line">[红色]0;-0;0;@  [设置文本颜色]</span><br></pre></td></tr></table></figure>
+<p><strong>条件设置</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">设置格式[条件1];设置格式[条件2];设置格式//都不满足则默认</span><br></pre></td></tr></table></figure>
+<h2 id="函数"><strong>函数</strong></h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">count 	计算数字单元格个数</span><br><span class="line">countA 	计算非空单元格个数</span><br><span class="line">countBlank 计算空单元格个数</span><br><span class="line">countif</span><br><span class="line">countifs 多条件都满足的单元格个数</span><br><span class="line"></span><br><span class="line">通配符</span><br><span class="line">* 任意多个字符</span><br><span class="line">? 任意单个字符</span><br><span class="line">~ 转义字符 如 ~* 表示*字符的文本</span><br><span class="line"></span><br><span class="line">&amp; 文本连接符 可以输入单元格而不是变成文本</span><br><span class="line"></span><br><span class="line">VLOOKUP(搜素目标,搜索范围,输出的相对列号,1表示模糊匹配/0表示精确匹配) //搜索范围查找的是第一列</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><s>IF({column1.copplumn2},列范围,列范围) 可以转换列的顺序</s></p>
+<h2 id="其它">其它</h2>
+<p>表格的箭头<strong>右键</strong>可以查看所有表格 <strong>ctrl +左键</strong>转到队尾</p>
+<p>开始选项卡中 <strong>填充</strong>功能可以快速<strong>生成指定序号</strong>等</p>
+]]></content>
+      <categories>
+        <category>小知识</category>
+      </categories>
+      <tags>
+        <tag>Excel</tag>
+        <tag>小知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>学成在线项目介绍</title>
     <url>/posts/42876.html</url>
     <content><![CDATA[<h1>学成在线</h1>
@@ -43,43 +80,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Excel笔记</title>
-    <url>/posts/62923.html</url>
-    <content><![CDATA[<h2 id="快捷键："><strong>快捷键：</strong></h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ctrl + E 快速填充</span><br><span class="line">ctrl + Q 快速分析</span><br><span class="line">ctrl + T 对普通区域创建表</span><br><span class="line">ctrl + N 新建工作簿</span><br><span class="line"></span><br><span class="line">ctrl + shift + 上下 快速选中左右列</span><br><span class="line">ctrl + shift + 左右 快速选中左右行</span><br><span class="line">上面两个组合使用也可以快速选中整个表或者多行多列</span><br><span class="line"></span><br><span class="line">ctrl + ； 生成日期</span><br><span class="line">ctrl + shift + ； 生成时间</span><br><span class="line"></span><br><span class="line">tab 下一个单元格</span><br><span class="line">shift + tab 上一个单元格</span><br><span class="line">Enter 下一行（指向上一行最初选中的单元格列）</span><br><span class="line">shift + Enter 上一行</span><br><span class="line">ctrl  + Enter 停留原始单元格光标不再往下 / 原位填充 填充相同内容到所选单元格</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">f4 输入公式时 选择单元格可以设置锁定列或行</span><br><span class="line">alt + = 快速求和</span><br></pre></td></tr></table></figure>
-<h2 id="输入格式">输入格式</h2>
-<p>分数输入 可以使用小数 或者 以下格式输入</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0 1/5  -----&gt; 这样会输入分数 </span><br><span class="line">1/5    -----&gt; 否则就会变成日期</span><br></pre></td></tr></table></figure>
-<p>文本格式输入数字</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#x27;123456789012345678  -----&gt; 最长只有15位 像身份证18位的就无法存储了</span><br><span class="line"> 123456789012345678  -----&gt; 变成123456789012345000 </span><br><span class="line">                     -----&gt; 抹去后面的位数精度 并采用科学计数法显示</span><br></pre></td></tr></table></figure>
-<h2 id="格式">格式</h2>
-<p>**开始组 ** <strong>格式选项</strong> <strong>中可以调整</strong>   <strong>列宽和行宽</strong></p>
-<p>文本<strong>多列居中</strong>一般不采用合并居中 采用<strong>跨列居中</strong> 在开始组 <strong>对齐选项卡的小三角</strong> 里可以找到</p>
-<p>双击<strong>顶部字母中间</strong>自动调整<strong>宽度</strong> 或者在开始组<strong>单元格格式</strong>下的选项中找到调整<strong>宽度</strong></p>
-<h3 id="自定义数字格式：">自定义数字格式：</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0 代表必须占位符 无则会添加0补齐</span><br><span class="line"># 代表弱占位符， 无则不会填充</span><br><span class="line">？特殊占位符，   无则会补空格</span><br><span class="line">小数位数不够时会自动四舍五入</span><br></pre></td></tr></table></figure>
-<h3 id="文本自定义格式：">文本自定义格式：</h3>
-<p><strong>@表示当前字符串</strong></p>
-<p><strong>可以同时设定四个区域格式</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">0;-0;0;@  正数;负数;零值;文本</span><br><span class="line">[红色]0;-0;0;@  [设置文本颜色]</span><br></pre></td></tr></table></figure>
-<p><strong>条件设置</strong></p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">设置格式[条件1];设置格式[条件2];设置格式//都不满足则默认</span><br></pre></td></tr></table></figure>
-<h2 id="函数"><strong>函数</strong></h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">count 	计算数字单元格个数</span><br><span class="line">countA 	计算非空单元格个数</span><br><span class="line">countBlank 计算空单元格个数</span><br><span class="line">countif</span><br><span class="line">countifs 多条件都满足的单元格个数</span><br><span class="line"></span><br><span class="line">通配符</span><br><span class="line">* 任意多个字符</span><br><span class="line">? 任意单个字符</span><br><span class="line">~ 转义字符 如 ~* 表示*字符的文本</span><br><span class="line"></span><br><span class="line">&amp; 文本连接符 可以输入单元格而不是变成文本</span><br><span class="line"></span><br><span class="line">VLOOKUP(搜素目标,搜索范围,输出的相对列号,1表示模糊匹配/0表示精确匹配) //搜索范围查找的是第一列</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><s>IF({column1.copplumn2},列范围,列范围) 可以转换列的顺序</s></p>
-<h2 id="其它">其它</h2>
-<p>表格的箭头<strong>右键</strong>可以查看所有表格 <strong>ctrl +左键</strong>转到队尾</p>
-<p>开始选项卡中 <strong>填充</strong>功能可以快速<strong>生成指定序号</strong>等</p>
-]]></content>
-      <categories>
-        <category>小知识</category>
-      </categories>
-      <tags>
-        <tag>Excel</tag>
-        <tag>小知识</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PR笔记</title>
     <url>/posts/54ee589c.html</url>
     <content><![CDATA[<h2 id="技巧">技巧</h2>
@@ -115,72 +115,6 @@ shift + ~ 最大化显示选中的面板</p>
       <tags>
         <tag>小知识</tag>
         <tag>PR</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>各省份简称</title>
-    <url>/posts/8959a8f7.html</url>
-    <content><![CDATA[<h2 id="各省份简称：">各省份简称：</h2>
-<p>北京（京）天津（津）江苏（苏）浙江（浙）<br>
-黑龙江（黑）吉林（吉）辽宁（辽）<br>
-内蒙古（蒙）青海（青）宁夏（宁）西藏（藏）新疆（新）<br>
-台湾（台）香港（港）澳门（澳）  （<strong>都是省份名的其中一个字作为其省份简称</strong>）</p>
-<p>上海（沪）江西（赣）四川（川、蜀）<strong>（常见的非上述省的省份简称）</strong></p>
-<p><strong>河北（冀）</strong> <strong>河南（豫）</strong> 山东（鲁）<strong>山西（晋）</strong><br>
-湖北（鄂）<strong>湖南（湘）</strong><br>
-**重庆（渝）**贵州（黔、贵）云南（<strong>滇</strong>、云）<br>
-甘肃（陇、<strong>甘</strong>）陕西（陕）<br>
-<strong>安徽（皖）</strong> <strong>福建（闽）</strong> 广东（粤）广西（桂）<strong>海南（琼）</strong> <strong>（不常见的非上述省的省份简称）</strong></p>
-<h3 id="看看你呢写出下列的省份名称吗？">看看你呢写出下列的省份名称吗？</h3>
-<p>北京（   ）<br>
-天津（   ）<br>
-江苏（   ）<br>
-浙江（   ）<br>
-黑龙江（   ）<br>
-吉林（   ）<br>
-辽宁（   ）<br>
-内蒙古（   ）<br>
-青海（   ）<br>
-宁夏（   ）<br>
-西藏（   ）<br>
-新疆（   ）<br>
-台湾（   ）<br>
-香港（   ）<br>
-澳门（   ）</p>
-<hr>
-<p><strong>（陇）（冀）（渝）（黔）（沪）</strong><br>
-<strong>（鄂）（蜀）（滇）（豫）（陕）</strong><br>
-<strong>（粤）（桂）（琼）（湘）（鲁）</strong><br>
-<strong>（皖）（闽）（赣）（晋）</strong></p>
-<p>上海（   ）<br>
-江西（   ）<br>
-四川（   ）<br>
-河北（   ）<br>
-河南（   ）<br>
-山东（   ）<br>
-山西（   ）<br>
-湖北（   ）<br>
-湖南（   ）<br>
-重庆（   ）<br>
-贵州（   ）<br>
-云南（   ）<br>
-甘肃（   ）<br>
-陕西（   ）<br>
-安徽（   ）<br>
-福建（   ）<br>
-广东（   ）<br>
-广西（   ）<br>
-海南（   ）</p>
-<hr>
-<h2 id="常见其它地理名称：">常见其它地理名称：</h2>
-<p><strong>岭南</strong>：<br>
-又称**“岭表”“岭外”**，是中国南方五岭以南地区的统称，即广东、广西、香港、澳门以及海南全境</p>
-]]></content>
-      <categories>
-        <category>小知识</category>
-      </categories>
-      <tags>
-        <tag>小知识</tag>
       </tags>
   </entry>
   <entry>
@@ -264,6 +198,72 @@ shift + ~ 最大化显示选中的面板</p>
       </tags>
   </entry>
   <entry>
+    <title>各省份简称</title>
+    <url>/posts/8959a8f7.html</url>
+    <content><![CDATA[<h2 id="各省份简称：">各省份简称：</h2>
+<p>北京（京）天津（津）江苏（苏）浙江（浙）<br>
+黑龙江（黑）吉林（吉）辽宁（辽）<br>
+内蒙古（蒙）青海（青）宁夏（宁）西藏（藏）新疆（新）<br>
+台湾（台）香港（港）澳门（澳）  （<strong>都是省份名的其中一个字作为其省份简称</strong>）</p>
+<p>上海（沪）江西（赣）四川（川、蜀）<strong>（常见的非上述省的省份简称）</strong></p>
+<p><strong>河北（冀）</strong> <strong>河南（豫）</strong> 山东（鲁）<strong>山西（晋）</strong><br>
+湖北（鄂）<strong>湖南（湘）</strong><br>
+**重庆（渝）**贵州（黔、贵）云南（<strong>滇</strong>、云）<br>
+甘肃（陇、<strong>甘</strong>）陕西（陕）<br>
+<strong>安徽（皖）</strong> <strong>福建（闽）</strong> 广东（粤）广西（桂）<strong>海南（琼）</strong> <strong>（不常见的非上述省的省份简称）</strong></p>
+<h3 id="看看你呢写出下列的省份名称吗？">看看你呢写出下列的省份名称吗？</h3>
+<p>北京（   ）<br>
+天津（   ）<br>
+江苏（   ）<br>
+浙江（   ）<br>
+黑龙江（   ）<br>
+吉林（   ）<br>
+辽宁（   ）<br>
+内蒙古（   ）<br>
+青海（   ）<br>
+宁夏（   ）<br>
+西藏（   ）<br>
+新疆（   ）<br>
+台湾（   ）<br>
+香港（   ）<br>
+澳门（   ）</p>
+<hr>
+<p><strong>（陇）（冀）（渝）（黔）（沪）</strong><br>
+<strong>（鄂）（蜀）（滇）（豫）（陕）</strong><br>
+<strong>（粤）（桂）（琼）（湘）（鲁）</strong><br>
+<strong>（皖）（闽）（赣）（晋）</strong></p>
+<p>上海（   ）<br>
+江西（   ）<br>
+四川（   ）<br>
+河北（   ）<br>
+河南（   ）<br>
+山东（   ）<br>
+山西（   ）<br>
+湖北（   ）<br>
+湖南（   ）<br>
+重庆（   ）<br>
+贵州（   ）<br>
+云南（   ）<br>
+甘肃（   ）<br>
+陕西（   ）<br>
+安徽（   ）<br>
+福建（   ）<br>
+广东（   ）<br>
+广西（   ）<br>
+海南（   ）</p>
+<hr>
+<h2 id="常见其它地理名称：">常见其它地理名称：</h2>
+<p><strong>岭南</strong>：<br>
+又称**“岭表”“岭外”**，是中国南方五岭以南地区的统称，即广东、广西、香港、澳门以及海南全境</p>
+]]></content>
+      <categories>
+        <category>小知识</category>
+      </categories>
+      <tags>
+        <tag>小知识</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>常见打字错误拼音记录</title>
     <url>/posts/b6b3d2a3.html</url>
     <content><![CDATA[<h2 id="打字网站推荐">打字网站推荐</h2>
@@ -334,27 +334,62 @@ shift + ~ 最大化显示选中的面板</p>
       </tags>
   </entry>
   <entry>
-    <title>力扣88 合并两个有序数组</title>
-    <url>/posts/leetcode88.html</url>
-    <content><![CDATA[<p><strong>题目描述：</strong></p>
-<p>给你两个按 <strong>非递减顺序</strong> 排列的整数数组 <code>nums1</code> 和 <code>nums2</code>，另有两个整数 <code>m</code> 和 <code>n</code> ，分别表示 <code>nums1</code> 和 <code>nums2</code> 中的元素数目。<br>
-请你 <strong>合并</strong> <code>nums2</code> 到 <code>nums1</code> 中，使合并后的数组同样按 <strong>非递减顺序</strong> 排列。<br>
-**注意：**最终，合并后数组不应由函数返回，而是存储在数组 <code>nums1</code> 中。为了应对这种情况，<code>nums1</code> 的初始长度为 <code>m + n</code>，其中前 <code>m</code> 个元素表示应合并的元素，后 <code>n</code> 个元素为 <code>0</code> ，应忽略。<code>nums2</code> 的长度为 <code>n</code> 。</p>
-<hr>
-<p>经典的<strong>双指针问题</strong>，可以分别从左往右遍历两个数组来按顺序merge<br>
-简单题，不多赘述</p>
-<p><strong>注意的是：</strong><br>
-由于校验的是nums1指针指向的数组（不是传统的返回数据校验）<br>
-所以我们需要修改的是<strong>原指针指向的数组</strong>，开头去创建一个对象复制原数组用做中间量，<strong>原数组当作结果容器</strong>。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//代码如下</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">merge</span><span class="params">(<span class="type">int</span>[] nums1, <span class="type">int</span> m, <span class="type">int</span>[] nums2, <span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="comment">//nums1是一个指针，对其赋值源对象不会修改，即原调用方无法感知这件事</span></span><br><span class="line">        <span class="type">int</span>[] copyNum1 = Arrays.copyOf(nums1, m);</span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>, j = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (; i &lt; m &amp;&amp; j &lt; n; ) &#123;</span><br><span class="line">            <span class="keyword">if</span> (copyNum1[i] &lt; nums2[j]) &#123;</span><br><span class="line">                nums1[i + j] = copyNum1[i];</span><br><span class="line">                i++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                nums1[i + j] = nums2[j];</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//总会有一方未遍历完，继续赋值</span></span><br><span class="line">        <span class="keyword">for</span> (; i &lt; m; i++) &#123;</span><br><span class="line">            nums1[i + j] = copyNum1[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (; j &lt; n; j++) &#123;</span><br><span class="line">            nums1[i + j] = nums2[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+    <title>创建特殊文档</title>
+    <url>/posts/15129.html</url>
+    <content><![CDATA[<p>创建分类总览页代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+<p>创建标签总览页代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>创建About总览页代码：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
+<p><strong>注</strong>：</p>
+<p>网址路径结尾是“/”的话 会自动加载对应目录的index.html</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">也就是  http://localhost:4000/tags/ 加载的是tags目录下的index.html 而不是tags.html </span><br></pre></td></tr></table></figure>
+<p>上面前两个文档文件需要手动生成，但里面的内容会自动生成 。</p>
 ]]></content>
       <categories>
-        <category>力扣</category>
+        <category>博客搭建的一些问题汇总</category>
       </categories>
       <tags>
-        <tag>算法</tag>
-        <tag>力扣</tag>
-        <tag>数组</tag>
+        <tag>butterflyx主题</tag>
+        <tag>博客搭建</tag>
+        <tag>问题汇总</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/16107.html</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>博客config配置</title>
+    <url>/posts/8702.html</url>
+    <content><![CDATA[<p>初始配置文件（config那个没有别的后缀）</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="comment"># 网站显示的标题 随意填</span></span><br><span class="line"><span class="attr">author:</span> <span class="comment"># 你的名字 随意填</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:username/username.github.io.git</span>  <span class="comment"># 要是GitHub改名了，记得这里改一下</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> <span class="comment"># 仓库名称</span></span><br></pre></td></tr></table></figure>
+<p>主题配置文件常见配置（我所有是butterflyx主题）：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Avatar (头像设置)</span></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">img:</span>  <span class="comment"># url</span></span><br><span class="line">  <span class="attr">effect:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon（网站的图标）</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/img/myFavicon.png</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="comment"># display the cover or not (是否顯示文章封面)</span></span><br><span class="line">  <span class="attr">default_cover:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">/img/***.***</span>  <span class="comment"># 默认封面 对应文档的cover参数 可以是GIF</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Menu 目錄</span></span><br><span class="line"><span class="attr">menu:</span> <span class="comment"># 右上角的选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">---     </span></span><br><span class="line"><span class="comment"># Sponsor/reward</span></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">text:</span></span><br><span class="line">  <span class="attr">QR_code:</span> <span class="comment">#二维码设置</span></span><br><span class="line">     <span class="bullet">-</span> <span class="attr">img:</span> <span class="string">/img/***.png</span></span><br><span class="line">       <span class="attr">link:</span> <span class="comment"># 链接</span></span><br><span class="line">       <span class="attr">text:</span> <span class="comment"># 图片下面显示的文本</span></span><br><span class="line">       </span><br><span class="line"> <span class="string">---</span></span><br><span class="line"><span class="comment"># 网站优化</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># canvas_ribbon:  背景彩帶设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Mouse click effects 鼠标点击效果设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Loading Animation (加载动画设置)</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>博客搭建的一些问题汇总</category>
+      </categories>
+      <tags>
+        <tag>butterflyx主题</tag>
+        <tag>博客搭建</tag>
+        <tag>问题汇总</tag>
       </tags>
   </entry>
   <entry>
@@ -791,65 +826,6 @@ QDII基金是指在一国境内设立，经该国有关部门批准从事境外�
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/posts/16107.html</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>创建特殊文档</title>
-    <url>/posts/15129.html</url>
-    <content><![CDATA[<p>创建分类总览页代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
-<p>创建标签总览页代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
-<p>创建About总览页代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
-<p><strong>注</strong>：</p>
-<p>网址路径结尾是“/”的话 会自动加载对应目录的index.html</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">也就是  http://localhost:4000/tags/ 加载的是tags目录下的index.html 而不是tags.html </span><br></pre></td></tr></table></figure>
-<p>上面前两个文档文件需要手动生成，但里面的内容会自动生成 。</p>
-]]></content>
-      <categories>
-        <category>博客搭建的一些问题汇总</category>
-      </categories>
-      <tags>
-        <tag>butterflyx主题</tag>
-        <tag>博客搭建</tag>
-        <tag>问题汇总</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客config配置</title>
-    <url>/posts/8702.html</url>
-    <content><![CDATA[<p>初始配置文件（config那个没有别的后缀）</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="comment"># 网站显示的标题 随意填</span></span><br><span class="line"><span class="attr">author:</span> <span class="comment"># 你的名字 随意填</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:username/username.github.io.git</span>  <span class="comment"># 要是GitHub改名了，记得这里改一下</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> <span class="comment"># 仓库名称</span></span><br></pre></td></tr></table></figure>
-<p>主题配置文件常见配置（我所有是butterflyx主题）：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Avatar (头像设置)</span></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">img:</span>  <span class="comment"># url</span></span><br><span class="line">  <span class="attr">effect:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon（网站的图标）</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/img/myFavicon.png</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="comment"># display the cover or not (是否顯示文章封面)</span></span><br><span class="line">  <span class="attr">default_cover:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">/img/***.***</span>  <span class="comment"># 默认封面 对应文档的cover参数 可以是GIF</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Menu 目錄</span></span><br><span class="line"><span class="attr">menu:</span> <span class="comment"># 右上角的选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">---     </span></span><br><span class="line"><span class="comment"># Sponsor/reward</span></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">text:</span></span><br><span class="line">  <span class="attr">QR_code:</span> <span class="comment">#二维码设置</span></span><br><span class="line">     <span class="bullet">-</span> <span class="attr">img:</span> <span class="string">/img/***.png</span></span><br><span class="line">       <span class="attr">link:</span> <span class="comment"># 链接</span></span><br><span class="line">       <span class="attr">text:</span> <span class="comment"># 图片下面显示的文本</span></span><br><span class="line">       </span><br><span class="line"> <span class="string">---</span></span><br><span class="line"><span class="comment"># 网站优化</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># canvas_ribbon:  背景彩帶设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Mouse click effects 鼠标点击效果设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Loading Animation (加载动画设置)</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>博客搭建的一些问题汇总</category>
-      </categories>
-      <tags>
-        <tag>butterflyx主题</tag>
-        <tag>博客搭建</tag>
-        <tag>问题汇总</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>文档上的注释</title>
     <url>/posts/33714.html</url>
     <content><![CDATA[<p>Front-matter 采用 YAML  格式</p>
@@ -891,6 +867,57 @@ QDII基金是指在一国境内设立，经该国有关部门批准从事境外�
         <tag>butterflyx主题</tag>
         <tag>博客搭建</tag>
         <tag>问题汇总</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>力扣27 移除元素</title>
+    <url>/posts/leetcode27.html</url>
+    <content><![CDATA[<p><strong>题目描述：</strong></p>
+<p>给你一个数组 <code>nums</code> 和一个值 <code>val</code>，你需要 <strong><a href="https://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95">原地</a></strong> <strong>移除所有数值等于 <code>val</code> 的元素</strong>。元素的顺序可能发生改变。然后返回 <code>nums</code> 中与 <code>val</code> <strong>不同的元素的数量</strong>。<br>
+假设 <code>nums</code> 中不等于 <code>val</code> 的元素数量为 <code>k</code>，要通过此题，您需要执行以下操作：</p>
+<ul>
+<li>更改 <code>nums</code> 数组，使 <code>nums</code> 的前 <code>k</code> 个元素包含不等于 <code>val</code> 的元素。<code>nums</code> 的其余元素和 <code>nums</code> 的大小并不重要。</li>
+<li>返回 <code>k</code>。</li>
+</ul>
+<hr>
+<p>简单题，不多赘述；（去创建一个数组遍历我想大家都会）<br>
+不过由于nums的大小不重要，我们会想到能不能在原数组进行操作？这里可以通过<strong>记录非<code>val</code>的数据的数量</strong>来进行优化</p>
+<p><strong>注意的是：</strong></p>
+<p>count为当前非<code>val</code>的数据数量<br>
+赋值操作不会覆盖未比较的值（因为count永远比当前索引小）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//代码如下</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">removeElement</span><span class="params">(<span class="type">int</span>[] nums, <span class="type">int</span> val)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> num : nums) </span><br><span class="line">            <span class="keyword">if</span> (num != val) </span><br><span class="line">                nums[count++] = num;<span class="comment">//数据为非val 当前位置赋值 且数量+1</span></span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>力扣</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>力扣</tag>
+        <tag>数组</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>力扣88 合并两个有序数组</title>
+    <url>/posts/leetcode88.html</url>
+    <content><![CDATA[<p><strong>题目描述：</strong></p>
+<p>给你两个按 <strong>非递减顺序</strong> 排列的整数数组 <code>nums1</code> 和 <code>nums2</code>，另有两个整数 <code>m</code> 和 <code>n</code> ，分别表示 <code>nums1</code> 和 <code>nums2</code> 中的元素数目。<br>
+请你 <strong>合并</strong> <code>nums2</code> 到 <code>nums1</code> 中，使合并后的数组同样按 <strong>非递减顺序</strong> 排列。<br>
+**注意：**最终，合并后数组不应由函数返回，而是存储在数组 <code>nums1</code> 中。为了应对这种情况，<code>nums1</code> 的初始长度为 <code>m + n</code>，其中前 <code>m</code> 个元素表示应合并的元素，后 <code>n</code> 个元素为 <code>0</code> ，应忽略。<code>nums2</code> 的长度为 <code>n</code> 。</p>
+<hr>
+<p>经典的<strong>双指针问题</strong>，可以分别从左往右遍历两个数组来按顺序merge<br>
+简单题，不多赘述</p>
+<p><strong>注意的是：</strong><br>
+由于校验的是nums1指针指向的数组（不是传统的返回数据校验）<br>
+所以我们需要修改的是<strong>原指针指向的数组</strong>，开头去创建一个对象复制原数组用做中间量，<strong>原数组当作结果容器</strong>。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//代码如下</span></span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">merge</span><span class="params">(<span class="type">int</span>[] nums1, <span class="type">int</span> m, <span class="type">int</span>[] nums2, <span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="comment">//nums1是一个指针，对其赋值源对象不会修改，即原调用方无法感知这件事</span></span><br><span class="line">        <span class="type">int</span>[] copyNum1 = Arrays.copyOf(nums1, m);</span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>, j = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (; i &lt; m &amp;&amp; j &lt; n; ) &#123;</span><br><span class="line">            <span class="keyword">if</span> (copyNum1[i] &lt; nums2[j]) &#123;</span><br><span class="line">                nums1[i + j] = copyNum1[i];</span><br><span class="line">                i++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                nums1[i + j] = nums2[j];</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//总会有一方未遍历完，继续赋值</span></span><br><span class="line">        <span class="keyword">for</span> (; i &lt; m; i++) &#123;</span><br><span class="line">            nums1[i + j] = copyNum1[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (; j &lt; n; j++) &#123;</span><br><span class="line">            nums1[i + j] = nums2[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>力扣</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+        <tag>力扣</tag>
+        <tag>数组</tag>
       </tags>
   </entry>
   <entry>
@@ -1150,108 +1177,6 @@ G219<br>
       </tags>
   </entry>
   <entry>
-    <title>记录片推荐</title>
-    <url>/posts/9582e118.html</url>
-    <content><![CDATA[<h1>记录片</h1>
-<h2 id="科技：">科技：</h2>
-<h2 id="人文：">人文：</h2>
-<h3 id="《天地玄黄》">《天地玄黄》</h3>
-<h3 id="《一百年很长吗》">《一百年很长吗》</h3>
-<p>2024.8</p>
-<p>“家有千金不如朝夕为人”</p>
-<p>以前老师上课时候，讲自己教书育人，是先生。<br>
-我觉得，这几位老先生，也是有自己风骨的先生。印章用的少了，老先生的字还是有风骨。阿勒泰的马鞍留存在游牧人的马背上，或许人没有感觉差异，但是游牧民族的灵魂看得见。<br>
-手艺的传承，是几代人口手相传的。一辈子没有那么长，百年以前，也是这样的老先生们，把手艺在瓦缝溜下来的光里，和昏黄的烛台旁边，留存下来。<br>
-老爷子说以前人活七十古来稀，现在八九十岁也常见。<br>
-不管是什么手艺，以前会了一门活计是骄傲的，像是武林中的门派，弟子热络不绝。而今青瓦房里，先生们，活的是留存的武林气息。<br>
-先生，高义。<a href="B%E7%AB%99">^4</a></p>
-<h3 id="《超级顾客-第一季》">《超级顾客 第一季》</h3>
-<p>2024.7</p>
-<p>产品的本质真的像广告宣传所说的那样吗？连锁店的产品价格是一样的吗？大牌产品和不知名的品牌之间有着巨大的价格差异，但是，品质也是相差如此之大吗？性价比呢？你一直使用的所谓优质产品，和别的产品之间有什么不同？为什么不同品牌的产品，有时候你觉得是同样的东西？本节目将深入了解产品内幕，揭开品牌和零售商的假面具，寻找价廉物美的产品，让你先人一步，成为更精明的消费者。<a href="B%E7%AB%99">^4</a></p>
-<h3 id="《无节制消费的元凶》">《无节制消费的元凶》</h3>
-<p>2024.6</p>
-<p>我们为什会买东西？谁让这个世界变得无节制消费？他们如何做到这一点？调查记者雅克•佩雷蒂审视了无节制消费潮流背后的机制，得出了答案。原来，使这个世界变得无节制消费的元凶，并不是人们普遍认为的广告员和市场推广员，而是这诸多表象背后那个首先改变了产品，然后改变我们的人。<a href="B%E7%AB%99">^4</a></p>
-<p>无节制消费的元凶：</p>
-<ol>
-<li><strong>计划报废，规定期限</strong>。演变到瞬间报废（一次性消费）；</li>
-<li>改变消费心理，有序制造不满情绪，<strong>培养淘汰观念</strong></li>
-<li>**恐惧植入，提供解决方案。**商家唤起我们的恐惧和焦虑情绪，对逃避死亡、健康、医疗、美容、灭菌，<strong>利用信用卡延迟消费痛苦</strong>；</li>
-<li><strong>缩减从想要购买到支付的思考时间</strong>，刷脸支付，小额免密码支付。</li>
-<li>从孩童入手，<strong>创造故事，周边购买。从小灌输的消费观念</strong>，动画片《变形金刚》把广告拍成电影。</li>
-<li><strong>营销使成年人变成小孩消费</strong>，漫展和利用孩子反向营销成人（丰田小汽车案例）、</li>
-<li>游戏及时奖励，刺激多巴胺。<br>
-<strong>永远提供更好的产品——无节制消费的元凶</strong></li>
-</ol>
-<h3 id="《美国商业大亨传奇》">《美国商业大亨传奇》</h3>
-<p>2024.6</p>
-<p>那个时代的美国真的很激动人心，<strong>垄断、恶意并购、低价倾销</strong>都是从他们开始的</p>
-<p>一、范德比尔特。铁路大亨<br>
-创新-运输新货物即石油-敏锐发现市场需要</p>
-<p>二、洛克菲勒。石油大亨-美国标准石油公司<br>
-相信自己-分析问题-选择低成本业务-效率至上-理论联系实际创造竞争优势：管道运输、提炼出煤油到提炼出汽油。</p>
-<p>三、卡内基。钢铁大亨<br>
-发现钢-炼造钢-建造桥-建楼<br>
-搭档：弗里克造成约翰斯顿洪水事件<br>
-伯乐：斯科特-宾夕法尼亚铁路公司</p>
-<p>四、摩根（约翰·皮尔庞特·摩根）。金融大亨-美国通用电器公司<br>
-对手：威斯汀豪斯的美国钢铁公司<br>
-爱迪生vs特斯拉（原来爱迪生也有小人的一面）、麦金莱vs布莱恩、罗斯福上位-反托拉斯（破垄断）</p>
-<p>五、福特。汽车大亨</p>
-<p>要有胆量-满足市场需要</p>
-<p>没有他们可能美国的崛起不会这么快吧<a href="B%E7%AB%99">^4</a></p>
-<h2 id="自然：">自然：</h2>
-<h3 id="《史前星球-第一季》">《史前星球 第一季》</h3>
-<p>2024.6</p>
-<h3 id="《地球脉动-第三季》">《地球脉动 第三季》</h3>
-<p>2024.5</p>
-<p>：由 <a href="https://www.douban.com/personage/27250858/">大卫·爱登堡</a> 主演</p>
-<p>从海洋深处到最偏远的丛林，《地球脉动III》为经典巨制翻开崭新篇章，继续造访地球上众多令人称奇的栖息地，观众将跟随镜头探索这颗星球上最后的天然野境，领略野生动物进化出的绝妙生存策略。同时，也展现出荒野之境和生在其中的野生动物对维持地球健康运转的独特意义，饱含对大自然的敬畏、礼赞与关怀。</p>
-<p>汹涌的海浪淹没冲浪的人，冲毁火烈鸟的巢穴，危机40%人口沿海的家园，却能拯救海滩无助的海龟。 人本位的思维禁锢着世界，我们试图消除一切威胁人类生存的元素，但如果这个世界是鱼本位、鸟本位、鲸本位，甚至是龟本位，地球会不会有所不同？ 地球脉动用别样的视角，探索这个复杂星球上不同物种的生存际遇。当澳大利亚的沙土运到雷恩岛时，海龟会不会感谢人类？我们无从得知，但我们必须清晰地认识到平等的生存关系，人和其它动物是共享这个星球，它们的生存权利并非人类施舍，<strong>是天授</strong>。<a href="%E8%B1%86%E7%93%A3%E7%BD%91">^3</a></p>
-<h3 id="《绿色星球》">《绿色星球》</h3>
-<p>2024.5</p>
-<p>绿色星球节目是首个通过沉浸式的呈现方式聚焦植物的纪录片，为观众们展示了这个低调秘密、不为人知的植物世界。它们既能与动物形成互惠互利的关系，也可以像我们星球上的任何生物一样具有攻击性、竞争性和戏剧性。为争夺光照、空间、营养和为家族开枝散叶的机会，它们会与竞争对手、动物和元素进行致命的斗争。<br>
-　　本片展示了跨越20多年的新发现，同时揭示了相互紧密联系的植物世界。专业摄像机使我们拥有超越人眼的能力，比以往任何时候都观察的更贴近与深入。<br>
-　　全新的故事，前所未见的动植物行为，令人惊讶的英雄，带你从植物的角度看地球。<a href="%E8%B1%86%E7%93%A3%E7%BD%91">^3</a></p>
-<p>这部由BBC Studios自然历史部耗时四年完成的作品，被影评人称作**“全球首部沉浸式聚焦植物的纪录片”**。</p>
-<h1>电影</h1>
-<h2 id="戏剧：">戏剧：</h2>
-<h3 id="《城市之光》">《城市之光》</h3>
-<p>2024.8</p>
-<p>​        真是讽刺，盲人心存光明，穷人拥有富人没有的爱情，善良之人锒铛入狱，恶徒却逍遥法外，富人随意漏出来的财富都是穷人用生命也换不来的东西，富人在清醒时永远不会与穷人为伍，人在糊涂时才会有真性情</p>
-<h3 id="《大独裁者》">《大独裁者》</h3>
-<p>2024.8</p>
-<p>​        影片讲述第一次世界大战，托曼尼亚王国独裁者辛格尔（查理·卓别林饰）上台。他的大肆扩张导致战乱不断民不聊生。并且他大搞阴谋政策，煽动民众对犹太人的敌对与仇恨，让犹太人民陷入水深火热的灾难之中。被征入伍的犹太人理发师查理（查理·卓别林饰）更是在这样的高压政策下难逃一劫。当查理逃出边境时，被驻守在这里的军队误认为是独裁者辛格尔，他趁机做了一场“为自由而战斗”的大演说。<a href="%E8%B1%86%E7%93%A3%E7%BD%91">^3</a></p>
-<p><strong>“独裁者会死去，他们从人民手里夺去的权利即将归还人民”。</strong></p>
-<h3 id="《摩登时代》">《摩登时代》</h3>
-<p>2024.8</p>
-<p>​        二十年代的美国处于经济萧条时期，失业率居高不下，工人受尽压榨，成为了大机器生产中的一颗螺丝钉。查理（查理·卓别林 Charles Chaplin 饰）就是一个底层市民，他在一个机器隆隆的厂房里日以继夜地工作，以赚取微薄的收入。重复繁重的工作压得他喘不过气，他把人们的鼻子当成螺丝钉来拧，卷入流水线机器的皮带里，令人苦笑不得。</p>
-<p>​        写到这里，想起影片一开始的片段，第一个镜头是许多羊群争先恐后的挤出羊圈，随后紧接着切入了一个许多工人下班拥挤的走出工厂的镜头。看到这里，我想到了我自己，每天上下班时的地铁站口，我随着成千上万的人群进进出出的场景。我<strong>认为摩登时代一开始的那两个镜头完全有理由成为电影史上最伟大最经典的蒙太奇。</strong><a href="%E8%B1%86%E7%93%A3%E7%BD%91">^3</a><br>
-​        <strong>正如狄更斯所言，这是最好的时代，这是最坏的时代。</strong></p>
-<h3 id="《指环王》">《指环王》</h3>
-<p>2022</p>
-<h3 id="《熊出没：重返地球》">《熊出没：重返地球》</h3>
-<h2 id="科幻：">科幻：</h2>
-<h3 id="《流浪地球》">《流浪地球》</h3>
-<h3 id="《盗梦空间》">《盗梦空间》</h3>
-<h3 id="《星际穿越》">《星际穿越》</h3>
-<h3 id="《头号玩家》">《头号玩家》</h3>
-<h3 id="《环太平洋2》">《环太平洋2》</h3>
-<h3 id="《哥斯拉2：怪兽之王》">《哥斯拉2：怪兽之王》</h3>
-<h2 id="悬疑：">悬疑：</h2>
-<h3 id="《大侦探福尔摩斯》">《大侦探福尔摩斯》</h3>
-<h3 id="《大侦探福尔摩斯2：诡影游戏》">《大侦探福尔摩斯2：诡影游戏》</h3>
-<h1>参考资料</h1>
-<p><strong>空白为待制作</strong></p>
-]]></content>
-      <categories>
-        <category>推荐</category>
-      </categories>
-      <tags>
-        <tag>推荐</tag>
-        <tag>记录片</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>语句记录</title>
     <url>/posts/b213807a.html</url>
     <content><![CDATA[<h2 id="语句记录"><strong>语句记录</strong></h2>
@@ -1416,6 +1341,108 @@ G219<br>
       <tags>
         <tag>书籍</tag>
         <tag>记录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录片推荐</title>
+    <url>/posts/9582e118.html</url>
+    <content><![CDATA[<h1>记录片</h1>
+<h2 id="科技：">科技：</h2>
+<h2 id="人文：">人文：</h2>
+<h3 id="《天地玄黄》">《天地玄黄》</h3>
+<h3 id="《一百年很长吗》">《一百年很长吗》</h3>
+<p>2024.8</p>
+<p>“家有千金不如朝夕为人”</p>
+<p>以前老师上课时候，讲自己教书育人，是先生。<br>
+我觉得，这几位老先生，也是有自己风骨的先生。印章用的少了，老先生的字还是有风骨。阿勒泰的马鞍留存在游牧人的马背上，或许人没有感觉差异，但是游牧民族的灵魂看得见。<br>
+手艺的传承，是几代人口手相传的。一辈子没有那么长，百年以前，也是这样的老先生们，把手艺在瓦缝溜下来的光里，和昏黄的烛台旁边，留存下来。<br>
+老爷子说以前人活七十古来稀，现在八九十岁也常见。<br>
+不管是什么手艺，以前会了一门活计是骄傲的，像是武林中的门派，弟子热络不绝。而今青瓦房里，先生们，活的是留存的武林气息。<br>
+先生，高义。<a href="B%E7%AB%99">^4</a></p>
+<h3 id="《超级顾客-第一季》">《超级顾客 第一季》</h3>
+<p>2024.7</p>
+<p>产品的本质真的像广告宣传所说的那样吗？连锁店的产品价格是一样的吗？大牌产品和不知名的品牌之间有着巨大的价格差异，但是，品质也是相差如此之大吗？性价比呢？你一直使用的所谓优质产品，和别的产品之间有什么不同？为什么不同品牌的产品，有时候你觉得是同样的东西？本节目将深入了解产品内幕，揭开品牌和零售商的假面具，寻找价廉物美的产品，让你先人一步，成为更精明的消费者。<a href="B%E7%AB%99">^4</a></p>
+<h3 id="《无节制消费的元凶》">《无节制消费的元凶》</h3>
+<p>2024.6</p>
+<p>我们为什会买东西？谁让这个世界变得无节制消费？他们如何做到这一点？调查记者雅克•佩雷蒂审视了无节制消费潮流背后的机制，得出了答案。原来，使这个世界变得无节制消费的元凶，并不是人们普遍认为的广告员和市场推广员，而是这诸多表象背后那个首先改变了产品，然后改变我们的人。<a href="B%E7%AB%99">^4</a></p>
+<p>无节制消费的元凶：</p>
+<ol>
+<li><strong>计划报废，规定期限</strong>。演变到瞬间报废（一次性消费）；</li>
+<li>改变消费心理，有序制造不满情绪，<strong>培养淘汰观念</strong></li>
+<li>**恐惧植入，提供解决方案。**商家唤起我们的恐惧和焦虑情绪，对逃避死亡、健康、医疗、美容、灭菌，<strong>利用信用卡延迟消费痛苦</strong>；</li>
+<li><strong>缩减从想要购买到支付的思考时间</strong>，刷脸支付，小额免密码支付。</li>
+<li>从孩童入手，<strong>创造故事，周边购买。从小灌输的消费观念</strong>，动画片《变形金刚》把广告拍成电影。</li>
+<li><strong>营销使成年人变成小孩消费</strong>，漫展和利用孩子反向营销成人（丰田小汽车案例）、</li>
+<li>游戏及时奖励，刺激多巴胺。<br>
+<strong>永远提供更好的产品——无节制消费的元凶</strong></li>
+</ol>
+<h3 id="《美国商业大亨传奇》">《美国商业大亨传奇》</h3>
+<p>2024.6</p>
+<p>那个时代的美国真的很激动人心，<strong>垄断、恶意并购、低价倾销</strong>都是从他们开始的</p>
+<p>一、范德比尔特。铁路大亨<br>
+创新-运输新货物即石油-敏锐发现市场需要</p>
+<p>二、洛克菲勒。石油大亨-美国标准石油公司<br>
+相信自己-分析问题-选择低成本业务-效率至上-理论联系实际创造竞争优势：管道运输、提炼出煤油到提炼出汽油。</p>
+<p>三、卡内基。钢铁大亨<br>
+发现钢-炼造钢-建造桥-建楼<br>
+搭档：弗里克造成约翰斯顿洪水事件<br>
+伯乐：斯科特-宾夕法尼亚铁路公司</p>
+<p>四、摩根（约翰·皮尔庞特·摩根）。金融大亨-美国通用电器公司<br>
+对手：威斯汀豪斯的美国钢铁公司<br>
+爱迪生vs特斯拉（原来爱迪生也有小人的一面）、麦金莱vs布莱恩、罗斯福上位-反托拉斯（破垄断）</p>
+<p>五、福特。汽车大亨</p>
+<p>要有胆量-满足市场需要</p>
+<p>没有他们可能美国的崛起不会这么快吧<a href="B%E7%AB%99">^4</a></p>
+<h2 id="自然：">自然：</h2>
+<h3 id="《史前星球-第一季》">《史前星球 第一季》</h3>
+<p>2024.6</p>
+<h3 id="《地球脉动-第三季》">《地球脉动 第三季》</h3>
+<p>2024.5</p>
+<p>：由 <a href="https://www.douban.com/personage/27250858/">大卫·爱登堡</a> 主演</p>
+<p>从海洋深处到最偏远的丛林，《地球脉动III》为经典巨制翻开崭新篇章，继续造访地球上众多令人称奇的栖息地，观众将跟随镜头探索这颗星球上最后的天然野境，领略野生动物进化出的绝妙生存策略。同时，也展现出荒野之境和生在其中的野生动物对维持地球健康运转的独特意义，饱含对大自然的敬畏、礼赞与关怀。</p>
+<p>汹涌的海浪淹没冲浪的人，冲毁火烈鸟的巢穴，危机40%人口沿海的家园，却能拯救海滩无助的海龟。 人本位的思维禁锢着世界，我们试图消除一切威胁人类生存的元素，但如果这个世界是鱼本位、鸟本位、鲸本位，甚至是龟本位，地球会不会有所不同？ 地球脉动用别样的视角，探索这个复杂星球上不同物种的生存际遇。当澳大利亚的沙土运到雷恩岛时，海龟会不会感谢人类？我们无从得知，但我们必须清晰地认识到平等的生存关系，人和其它动物是共享这个星球，它们的生存权利并非人类施舍，<strong>是天授</strong>。<a href="%E8%B1%86%E7%93%A3%E7%BD%91">^3</a></p>
+<h3 id="《绿色星球》">《绿色星球》</h3>
+<p>2024.5</p>
+<p>绿色星球节目是首个通过沉浸式的呈现方式聚焦植物的纪录片，为观众们展示了这个低调秘密、不为人知的植物世界。它们既能与动物形成互惠互利的关系，也可以像我们星球上的任何生物一样具有攻击性、竞争性和戏剧性。为争夺光照、空间、营养和为家族开枝散叶的机会，它们会与竞争对手、动物和元素进行致命的斗争。<br>
+　　本片展示了跨越20多年的新发现，同时揭示了相互紧密联系的植物世界。专业摄像机使我们拥有超越人眼的能力，比以往任何时候都观察的更贴近与深入。<br>
+　　全新的故事，前所未见的动植物行为，令人惊讶的英雄，带你从植物的角度看地球。<a href="%E8%B1%86%E7%93%A3%E7%BD%91">^3</a></p>
+<p>这部由BBC Studios自然历史部耗时四年完成的作品，被影评人称作**“全球首部沉浸式聚焦植物的纪录片”**。</p>
+<h1>电影</h1>
+<h2 id="戏剧：">戏剧：</h2>
+<h3 id="《城市之光》">《城市之光》</h3>
+<p>2024.8</p>
+<p>​        真是讽刺，盲人心存光明，穷人拥有富人没有的爱情，善良之人锒铛入狱，恶徒却逍遥法外，富人随意漏出来的财富都是穷人用生命也换不来的东西，富人在清醒时永远不会与穷人为伍，人在糊涂时才会有真性情</p>
+<h3 id="《大独裁者》">《大独裁者》</h3>
+<p>2024.8</p>
+<p>​        影片讲述第一次世界大战，托曼尼亚王国独裁者辛格尔（查理·卓别林饰）上台。他的大肆扩张导致战乱不断民不聊生。并且他大搞阴谋政策，煽动民众对犹太人的敌对与仇恨，让犹太人民陷入水深火热的灾难之中。被征入伍的犹太人理发师查理（查理·卓别林饰）更是在这样的高压政策下难逃一劫。当查理逃出边境时，被驻守在这里的军队误认为是独裁者辛格尔，他趁机做了一场“为自由而战斗”的大演说。<a href="%E8%B1%86%E7%93%A3%E7%BD%91">^3</a></p>
+<p><strong>“独裁者会死去，他们从人民手里夺去的权利即将归还人民”。</strong></p>
+<h3 id="《摩登时代》">《摩登时代》</h3>
+<p>2024.8</p>
+<p>​        二十年代的美国处于经济萧条时期，失业率居高不下，工人受尽压榨，成为了大机器生产中的一颗螺丝钉。查理（查理·卓别林 Charles Chaplin 饰）就是一个底层市民，他在一个机器隆隆的厂房里日以继夜地工作，以赚取微薄的收入。重复繁重的工作压得他喘不过气，他把人们的鼻子当成螺丝钉来拧，卷入流水线机器的皮带里，令人苦笑不得。</p>
+<p>​        写到这里，想起影片一开始的片段，第一个镜头是许多羊群争先恐后的挤出羊圈，随后紧接着切入了一个许多工人下班拥挤的走出工厂的镜头。看到这里，我想到了我自己，每天上下班时的地铁站口，我随着成千上万的人群进进出出的场景。我<strong>认为摩登时代一开始的那两个镜头完全有理由成为电影史上最伟大最经典的蒙太奇。</strong><a href="%E8%B1%86%E7%93%A3%E7%BD%91">^3</a><br>
+​        <strong>正如狄更斯所言，这是最好的时代，这是最坏的时代。</strong></p>
+<h3 id="《指环王》">《指环王》</h3>
+<p>2022</p>
+<h3 id="《熊出没：重返地球》">《熊出没：重返地球》</h3>
+<h2 id="科幻：">科幻：</h2>
+<h3 id="《流浪地球》">《流浪地球》</h3>
+<h3 id="《盗梦空间》">《盗梦空间》</h3>
+<h3 id="《星际穿越》">《星际穿越》</h3>
+<h3 id="《头号玩家》">《头号玩家》</h3>
+<h3 id="《环太平洋2》">《环太平洋2》</h3>
+<h3 id="《哥斯拉2：怪兽之王》">《哥斯拉2：怪兽之王》</h3>
+<h2 id="悬疑：">悬疑：</h2>
+<h3 id="《大侦探福尔摩斯》">《大侦探福尔摩斯》</h3>
+<h3 id="《大侦探福尔摩斯2：诡影游戏》">《大侦探福尔摩斯2：诡影游戏》</h3>
+<h1>参考资料</h1>
+<p><strong>空白为待制作</strong></p>
+]]></content>
+      <categories>
+        <category>推荐</category>
+      </categories>
+      <tags>
+        <tag>推荐</tag>
+        <tag>记录片</tag>
       </tags>
   </entry>
   <entry>
@@ -1633,6 +1660,86 @@ G219<br>
       </tags>
   </entry>
   <entry>
+    <title>马丁·路德·金《我有一个梦想》演讲稿（中英文双版）</title>
+    <url>/posts/36b602fd.html</url>
+    <content><![CDATA[<h1>马丁路德金的演讲稿《我有一个梦想》（中英文双版）</h1>
+<p>《我有一个梦想》是1960年代的美国黑人民权运动领袖马丁·路德·金博士一场极为著名演讲的名称，由于他在该次演说中，强力且有说服力地描述他对于黑人与白人有一天能和平且平等共存的远景时，不断重复使用的“I have a dream”一词。演讲在1963年8月28日华盛顿大游行中，于林肯纪念堂前发表。该演讲促使美国国会在1964年通过《1964年民权法案》宣布所有种族隔离和歧视政策为非法政策。</p>
+<h2 id="中文版全文">中文版全文:</h2>
+<h3 id="我有一个梦想">我有一个梦想</h3>
+<p>100年前，一位伟大的美国人签署了解放黑奴宣言，今天我们就是在他的雕像前集会。这一庄严宣言犹如灯塔的光芒，给千百万在那摧残生命的不义之火中受煎熬的黑奴带来了希望。它之到来犹如欢乐的黎明，结束了束缚黑人的漫漫长夜。然而100年后的今天，我们必须正视黑人还没有得到自由这一悲惨的事实。100年后的今天，在种族隔离的镣铐和种族歧视的枷锁下，黑人的生活备受压榨。100年后的今天，黑人仍生活在物质充裕的海洋中一个穷困的孤岛上。100年后的今天，黑人仍然萎缩在美国社会的角落里，并且意识到自己是故土家园中的流亡者。今天我们在这里集会，就是要把这种骇人听闻的情况公诸于众。</p>
+<p>就某种意义而言，今天我们是为了要求兑现诺言而汇集到我们国家的首都来的。我们共和国的缔造者草拟宪法和独立宣言的气壮山河的词句时，曾向每一个美国人许下了诺言，他们承诺给予所有的人以生存、自由和追求幸福的不可剥夺的权利。</p>
+<p>就有色公民而论，美国显然没有实践她的诺言。美国没有履行这项神圣的义务，只是给黑人开了一张空头支票，支票上盖着“资金不足”的戳子后便退了回来。但是我们不相信正义的银行已经破产，我们不相信，在这个国家巨大的机会之库里已没有足够的储备。因此今天我们要求将支票兑现——这张支票将给予我们宝贵的自由和正义的保障。</p>
+<p>我们来到这个圣地也是为了提醒美国，现在是非常急迫的时刻。现在决非侈谈冷静下来或服用渐进主义的镇静剂的时候。现在是实现民主的诺言时候。现在是从种族隔离的荒凉阴暗的深谷攀登种族平等的光明大道的时候，现在是向上帝所有的儿女开放机会之门的时候，现在是把我们的国家从种族不平等的流沙中拯救出来，置于兄弟情谊的磐石上的时候。</p>
+<p>如果美国忽视时间的迫切性和低估黑人的决心，那么，这对美国来说，将是致命伤。自由和平等的爽朗秋天如不到来，黑人义愤填膺的酷暑就不会过去。1963年并不意味着斗争的结束，而是开始。有人希望，黑人只要撒撒气就会满足；如果国家安之若素，毫无反应，这些人必会大失所望的。黑人得不到公民的权利，美国就不可能有安宁或平静，正义的光明的一天不到来，叛乱的旋风就将继续动摇这个国家的基础。</p>
+<p>但是对于等候在正义之宫门口的心急如焚的人们，有些话我是必须说的。在争取合法地位的过程中，我们不要采取错误的做法。我们不要为了满足对自由的渴望而抱着敌对和仇恨之杯痛饮。我们斗争时必须永远举止得体，纪律严明。我们不能容许我们的具有崭新内容的抗议蜕变为暴力行动。我们要不断地升华到以精神力量对付物质力量的崇高境界中去。</p>
+<p>现在黑人社会充满着了不起的新的战斗精神，但是不能因此而不信任所有的白人。因为我们的许多白人兄弟已经认识到，他们的命运与我们的命运是紧密相连的，他们今天参加游行集会就是明证。他们的自由与我们的自由是息息相关的。我们不能单独行动。</p>
+<p>当我们行动时，我们必须保证向前进。我们不能倒退。现在有人问热心民权运动的人，“你们什么时候才能满足？”只要黑人仍然遭受警察难以形容的野蛮迫害，我们就绝不会满足。只要我们在外奔波而疲乏的身躯不能在公路旁的汽车旅馆和城里的旅馆找到住宿之所，我们就绝不会满足。只要黑人的基本活动范围只是从少数民族聚居的小贫民区转移到大贫民区，我们就绝不会满足。只要密西西比仍然有一个黑人不能参加选举，只要纽约有一个黑人认为他投票无济于事，我们就绝不会满足。</p>
+<p>不！我们现在并不满足，我们将来也不满足，除非正义和公正犹如江海之波涛，汹涌澎湃，滚滚而来。</p>
+<p>我并非没有注意到，参加今天集会的人中，有些受尽苦难和折磨，有些刚刚走出窄小的牢房，有些由于寻求自由，曾在居住地惨遭疯狂迫害的打击，并在警察暴行的旋风中摇摇欲坠。你们是人为痛苦的长期受难者。坚持下去吧，要坚决相信，忍受不应得的痛苦是一种赎罪。</p>
+<p>让我们回到密西西比去，回到亚拉巴马去，回到南卡罗来纳去，回到佐治亚去，回到路易斯安那去，回到我们北方城市中的贫民区和少数民族居住区去，要心中有数，这种状况是能够也必将改变的。我们不要陷入绝望而不可自拔。</p>
+<p>朋友们，今天我对你们说，在此时此刻，我们虽然遭受种种困难和挫折，我仍然有一个梦想，这个梦想是深深扎根于美国的梦想中的。</p>
+<p>我梦想有一天，这个国家会站立起来，真正实现其信条的真谛：“我们认为这些真理是不言而喻的，人人生而平等。”</p>
+<p>我梦想有一天，在佐治亚的红山上，从前奴隶的后嗣将能够和奴隶主的后嗣坐在一起，共叙兄弟情谊。</p>
+<p>我梦想有一天，甚至连密西西比州这个正义匿迹，压迫成风，如同沙漠般的地方，也将变成自由和正义的绿洲。我梦想有一天，我的四个孩子将在一个不是以他们的肤色，而是以他们的品格优劣来评价他们的国度里生活。</p>
+<p>我今天有一个梦想。我梦想有一天，亚拉巴马州能够有所转变，尽管该州州长现在仍然满口异议，反对联邦法令，但有朝一日，那里的黑人男孩和女孩将能与白人男孩和女孩情同骨肉，携手并进。</p>
+<p>我今天有一个梦想。我梦想有一天，幽谷上升，高山下降；坎坷曲折之路成坦途，圣光披露，满照人间。这就是我们的希望。我怀着这种信念回到南方。有了这个信念，我们将能从绝望之岭劈出一块希望之石。有了这个信念，我们将能把这个国家刺耳的争吵声，改变成为一支洋溢手足之情的优美交响曲。 有了这个信念，我们将能一起工作，一起祈祷，一起斗争，一起坐牢，一起维护自由；因为我们知道，终有一天，我们是会自由的。</p>
+<p>在自由到来的那一天，上帝的所有儿女们将以新的含义高唱这支歌：“我的祖国，美丽的自由之乡，我为您歌唱。您是父辈逝去的地方，您是最初移民的骄傲，让自由之声响彻每个山岗。”</p>
+<p>如果美国要成为一个伟大的国家，这个梦想必须实现。让自由之声从新罕布什尔州的巍峨的崇山峻岭响起来！让自由之声从纽约州的崇山峻岭响起来！让自由之声从科罗拉多州冰雪覆盖的落基山响起来！让自由之声从加利福尼亚州蜿蜒的群峰响起来！不仅如此，还要让自由之声从佐治亚州的石岭响起来！让自由之声从田纳西州的了望山响起来！ 让自由之声从密西西比的每一座丘陵响起来！让自由之声从每一片山坡响起来。</p>
+<p>当我们让自由之声响起来，让自由之声从每一个大小村庄、每一个州和每一个城市响起来时，我们将能够加速这一天的到来，那时，上帝的所有儿女，黑人和白人，犹太教徒和非犹太教徒，耶稣教徒和天主教徒，都将手携手，合唱一首古老的黑人灵歌：“终于自由啦！终于自由啦！感谢全能天父，我们终于自由啦！”</p>
+<h2 id="英文版全文">英文版全文:</h2>
+<h3 id="I-Have-a-Dream">I Have a Dream</h3>
+<p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.</p>
+<p>Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity.</p>
+<p>But one hundred years later, the Negro still is not free. One hundred years later, the life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination. One hundred years later, the Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity. One hundred years later, the Negro is still languished in the corners of American society and finds himself an exile in his own land. And so we’ve come here today to dramatize a shameful condition.</p>
+<p>In a sense we’ve come to our nation’s capital to cash a check. When the architects of our republic wrote the magnificent words of the Constitution and the Declaration of Independence, they were signing a promissory note to which every American was to fall heir. This note was a promise that all men, yes, black men as well as white men, would be guaranteed the “unalienable Rights” of “Life, Liberty and the pursuit of Happiness.” It is obvious today that America has defaulted on this promissory note, insofar as her citizens of color are concerned. Instead of honoring this sacred obligation, America has given the Negro people a bad check, a check which has come back marked “insufficient funds.”</p>
+<p>But we refuse to believe that the bank of justice is bankrupt. We refuse to believe that there are insufficient funds in the great vaults of opportunity of this nation. And so, we’ve come to cash this check, a check that will give us upon demand the riches of freedom and the security of justice.</p>
+<p>We have also come to this hallowed spot to remind America of the fierce urgency of Now. This is no time to engage in the luxury of cooling off or to take the tranquilizing drug of gradualism. Now is the time to make real the promises of democracy. Now is the time to rise from the dark and desolate valley of segregation to the sunlit path of racial justice. Now is the time to lift our nation from the quicksands of racial injustice to the solid rock of brotherhood. Now is the time to make justice a reality for all of God’s children.</p>
+<p>It would be fatal for the nation to overlook the urgency of the moment. This sweltering summer of the Negro’s legitimate discontent will not pass until there is an invigorating autumn of freedom and equality. Nineteen sixty-three is not an end, but a beginning. And those who hope that the Negro needed to blow off steam and will now be content will have a rude awakening if the nation returns to business as usual. And there will be neither rest nor tranquility in America until the Negro is granted his citizenship rights. The whirlwinds of revolt will continue to shake the foundations of our nation until the bright day of justice emerges.</p>
+<p>But there is something that I must say to my people, who stand on the warm threshold which leads into the palace of justice: In the process of gaining our rightful place, we must not be guilty of wrongful deeds. Let us not seek to satisfy our thirst for freedom by drinking from the cup of bitterness and hatred. We must forever conduct our struggle on the high plane of dignity and discipline. We must not allow our creative protest to degenerate into physical violence. Again and again, we must rise to the majestic heights of meeting physical force with soul force.</p>
+<p>The marvelous new militancy which has engulfed the Negro community must not lead us to a distrust of all white people, for many of our white brothers, as evidenced by their presence here today, have come to realize that their destiny is tied up with our destiny. And they have come to realize that their freedom is inextricably bound to our freedom.</p>
+<p>We cannot walk alone.</p>
+<p>And as we walk, we must make the pledge that we shall always march ahead.</p>
+<p>We cannot turn back.</p>
+<p>There are those who are asking the devotees of civil rights, “When will you be satisfied?” We can never be satisfied as long as the Negro is the victim of the unspeakable horrors of police brutality. We can never be satisfied as long as our bodies, heavy with the fatigue of travel, cannot gain lodging in the motels of the highways and the hotels of the cities. <strong>We cannot be satisfied as long as the negro’s basic mobility is from a smaller ghetto to a larger one. We can never be satisfied as long as our children are stripped of their self-hood and robbed of their dignity by signs stating: “For Whites Only.”</strong> We cannot be satisfied as long as a Negro in Mississippi cannot vote and a Negro in New York believes he has nothing for which to vote. No, no, we are not satisfied, and we will not be satisfied until “justice rolls down like waters, and righteousness like a mighty stream.”</p>
+<p>I am not unmindful that some of you have come here out of great trials and tribulations. Some of you have come fresh from narrow jail cells. And some of you have come from areas where your quest – quest for freedom left you battered by the storms of persecution and staggered by the winds of police brutality. You have been the veterans of creative suffering. Continue to work with the faith that unearned suffering is redemptive. Go back to Mississippi, go back to Alabama, go back to South Carolina, go back to Georgia, go back to Louisiana, go back to the slums and ghettos of our northern cities, knowing that somehow this situation can and will be changed.</p>
+<p>Let us not wallow in the valley of despair, I say to you today, my friends.</p>
+<p>And so even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream.</p>
+<p>I have a dream that one day this nation will rise up and live out the true meaning of its creed: “We hold these truths to be self-evident, that all men are created equal.”</p>
+<p>I have a dream that one day on the red hills of Georgia, the sons of former slaves and the sons of former slave owners will be able to sit down together at the table of brotherhood.</p>
+<p>I have a dream that one day even the state of Mississippi, a state sweltering with the heat of injustice, sweltering with the heat of oppression, will be transformed into an oasis of freedom and justice.</p>
+<p>I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.</p>
+<p>I have a dream today!</p>
+<p>I have a dream that one day, down in Alabama, with its vicious racists, with its governor having his lips dripping with the words of “interposition” and “nullification” – one day right there in Alabama little black boys and black girls will be able to join hands with little white boys and white girls as sisters and brothers.</p>
+<p>I have a dream today!</p>
+<p>I have a dream that one day every valley shall be exalted, and every hill and mountain shall be made low, the rough places will be made plain, and the crooked places will be made straight; &quot;and the glory of the Lord shall be revealed and all flesh shall see it together.&quot;2</p>
+<p>This is our hope, and this is the faith that I go back to the South with.</p>
+<p>With this faith, we will be able to hew out of the mountain of despair a stone of hope. With this faith, we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood. With this faith, we will be able to work together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day.</p>
+<p>And this will be the day – this will be the day when all of God’s children will be able to sing with new meaning:</p>
+<p>My country 'tis of thee, sweet land of liberty, of thee I sing. Land where my fathers died, land of the Pilgrim’s pride, From every mountainside, let freedom ring!</p>
+<p>And if America is to be a great nation, this must become true.</p>
+<p>And so let freedom ring from the prodigious hilltops of New Hampshire.</p>
+<p>Let freedom ring from the mighty mountains of New York.</p>
+<p>Let freedom ring from the heightening Alleghenies of Pennsylvania.</p>
+<p>Let freedom ring from the snow-capped Rockies of Colorado.</p>
+<p>Let freedom ring from the curvaceous slopes of California.</p>
+<p>But not only that:</p>
+<p>Let freedom ring from Stone Mountain of Georgia.</p>
+<p>Let freedom ring from Lookout Mountain of Tennessee.</p>
+<p>Let freedom ring from every hill and molehill of Mississippi.</p>
+<p>From every mountainside, let freedom ring.</p>
+<p>And when this happens, and when we allow freedom ring, when we let it ring from every village and every hamlet, from every state and every city, we will be able to speed up that day when all of God’s children, black men and white men, Jews and Gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual:</p>
+<p>Free at last! Free at last!</p>
+<p>Thank God Almighty, we are free at last!</p>
+]]></content>
+      <categories>
+        <category>推荐</category>
+      </categories>
+      <tags>
+        <tag>书籍</tag>
+        <tag>推荐</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>合并排序</title>
     <url>/posts/7.html</url>
     <content><![CDATA[<p><strong>一个比较经典的的排序算法</strong></p>
@@ -1764,86 +1871,6 @@ G219<br>
         <tag>算法</tag>
         <tag>排序</tag>
         <tag>经典</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>马丁·路德·金《我有一个梦想》演讲稿（中英文双版）</title>
-    <url>/posts/36b602fd.html</url>
-    <content><![CDATA[<h1>马丁路德金的演讲稿《我有一个梦想》（中英文双版）</h1>
-<p>《我有一个梦想》是1960年代的美国黑人民权运动领袖马丁·路德·金博士一场极为著名演讲的名称，由于他在该次演说中，强力且有说服力地描述他对于黑人与白人有一天能和平且平等共存的远景时，不断重复使用的“I have a dream”一词。演讲在1963年8月28日华盛顿大游行中，于林肯纪念堂前发表。该演讲促使美国国会在1964年通过《1964年民权法案》宣布所有种族隔离和歧视政策为非法政策。</p>
-<h2 id="中文版全文">中文版全文:</h2>
-<h3 id="我有一个梦想">我有一个梦想</h3>
-<p>100年前，一位伟大的美国人签署了解放黑奴宣言，今天我们就是在他的雕像前集会。这一庄严宣言犹如灯塔的光芒，给千百万在那摧残生命的不义之火中受煎熬的黑奴带来了希望。它之到来犹如欢乐的黎明，结束了束缚黑人的漫漫长夜。然而100年后的今天，我们必须正视黑人还没有得到自由这一悲惨的事实。100年后的今天，在种族隔离的镣铐和种族歧视的枷锁下，黑人的生活备受压榨。100年后的今天，黑人仍生活在物质充裕的海洋中一个穷困的孤岛上。100年后的今天，黑人仍然萎缩在美国社会的角落里，并且意识到自己是故土家园中的流亡者。今天我们在这里集会，就是要把这种骇人听闻的情况公诸于众。</p>
-<p>就某种意义而言，今天我们是为了要求兑现诺言而汇集到我们国家的首都来的。我们共和国的缔造者草拟宪法和独立宣言的气壮山河的词句时，曾向每一个美国人许下了诺言，他们承诺给予所有的人以生存、自由和追求幸福的不可剥夺的权利。</p>
-<p>就有色公民而论，美国显然没有实践她的诺言。美国没有履行这项神圣的义务，只是给黑人开了一张空头支票，支票上盖着“资金不足”的戳子后便退了回来。但是我们不相信正义的银行已经破产，我们不相信，在这个国家巨大的机会之库里已没有足够的储备。因此今天我们要求将支票兑现——这张支票将给予我们宝贵的自由和正义的保障。</p>
-<p>我们来到这个圣地也是为了提醒美国，现在是非常急迫的时刻。现在决非侈谈冷静下来或服用渐进主义的镇静剂的时候。现在是实现民主的诺言时候。现在是从种族隔离的荒凉阴暗的深谷攀登种族平等的光明大道的时候，现在是向上帝所有的儿女开放机会之门的时候，现在是把我们的国家从种族不平等的流沙中拯救出来，置于兄弟情谊的磐石上的时候。</p>
-<p>如果美国忽视时间的迫切性和低估黑人的决心，那么，这对美国来说，将是致命伤。自由和平等的爽朗秋天如不到来，黑人义愤填膺的酷暑就不会过去。1963年并不意味着斗争的结束，而是开始。有人希望，黑人只要撒撒气就会满足；如果国家安之若素，毫无反应，这些人必会大失所望的。黑人得不到公民的权利，美国就不可能有安宁或平静，正义的光明的一天不到来，叛乱的旋风就将继续动摇这个国家的基础。</p>
-<p>但是对于等候在正义之宫门口的心急如焚的人们，有些话我是必须说的。在争取合法地位的过程中，我们不要采取错误的做法。我们不要为了满足对自由的渴望而抱着敌对和仇恨之杯痛饮。我们斗争时必须永远举止得体，纪律严明。我们不能容许我们的具有崭新内容的抗议蜕变为暴力行动。我们要不断地升华到以精神力量对付物质力量的崇高境界中去。</p>
-<p>现在黑人社会充满着了不起的新的战斗精神，但是不能因此而不信任所有的白人。因为我们的许多白人兄弟已经认识到，他们的命运与我们的命运是紧密相连的，他们今天参加游行集会就是明证。他们的自由与我们的自由是息息相关的。我们不能单独行动。</p>
-<p>当我们行动时，我们必须保证向前进。我们不能倒退。现在有人问热心民权运动的人，“你们什么时候才能满足？”只要黑人仍然遭受警察难以形容的野蛮迫害，我们就绝不会满足。只要我们在外奔波而疲乏的身躯不能在公路旁的汽车旅馆和城里的旅馆找到住宿之所，我们就绝不会满足。只要黑人的基本活动范围只是从少数民族聚居的小贫民区转移到大贫民区，我们就绝不会满足。只要密西西比仍然有一个黑人不能参加选举，只要纽约有一个黑人认为他投票无济于事，我们就绝不会满足。</p>
-<p>不！我们现在并不满足，我们将来也不满足，除非正义和公正犹如江海之波涛，汹涌澎湃，滚滚而来。</p>
-<p>我并非没有注意到，参加今天集会的人中，有些受尽苦难和折磨，有些刚刚走出窄小的牢房，有些由于寻求自由，曾在居住地惨遭疯狂迫害的打击，并在警察暴行的旋风中摇摇欲坠。你们是人为痛苦的长期受难者。坚持下去吧，要坚决相信，忍受不应得的痛苦是一种赎罪。</p>
-<p>让我们回到密西西比去，回到亚拉巴马去，回到南卡罗来纳去，回到佐治亚去，回到路易斯安那去，回到我们北方城市中的贫民区和少数民族居住区去，要心中有数，这种状况是能够也必将改变的。我们不要陷入绝望而不可自拔。</p>
-<p>朋友们，今天我对你们说，在此时此刻，我们虽然遭受种种困难和挫折，我仍然有一个梦想，这个梦想是深深扎根于美国的梦想中的。</p>
-<p>我梦想有一天，这个国家会站立起来，真正实现其信条的真谛：“我们认为这些真理是不言而喻的，人人生而平等。”</p>
-<p>我梦想有一天，在佐治亚的红山上，从前奴隶的后嗣将能够和奴隶主的后嗣坐在一起，共叙兄弟情谊。</p>
-<p>我梦想有一天，甚至连密西西比州这个正义匿迹，压迫成风，如同沙漠般的地方，也将变成自由和正义的绿洲。我梦想有一天，我的四个孩子将在一个不是以他们的肤色，而是以他们的品格优劣来评价他们的国度里生活。</p>
-<p>我今天有一个梦想。我梦想有一天，亚拉巴马州能够有所转变，尽管该州州长现在仍然满口异议，反对联邦法令，但有朝一日，那里的黑人男孩和女孩将能与白人男孩和女孩情同骨肉，携手并进。</p>
-<p>我今天有一个梦想。我梦想有一天，幽谷上升，高山下降；坎坷曲折之路成坦途，圣光披露，满照人间。这就是我们的希望。我怀着这种信念回到南方。有了这个信念，我们将能从绝望之岭劈出一块希望之石。有了这个信念，我们将能把这个国家刺耳的争吵声，改变成为一支洋溢手足之情的优美交响曲。 有了这个信念，我们将能一起工作，一起祈祷，一起斗争，一起坐牢，一起维护自由；因为我们知道，终有一天，我们是会自由的。</p>
-<p>在自由到来的那一天，上帝的所有儿女们将以新的含义高唱这支歌：“我的祖国，美丽的自由之乡，我为您歌唱。您是父辈逝去的地方，您是最初移民的骄傲，让自由之声响彻每个山岗。”</p>
-<p>如果美国要成为一个伟大的国家，这个梦想必须实现。让自由之声从新罕布什尔州的巍峨的崇山峻岭响起来！让自由之声从纽约州的崇山峻岭响起来！让自由之声从科罗拉多州冰雪覆盖的落基山响起来！让自由之声从加利福尼亚州蜿蜒的群峰响起来！不仅如此，还要让自由之声从佐治亚州的石岭响起来！让自由之声从田纳西州的了望山响起来！ 让自由之声从密西西比的每一座丘陵响起来！让自由之声从每一片山坡响起来。</p>
-<p>当我们让自由之声响起来，让自由之声从每一个大小村庄、每一个州和每一个城市响起来时，我们将能够加速这一天的到来，那时，上帝的所有儿女，黑人和白人，犹太教徒和非犹太教徒，耶稣教徒和天主教徒，都将手携手，合唱一首古老的黑人灵歌：“终于自由啦！终于自由啦！感谢全能天父，我们终于自由啦！”</p>
-<h2 id="英文版全文">英文版全文:</h2>
-<h3 id="I-Have-a-Dream">I Have a Dream</h3>
-<p>I am happy to join with you today in what will go down in history as the greatest demonstration for freedom in the history of our nation.</p>
-<p>Five score years ago, a great American, in whose symbolic shadow we stand today, signed the Emancipation Proclamation. This momentous decree came as a great beacon light of hope to millions of Negro slaves who had been seared in the flames of withering injustice. It came as a joyous daybreak to end the long night of their captivity.</p>
-<p>But one hundred years later, the Negro still is not free. One hundred years later, the life of the Negro is still sadly crippled by the manacles of segregation and the chains of discrimination. One hundred years later, the Negro lives on a lonely island of poverty in the midst of a vast ocean of material prosperity. One hundred years later, the Negro is still languished in the corners of American society and finds himself an exile in his own land. And so we’ve come here today to dramatize a shameful condition.</p>
-<p>In a sense we’ve come to our nation’s capital to cash a check. When the architects of our republic wrote the magnificent words of the Constitution and the Declaration of Independence, they were signing a promissory note to which every American was to fall heir. This note was a promise that all men, yes, black men as well as white men, would be guaranteed the “unalienable Rights” of “Life, Liberty and the pursuit of Happiness.” It is obvious today that America has defaulted on this promissory note, insofar as her citizens of color are concerned. Instead of honoring this sacred obligation, America has given the Negro people a bad check, a check which has come back marked “insufficient funds.”</p>
-<p>But we refuse to believe that the bank of justice is bankrupt. We refuse to believe that there are insufficient funds in the great vaults of opportunity of this nation. And so, we’ve come to cash this check, a check that will give us upon demand the riches of freedom and the security of justice.</p>
-<p>We have also come to this hallowed spot to remind America of the fierce urgency of Now. This is no time to engage in the luxury of cooling off or to take the tranquilizing drug of gradualism. Now is the time to make real the promises of democracy. Now is the time to rise from the dark and desolate valley of segregation to the sunlit path of racial justice. Now is the time to lift our nation from the quicksands of racial injustice to the solid rock of brotherhood. Now is the time to make justice a reality for all of God’s children.</p>
-<p>It would be fatal for the nation to overlook the urgency of the moment. This sweltering summer of the Negro’s legitimate discontent will not pass until there is an invigorating autumn of freedom and equality. Nineteen sixty-three is not an end, but a beginning. And those who hope that the Negro needed to blow off steam and will now be content will have a rude awakening if the nation returns to business as usual. And there will be neither rest nor tranquility in America until the Negro is granted his citizenship rights. The whirlwinds of revolt will continue to shake the foundations of our nation until the bright day of justice emerges.</p>
-<p>But there is something that I must say to my people, who stand on the warm threshold which leads into the palace of justice: In the process of gaining our rightful place, we must not be guilty of wrongful deeds. Let us not seek to satisfy our thirst for freedom by drinking from the cup of bitterness and hatred. We must forever conduct our struggle on the high plane of dignity and discipline. We must not allow our creative protest to degenerate into physical violence. Again and again, we must rise to the majestic heights of meeting physical force with soul force.</p>
-<p>The marvelous new militancy which has engulfed the Negro community must not lead us to a distrust of all white people, for many of our white brothers, as evidenced by their presence here today, have come to realize that their destiny is tied up with our destiny. And they have come to realize that their freedom is inextricably bound to our freedom.</p>
-<p>We cannot walk alone.</p>
-<p>And as we walk, we must make the pledge that we shall always march ahead.</p>
-<p>We cannot turn back.</p>
-<p>There are those who are asking the devotees of civil rights, “When will you be satisfied?” We can never be satisfied as long as the Negro is the victim of the unspeakable horrors of police brutality. We can never be satisfied as long as our bodies, heavy with the fatigue of travel, cannot gain lodging in the motels of the highways and the hotels of the cities. <strong>We cannot be satisfied as long as the negro’s basic mobility is from a smaller ghetto to a larger one. We can never be satisfied as long as our children are stripped of their self-hood and robbed of their dignity by signs stating: “For Whites Only.”</strong> We cannot be satisfied as long as a Negro in Mississippi cannot vote and a Negro in New York believes he has nothing for which to vote. No, no, we are not satisfied, and we will not be satisfied until “justice rolls down like waters, and righteousness like a mighty stream.”</p>
-<p>I am not unmindful that some of you have come here out of great trials and tribulations. Some of you have come fresh from narrow jail cells. And some of you have come from areas where your quest – quest for freedom left you battered by the storms of persecution and staggered by the winds of police brutality. You have been the veterans of creative suffering. Continue to work with the faith that unearned suffering is redemptive. Go back to Mississippi, go back to Alabama, go back to South Carolina, go back to Georgia, go back to Louisiana, go back to the slums and ghettos of our northern cities, knowing that somehow this situation can and will be changed.</p>
-<p>Let us not wallow in the valley of despair, I say to you today, my friends.</p>
-<p>And so even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream.</p>
-<p>I have a dream that one day this nation will rise up and live out the true meaning of its creed: “We hold these truths to be self-evident, that all men are created equal.”</p>
-<p>I have a dream that one day on the red hills of Georgia, the sons of former slaves and the sons of former slave owners will be able to sit down together at the table of brotherhood.</p>
-<p>I have a dream that one day even the state of Mississippi, a state sweltering with the heat of injustice, sweltering with the heat of oppression, will be transformed into an oasis of freedom and justice.</p>
-<p>I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.</p>
-<p>I have a dream today!</p>
-<p>I have a dream that one day, down in Alabama, with its vicious racists, with its governor having his lips dripping with the words of “interposition” and “nullification” – one day right there in Alabama little black boys and black girls will be able to join hands with little white boys and white girls as sisters and brothers.</p>
-<p>I have a dream today!</p>
-<p>I have a dream that one day every valley shall be exalted, and every hill and mountain shall be made low, the rough places will be made plain, and the crooked places will be made straight; &quot;and the glory of the Lord shall be revealed and all flesh shall see it together.&quot;2</p>
-<p>This is our hope, and this is the faith that I go back to the South with.</p>
-<p>With this faith, we will be able to hew out of the mountain of despair a stone of hope. With this faith, we will be able to transform the jangling discords of our nation into a beautiful symphony of brotherhood. With this faith, we will be able to work together, to pray together, to struggle together, to go to jail together, to stand up for freedom together, knowing that we will be free one day.</p>
-<p>And this will be the day – this will be the day when all of God’s children will be able to sing with new meaning:</p>
-<p>My country 'tis of thee, sweet land of liberty, of thee I sing. Land where my fathers died, land of the Pilgrim’s pride, From every mountainside, let freedom ring!</p>
-<p>And if America is to be a great nation, this must become true.</p>
-<p>And so let freedom ring from the prodigious hilltops of New Hampshire.</p>
-<p>Let freedom ring from the mighty mountains of New York.</p>
-<p>Let freedom ring from the heightening Alleghenies of Pennsylvania.</p>
-<p>Let freedom ring from the snow-capped Rockies of Colorado.</p>
-<p>Let freedom ring from the curvaceous slopes of California.</p>
-<p>But not only that:</p>
-<p>Let freedom ring from Stone Mountain of Georgia.</p>
-<p>Let freedom ring from Lookout Mountain of Tennessee.</p>
-<p>Let freedom ring from every hill and molehill of Mississippi.</p>
-<p>From every mountainside, let freedom ring.</p>
-<p>And when this happens, and when we allow freedom ring, when we let it ring from every village and every hamlet, from every state and every city, we will be able to speed up that day when all of God’s children, black men and white men, Jews and Gentiles, Protestants and Catholics, will be able to join hands and sing in the words of the old Negro spiritual:</p>
-<p>Free at last! Free at last!</p>
-<p>Thank God Almighty, we are free at last!</p>
-]]></content>
-      <categories>
-        <category>推荐</category>
-      </categories>
-      <tags>
-        <tag>书籍</tag>
-        <tag>推荐</tag>
       </tags>
   </entry>
   <entry>
@@ -2023,122 +2050,4 @@ G219<br>
         <tag>经典</tag>
       </tags>
   </entry>
-</search>
-�象出来</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//当前位置和目标位置 还有剩余位置抽象出来   </span></span><br><span class="line"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">fromTo</span><span class="params">(String from, String other, String to, <span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;move&quot;</span> + n + from + <span class="string">&quot; to &quot;</span> + to);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        fromTo(from, to, other, n - <span class="number">1</span>);<span class="comment">//other 和 to交换位置 代表当前圆盘的上面的圆盘移到剩余位置</span></span><br><span class="line">        System.out.println(<span class="string">&quot;move&quot;</span> + n + from + <span class="string">&quot; to &quot;</span> + to);</span><br><span class="line">        fromTo(other, from, to, n - <span class="number">1</span>);<span class="comment">//代表当前圆盘的上面的圆盘移到目标位置</span></span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>大功告成，我相信你也对递归有了更好的理解了吧</p><p>不过有个小彩蛋，那就是你会发现这个递归次数成指数增长</p><p><strong>因为</strong>从递归式可以看出</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(n)=2f(n-1)+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span></p><p>推出----&gt;</p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo>=</mo><mn>2</mn><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>+</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">f(n)+1=2(f(n)+1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>k</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mn>2</mn><mi>k</mi><mo stretchy="false">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">k(n)=2k(n-1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></p><p>有了<strong>递推式</strong>就可以写出 <strong>f(n)</strong></p><p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mi>k</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo>=</mo><msup><mn>2</mn><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(n)=k(n)-1=2^n-1 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7977em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7144em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span></span></p><p>也就是n层汉诺塔至少需要这么多步</p><p>也就是说<strong>64片黄金</strong>圆盘需要移动 <strong>18446744073709551615</strong>次？？？那故事里的金盘移动完怕不是地球都没了</p><p>( ‵▽′)ψ</p><p>（ps：第一次写，如果有什么不好的欢迎指出( •̀ ω •́ )y）下次见</p><p>每日一句：</p><p>上善若水，水善利万物而不争。[<a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_2">2]</a></p><h2 id="参考">参考</h2><ol><li><a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_1_0">^</a>百度百科</li><li><a href="https://www.zhihu.com/people/10-16-96-85/posts#ref_2_0">^</a>老子《道德经》</li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 算法 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 经典算法 </tag>
-            
-            <tag> 汉诺塔 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>学成在线项目介绍</title>
-      <link href="/posts/42876.html"/>
-      <url>/posts/42876.html</url>
-      
-        <content type="html"><![CDATA[<h1>学成在线</h1><h4 id="介绍">介绍</h4><p>本项目基于<strong>黑马程序员</strong>的 <em>《学成在线》</em> 项目搭建 仅供学习参考<br>在线教育行业是一个有着极强的广度和深度的行业，从校内到校外；从早幼教到职业培训；从教育工具到全信息化平台等等。</p><p>学成在线项目是本公司自研的一个专门针对成人职业技能教育的网络课堂系统，网站提供了成人职业技能培训的相关课程，如：软件开发培训、职业资格证书培训、成人学历教育培训等课程。项目基于B2B2C的业务模式，培训机构可以在平台入驻、发布课程，运营人员对发布的课程进行审核，审核通过后课程才可以发布成功，课程包括免费和收费两种形式，对于免费课程可以直接选课学习，对于收费课程在选课后需要支付成功才可以继续学习。</p><span id="more"></span><h4 id="软件架构">软件架构</h4><p>本项目包括了用户端、机构端、运营端。</p><p>核心模块包括：内容管理、媒资管理、课程搜索、订单支付、选课管理、认证授权等。</p><p>下图是项目的功能模块图：</p><img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97%E5%9B%BE.png" style="zoom:150%;" /><p>本项目采用前后端分离架构，后端采用SpringBoot、SpringCloud技术栈开发，数据库使用了MySQL，还使用的Redis、消息队列、分布式文件系统、Elasticsearch等中间件系统。</p><p>划分的微服务包括：内容管理服务、媒资管理服务、搜索服务、订单支付服务、 学习中心服务、系统管理服务、认证授权服务、网关服务、注册中心服务、配置中心服务等。</p><p>下图是项目的技术架构图：</p><img src="https://xuecheng-rzf.oss-cn-beijing.aliyuncs.com/gitee_readme/%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84%E5%9B%BE.png" style="zoom:150%;" /><h4 id="安装教程">安装教程</h4><ol><li>项目基于JDK1.8环境开发，使用Mavne构建项目工程</li></ol><h4 id="使用说明">使用说明</h4><ol><li><p>教学机构的老师登录教学管理平台，编辑课程信息，发布自己的课程。</p></li><li><p>平台运营人员登录运营平台审核课程、视频等信息，审核通过后课程方可发布。</p></li><li><p>课程发布后学生登录平台进行选课、在线学习。免费课程可直接学习，收费课程需要下单购买。</p></li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> 项目 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 项目介绍 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>文档上的注释</title>
-      <link href="/posts/33714.html"/>
-      <url>/posts/33714.html</url>
-      
-        <content type="html"><![CDATA[<p>Front-matter 采用 YAML  格式</p><p>源码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: # 标题</span><br><span class="line">date: # 日期</span><br><span class="line">tags: # 标签</span><br><span class="line">- </span><br><span class="line">categories: # 分类</span><br><span class="line">-</span><br><span class="line">cover: /img/***.jpg # 封面 相对路径或者使用网址</span><br><span class="line">indexing: false #  生成的搜素（此功能需要手动开启）结果将不包含此帖子或页面</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p>可以参考<a href="https://hexo.io/zh-cn/docs/front-matter">官方文档</a></p><p><strong>注意事项</strong>：</p><p>title 不建议写中文或者网站采用hash算法（避免网址中文乱码）</p><p>采用hash算法设置（主路径下的_config配置中的下面位置）：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://***.github.io</span></span><br><span class="line"><span class="comment"># 改这里 原先是 :year/:month/:day/:title/ -&gt; :year/:month/:day/:hash/</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:hash/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">pretty_urls:</span></span><br><span class="line">  <span class="attr">trailing_index:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;index.html&#x27; from permalinks</span></span><br><span class="line">  <span class="attr">trailing_html:</span> <span class="literal">true</span> <span class="comment"># Set to false to remove trailing &#x27;.html&#x27; from permalinks</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p><strong>小技巧</strong>：</p><p>微软输入法快速输入日期的方法：</p><p>可以去右下角输入法的地方右键点击设置 --&gt; 找到词库 --&gt; 然后添加自定义短语 --&gt;</p><p>关键词自己定义  映射短语设置：%yyyy%-%MM%-%dd% %HH%:%mm%:%ss%</p><p>就可以快速输入时间了</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 博客搭建的一些问题汇总 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> butterflyx主题 </tag>
-            
-            <tag> 博客搭建 </tag>
-            
-            <tag> 问题汇总 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>推荐关注</title>
-      <link href="/posts/22031.html"/>
-      <url>/posts/22031.html</url>
-      
-        <content type="html"><![CDATA[<p>B站</p><p><strong>老陌Ss</strong> UID：1343324216</p><p><strong>左神（左程云）的算法课</strong> （我个人认为最好的算法课没有之一）</p><p><strong>极海Channel</strong> UID：1525355</p><p><strong>我的B站号</strong></p><p><strong>长夜有晨星</strong> UID：95747099</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 推荐 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 推荐 </tag>
-            
-            <tag> 博主 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/posts/16107.html"/>
-      <url>/posts/16107.html</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start">Quick Start</h2><h3 id="Create-a-new-post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
 </search>

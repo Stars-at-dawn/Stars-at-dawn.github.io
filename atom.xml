@@ -6,7 +6,7 @@
   <link href="https://stars-at-dawn.github.io/atom.xml" rel="self"/>
   
   <link href="https://stars-at-dawn.github.io/"/>
-  <updated>2025-04-18T00:49:01.281Z</updated>
+  <updated>2025-04-18T00:59:48.506Z</updated>
   <id>https://stars-at-dawn.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>力扣27 移除元素</title>
+    <link href="https://stars-at-dawn.github.io/posts/leetcode27"/>
+    <id>https://stars-at-dawn.github.io/posts/leetcode27</id>
+    <published>2025-04-18T00:59:47.000Z</published>
+    <updated>2025-04-18T00:59:48.506Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>题目描述：</strong></p><p>给你一个数组 <code>nums</code> 和一个值 <code>val</code>，你需要 <strong><a href="https://baike.baidu.com/item/%E5%8E%9F%E5%9C%B0%E7%AE%97%E6%B3%95">原地</a></strong> <strong>移除所有数值等于 <code>val</code> 的元素</strong>。元素的顺序可能发生改变。然后返回 <code>nums</code> 中与 <code>val</code> <strong>不同的元素的数量</strong>。<br>假设 <code>nums</code> 中不等于 <code>val</code> 的元素数量为 <code>k</code>，要通过此题，您需要执行以下操作：</p><ul><li>更改 <code>nums</code> 数组，使 <code>nums</code> 的前 <code>k</code> 个元素包含不等于 <code>val</code> 的元素。<code>nums</code> 的其余元素和 <code>nums</code> 的大小并不重要。</li><li>返回 <code>k</code>。</li></ul><hr><p>简单题，不多赘述；（去创建一个数组遍历我想大家都会）<br>不过由于nums的大小不重要，我们会想到能不能在原数组进行操作？这里可以通过<strong>记录非<code>val</code>的数据的数量</strong>来进行优化</p><p><strong>注意的是：</strong></p><p>count为当前非<code>val</code>的数据数量<br>赋值操作不会覆盖未比较的值（因为count永远比当前索引小）</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码如下</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">removeElement</span><span class="params">(<span class="type">int</span>[] nums, <span class="type">int</span> val)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> num : nums) </span><br><span class="line">            <span class="keyword">if</span> (num != val) </span><br><span class="line">                nums[count++] = num;<span class="comment">//数据为非val 当前位置赋值 且数量+1</span></span><br><span class="line">        <span class="keyword">return</span> count;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;题目描述：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;给你一个数组 &lt;code&gt;nums&lt;/code&gt; 和一个值 &lt;code&gt;val&lt;/code&gt;，你需要 &lt;strong&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E5%8E%9F%</summary>
+      
+    
+    
+    
+    <category term="力扣" scheme="https://stars-at-dawn.github.io/categories/%E5%8A%9B%E6%89%A3/"/>
+    
+    
+    <category term="算法" scheme="https://stars-at-dawn.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="力扣" scheme="https://stars-at-dawn.github.io/tags/%E5%8A%9B%E6%89%A3/"/>
+    
+    <category term="数组" scheme="https://stars-at-dawn.github.io/tags/%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
   
   <entry>
     <title>力扣88 合并两个有序数组</title>
@@ -566,35 +595,6 @@
       
     <summary type="html">&lt;p&gt;创建分类总览页代码：&lt;/p&gt;
 &lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class</summary>
-      
-    
-    
-    
-    <category term="博客搭建的一些问题汇总" scheme="https://stars-at-dawn.github.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
-    
-    
-    <category term="butterflyx主题" scheme="https://stars-at-dawn.github.io/tags/butterflyx%E4%B8%BB%E9%A2%98/"/>
-    
-    <category term="博客搭建" scheme="https://stars-at-dawn.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    <category term="问题汇总" scheme="https://stars-at-dawn.github.io/tags/%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>博客config配置</title>
-    <link href="https://stars-at-dawn.github.io/posts/8702"/>
-    <id>https://stars-at-dawn.github.io/posts/8702</id>
-    <published>2024-05-30T05:38:01.000Z</published>
-    <updated>2024-06-04T05:17:48.252Z</updated>
-    
-    <content type="html"><![CDATA[<p>初始配置文件（config那个没有别的后缀）</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Site</span></span><br><span class="line"><span class="attr">title:</span> <span class="comment"># 网站显示的标题 随意填</span></span><br><span class="line"><span class="attr">author:</span> <span class="comment"># 你的名字 随意填</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repository:</span> <span class="string">git@github.com:username/username.github.io.git</span>  <span class="comment"># 要是GitHub改名了，记得这里改一下</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span> <span class="comment"># 仓库名称</span></span><br></pre></td></tr></table></figure><p>主题配置文件常见配置（我所有是butterflyx主题）：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Avatar (头像设置)</span></span><br><span class="line"><span class="attr">avatar:</span></span><br><span class="line">  <span class="attr">img:</span>  <span class="comment"># url</span></span><br><span class="line">  <span class="attr">effect:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Favicon（网站的图标）</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/img/myFavicon.png</span></span><br><span class="line"></span><br><span class="line"><span class="attr">cover:</span></span><br><span class="line">  <span class="comment"># display the cover or not (是否顯示文章封面)</span></span><br><span class="line">  <span class="attr">default_cover:</span></span><br><span class="line">     <span class="bullet">-</span> <span class="string">/img/***.***</span>  <span class="comment"># 默认封面 对应文档的cover参数 可以是GIF</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Menu 目錄</span></span><br><span class="line"><span class="attr">menu:</span> <span class="comment"># 右上角的选项</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">---     </span></span><br><span class="line"><span class="comment"># Sponsor/reward</span></span><br><span class="line"><span class="attr">reward:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">text:</span></span><br><span class="line">  <span class="attr">QR_code:</span> <span class="comment">#二维码设置</span></span><br><span class="line">     <span class="bullet">-</span> <span class="attr">img:</span> <span class="string">/img/***.png</span></span><br><span class="line">       <span class="attr">link:</span> <span class="comment"># 链接</span></span><br><span class="line">       <span class="attr">text:</span> <span class="comment"># 图片下面显示的文本</span></span><br><span class="line">       </span><br><span class="line"> <span class="string">---</span></span><br><span class="line"><span class="comment"># 网站优化</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># canvas_ribbon:  背景彩帶设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Mouse click effects 鼠标点击效果设置</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Loading Animation (加载动画设置)</span></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;初始配置文件（config那个没有别的后缀）&lt;/p&gt;
-&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;</summary>
       
     
     
