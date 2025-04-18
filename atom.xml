@@ -6,7 +6,7 @@
   <link href="https://stars-at-dawn.github.io/atom.xml" rel="self"/>
   
   <link href="https://stars-at-dawn.github.io/"/>
-  <updated>2025-04-18T00:37:20.301Z</updated>
+  <updated>2025-04-18T00:49:01.281Z</updated>
   <id>https://stars-at-dawn.github.io/</id>
   
   <author>
@@ -18,17 +18,18 @@
   
   <entry>
     <title>力扣88 合并两个有序数组</title>
-    <link href="https://stars-at-dawn.github.io/posts/34e47c75"/>
-    <id>https://stars-at-dawn.github.io/posts/34e47c75</id>
+    <link href="https://stars-at-dawn.github.io/posts/leetcode88"/>
+    <id>https://stars-at-dawn.github.io/posts/leetcode88</id>
     <published>2025-04-18T00:35:39.000Z</published>
-    <updated>2025-04-18T00:37:20.301Z</updated>
+    <updated>2025-04-18T00:49:01.281Z</updated>
     
-    <content type="html"><![CDATA[<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">merge</span><span class="params">(<span class="type">int</span>[] nums1, <span class="type">int</span> m, <span class="type">int</span>[] nums2, <span class="type">int</span> n)</span> &#123;</span><br><span class="line">       <span class="comment">//nums1是一个指针，对其赋值源对象不会修改，即原调用方无法感知这件事</span></span><br><span class="line">       <span class="type">int</span>[] copyNum1 = Arrays.copyOf(nums1, m);</span><br><span class="line">       <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>, j = <span class="number">0</span>;</span><br><span class="line">       <span class="keyword">for</span> (; i &lt; m &amp;&amp; j &lt; n; ) &#123;</span><br><span class="line">           <span class="keyword">if</span> (copyNum1[i] &lt; nums2[j]) &#123;</span><br><span class="line">               nums1[i + j] = copyNum1[i];</span><br><span class="line">               i++;</span><br><span class="line">           &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">               nums1[i + j] = nums2[j];</span><br><span class="line">               j++;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">for</span> (; i &lt; m; i++) &#123;</span><br><span class="line">           nums1[i + j] = copyNum1[i];</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">for</span> (; j &lt; n; j++) &#123;</span><br><span class="line">           nums1[i + j] = nums2[j];</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p><strong>题目描述：</strong></p><p>给你两个按 <strong>非递减顺序</strong> 排列的整数数组 <code>nums1</code> 和 <code>nums2</code>，另有两个整数 <code>m</code> 和 <code>n</code> ，分别表示 <code>nums1</code> 和 <code>nums2</code> 中的元素数目。<br>请你 <strong>合并</strong> <code>nums2</code> 到 <code>nums1</code> 中，使合并后的数组同样按 <strong>非递减顺序</strong> 排列。<br>**注意：**最终，合并后数组不应由函数返回，而是存储在数组 <code>nums1</code> 中。为了应对这种情况，<code>nums1</code> 的初始长度为 <code>m + n</code>，其中前 <code>m</code> 个元素表示应合并的元素，后 <code>n</code> 个元素为 <code>0</code> ，应忽略。<code>nums2</code> 的长度为 <code>n</code> 。</p><hr><p>经典的<strong>双指针问题</strong>，可以分别从左往右遍历两个数组来按顺序merge<br>简单题，不多赘述</p><p><strong>注意的是：</strong><br>由于校验的是nums1指针指向的数组（不是传统的返回数据校验）<br>所以我们需要修改的是<strong>原指针指向的数组</strong>，开头去创建一个对象复制原数组用做中间量，<strong>原数组当作结果容器</strong>。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码如下</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">merge</span><span class="params">(<span class="type">int</span>[] nums1, <span class="type">int</span> m, <span class="type">int</span>[] nums2, <span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="comment">//nums1是一个指针，对其赋值源对象不会修改，即原调用方无法感知这件事</span></span><br><span class="line">        <span class="type">int</span>[] copyNum1 = Arrays.copyOf(nums1, m);</span><br><span class="line">        <span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>, j = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (; i &lt; m &amp;&amp; j &lt; n; ) &#123;</span><br><span class="line">            <span class="keyword">if</span> (copyNum1[i] &lt; nums2[j]) &#123;</span><br><span class="line">                nums1[i + j] = copyNum1[i];</span><br><span class="line">                i++;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                nums1[i + j] = nums2[j];</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//总会有一方未遍历完，继续赋值</span></span><br><span class="line">        <span class="keyword">for</span> (; i &lt; m; i++) &#123;</span><br><span class="line">            nums1[i + j] = copyNum1[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (; j &lt; n; j++) &#123;</span><br><span class="line">            nums1[i + j] = nums2[j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=</summary>
+    <summary type="html">&lt;p&gt;&lt;strong&gt;题目描述：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;给你两个按 &lt;strong&gt;非递减顺序&lt;/strong&gt; 排列的整数数组 &lt;code&gt;nums1&lt;/code&gt; 和 &lt;code&gt;nums2&lt;/code&gt;，另有两个整数 &lt;code&gt;m&lt;/code&gt; 和 &lt;code&gt;</summary>
       
     
     
@@ -93,9 +94,9 @@
     <category term="推荐" scheme="https://stars-at-dawn.github.io/categories/%E6%8E%A8%E8%8D%90/"/>
     
     
-    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
-    
     <category term="书籍" scheme="https://stars-at-dawn.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
     
   </entry>
   
@@ -354,9 +355,9 @@
     <category term="推荐" scheme="https://stars-at-dawn.github.io/categories/%E6%8E%A8%E8%8D%90/"/>
     
     
-    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
-    
     <category term="书籍" scheme="https://stars-at-dawn.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
     
   </entry>
   
@@ -448,9 +449,9 @@
     <category term="推荐" scheme="https://stars-at-dawn.github.io/categories/%E6%8E%A8%E8%8D%90/"/>
     
     
-    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
-    
     <category term="书籍" scheme="https://stars-at-dawn.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
+    
+    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
     
   </entry>
   
