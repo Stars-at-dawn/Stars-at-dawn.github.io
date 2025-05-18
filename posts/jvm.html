@@ -1,0 +1,692 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>简历提问相关-JVM | 晨星的博客</title><meta name="author" content="长夜有晨星"><meta name="copyright" content="长夜有晨星"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="简历提问相关  JVM  自动内存管理子系统  运行时数据区：  方法区（线程共享的）  主要存储对象的元数据信息（类名，字段信息，方法信息，父类信息等）和运行时常量池（字符串（JDK1.7以前是存放的对象，后面改成了存放引用，对象放到堆内存中了）&#x2F;数值&#x2F;布尔字面量，符号引用（类全限定名，字段的描述信息，方法的描述信息）） 实现方式  JDK1.8以前实现方式是永久代（主要为了适配堆的分代结构方便">
+<meta property="og:type" content="article">
+<meta property="og:title" content="简历提问相关-JVM">
+<meta property="og:url" content="https://stars-at-dawn.github.io/posts/jvm">
+<meta property="og:site_name" content="晨星的博客">
+<meta property="og:description" content="简历提问相关  JVM  自动内存管理子系统  运行时数据区：  方法区（线程共享的）  主要存储对象的元数据信息（类名，字段信息，方法信息，父类信息等）和运行时常量池（字符串（JDK1.7以前是存放的对象，后面改成了存放引用，对象放到堆内存中了）&#x2F;数值&#x2F;布尔字面量，符号引用（类全限定名，字段的描述信息，方法的描述信息）） 实现方式  JDK1.8以前实现方式是永久代（主要为了适配堆的分代结构方便">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://stars-at-dawn.github.io/img/%E4%B8%8A%E5%B8%9DDJ.gif">
+<meta property="article:published_time" content="2025-05-18T06:07:47.000Z">
+<meta property="article:modified_time" content="2025-05-18T06:07:48.760Z">
+<meta property="article:author" content="长夜有晨星">
+<meta property="article:tag" content="JVM">
+<meta property="article:tag" content="知识梳理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://stars-at-dawn.github.io/img/%E4%B8%8A%E5%B8%9DDJ.gif"><link rel="shortcut icon" href="/img/myFavicon.png"><link rel="canonical" href="https://stars-at-dawn.github.io/posts/jvm"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":10,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":25,"languages":{"author":"作者: 长夜有晨星","link":"链接: ","source":"来源: 晨星的博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '简历提问相关-JVM',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-05-18 14:07:48'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="晨星的博客" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://avatars.githubusercontent.com/u/70315861?v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">33</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/about"><span> About</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.zhihu.com/people/10-16-96-85?theme=dark"><span> 知乎</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/%E4%B8%8A%E5%B8%9DDJ.gif')"><nav id="nav"><span id="blog-info"><a href="/" title="晨星的博客"><span class="site-name">晨星的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/about"><span> About</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.zhihu.com/people/10-16-96-85?theme=dark"><span> 知乎</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">简历提问相关-JVM</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-18T06:07:47.000Z" title="发表于 2025-05-18 14:07:47">2025-05-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-18T06:07:48.760Z" title="更新于 2025-05-18 14:07:48">2025-05-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/">知识梳理</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="简历提问相关-JVM"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="简历提问相关">简历提问相关</h2>
+<ul>
+<li>JVM
+<ul>
+<li><strong>自动内存管理子系统</strong>
+<ul>
+<li><strong>运行时数据区：</strong>
+<ul>
+<li><strong>方法区</strong>（<u>线程共享的</u>）
+<ul>
+<li>主要存储对象的<strong>元数据信息</strong>（类名，字段信息，方法信息，父类信息等）和<strong>运行时常量池</strong>（字符串（JDK1.7以前是存放的对象，后面改成了存放引用，对象放到堆内存中了）/数值/布尔字面量，符号引用（类全限定名，字段的描述信息，方法的描述信息））</li>
+<li>实现方式
+<ul>
+<li>JDK1.8以前实现方式是<strong>永久代</strong>（主要为了<strong>适配堆的分代结构</strong>方便垃圾回收器一起管理）</li>
+<li>JDK1.8后采用<strong>元空间</strong>实现（使用<strong>本地内存</strong>来存储，与堆内存分离，内存大小可以动态扩展，大大<strong>减少了内存溢出的风险</strong>）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>堆</strong>（<u>线程共享的</u>）
+<ul>
+<li>
+<p><strong>对象的创建过程</strong></p>
+</li>
+<li>
+<p>当JVM遇到一条new语句时，会先去找常量池找到此类的符号引用，并检查它是否已加载，否则执行<strong>类加载过程</strong>，通过后，JVM会为新对象在堆中<strong>分配固定内存</strong>（其大小在类加载完成后便以确定），同时<strong>初始化零值</strong>（对象头除外），接着<strong>设置对象头</strong>（锁状态信息，GC分代年龄，类型指针（指向它的类型元数据的指针）等，如果是数组则还要记录它的长度），在JVM看来此时对象已经真正创建完成；接着将会<strong>执行<init>方法</strong>才按照我们的意愿操作</p>
+</li>
+<li>
+<p><strong>对象的存储布局</strong></p>
+<ul>
+<li>主要由三部分组成：<strong>对象头</strong>（Mark Word（存放对象自身运行时的数据），类型指针（指向它的类型元数据的指针）），<strong>实例数据</strong>（真正有效的信息，自己定义的各种类型字段内容），<strong>对齐填充</strong>（无意义，只是由于HotSpot虚拟机的要求对象的起始地址必须时8字节的整数倍）</li>
+</ul>
+</li>
+<li>
+<p><strong>垃圾回收器</strong></p>
+<ul>
+<li>
+<p><strong>如何判断垃圾</strong>（哪些内存需要回收）</p>
+<ul>
+<li>“垃圾”指的就是那些不可能被使用的对象</li>
+</ul>
+</li>
+<li>
+<p><strong>判断</strong>是否是<strong>垃圾</strong>主要有两种<strong>算法</strong>，分别是</p>
+<ul>
+<li><strong>引用计数算法</strong>
+<ul>
+<li>在对象中添加一个引用计数器，当有引用指向它就+1，只要计数器为0就说明此对象是垃圾，但单纯的此算法无法解决诸如循环引用等问题</li>
+</ul>
+</li>
+<li><strong>可达性分析算法</strong>
+<ul>
+<li>这个算法的核心就是根节点（GC Roots 如在栈帧引用的对象，类静态属性引用的对象，常量引用的对象（字符串等）等），只要通过根节点找不到这个对象，则表示此对象为垃圾。</li>
+<li>finalize()方法（已被官方废弃），在它们被回收时，如果有必要执行此方法（此方法只会执行一次），则会放到一个队列另起一个线程执行，然后再次对此队列进行再次扫描。</li>
+</ul>
+</li>
+<li><strong>Java中的四种引用类型</strong>
+<ul>
+<li><strong>强引用</strong>（传统的引用，不会被回收）、<strong>软引用</strong>（SoftReference 当要发生内存溢出时会尝试二次GC回收这些对象）、<strong>弱引用</strong>（WeakReference下次GC就会直接回收）、<strong>虚引用</strong>（PhantomReference此引用不起实际的作用，不会对对象的生命周期产生影响，其指向的对象回收后会将虚引用加入到指定的队列，可以得到通知）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>垃圾回收算法</strong>（追踪式的）</p>
+<ul>
+<li>首先这个算法基于<strong>分代收集理论</strong>（说是理论实则是统计学的经验法则）即：
+<ul>
+<li>①大部分对象都是朝生暮死</li>
+<li>②熬过越多次GC的对象就越难消亡</li>
+</ul>
+</li>
+<li>所以Java将堆分成了几个不同的区域：<strong>新生代和老年代</strong>
+<ul>
+<li>我们将会对不同的区域进行垃圾回收；但同时对象不是孤立的，会存在跨代引用，但这只是占极少数，因此我们在新生代上建立一个<strong>数据结构</strong>（<strong>记忆集</strong>）来标识哪些老年代内存需要一起GC</li>
+</ul>
+</li>
+<li>针对这些区域和特点做了相匹配的算法，也就是下面：</li>
+<li><strong>标记-清除算法</strong>
+<ul>
+<li>最基础的版本，分为两个步骤**“标记”“清除”<strong>，首先标记要回收的对象，然后统一回收掉所有被标记的对象。它的</strong>执行效率不稳定**，因为大量对象都需要回收，标记和清除的动作会导致效率很低，同时<strong>产生大量的内存碎片</strong></li>
+<li><strong>标记-复制算法</strong>
+<ul>
+<li>可以解决这两个问题（<strong>适合新生代GC使用</strong>）（<strong>复制过程可以采用并发来加速提高效率</strong>）最早提出的是半区复制，即GC时，将一半空间中存活的对象复制到另一半空间里，不过这会产生大量的<strong>空间浪费</strong>（新生代存活的对象一般不足十分之一），所以就将新生代分为了<strong>Eden区和Survivor区</strong></li>
+<li>新生代：一个较大的Eden区和两个较小的Survivor区（另一个用来存放复制存活的对象），它们默认的大小比例为8：1：1（大大<strong>减少了空间的浪费</strong>）</li>
+</ul>
+</li>
+<li><strong>标记-整理算法</strong>
+<ul>
+<li>标记-复制算法对老年代的存活对象较多的场景不适用（复制的操作过多，且存活对象过多），于是在“标记”后，将<strong>存活的对象向内侧空间移动，然后直接清理掉边界外的内存</strong>（<strong>适用老年代</strong>）</li>
+<li><strong>移动操作</strong>是一项极为负重的操作，因为移动对象必须全程暂停用户线程才能进行，而这种停顿也被我们戏称为**“Stop The World”**（STW）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>HotSpot内部的算法实现细节</strong></p>
+<ul>
+<li>GCRoot的相关细节
+<ul>
+<li><strong>GC Roots枚举</strong>
+<ul>
+<li>要实现找到垃圾的可达性分析，最终要的就是GC Roots的寻找，由于在此时会STW（要做到准确收集），但HotSpot虚拟机会使用一个Map（<strong>OopMap</strong>），会将对象的偏移量计算后写入，来加速扫描过程。</li>
+</ul>
+</li>
+<li><strong>安全点</strong>
+<ul>
+<li>在每个方法都生成OopMaps（记录信息）是不现实的，所以设置了安全点的概念，只在这生成，同时这里会执行全局操作（GC、类卸载等），要确保状态的可预知性，同时不能安全点设置不能太多也不能太少（会设置在方法调用，循环，异常等指令跳转的地方），线程会通过轮询一个标志位判断是否需要中断（或是虚拟机强制中断线程）</li>
+</ul>
+</li>
+<li><strong>记忆集</strong>
+<ul>
+<li>上面讲到为了<strong>解决跨代之间的对象引用</strong>而建立的数据结构（记录的粒度可以是字长，对象，或者“卡”（一个内存区域，卡表独有））</li>
+<li><strong>卡表</strong>作为记忆集的一种实现方式（<strong>一个字节数字</strong>），它以“卡页”作为精度，一个卡页会包含多个对象，如果其中有一个对象的字段存在跨代引用，则表明这个元素<strong>变脏</strong>，其通过<strong>写屏障技术</strong>维护卡表状态（会为所有赋值操作生成相应指令，相当于虚拟机层面的AOP）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>并发判断是否是垃圾（并发的可达性分析）</strong>
+<ul>
+<li>在此需要引入<strong>三色标记</strong>来帮助理解为什么并发判断垃圾会出现问题</li>
+<li><strong>三色标记</strong>（<strong>白色：未标记，黑色：标记完成的存活对象，灰色：其指向的对象没有标记完</strong>）</li>
+<li>并发标记会出现如下两个问题（<strong>漏标和多标</strong>）
+<ul>
+<li>当插入一条黑色到白色的引用同时删除所有灰色到此白色的引用，那么白色引用将无法被找到
+<ul>
+<li>这会直接影响到程序的运行，是不可容忍的</li>
+<li>为了解决这个问题提出了<strong>增量更新</strong>和<strong>原始快照</strong>两种解决方案</li>
+<li><strong>前者是让黑色对象插入白色引用时变为灰色对象。</strong></li>
+<li><strong>后者是在灰色对象删除白色引用时将白色对象变为灰色，重新扫描。</strong></li>
+</ul>
+</li>
+<li>当删除一条黑色到灰色的引用，虚拟机会无法感知，可能出现内存泄漏（浮动垃圾）
+<ul>
+<li>只需要等到下次GC清理就行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>不同的GC的特点和使用场景</strong></p>
+<ul>
+<li>经典的GC的组合：
+<ul>
+<li><strong>Serial + Serial Old</strong>（简单高效，小型机器使用）
+<ul>
+<li>都是<strong>单线程</strong>垃圾回收器，<strong>全程都需要STW</strong>，<strong>Serial</strong>采用<strong>标记-复制算法</strong>（Eden和Survivor）负责新生代进行回收，<strong>Serial Old</strong>则采用<strong>标记-整理算法</strong>负责老年代GC</li>
+</ul>
+</li>
+<li><strong>ParNew（JDK 7前首选的新生代收集器） + CMS</strong>
+<ul>
+<li><strong>ParNew</strong> 实际上就是<strong>Serial</strong>的<strong>多线程版本</strong>，使用多条线程并行处理垃圾，其它与Serial并无差异</li>
+<li><strong>CMS</strong>负责<strong>老年代</strong>GC，它第一次实现了<strong>并发的垃圾收集</strong>，从名字就可以看出（Concurrent Mark Sweep）它是基于<strong>标记-清除</strong>算法实现，它的执行包含四个步骤</li>
+<li><strong>GC过程：①初始标记。②并发标记。③重新标记。④并发清除</strong>（<strong>①和③仍然需要STW</strong>）</li>
+<li>①只是<strong>标记GC Roots</strong>能直接关联的对象。②是<strong>遍历</strong>整个对象图标记垃圾的过程。<br>
+③则是<strong>增量更新</strong>的过程。④是<strong>清除</strong>垃圾的过程（不需要移动对象，所以可以并发）</li>
+<li>CMS存在需多问题，最严重的是它<strong>不能处理浮动垃圾和空间碎片</strong>，GC失败后会调用Serial Old</li>
+</ul>
+</li>
+<li><strong>PS</strong>（Parallel Scavenge） + <strong>PO</strong>（Parallel Old）
+<ul>
+<li>PS是基于<strong>标记-复制算法</strong>的<strong>并发</strong>收集的<strong>新生代GC</strong>，它的主要特点是关注点不同，它关注<strong>吞吐量</strong>（处理器用于业务代码的时间占比）的大小，<strong><u>适合需要后台运行不需要太多交互的应用</u></strong>，它的<strong>标记阶段是并行的</strong>，在清<strong>理垃圾时是STW的</strong>，因为需要移动对象</li>
+<li>PO是PS<strong>老年代</strong>的版本是基于<strong>标记-整理算法</strong>实现的</li>
+</ul>
+</li>
+<li><strong>G1</strong>（Garbage First） （<strong>JDK 9开始是服务端模式下的推荐方案</strong>了，之前是PS + PO）
+<ul>
+<li>G1是一个<strong>面向全堆的收集器</strong>，它从<strong>整体上</strong>看是<strong>标记-整理算法</strong>实现，从<strong>局部</strong>（两个Region）上看又是基于<strong>标记-复制算法</strong>实现。它第一次提出了基于<strong>Region</strong>的<strong>内存布局</strong>形式。但是G1没有抛弃分代的理念，<strong>每个Region</strong>都可以<strong>根据需要扮演对应的区域</strong>。</li>
+<li>G1的垃圾回收可以<strong>针对任意区域</strong>（一个<strong>回收集</strong>，称为CSet）进行回收，而不是只局限与整个年龄代，根据<strong>回收的收益</strong>来进行回收，这就是它的<strong>Mixed GC模式</strong>，同时可以<strong>做到可控的GC停顿时间</strong>（用户可以通过参数指定）（衰减平均值的概念）</li>
+<li><strong>维护跨Region的引用对象会变得非常复杂</strong>，需要耗费过多的内存来维护，成为额外负担</li>
+<li><strong>GC过程：①初始标记。②并发标记。③最终标记。④筛选回收</strong>（<strong>①和③和④仍然需要STW</strong>）</li>
+<li>①<strong>标记GC Roots</strong>②如果用户<strong>新创建对象</strong>则会在Region中设置<strong>两个指针标记</strong>，加入其中会默认其是<strong>存活</strong>的③是<strong>原始快照</strong>过程。④负责统计Region的回收价值<strong>制定回收计划</strong>，最后把存活的对象<strong>复制</strong>到空的Region中再清理掉旧的Region（此时需要<strong>STW</strong>再多线程执行移动对象）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>高性能GC：
+<ul>
+<li><strong>Shenandoah</strong>（非官方的GC）
+<ul>
+<li><strong>G1的继承者</strong>，不同的是它<strong>支持并发的整理算法</strong>，其次它<strong>抛弃了分代设计</strong>，此外将<strong>记忆集</strong>的实现方式改成了<strong>连接矩阵</strong>的<strong>全局</strong>数据结构。</li>
+<li>**GC过程：**①初始标记。②并发标记。③最终标记。④并发清理。⑤并发回收。<br>
+<strong>⑥初始引用更新。⑦并发引用更新。⑧最终引用更新。⑨并发清理</strong>（<strong>①③⑥⑧需要STW</strong>）</li>
+<li><strong>①②③与G1基本一样</strong>，<strong>④</strong>会<strong>清理没有存活对象的Region</strong>。<strong>⑤</strong>先将存活对象<strong>复制</strong>到一个没有用过的Region中。<strong>⑥</strong>确定一个执行点，<strong>确保⑤已经执行完成</strong>，此时会STW。<strong>⑦</strong>将堆中的所有指向旧对象的指针<strong>指向新地址</strong>。<strong>⑧</strong>修改<strong>GC Root</strong>的引用，此时会STW。<strong>⑨</strong>再次<strong>调用④过程</strong>。、</li>
+<li><strong>并发移动</strong>时，采用<strong>转发指针</strong>来防止访问旧对象（在对象中加入一个新的引用字段，默认指向自己，而在移动后，指向新地址）</li>
+</ul>
+</li>
+<li><strong>ZGC</strong>（它的设计注定它能承受的对象分配速率不会太高）
+<ul>
+<li>是一款<strong>基于Region内存布局</strong>的，不采用分代设计的GC。其使用<strong>读屏障，染色指针和内存多映射</strong>等技术实现<strong>并发</strong>的<strong>标记-整理算法</strong></li>
+<li>与G1和Shenandoah不同，它的Region具有动态性，分小、中、大三类，对应不同大小的对象</li>
+<li><strong>染色指针</strong>是它的标志（Linux中通过<strong>多重映射</strong>的方式来<strong>支持</strong>），即将<strong>一部分信息存在指针</strong>上（4位，三色标记状态，是否移动等），所以这会导致ZGC可以管理的内存大小不能超过4TB（2^42），同时它也不能支持<strong>指针压缩</strong>（将64位的指针压缩成32位，减少内存消耗），它可以<strong>使Region被移走后直接释放</strong></li>
+<li><strong>GC过程：①并发标记。②并发预备重分配。③并发重分配。④并发重映射。</strong></li>
+<li><strong>①</strong>与G1和Shenandoah一样的<strong>标记过程</strong>。<strong>②</strong>去<strong>扫描</strong>所有的Region（<strong>省去了记忆集</strong>的开销），确定<strong>回收</strong>的Region<strong>的集合</strong>。<strong>③复制</strong>存活对象到新的Region中，并为老Region维护一个<strong>转发表</strong>，当有引用通过转发表进行访问时，会<strong>重新更新它的引用</strong>，减少后续的开销（<strong>指针自愈</strong>）<strong>④</strong>修正整个堆的<strong>旧引用</strong>，与<strong>Shenandoah的⑦</strong>基本一样，不过ZGC会<strong>在并发标记时一起执行</strong>（自愈）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>栈</strong>（<u>线程私有的</u>）
+<ul>
+<li><strong>本地方法栈</strong></li>
+<li><strong>虚拟机栈</strong>
+<ul>
+<li><strong>栈帧</strong>（<a href="#%E6%A0%88%E5%B8%A7">详见此处</a>）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>执行子系统：</strong>
+<ul>
+<li><strong>Class文件</strong>的结构
+<ul>
+<li>开头就是魔术与Class文件的版本号，接着就是Class文件的常量池</li>
+</ul>
+</li>
+<li><strong>类加载机制</strong>
+<ul>
+<li>
+<p><strong>执行时机</strong></p>
+<ul>
+<li><strong>①使用new关键词实例化对象时</strong>。<br>
+<strong>②读取或设置类的静态字段时（final修饰，已在编译器放入常量池的静态字段除外）</strong>。<br>
+<strong>③调用一个类的静态方法时</strong>。</li>
+</ul>
+</li>
+<li>
+<p><strong>类的生命周期</strong></p>
+<ul>
+<li><strong>加载、<u>验证、准备、解析（三个步骤被称为连接）</u></strong><br>
+<strong>初始化、使用、卸载</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>类加载过程</strong></p>
+<ul>
+<li><strong>加载阶段：</strong><br>
+<strong>①通过类的全限定名获取字节流</strong>（如果数组的组件类型是引用类型，将会递归执行此过程）<br>
+<strong>②将静态结构转化为方法区的数据结构</strong><br>
+<strong>③在堆中生成一个Class对象（JDK1.8后移动到堆中，逻辑上属于方法区），作为访问入口</strong>
+<ul>
+<li><strong>类加载器</strong>
+<ul>
+<li>加载阶段是可控性最强的阶段，可以重写类加载器的<strong>findClass或者loadClass方法</strong>来修改<strong>获取字节流的方式</strong>，实现自定义获取程序代码。</li>
+<li><strong>双亲委派模型</strong>（指各个类加载器之间的层次关系）
+<ul>
+<li>除了启动类加载器，其余类加载器都应有自己的父类加载器</li>
+</ul>
+</li>
+<li><strong>双亲委派机制</strong>
+<ul>
+<li>一个类加载器收到类加载请求，它会先委派父类加载器加载，每个加载器都如此，当父类加载器无法加载时，子类加载器才会尝试加载。</li>
+<li>能够避免类的重复加载，同时确保核心类都由虚拟机自行加载，增加了安全性</li>
+</ul>
+</li>
+<li><strong>破坏双亲委派机制</strong>
+<ul>
+<li><strong>重写loadClass方法</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>连接（验证，准备，解析）阶段</strong>
+<ul>
+<li><strong>验证</strong>阶段：<strong>确保Class文件的内容符合规范约束</strong>（如果确认了，则此步骤可以通过参数关闭加速启动时间）<br>
+<strong>准备</strong>阶段：正式<strong>为类中定义的变量（即静态变量）分配内存并设置零值</strong>。<br>
+<strong>解析</strong>阶段：是将Class文件的常量池内的<strong>符号引用替换为直接引用</strong>。（此处可能会触发别的类加载）</li>
+</ul>
+</li>
+<li><strong>初始化阶段（类加载过程的最后阶段</strong>）
+<ul>
+<li><strong>分配对象内存空间</strong><br>
+<strong>初始化对象</strong><br>
+<strong>将指针指向刚才分配的内存空间</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>执行代码的过程</strong>
+<ul>
+<li><strong>执行引擎</strong>（虚拟机字节码执行引擎）<br>
+-<strong>虚拟机</strong>是一个相对<strong>物理机</strong>的概念，物理机的执行引擎直接建立在<strong>硬件和操作系统层面</strong>上的，而虚拟机执行引擎则是由<strong>软件自行实现</strong>，因此可以不受制约实现其它指令集格式。<br>
+-虚拟机执行引擎在执行字节码时通常会有<strong>解释执行</strong>和<strong>编译执行</strong>两种方式（或同时存在）。<strong>输入</strong>字节码二进制流，<strong>处理</strong>过程就是对字节码的解释执行，<strong>输出</strong>执行结果
+<ul>
+<li><strong><span id="栈帧">栈帧</span></strong>（Java虚拟机以方法作为最基本的执行单位）
+<ul>
+<li>其中包括了<strong>局部变量表</strong>，<strong>操作数栈</strong>，<strong>方法返回地址</strong>等信息（其大小一开始就已经确定了，固定的）</li>
+<li><strong>局部变量表</strong>：是<strong>变量的存储空间</strong>（存放方法参数和方法内部定义的局部变量，非静态方法第0位为this变量）<br>
+<strong>操作数栈</strong>：是一个先进后出的栈（栈的最大深度也是一开始就确定了）</li>
+</ul>
+</li>
+<li><strong>方法调用</strong>（只是<strong>确定调用版本</strong>，<strong>并未执行</strong>方法）
+<ul>
+<li><strong>静态解析</strong>：针对的是<strong>编译期就可知调用版本</strong>的方法，主要是<strong>静态方法</strong>（直接与类相关）和<strong>私有方法</strong>（外部不可访问）两类</li>
+<li><strong>分派</strong>（多态的具体体现）：
+<ul>
+<li><strong>静态分派</strong>：依赖静态类型来决定执行版本的分派（最典型的就是<strong>方法重载</strong>）<br>
+对于<strong>Human man = new Man()；Human 为静态类型，Man为实际类型</strong><br>
+其在<strong>编译期</strong>就会由编译器通过<strong>静态类型</strong>和<strong>参数</strong>确定执行版本，被称为多分派类型</li>
+<li><strong>动态分派</strong>：根据对象的实际类型来执行版本的分派（<strong>方法重写和多态</strong>）<br>
+在<strong>运行期</strong>才能知道方法的<strong>调用目标</strong>（<strong>实际类型</strong>）<br>
+只会<strong>根据实际类型</strong>进行分派（此时参数类型已经确认），被称为单分派类型</li>
+<li>动态分派<strong>优化</strong>：由于此操作极其频繁，会在方法区中创建一个虚方法表用来代替元数据的查找。</li>
+</ul>
+</li>
+<li>**Reflection和MethodHandle（java.lang.invoke包）**的区别：反射（Reflection）是重量级操作，是对象的全面映射，而后者则只是包含该方法的相关信息，较之是轻量级操作</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>编译子系统：</strong>
+<ul>
+<li><strong>前端编译优化</strong>
+<ul>
+<li><s>Javac</s></li>
+<li><strong>语法糖</strong>
+<ul>
+<li><strong>泛型</strong>：Java的泛型实现方式为“<strong>类型擦除式泛型</strong>”，即Java中的<strong>泛型只在源码中出现</strong>，编译后的字节码中都会被替换为<strong>裸类型</strong>，并在相应地方插入<strong>强制转换代码</strong>。（目的就是为了兼容旧版本）</li>
+<li><strong>自动装箱、拆箱</strong>：大量的诸如<strong>Integer.valueOf</strong>的方法，在“==”运算或者equals方法中时不会起作用</li>
+<li><strong>for-each的迭代器；条件不成立的分支自动去除；枚举类、Lambda表达式</strong>等等。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>后端编译优化</strong>
+<ul>
+<li><strong>解释器</strong>：它可以<strong>直接运行</strong>程序，不需要编译；它还可以<strong>节约内存</strong>；且是编译<strong>优化失败</strong>后的底牌。</li>
+<li><strong>即时编译器</strong>（C1，C2编译器）
+<ul>
+<li>针对的是<strong>热点代码</strong>（即<strong>多次执行的循环体</strong>或者被<strong>多次调用的方法</strong>）<br>
+当对循环体优化时，会发生<strong>栈上替换</strong>，在方法运行时就将其替换</li>
+<li>热点探测（有两种方式）
+<ul>
+<li><strong>基于采样</strong>的热点探测：会周期性的查看各个线程的<strong>栈顶</strong>，如果发现某个方法出现<strong>频率过高</strong>，就是热点；其<strong>缺点</strong>就是<strong>无法准确确认</strong>一个方法的热度，容易受<strong>线程阻塞</strong>或者外界执行的因素的<strong>影响</strong>。</li>
+<li><strong>基于计数器</strong>的热点探测：HotSpot为每个方法准备了两个计数器，<strong>方法调用计数器</strong>和<strong>回边计数器</strong>；当有其中一个超过阈值，则为热点。<br>
+<strong>方法调用计数器</strong>：见名知意，<strong>统计方法调用次数</strong>，在默认情况下，它<strong>统计</strong>的不是绝对次数，而是<strong>相对的频率</strong>，当<strong>一定时间</strong>过后，如果还未到阈值，则会<strong>减少一半</strong>（被称为<strong>热度的衰减</strong>）<br>
+<strong>回边计数器</strong>：它的作用是<strong>统计循环中代码执行的次数</strong>，其没有热度衰减，<strong>统计的是绝对次数</strong>。</li>
+</ul>
+</li>
+<li><strong>分层编译</strong>的概念：
+<ul>
+<li>主要由于即使编译器编译<strong>需要占用资源</strong>，所以为了<strong>平衡其影响</strong>提出了分层编译的功能<br>
+（客户端编译器，服务端编译器）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>提前编译器</strong></li>
+<li><strong>优化技术</strong>
+<ul>
+<li><strong>方法内联</strong>：最基础也是最重要的优化，是<strong>其它优化的基础</strong>。通过<strong>将方法中的代码“复制”到调用的位置</strong>，可以去除调用时的成本，同时<strong>为其它优化奠定基础</strong>。<br>
+<strong>虚方法的内联</strong>：非虚方法没有什么问题，但虚方法则很难确定调用者的类型，如果查询到<strong>只有一个版本</strong>，则将此内联称为<strong>守护内联</strong>（<strong>Java</strong>是<strong>动态连接</strong>的，所以有可能<strong>被打破</strong>）；如果是<strong>多个版本</strong>，则会<strong>去调用方法</strong>，但会使用一个<strong>缓存</strong>来缩减调用开销。</li>
+<li><strong>逃逸分析</strong>：它也是<strong>为其它优化提供基础的分析技术</strong>；通过分析<strong>对象</strong>的动态<strong>作用域</strong>，分为方法逃逸，线程逃逸，以及从不逃逸。<br>
+据此它分为<strong>三种优化方式</strong>
+<ul>
+<li><strong>标量替换</strong>：将其成员变量的访问<strong>恢复原始对象的访问</strong>，它<strong>不允许逃逸到方法外面</strong>。</li>
+<li><strong>栈上分配</strong>：<strong>分配到栈上</strong>，可以省去GC的开销，随着栈帧的出栈而回收，它<strong>不允许逃逸到线程外面</strong>。</li>
+<li><strong>同步消除</strong>：对<strong>不能逃逸到线程外</strong>面的代码<strong>取消同步措施</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>高效并发：</strong>（<strong>阿姆达尔</strong>（Amdahl）<strong>定理</strong>代替<strong>摩尔定律</strong>成为计算机性能发展的源动力）
+<ul>
+<li><strong>Java内存模型：</strong>
+<ul>
+<li><strong>三大特性：</strong><br>
+<strong>原子性</strong>：指此操作不可分割和中断的，对于基本数据类型的访问，读写都具备原子性<br>
+<strong>可见性</strong>：指一个线程修改了共享变量时，其它线程能够立即得知这个修改。<br>
+<strong>有序性</strong>：在线程内观察，所有操作都是有序的，而线程外看起来则是无序的，先行发生原则（happens-before原则）</li>
+<li><strong>乱序执行</strong>：<br>
+处理器会对输入代码进行乱序执行优化，是<strong>机器级别的优化</strong></li>
+</ul>
+</li>
+<li><strong>线程的运行状态</strong><br>
+<strong>①新建</strong>（创建但尚未运行）<br>
+<strong>②运行</strong>（运行中的线程）<br>
+<strong>③无限期等待</strong>（未设置等待时间的线程，等待唤醒动作）<br>
+<strong>④限期等待</strong>（设置等待时间的线程，等待唤醒动作或者时间）<br>
+<strong>⑤阻塞</strong>（与等待的区别是，它在等待获取一个排他锁的释放）<br>
+<strong>⑥结束</strong>（终止后的线程状态）</li>
+<li><strong>互斥同步：</strong>（互斥是方法，同步是目的）
+<ul>
+<li><strong>synchronized</strong>：<br>
+这是一种<strong>块结构</strong>的同步语法，会在<strong>同步代码块前后</strong>生成<strong>monitorenter和monitorexit</strong>这两个字节码指令，其需要明确加锁对象（Java中如果没指定了加锁对象，则根据<strong>锁定方法</strong>来判断是<u>对象实例</u>（<strong>实例方法</strong>）还是<u>Class对象</u>（<strong>类方法</strong>））
+<ul>
+<li><strong>monitorenter</strong>会去获取对象的锁，如果获取成功，<strong>锁的计数器加一</strong>，monitorexit也是如此，所以其是<strong>可重入锁</strong></li>
+</ul>
+</li>
+<li><strong>Lock接口：</strong>（JUC包下的）<strong>非块结构</strong>来实现互斥同步
+<ul>
+<li><strong>ReentrantLock</strong>：<strong>重入锁</strong>，和synchronized一样也是可重入的，但其多了三大功能：<strong>等待可中断</strong>（等待的线程可以选择<strong>放弃等待</strong>），<strong>公平锁</strong>（可以按照等待顺序依次获得锁，默认不公平的，开启后会使得性能下降），<strong>锁绑定多个条件</strong>（锁对象可以绑定多个<strong>Condition对象</strong>）。</li>
+</ul>
+</li>
+<li><strong>互斥同步</strong>的<strong>主要问题</strong>是进行<strong>线程阻塞和唤醒</strong>所带来的<strong>开销</strong>，所以诞生了<strong>非阻塞的同步</strong>，<strong>CAS</strong>（比较并交换）就是其中之一。CAS存在一个<strong>ABA问题</strong>（可以通过版本号来解决，但一般此问题对程序不会有大影响）。</li>
+</ul>
+</li>
+<li><strong>锁优化：</strong>
+<ul>
+<li><strong>自旋锁</strong>：<br>
+互斥同步最大的性能开销就是阻塞，同时共享变量的锁定状态一般<strong>不会持续很久</strong>，所以不需要每次都直接等待挂起，而是让其<strong>进行一个忙循环</strong>（<strong>自旋</strong>）。如果<strong>多次自旋成功</strong>，可能会允许自旋的<strong>次数更多</strong>，反之则可能会直接<strong>略过自旋</strong>避免<strong>浪费处理器资源</strong>（<strong>自适应自旋</strong>）。</li>
+<li><strong>偏向锁</strong>：<br>
+目的为了<strong>消除无竞争下的同步操作</strong>，它会<strong>偏向于第一个获得它的线程</strong>，如果没有竞争，则此线程无需执行同步操作（在竞争激烈的程序中可以关闭此功能提升性能）。（在<strong>对象头</strong>中设置标志位）<strong>一旦有别的线程尝试获取这个对象的锁</strong>，偏向锁就会结束，<strong>转为轻量级锁</strong>。</li>
+<li><strong>轻量级锁</strong>：<br>
+在<strong>对象没有被锁定时</strong>，虚拟机会为此对象的Mark Word的<strong>拷贝</strong>，然后通过<strong>CAS</strong>来将<strong>Mark Word更新为指向栈帧的指针</strong>，同时将锁标志位<strong>设置为轻量级锁定</strong>；如果<strong>失败</strong>则意味这有其它线程在竞争，此时需要<strong>膨胀成重量级锁</strong>，将指针更新为<strong>互斥量指针</strong>；<strong>释放锁</strong>也是同理，如果<strong>CAS</strong>更新Mark Word<strong>失败</strong>，则需要<strong>唤醒其它被挂起的线程</strong>。</li>
+<li><strong>锁消除</strong>：主要通过<strong>逃逸分析</strong>的支持，如果无法被其它线程访问到，则可以将它们的<strong>同步语句去除</strong>。</li>
+<li><strong>锁粗化</strong>：有些情况下连续的一串操作中会不停的加锁解锁（一些方法调用时），此时虚拟机会将这<strong>一些零散的加锁</strong>操作变成<strong>一个范围的加锁同步</strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/stars-at-dawn">长夜有晨星</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://stars-at-dawn.github.io/posts/jvm">https://stars-at-dawn.github.io/posts/jvm</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://stars-at-dawn.github.io" target="_blank">晨星的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/JVM/">JVM</a><a class="post-meta__tags" href="/tags/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/">知识梳理</a></div><div class="post_share"><div class="social-share" data-image="/img/%E4%B8%8A%E5%B8%9DDJ.gif" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src="/img/wechat.png" alt="感谢投喂(☆▽☆)"/></a><div class="post-qr-code-desc">感谢投喂(☆▽☆)</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/leetcode45" title="力扣45跳跃游戏 II"><img class="cover" src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">力扣45跳跃游戏 II</div></div></a></div></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://avatars.githubusercontent.com/u/70315861?v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">长夜有晨星</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">33</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/stars-at-dawn"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="/Email" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到晨星的博客O(∩_∩)O</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E5%8E%86%E6%8F%90%E9%97%AE%E7%9B%B8%E5%85%B3"><span class="toc-number">1.</span> <span class="toc-text">简历提问相关</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/jvm" title="简历提问相关-JVM"><img src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="简历提问相关-JVM"/></a><div class="content"><a class="title" href="/posts/jvm" title="简历提问相关-JVM">简历提问相关-JVM</a><time datetime="2025-05-18T06:07:47.000Z" title="发表于 2025-05-18 14:07:47">2025-05-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/leetcode45" title="力扣45跳跃游戏 II"><img src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="力扣45跳跃游戏 II"/></a><div class="content"><a class="title" href="/posts/leetcode45" title="力扣45跳跃游戏 II">力扣45跳跃游戏 II</a><time datetime="2025-04-20T08:00:20.000Z" title="发表于 2025-04-20 16:00:20">2025-04-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/leetcode55" title="力扣55跳跃游戏"><img src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="力扣55跳跃游戏"/></a><div class="content"><a class="title" href="/posts/leetcode55" title="力扣55跳跃游戏">力扣55跳跃游戏</a><time datetime="2025-04-20T06:38:57.000Z" title="发表于 2025-04-20 14:38:57">2025-04-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/leetcode189" title="力扣189 轮转数组"><img src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="力扣189 轮转数组"/></a><div class="content"><a class="title" href="/posts/leetcode189" title="力扣189 轮转数组">力扣189 轮转数组</a><time datetime="2025-04-19T14:01:04.000Z" title="发表于 2025-04-19 22:01:04">2025-04-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/leetcode169" title="力扣169 合并两个有序数组"><img src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="力扣169 合并两个有序数组"/></a><div class="content"><a class="title" href="/posts/leetcode169" title="力扣169 合并两个有序数组">力扣169 合并两个有序数组</a><time datetime="2025-04-18T12:44:18.000Z" title="发表于 2025-04-18 20:44:18">2025-04-18</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By 长夜有晨星</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const initGitalk = () => {
+    const gitalk = new Gitalk(Object.assign({
+      clientID: 'Ov23lisRUCB6OYtzaZaD',
+      clientSecret: '2980ba93a2df32300f79de4a789dd32662f0800b',
+      repo: 'Stars-at-dawn.github.io',
+      owner: 'Stars-at-dawn',
+      admin: ['Stars-at-dawn'],
+      id: '12eac0c79f2e81519a1fc8113972d9ec',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  const loadGitalk = async() => {
+    if (typeof Gitalk === 'function') initGitalk()
+    else {
+      await getCSS('https://cdn.jsdelivr.net/npm/gitalk@1.8.0/dist/gitalk.min.css')
+      await getScript('https://cdn.jsdelivr.net/npm/gitalk@1.8.0/dist/gitalk.min.js')
+      initGitalk()
+    }
+  }
+  
+  const commentCount = n => {
+    const isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+    if (isCommentCount) {
+      isCommentCount.textContent= n
+    }
+  }
+
+  if ('Gitalk' === 'Gitalk' || !true) {
+    if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+    else loadGitalk()
+  } else {
+    window.loadOtherComment = loadGitalk
+  }
+})()</script></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script>(() => {
+  const isChatBtn = true
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    const close = () => {
+      Chatra('minimizeWidget')
+      Chatra('hide')
+    }
+
+    const open = () => {
+      Chatra('openChat', true)
+      Chatra('show')
+    }
+
+    window.ChatraSetup = {
+      startHidden: true
+    }
+  
+    window.chatBtnFn = () => {
+      const isShow = document.getElementById('chatra').classList.contains('chatra--expanded')
+      isShow ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        Chatra('hide')
+      },
+      show: () => {
+        Chatra('show')
+      }
+    }
+  }
+
+  (function(d, w, c) {
+    w.ChatraID = 'tLSFCQ8hRBxXNzTDN'
+    var s = d.createElement('script')
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments)
+    }
+    s.async = true
+    s.src = 'https://call.chatra.io/chatra.js'
+    if (d.head) d.head.appendChild(s)
+  })(document, window, 'Chatra')
+
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
