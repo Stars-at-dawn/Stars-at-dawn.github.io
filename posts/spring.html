@@ -1,0 +1,550 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Spring相关知识点 | 晨星的博客</title><meta name="author" content="长夜有晨星"><meta name="copyright" content="长夜有晨星"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="Spring知识点  Spring框架   依赖注入，控制反转的介绍  控制反转指的是一个过程，将原本对象自己控制的依赖关系变成外部容器来进行控制。 依赖注入是它的实现方式，Spring容器通过构造函数或者setter方法将依赖关系注入到对象中    Bean的注入方式  引导加载方式：通过Xml文件或者Java注解（@Bean注解）来实现 自动配置：即 ①自动装配（声明setter方法，@Aut">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring相关知识点">
+<meta property="og:url" content="https://stars-at-dawn.github.io/posts/spring">
+<meta property="og:site_name" content="晨星的博客">
+<meta property="og:description" content="Spring知识点  Spring框架   依赖注入，控制反转的介绍  控制反转指的是一个过程，将原本对象自己控制的依赖关系变成外部容器来进行控制。 依赖注入是它的实现方式，Spring容器通过构造函数或者setter方法将依赖关系注入到对象中    Bean的注入方式  引导加载方式：通过Xml文件或者Java注解（@Bean注解）来实现 自动配置：即 ①自动装配（声明setter方法，@Aut">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://stars-at-dawn.github.io/img/%E4%B8%8A%E5%B8%9DDJ.gif">
+<meta property="article:published_time" content="2025-06-07T01:52:49.000Z">
+<meta property="article:modified_time" content="2025-06-07T01:55:42.257Z">
+<meta property="article:author" content="长夜有晨星">
+<meta property="article:tag" content="知识梳理">
+<meta property="article:tag" content="Spring">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://stars-at-dawn.github.io/img/%E4%B8%8A%E5%B8%9DDJ.gif"><link rel="shortcut icon" href="/img/myFavicon.png"><link rel="canonical" href="https://stars-at-dawn.github.io/posts/spring"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":10,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":25,"languages":{"author":"作者: 长夜有晨星","link":"链接: ","source":"来源: 晨星的博客","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Spring相关知识点',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-06-07 09:55:42'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/atom.xml" title="晨星的博客" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://avatars.githubusercontent.com/u/70315861?v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">26</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/about"><span> About</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.zhihu.com/people/10-16-96-85?theme=dark"><span> 知乎</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/%E4%B8%8A%E5%B8%9DDJ.gif')"><nav id="nav"><span id="blog-info"><a href="/" title="晨星的博客"><span class="site-name">晨星的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/about"><span> About</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://www.zhihu.com/people/10-16-96-85?theme=dark"><span> 知乎</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Spring相关知识点</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-06-07T01:52:49.000Z" title="发表于 2025-06-07 09:52:49">2025-06-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-06-07T01:55:42.257Z" title="更新于 2025-06-07 09:55:42">2025-06-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/">知识梳理</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Spring相关知识点"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="Spring知识点">Spring知识点</h2>
+<ul>
+<li><strong><span id="Spring源码">Spring框架</span></strong>
+<ul>
+<li>
+<p><strong>依赖注入</strong>，<strong>控制反转</strong>的介绍</p>
+<ul>
+<li><strong>控制反转</strong>指的是一个<strong>过程</strong>，将<strong>原本对象自己控制的依赖关系变成外部容器来进行控制</strong>。</li>
+<li><strong>依赖注入</strong>是它的<strong>实现方式</strong>，Spring容器通过构造函数或者setter方法将依赖关系注入到对象中</li>
+</ul>
+</li>
+<li>
+<p><strong>Bean</strong>的<strong>注入方式</strong></p>
+<ul>
+<li><strong>引导加载方式</strong>：通过<strong>Xml文件</strong>或者<strong>Java注解</strong>（@Bean注解）来实现</li>
+<li><strong>自动配置</strong>：即<br>
+<strong>①自动装配</strong>（声明<strong>setter方法</strong>，<strong>@Autowired</strong> 根据类进行匹配，多个则根据名字匹配（设置**@Qualifier<strong>注解可以指定Bean的名称）（设置</strong>required<strong>参数可以让其在找不到时</strong>不报错**），<strong>@Resouce JDK提供的</strong> 查找方式反一下）（在Bean上使用**@Primary<strong>注解可以设置多个匹配时的</strong>主类**。）<br>
+<strong>②组件扫描</strong>（@ComponentScan注解 默认会在当前包路径下扫描）</li>
+<li><strong>自动装配的过程</strong>：再<strong>创建上下文时进行注册Bean定义</strong>，在<strong>Bean的实例化时进行解析</strong>（根据注解类型来选择执行Bean的后置处理器进行解析）</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring IoC容器加载的流程</strong></p>
+<ul>
+<li>注册容器时，会先<strong>注册启动配置类</strong>，然后调用<strong>refresh()<strong>方法</strong>启动容器</strong></li>
+<li><strong>准备初始化</strong>，对其<strong>设置启动日期和状态标志以及初始化监听器容器</strong>等</li>
+<li><strong>初始化Bean工厂</strong>，<strong>加载Bean定义</strong>，<strong>为其设置</strong>类加载器，添加后置处理器，注册系统环境等<strong>必要组件</strong></li>
+<li><strong>postProcessBeanFactory()<strong>留给</strong>子类</strong>的钩子方法，用来<strong>对工厂后处理</strong>，<strong>然后实例化并调用</strong>所有的<strong>工厂后置处理器</strong>。
+<ul>
+<li><strong>为什么先加载</strong>工厂后置处理器：因为<strong>Bean定义在IoC容器加载时会先进行注册</strong>，而工厂后置处理器要对加载完的Bean定义进行<strong>扩展</strong>用的，所以要先加载。（比如<strong>解析配置类</strong>的<strong>Bean工厂后置处理器</strong>）</li>
+</ul>
+</li>
+<li><strong>国际化消息的相关支持方法</strong>（默认的消息器会将消息传给父类（如果有的话），本身无实际作用）</li>
+<li>初始化Spring容器的<strong>事件广播器</strong>（以支持事件监听）（如果用户<strong>未定义</strong>自己的广播器，则会<strong>创建一个默认的</strong>）。</li>
+<li><strong>onRefresh()<strong>留给子类的</strong>钩子方法</strong>，用以<strong>注册特殊的Bean</strong>等（<strong>如Spring Boot在此注册Servlet容器</strong>）</li>
+<li>注册<strong>事件监听器</strong>，将它们<strong>加入到刚才的事件广播器中</strong>。</li>
+<li><strong>实例化Bean</strong>。</li>
+<li><strong>创建容器完成，发布最终事件。</strong></li>
+</ul>
+</li>
+<li>
+<p>容器加载过程的<strong>扩展点</strong>：postProcessBeanFactory方法，onRefresh()方法</p>
+</li>
+<li>
+<p><strong>Spring启动过程相关的扩展点：</strong></p>
+<ul>
+<li><strong>钩子方法</strong></li>
+<li><strong>Bean工厂加载</strong>过程：<strong>Bean工厂后置处理器，Bean定义后置处理器，环境后置处理器</strong></li>
+<li><strong>ImportSelector接口</strong>返回一个类全限定名称的数组集合，Spring会根据这个数组解析Bean定义</li>
+<li><strong>ImportBeanDefinitionRegistrar接口</strong>，提供Bean定义的注册器，由用户将Bean定义传入</li>
+<li><strong>Bean的加载</strong>过程：<br>
+<strong>① Aware接口</strong>（设置<strong>Bean名字，类加载器，Bean工厂</strong>的方法）。<br>
+<strong>② Bean的后置处理器</strong>（<strong>Bean初始化的前后</strong>进行调用）。<br>
+<strong>③ InitializingBean接口</strong>，在<strong>Bean初始化后</strong>调用。<br>
+<strong>④ @PostConstruct注解</strong>，在<strong>Bean初始化后</strong>调用。<br>
+<strong>⑤ 使用init-method声明了初始化方法</strong>，在<strong>Bean初始化后</strong>调用。<br>
+<strong>⑥ DisposableBean接口</strong>，在<strong>Bean销毁后</strong>调用。<br>
+<strong>⑦ @PreDestroy，在Bean销毁后调用</strong>。<br>
+<strong>⑧ 使用destory-method 声明销毁方法</strong>，在Bean销毁后调用。<br>
+<strong>⑨ FactoryBean</strong>接口：自定义Bean的创建逻辑。</li>
+<li><strong>监听器扩展</strong>，监听Spring中发布的相关事件</li>
+<li><strong>ApplicationRunner / CommandLineRunner接口</strong>，在<strong>上下文刷新后</strong>提供扩展点（Spring Boot）</li>
+</ul>
+</li>
+<li>
+<p><strong>Bean的加载过程</strong></p>
+<ul>
+<li>先判断<strong>Bean是否为单例模式</strong>或者实现了<strong>SmartFactoryBean接口</strong>（FactoryBean的扩展接口）</li>
+<li>判断成功，会去<strong>一二级缓存中找</strong>，找到则返回，如果<strong>三级缓存</strong>中有值，则调用缓存中的工厂方法创建Bean<strong>返回</strong>，如果都没有，则继续执行。</li>
+<li>执行<strong>Bean实例化</strong>后将Bean包装成一个工厂<strong>加入三级缓存</strong></li>
+<li>根据Bean定义<strong>反射</strong>调用<strong>setter方法</strong>进行<strong>属性注入</strong>（此时会实例化别的Bean）
+<ul>
+<li>如果又再次回到开头，则会调用三级缓存的工厂方法，返回实例化的对象</li>
+</ul>
+</li>
+<li>相关属性注入完成，再次<strong>去一二缓存中找</strong>（没有三），防止重复创建动态代理</li>
+<li>如果没有，则开始<strong>进行初始化流程</strong>，调用相关扩展接口<strong>加入到一级缓存</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>三级缓存</strong>的作用<br>
+<strong>一级缓存</strong>：保存<strong>创建好的Bean</strong><br>
+<strong>二级缓存</strong>：存储已经<strong>实例化但尚未完成初始化的Bean</strong><br>
+<strong>三级缓存</strong>：存储的是<strong>早期的对象工厂</strong></p>
+<ul>
+<li><strong>二级缓存行不行</strong>？<br>
+<strong>Spring中的三级缓存是为了AOP服务的</strong>，如果实现AOP则从<strong>三级缓存</strong>中<strong>拿到</strong>的实例化对象是<strong>AOP代理对象</strong>，如果使用<strong>二级缓存</strong>，则需要在<strong>注入属性时直接注入代理类</strong>，这<strong>不符合Bean的生命周期</strong>，Bean的AOP创建应在<strong>初始化后调用AOP的后置处理器创建代理</strong>。</li>
+<li><strong>多例Bean无法进行循环依赖</strong>：依赖循环没有出口，因为每次都会创建实例。</li>
+<li><strong>构造函数无法进行循环依赖</strong>（Spring无法直接解决）：<br>
+构造器注入，会在通过构造函数实例化时就直接注入属性<br>
+此时可以加上**@Lazy注解**，让其注入时<strong>返回一个空对象</strong>，跳出依赖循环即可。</li>
+<li><strong>Bean的并发创建</strong>：<strong>双重检查锁</strong><br>
+<strong>在第一次查找缓存时，会对二三级缓存上锁</strong>（一级缓存不上锁，是为了<strong>减少性能影响</strong>），等线程创建完成对象<strong>加入一级缓存后</strong>，<strong>锁会被释放</strong>，同时唤醒后的线程因为找不到缓存（一级缓存已经找过了），则执行后面的逻辑，在依赖注入完成后，会<strong>再次上锁查找缓存</strong>（名字的由来），<strong>避免重复创建</strong>。</li>
+</ul>
+</li>
+<li>
+<p><strong>加载第三方的Bean：</strong></p>
+<ul>
+<li><strong>@Bean的方式来配置第三方类</strong><br>
+<strong>@Import直接导入类的方式</strong></li>
+</ul>
+</li>
+<li>
+<p><strong>FactoryBean</strong>的作用以及原理</p>
+<ul>
+<li>它是一个接口，其中的<strong>getObject方法</strong>就是用来获取其产生的对象（且是<strong>懒加载</strong>的）</li>
+</ul>
+</li>
+<li>
+<p>Spring相关的重要注解</p>
+<ul>
+<li>常见注解的功能</li>
+</ul>
+</li>
+<li>
+<p><strong>Spring AOP</strong>（运行时增强）（常见的还有AspectJ AOP （编译时增强））</p>
+<ul>
+<li>实现方式：<strong>JDK（针对接口的实现类）<strong>和</strong>CGLib（生成子类去重写）</strong><br>
+在<strong>配置类中通过注解开启AOP支持</strong>（可以在此处<strong>设置在线程中暴露代理对象</strong>参数，这样就可以<strong>通过AOP的上下文拿到</strong>当前增强的对象，防止出现本<strong>类方法互相调用时AOP失效</strong>问题。）</li>
+<li>具体使用<br>
+<strong>①基于接口的配置。</strong><br>
+<strong>②@AspectJ注解配置。</strong><br>
+③AspectJ直接实现。</li>
+<li><strong>实现原理</strong>：基于<strong>动态代理</strong>，代理类会封装目标类，并<strong>拦截</strong>被通知的方法的调用，<strong>执行切面</strong>逻辑，再将调用<strong>转发给目标类</strong>。采用责任链的设计模式。<br>
+当配置类<strong>设置AOP启动参数</strong>，会<strong>注入一个AOP的Bean后置处理器</strong>，在<strong>初始化前会解析切面注解</strong>并缓存，<strong>初始化后</strong>会拿到之前的缓存，<strong>判断</strong>是否被切点命中，<strong>创建代理</strong>。</li>
+<li>失效的原因：<br>
+<strong>–类内部调用方法</strong>失效（<strong>设置线程暴露参数</strong>，或者直接<strong>注入本类，然后调用</strong>）<br>
+–方法是<strong>private或者static</strong>（无法继承，实际上<strong>除了public都不行</strong>）<br>
+–目标类没有配置为Bean</li>
+</ul>
+</li>
+<li>
+<p><strong>事务</strong></p>
+<ul>
+<li><strong>四大特性：</strong><br>
+<strong>原子性</strong>：所有操作<strong>要么全部成功，要么全部回滚</strong><br>
+<strong>一致性</strong>：事务<strong>执行前和执行后必须处于一致性状态</strong><br>
+<strong>隔离性</strong>：并发访问数据时，多个<strong>事务互相不干扰</strong><br>
+<strong>持久性</strong>：事务一旦提交，<strong>对数据库的更改就是永久</strong>的</li>
+<li><strong>实现方式</strong>（<strong>编程式事务管理</strong>（编程的方式，灵活但难维护）和<strong>声明式事务管理</strong>（注解或xml配置，清晰方便））
+<ul>
+<li><strong>传播行为</strong><br>
+事务的传播行为指的是<strong>当一个事务方法调用另一个事务方法</strong>时，这个事务应该如何运行。<br>
+通过设置注解中的<strong>propagation</strong>参数，常见有三种：<br>
+<strong>默认的</strong>：<strong>无事务</strong>调用时会<strong>开启新事务</strong>，<strong>有事务</strong>调用时会<strong>融合</strong>外部事务（适合<strong>增删改</strong>）<br>
+<strong>SUPPORTS</strong>：<strong>无事务</strong>调用<strong>不开启</strong>事务，<strong>有事务</strong>调用时会<strong>融合</strong>外部事务（适合<strong>查询</strong>）<br>
+<strong>REQUIRES_NEW</strong>：<strong>无事务</strong>调用和<strong>有事务</strong>调用都会<strong>开启新事务</strong>（<strong>日志</strong>等）</li>
+<li><strong>隔离级别</strong><br>
+依赖数据库的<strong>事务隔离级别</strong>，通过注解中的<strong>isolation参数</strong>设置（）<br>
+<strong>脏读（RC）</strong><br>
+<strong>不可重复读（RR）</strong><br>
+<strong>幻影读（SERIALIZABLE）</strong></li>
+</ul>
+</li>
+<li><strong>实现原理</strong>（针对声明式事务管理）<br>
+基于<strong>AOP</strong>实现的（要在<strong>配置类</strong>中通过<strong>注解开启事务注解支持</strong>）<br>
+会为此类创建一个<strong>代理</strong>，调用会加上<strong>try-catch语句块</strong><br>
+<strong>Spring事务信息存放在ThreadLocal中</strong>，所以一个线程只能有一个事务
+<ul>
+<li><strong>try：</strong></li>
+<li><strong>判断ThreadLocal</strong>是否有<strong>数据库连接</strong>，如果<strong>有</strong>，说明现在是<strong>内嵌事务</strong>，执行下面语句：
+<ul>
+<li>如果是<strong>融入</strong>行为：不会重新创建新事务，将<strong>新事务的标志字段改为false</strong></li>
+<li>如果是<strong>创建</strong>行为：会将<strong>事务状态信息暂存后清空</strong>，重写<strong>创建</strong>一个事务</li>
+</ul>
+</li>
+<li>否则<strong>正常创建数据库连接</strong>，并且<strong>修改自动提交为false</strong>，<strong>执行</strong>目标方法</li>
+<li><strong>catch：<strong>出现异常，需要回滚就会</strong>回滚</strong>，否则正常提交</li>
+<li>无异常执行完成，<strong>当新事务标志字段为true</strong>则<strong>提交</strong>事务，<strong>否则恢复被清理的旧事务</strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>事件监听</strong>机制（<strong>观察者设计模式</strong>）</p>
+<ul>
+<li>实现原理：底层通过<strong>事件广播器</strong>来发布事件，可以<strong>自定义事件监听器</strong>，Spring容器会帮我们自动加入进去。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Spring-Boot">Spring Boot</h2>
+<ul>
+<li><strong>Spring Boot框架</strong>
+<ul>
+<li>与Spring的主要区别
+<ul>
+<li><strong>两者关系</strong>：Spring Boot不像Spring，不是一个框架，它<strong>是一个可以快速构建Spring脚手架工具</strong>，为其开发提供便利</li>
+<li>核心注解：<br>
+<strong>@SpringBootApplication</strong>（其为复合注解，还包括**@EnableAutoConfiguration @SpringBootConfiguration**）</li>
+<li><strong>内嵌Servlet容器</strong></li>
+</ul>
+</li>
+<li><strong>Spring Boot的启动流程</strong>
+<ul>
+<li>运行<strong>main方法</strong>，<strong>初始化SpringApplication</strong>（发布事件）</li>
+<li>运行<strong>run方法</strong>，内部会读取环境变量，打印Banner，设置一些参数等（发布事件）</li>
+<li><strong>创建</strong>SpringApplication上下文与<strong>初始化</strong>上下文，<strong>将启动类作为配置类注册</strong></li>
+<li>调用<strong>refresh方法加载IoC容器</strong>（发布事件）
+<ul>
+<li>解析**@Import加载的所有自动配置类**<br>
+（<strong>自动配置类</strong>：<strong>目的就是为我们做第三方库的自动配置</strong>）</li>
+<li><strong>onRefresh</strong>方法中会<strong>创建servlet容器</strong></li>
+</ul>
+</li>
+<li><strong>执行扩展接口</strong>（<strong>ApplicationRunner</strong>和<strong>CommandLineRunner</strong>接口）（发布事件）</li>
+<li>执行<strong>异常也会发布事件</strong></li>
+<li>大量利用<strong>监听器</strong>进行<strong>扩展</strong>（监听事件的发布）</li>
+</ul>
+</li>
+<li><strong>自动配置加载的原理：</strong>
+<ul>
+<li>通过**@SpringBootConfiguration<strong>映入了</strong>@EnableAutoConfiguration**注解</li>
+<li>其中使用**@Import<strong>导入了一个</strong>deferredImportSelcetor**</li>
+<li>加载IoC容器时会<strong>解析@Import</strong>注解</li>
+<li>会<strong>读取所有jar包META-INF/spring.factories文件</strong>（SPI），过滤出<strong>所有AutoConfigurationClass类型的类</strong></li>
+<li>通过**@Condition排除无效的自动配置类**</li>
+</ul>
+</li>
+<li><strong>内嵌Servlet容器启动原理</strong>（默认<strong>Tomcat</strong>）
+<ul>
+<li>当<strong>引用了web的场景启动器</strong>，就会导入<strong>容器启动的自动配置类</strong>，会导入一个Web容器工厂，在OnRefresh方法创建容器</li>
+<li>Jar包能直接运行的原因
+<ul>
+<li>Spring Boot提供了一个maven插件，此时打包会将依赖的jar包和Spring Boot相关的类一起打包。<br>
+同时启动时会分别加载依赖的jar包和启动Main函数。</li>
+</ul>
+</li>
+<li><strong>Servlet</strong>相关概念
+<ul>
+<li><strong>三大组件</strong>：<br>
+<strong>Servlet</strong>：处理客户端请求的核心组件<br>
+<strong>Listener</strong>：用于监听 Web 应用程序中各种事件的组件<br>
+<strong>Filter</strong>：用于在请求到达 Servlet 之前或响应返回客户端之前对请求和响应进行处理的组件</li>
+<li><strong>Spring Boot</strong>可以在<strong>配置类</strong>中的注册 <strong>注册器Bean</strong>，并在其中<strong>注册相关组件</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong><span id="日志框架">日志框架和门面</span></strong>
+<ul>
+<li>日志实现的方式有非常多，为了<strong>统一各个日志框架与日志门面</strong>，出现了<strong>适配器</strong>（让<strong>不同日志门面统一实现SLF4J门面</strong>）和<strong>桥接器</strong>（让<strong>不同日志框架实现SLF4J门面</strong>），只需要加入不同的适配器和桥接器就可以实现日志的整合。</li>
+</ul>
+</li>
+<li><strong>Spring MVC测试方法</strong>
+<ul>
+<li><strong>MockMvc</strong>：
+<ul>
+<li>不需要启动Web应用，可以<strong>对http请求进行模拟</strong>，同时<strong>提供一套验证工具</strong>，在测试类<strong>注入MockMvc对象</strong>，测试类加上**@AutoConfigureMockMvc**即可使用。</li>
+</ul>
+</li>
+<li><strong>RestTemplate</strong>
+<ul>
+<li>主要适用微服务远程调用（本地也行），在普通类中的构造函数可以通过builder构造一个<br>
+测试类通过TestRestTemplate直接new一个。（使用完整的远程调用请求路径，以及需要使用无参构造函数）</li>
+</ul>
+</li>
+<li>PostMan/<strong>ApiPost</strong>工具</li>
+<li><strong>Swagger</strong> API测试文档</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="SSM">SSM</h2>
+<ul>
+<li><strong>SSM框架</strong>
+<ul>
+<li><strong>Spring MVC</strong>
+<ul>
+<li><strong>工作流程：</strong>
+<ul>
+<li><strong>客户端</strong>向服务器<strong>发送一个HTTP请求</strong></li>
+<li><strong>前端控制器</strong>（<strong>DispatcherServlet</strong>）接收请求</li>
+<li><strong>根据</strong>请求的URL和其他<strong>信息</strong>，通过<strong>HandlerMapping</strong>确定请求应该由哪个**处理器（Controller）**来处理</li>
+<li><strong>确定处理器后</strong>，<strong>DispatcherServlet</strong>会通过<strong>HandlerAdapter</strong>来<strong>调用处理器</strong>。</li>
+<li><strong>处理器（Controller）<strong>具体的</strong>业务逻辑实现类</strong>，它接收请求参数，执行业务逻辑，并返回一个<strong>ModelAndView</strong>对象。</li>
+<li>返回ModelAndView对象后，<strong>DispatcherServlet</strong>会通过**视图解析器（ViewResolver）**解析视图名称，去找到对应视图。</li>
+<li>找到视图资源后，<strong>DispatcherServlet</strong> 会<strong>将模型数据传递给视图</strong>，并进行<strong>渲染</strong>。</li>
+<li>最后，<strong>DispatcherServlet</strong> 将生成的响应内容<strong>发送回客户端</strong>，客户端（如浏览器）会<strong>显示响应内容</strong>。</li>
+</ul>
+</li>
+<li><strong>HandlerInterceptor</strong>：用于<strong>拦截处理请求</strong>，可以在请求处理前、处理中和处理后执行特定逻辑。</li>
+<li><strong>ControllerAdvice</strong>：用于<strong>全局处理控制器的异常、数据绑定和数据校验</strong>。</li>
+</ul>
+</li>
+<li><strong>Spring</strong> <a href="#Spring%E6%BA%90%E7%A0%81">详细戳这</a></li>
+<li><strong>Mybatis</strong></li>
+<li><strong>三层架构</strong>
+<ul>
+<li><strong>表示层</strong></li>
+<li><strong>业务逻辑层</strong></li>
+<li><strong>数据访问层</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/stars-at-dawn">长夜有晨星</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://stars-at-dawn.github.io/posts/spring">https://stars-at-dawn.github.io/posts/spring</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://stars-at-dawn.github.io" target="_blank">晨星的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/">知识梳理</a><a class="post-meta__tags" href="/tags/Spring/">Spring</a></div><div class="post_share"><div class="social-share" data-image="/img/%E4%B8%8A%E5%B8%9DDJ.gif" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.png" target="_blank"><img class="post-qr-code-img" src="/img/wechat.png" alt="感谢投喂(☆▽☆)"/></a><div class="post-qr-code-desc">感谢投喂(☆▽☆)</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/mysql" title="MySQL相关知识点"><img class="cover" src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">MySQL相关知识点</div></div></a></div><div class="next-post pull-right"><a href="/posts/jvm" title="JVM相关知识点"><img class="cover" src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">JVM相关知识点</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/jvm" title="JVM相关知识点"><img class="cover" src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-05-18</div><div class="title">JVM相关知识点</div></div></a></div><div><a href="/posts/mysql" title="MySQL相关知识点"><img class="cover" src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2025-06-07</div><div class="title">MySQL相关知识点</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://avatars.githubusercontent.com/u/70315861?v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">长夜有晨星</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">35</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">26</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">9</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/stars-at-dawn"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="/Email" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到晨星的博客O(∩_∩)O</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring%E7%9F%A5%E8%AF%86%E7%82%B9"><span class="toc-number">1.</span> <span class="toc-text">Spring知识点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Spring-Boot"><span class="toc-number">2.</span> <span class="toc-text">Spring Boot</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SSM"><span class="toc-number">3.</span> <span class="toc-text">SSM</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/mysql" title="MySQL相关知识点"><img src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MySQL相关知识点"/></a><div class="content"><a class="title" href="/posts/mysql" title="MySQL相关知识点">MySQL相关知识点</a><time datetime="2025-06-07T01:57:17.000Z" title="发表于 2025-06-07 09:57:17">2025-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/spring" title="Spring相关知识点"><img src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Spring相关知识点"/></a><div class="content"><a class="title" href="/posts/spring" title="Spring相关知识点">Spring相关知识点</a><time datetime="2025-06-07T01:52:49.000Z" title="发表于 2025-06-07 09:52:49">2025-06-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/jvm" title="JVM相关知识点"><img src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="JVM相关知识点"/></a><div class="content"><a class="title" href="/posts/jvm" title="JVM相关知识点">JVM相关知识点</a><time datetime="2025-05-18T06:07:47.000Z" title="发表于 2025-05-18 14:07:47">2025-05-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/leetcode45" title="力扣45跳跃游戏 II"><img src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="力扣45跳跃游戏 II"/></a><div class="content"><a class="title" href="/posts/leetcode45" title="力扣45跳跃游戏 II">力扣45跳跃游戏 II</a><time datetime="2025-04-20T08:00:20.000Z" title="发表于 2025-04-20 16:00:20">2025-04-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/leetcode55" title="力扣55跳跃游戏"><img src="/img/%E4%B8%8A%E5%B8%9DDJ.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="力扣55跳跃游戏"/></a><div class="content"><a class="title" href="/posts/leetcode55" title="力扣55跳跃游戏">力扣55跳跃游戏</a><time datetime="2025-04-20T06:38:57.000Z" title="发表于 2025-04-20 14:38:57">2025-04-20</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By 长夜有晨星</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="chat-btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="/js/tw_cn.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>(() => {
+  const initGitalk = () => {
+    const gitalk = new Gitalk(Object.assign({
+      clientID: 'Ov23lisRUCB6OYtzaZaD',
+      clientSecret: '2980ba93a2df32300f79de4a789dd32662f0800b',
+      repo: 'Stars-at-dawn.github.io',
+      owner: 'Stars-at-dawn',
+      admin: ['Stars-at-dawn'],
+      id: 'df87d0773b8aa38d03d63c5452b97b47',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  const loadGitalk = async() => {
+    if (typeof Gitalk === 'function') initGitalk()
+    else {
+      await getCSS('https://cdn.jsdelivr.net/npm/gitalk@1.8.0/dist/gitalk.min.css')
+      await getScript('https://cdn.jsdelivr.net/npm/gitalk@1.8.0/dist/gitalk.min.js')
+      initGitalk()
+    }
+  }
+  
+  const commentCount = n => {
+    const isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+    if (isCommentCount) {
+      isCommentCount.textContent= n
+    }
+  }
+
+  if ('Gitalk' === 'Gitalk' || !true) {
+    if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+    else loadGitalk()
+  } else {
+    window.loadOtherComment = loadGitalk
+  }
+})()</script></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script>(() => {
+  const isChatBtn = true
+  const isChatHideShow = false
+
+  if (isChatBtn) {
+    const close = () => {
+      Chatra('minimizeWidget')
+      Chatra('hide')
+    }
+
+    const open = () => {
+      Chatra('openChat', true)
+      Chatra('show')
+    }
+
+    window.ChatraSetup = {
+      startHidden: true
+    }
+  
+    window.chatBtnFn = () => {
+      const isShow = document.getElementById('chatra').classList.contains('chatra--expanded')
+      isShow ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        Chatra('hide')
+      },
+      show: () => {
+        Chatra('show')
+      }
+    }
+  }
+
+  (function(d, w, c) {
+    w.ChatraID = 'tLSFCQ8hRBxXNzTDN'
+    var s = d.createElement('script')
+    w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments)
+    }
+    s.async = true
+    s.src = 'https://call.chatra.io/chatra.js'
+    if (d.head) d.head.appendChild(s)
+  })(document, window, 'Chatra')
+
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
