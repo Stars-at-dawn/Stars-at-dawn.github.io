@@ -6,7 +6,7 @@
   <link href="https://stars-at-dawn.github.io/atom.xml" rel="self"/>
   
   <link href="https://stars-at-dawn.github.io/"/>
-  <updated>2025-06-07T01:57:19.539Z</updated>
+  <updated>2025-07-21T08:00:07.451Z</updated>
   <id>https://stars-at-dawn.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Excel 批量合成单元格</title>
+    <link href="https://stars-at-dawn.github.io/posts/62924"/>
+    <id>https://stars-at-dawn.github.io/posts/62924</id>
+    <published>2025-07-21T01:32:57.000Z</published>
+    <updated>2025-07-21T08:00:07.451Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="批量合并一列的相同单元格">批量合并一列的相同单元格</h3><p>软件：Microsoft Office Excel</p><p>关于在Excel中进行批量合并单元格的操作</p><p>在Excel表格操作时，我们通常会遇到许多数据连续一致，这时我们需要合并这些单元格，例如下面的表格我们需要合并人员相同的单元格，同时将工作单位一并合并。</p><img src="https://pic1.zhimg.com/80/v2-7c217aaf8acfd1a9c2287ac27b54652a_1440w.webp?source=d16d100b" style="zoom:50%;" /><ol><li>此时只需要选中人员列（不包括标题）</li><li>选择 <strong>“数据”–&gt;“分类汇总”</strong></li><li>得到如下图表<br><img src="https://picx.zhimg.com/80/v2-2173ba5d7904fb5a98352614c5fac203_1440w.webp?source=d16d100b" style="zoom:50%;" /></li><li>接着选中最左列，通过<strong>Ctrl + G快捷键</strong>，选择<strong>空值</strong>查找，如图所示：<img src="https://picx.zhimg.com/80/v2-81df44c302ef065d76db673714240739_1440w.webp?source=d16d100b" alt="image-20250721151656784" style="zoom: 33%;" /></li><li>筛选出对应的<strong>空值单元格</strong>（即要合并的列）</li><li>同时点击**“开始”–&gt;“合并后居中”**</li><li>再次选择最左列，此时再点击**“开始”–&gt;“格式刷”**，将格式刷到需要对应格式的列<img src="https://picx.zhimg.com/80/v2-e38c5b745fccd2fea6cbbab958889d37_1440w.webp?source=d16d100b" alt="image-20250721152043556" style="zoom:33%;" /></li><li>再次在最左列使用Ctrl + G快捷键，选择常量查找</li><li>此时右击选中的单元格，点击“删除”，选择整行，合并就算完成了，<strong>如有其它行需要，格式相同的可以使用格式刷</strong>，不同的则可以再次采用此方法。</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;批量合并一列的相同单元格&quot;&gt;批量合并一列的相同单元格&lt;/h3&gt;
+&lt;p&gt;软件：Microsoft Office Excel&lt;/p&gt;
+&lt;p&gt;关于在Excel中进行批量合并单元格的操作&lt;/p&gt;
+&lt;p&gt;在Excel表格操作时，我们通常会遇到许多数据连续一致，这时我们需要合</summary>
+      
+    
+    
+    
+    <category term="小知识" scheme="https://stars-at-dawn.github.io/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="小知识" scheme="https://stars-at-dawn.github.io/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="Excel" scheme="https://stars-at-dawn.github.io/tags/Excel/"/>
+    
+  </entry>
   
   <entry>
     <title>MySQL相关知识点</title>
@@ -41,9 +70,9 @@
     <category term="知识梳理" scheme="https://stars-at-dawn.github.io/categories/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
     
     
-    <category term="知识梳理" scheme="https://stars-at-dawn.github.io/tags/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
-    
     <category term="MySQL" scheme="https://stars-at-dawn.github.io/tags/MySQL/"/>
+    
+    <category term="知识梳理" scheme="https://stars-at-dawn.github.io/tags/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
     
   </entry>
   
@@ -106,9 +135,9 @@
     <category term="知识梳理" scheme="https://stars-at-dawn.github.io/categories/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
     
     
-    <category term="JVM" scheme="https://stars-at-dawn.github.io/tags/JVM/"/>
-    
     <category term="知识梳理" scheme="https://stars-at-dawn.github.io/tags/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
+    
+    <category term="JVM" scheme="https://stars-at-dawn.github.io/tags/JVM/"/>
     
   </entry>
   
@@ -453,9 +482,9 @@
     <category term="小知识" scheme="https://stars-at-dawn.github.io/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="Excel" scheme="https://stars-at-dawn.github.io/tags/Excel/"/>
-    
     <category term="小知识" scheme="https://stars-at-dawn.github.io/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="Excel" scheme="https://stars-at-dawn.github.io/tags/Excel/"/>
     
   </entry>
   
@@ -482,9 +511,9 @@
     <category term="小知识" scheme="https://stars-at-dawn.github.io/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
     
     
-    <category term="小知识" scheme="https://stars-at-dawn.github.io/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
-    
     <category term="PR" scheme="https://stars-at-dawn.github.io/tags/PR/"/>
+    
+    <category term="小知识" scheme="https://stars-at-dawn.github.io/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
@@ -577,35 +606,6 @@
     <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
     
     <category term="旅游" scheme="https://stars-at-dawn.github.io/tags/%E6%97%85%E6%B8%B8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>语句记录</title>
-    <link href="https://stars-at-dawn.github.io/posts/b213807a"/>
-    <id>https://stars-at-dawn.github.io/posts/b213807a</id>
-    <published>2024-11-02T02:24:43.000Z</published>
-    <updated>2024-11-02T02:31:13.879Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="语句记录"><strong>语句记录</strong></h2><p><strong>人民万岁！</strong></p><p><strong>懦者从不启程，弱者退与途中。</strong></p><p><strong>唯有遍历星河，才知人间值得。</strong></p><p><strong>只是糟糕的一天，不是糟糕的一生</strong></p><p><strong>你是在拜佛，还是在拜自己的欲望？</strong></p><hr><h3 id="俗语：">俗语：</h3><p>赔本赚吆喝</p><p><strong>工具没有好坏之分</strong></p><p>不要想的比做的多</p><p><strong>君子不立危墙之下</strong></p><p>君子怕小人，<strong>小人怕狠人</strong></p><p><strong>永远不要去挣最后一个铜板</strong></p><p><strong>透明和政府</strong>这两个词本身就是矛盾的</p><p>在一个拿锤子的人看来，任何东西都像钉子</p><p>先去做，做的过程再去想问题的解决办法</p><p>都快打到柏林了，还以为自己形势大好呐</p><p>阿Q挨了一巴掌，他没胆量打回去，只能骂一句儿子打老子，骂完之后他的脸仿佛不这么疼了</p><hr><h3 id="长句："><strong>长句：</strong></h3><p><strong>是俗是雅, 我已经分不清了, 我只知道月亮正圆,我若不看一眼, 倒显得我不解风情了。</strong></p><p>学校要求我们把头发剪了，我剪了头发，顿时觉得一股清流，再摸摸后脑勺，不知何时生出一只辫子</p><p>圆规为什么可以画圆? 因为<strong>脚在走，心不变。</strong><br>你为什么不可以圆梦? 因为<strong>心不定，脚不动。</strong></p><p>生而为人，要么就努力到能力出众，要么就懒得乐天知命。<br>最怕你是见识打开了，可努力又跟不上；<br>骨子里清高至极，性格上又软弱无比。</p><p><strong>当你将所有努力压在一件事情上，</strong><br><strong>那做完这件事等待你的将会是无尽的空虚</strong></p><p><strong>鲁莽者要学会思考，善思者要克服的是犹豫。</strong><br><strong>目的渴求完美，举步之际则无需周全。</strong></p><p><strong>平行的两只眼睛，却不平等看人</strong><br><strong>生在左右两只耳朵，却总听一面之词；</strong><br><strong>只有一张嘴，却总能说出两面话。</strong></p><p>你的迷茫，大多都是因为<strong>想得太多、做得太少</strong>。<br>还没开始，就担心前路太崎岖、害怕难关过不去。<br>与其思虑过度，不如脚踏实地。<br><strong>舍得逼自己一把，才能知道自己究竟能走多远。</strong></p><p>“怎样算欺凌?”<br>“十人欺负一人算。一百人欺负一人也算。”<br>“那么一万个人呢?”<br>“那是<strong>正义</strong>啊。”</p><p>一群连街边小偷都不敢呵斥的人，<br>却勇于高呼灭了敌国，<br>一帮连活着的人民的痛苦，都漠不关心的人，<br>却有脸说不忘死去的同胞。<br>——王朔</p><p><strong>你说的话里，藏着你读过的书，走过的路，爱过的人，</strong><br><strong>把自己变得丰富，才是你无惧一切的底气。</strong><br><strong>人们不在乎真相,只相信自己愿意相信的真相，谁给他们提供幻觉，谁就能轻易成为他们的主人</strong></p><p>跳蚤的来吮血，虽然可恶，而一声不响地就是一口，何等直截爽快。<br>蚊子便不然了，一针叮进皮肤，自然还可以算得有点彻底的，但当未叮之前，要哼哼地发一篇<br>大议论，却使人觉得讨厌。如果所哼的是在说明人血应该给它充饥的理由，那可更其讨厌了，幸而我不懂。</p><p>我正要出门，只看一个小狗乌咽亨即的躺在路旁，约莫是断了腿我于是请了兽医来。<br>他好一番检查，又从随身的包里摸出几个针线，不等我开口，只自顾自的缝了小狗的嘴起来。<br>我于是不见哀豪声了，它大抵是被医好了</p><p>中国人躺在儒家挖的大坑里几千年爬不上来，读书根本就不是为学习知识，掌握真理或探索宇宙奥妙，<br>读的好点的，参加科举，当个官，做做人上人；读的差的，混口饭吃仅此而已！<br>**人与人之间始终学不会平等的相处。**所以，至今仍然与现代文明格格不入（徐志摩）</p><hr><h3 id="名言："><strong>名言：</strong></h3><p>在无权、无势、善良的人身上挑毛病。<br>在有权、有势、缺德的人身上找优点。——莫言</p><p>上善若水，水善利万物而不争。——《道德经》</p><p><strong>毁掉我们的不是我们所憎恨的，恰恰是我们所热爱的。——《娱乐至死》</strong></p><p><strong>为了那些想象中的离奇故事，观众奉献了太多的笑声和泪水。——《乌合之众》</strong></p><p><strong>多数人在25岁时就死了，一直到75岁才埋葬。——富兰克林</strong></p><p>优于别人，并不高贵，<strong>真正的高贵是优于过去的自己</strong>。——海明威</p><p>如果印钞票能消除贫困的话，那么印文凭也就可以消除愚蠢了。——阿根廷总统 米莱</p><p>“<strong>屏蔽力</strong>”是一个人最顶级的能力。任何消耗你的人和事，多看一眼都是你的不对。——罗素</p><p>那些不能过公共生活，或者可以自给自足不需要过公共生活，因而不参与社会的，要么是兽类，要么是<strong>上帝</strong>。 ——亚里士多德</p><p><strong>“我们走后，他们会给你们修学校和医院，会提高你们的工资，这不是因为他们良心发现，也不是因为他们变成了好人，而是因为我们来过”</strong> ——切·格瓦拉</p><p><strong>“如果动物光吃不胖，它的肚子里一定有寄生虫；如果人民勤劳却无法致富，那个社会一定有吸血鬼。”</strong><br><strong>一鲁迅《狂人日记》</strong></p><hr><h3 id="短语：">短语：</h3><p><strong>行百里者半九十</strong></p><p><strong>不以物喜，不以己悲</strong></p><p>思接千载，视通万里</p><p>小惠未遍，民弗从也</p><p><strong>门客三千</strong>，古来已久（孟尝君食客三千）</p><p><strong>由俭入奢易，由奢入俭难</strong></p><p>**知行合一。**知进退，明得失。</p><p>流水不腐，户枢不蠹，<strong>动也。</strong></p><p><strong>谋爱前，先谋生，爱人前，先爱己。</strong></p><p>君子 <strong>藏器于身，待时而动；以钝示人，以锋策己。藏锋慰忠骨，出鞘镇河山。</strong></p><hr><h2 id="其它语句记录">其它语句记录</h2><h3 id="散文"><strong>散文</strong></h3><p><strong>黑瓦白墙的江南</strong></p><p>远处夜莺正在歌唱，<strong>引人入梦，扰人思绪</strong></p><p><strong>人生就像一盒多味巧克力，人们永远都不知道下一颗是什么味道，就好像你这颗，很甜。</strong></p><p><strong>身临其境，如一篇“桃花源记”</strong><br><strong>回首向望，是一卷“富春山居”</strong></p><p><strong>在他身上以妙不可言的比例结合在一起</strong></p><p>两年，是什么概念？<br>是把等待日出前的每一场黑夜凝铸，铸成一块徽墨，待东升之时，从容写下眼中最险峻的峰峦与路尽头最静谧的山林。<br>也是把穿透云海时每一抹水汽凝聚，聚成一股涓流，待云烟腾起，悄然晕染天边最壮观的云海与青瓦下最温柔的露珠。</p><p>——来自 摄影师独自一人耗时两年拍摄，这是你梦里的「徽州」吗？评论区</p><p>“<strong>地球这样的行星，是产生不了重元素的</strong>，你身体里的铁，来自璀璨的超新星爆炸”<br>“血液里的锌，源自两次中子星对撞后喷射向宇宙的尘埃”<br>“那微量的铜，更是需要见证一颗白矮星的死亡，即使是最微不足道的钴，也源自几十亿光年外的星云”<br>“某种意义上讲，人类对星空怀有好奇，是正常的。”<br><strong>“渴望见证星河大海的极限，因为我们本就是星辰之子。”</strong><br>“我们DNA里的氮元素，我们牙齿里的钙元素，我们血液里的铁元素，还有我们吃掉的东西里的碳元素，都是曾经大爆炸时的万千星辰散落后组成的，所以我们每个人都是星辰，你我皆为星辰之子，每一个细胞都书写着整个宇宙的历史，当你凝视自己，也望见了宇宙的轮廓”<br><strong>一切生命都是星海的孩子，我们将回归星空</strong></p><p>黄金的体积每年要磨去一千四百分之一，这就是所谓“损耗”。因此全世界流通的十四亿金子每年要损耗一百万。这一百万黄金化作灰尘，飞扬飘荡，变成轻的能够吸入呼出的原子，这种吸入剂像重担一样，压在人的良心上，跟灵魂起了化学作用，<strong>使富人变得傲慢，穷人变得凶狠。</strong><br>——雨果</p><p>“它身上的每一块钢铁、每一部零件，从原料的开采到冶炼，再到浇筑，无不由凡人进行——我们会使用机械代劳。”<br>“孩子，你要知道，这些生产机器的初步构思源于科研人员的头脑、基本架构诞生于设计师的纸笔，而它们的原型机来自于工匠们并不精湛的手艺。<strong>没有神赐，没有神谕</strong>，它们<strong>开始发动的轰鸣之声足以埋葬整个神话时代</strong>。”<br>“这些源于平凡的机器能够改变一个国家乃至世界、能够打碎神明引以为傲的资本，尽管它们无法与神正面媲美。”<br>“但它们却能让我们不再需要‘神’——<strong>至少,让我们拥有选择的权力</strong>。”</p><hr><h3 id="诗句"><strong>诗句</strong></h3><p>蒹葭苍苍，白露为霜。<br><strong>所谓伊人，在水一方</strong></p><p><strong>但愿人长久，千里共婵娟</strong></p><p><strong>郎骑竹马来，绕床弄青梅。</strong><br><strong>同居长干里，两小无嫌猜。</strong></p><p>故人轻抚今人眉，为尔散去半生灾</p><p><strong>纸上得来终觉浅，绝知此事要躬行</strong></p><p>凭君莫话封候事，一将功成万骨枯。</p><p><strong>年年岁岁花相似，岁岁年年人不同。</strong></p><p><strong>回首向来萧瑟处，也无风雨也无晴。</strong></p><p><strong>曾经沧海难为水，除却巫山不是云。</strong></p><p>天街小雨润如酥，草色遥看近却无。</p><p>最是一年春好处，绝胜烟柳满皇都。</p><p><strong>若非脚踏方寸土，不觉此身在人间。</strong></p><p><strong>应是补天余此物，险峰凝雪锢飞霞。</strong></p><p>天若有情天亦老，<strong>人间正道是沧桑</strong>——毛泽东</p><p>忽如一夜春风来，千树万树梨花开（描写雪的）<br>忽如一夜北风来，千树万树雪花白（仿写 描绘梨花开）</p><p><strong>欲买桂花同载酒，终不似，少年游</strong></p><p>“白雪纷纷何所似？”<br>“撒盐空中差可拟。”<br>“未若柳絮因风起。”</p><p>明天会变成什么？<br>会变成一束鲜花，一颗流星，一个愿望<br>会变成一个誓言，一句祝福<br>明天会变成你余下生命的第一天<br>——黑塞</p><p>如梦令·常记溪亭日暮【宋】李清照</p><p>常记溪亭日暮，沉醉不知归路。<br>**兴尽晚回舟，误入藕花深处。**争渡，争渡，惊起一滩鸥鹭。</p><p>青玉案·元夕 南宋 辛弃疾</p><p>**东风夜放花千树。**更吹落，星如雨。宝马雕车香满路。凤箫声动，玉壶光转，一夜鱼龙舞。</p><p>蛾儿雪柳黄金缕。笑语盈盈暗香去。<strong>众里寻他千百度。蓦然回首，那人却在，灯火阑珊处。</strong></p><p>宋·苏轼《前赤壁赋》：<br><strong>惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色，</strong><br><strong>取之无禁，用之不竭。是造物者之无尽藏也，而吾与子之所共适。</strong></p><p>《春江花月夜》 张若虚  称为&quot;孤篇压全唐&quot;<br>……<strong>江畔何人初见月？江月何年初照人？</strong><br>……<strong>白云一片去悠悠，青枫浦上不胜愁。</strong><br>……<strong>谁家今夜扁舟子？何处相思明月楼？</strong></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;语句记录&quot;&gt;&lt;strong&gt;语句记录&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;人民万岁！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;懦者从不启程，弱者退与途中。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;唯有遍历星河，才知人间值得。&lt;/str</summary>
-      
-    
-    
-    
-    <category term="记录" scheme="https://stars-at-dawn.github.io/categories/%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="书籍" scheme="https://stars-at-dawn.github.io/tags/%E4%B9%A6%E7%B1%8D/"/>
-    
-    <category term="记录" scheme="https://stars-at-dawn.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
     
   </entry>
   
