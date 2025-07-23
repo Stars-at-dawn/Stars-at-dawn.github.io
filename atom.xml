@@ -6,7 +6,7 @@
   <link href="https://stars-at-dawn.github.io/atom.xml" rel="self"/>
   
   <link href="https://stars-at-dawn.github.io/"/>
-  <updated>2025-07-21T08:00:07.451Z</updated>
+  <updated>2025-07-23T03:10:59.561Z</updated>
   <id>https://stars-at-dawn.github.io/</id>
   
   <author>
@@ -17,11 +17,40 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Excel笔记</title>
+    <link href="https://stars-at-dawn.github.io/posts/62925"/>
+    <id>https://stars-at-dawn.github.io/posts/62925</id>
+    <published>2025-07-23T02:57:14.000Z</published>
+    <updated>2025-07-23T03:10:59.561Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Excel-批量填充单元格">Excel 批量填充单元格</h3><p>软件：Microsoft Office Excel</p><p>关于在Excel中进行批量填充单元格的操作</p><p>在Excel表格操作时，我们通常会遇到一列中许多连续数据需要填充，而这时直接填充会出现只能选择某一个数据填充所有。数据如下图所示</p><img src="C:\Users\R_F\AppData\Roaming\Typora\typora-user-images\image-20250723105813760.png" alt="image-20250723105813760" style="zoom:50%;" /><p>1.我们只需要选择第一列，通过快捷键Ctrl + H 将“-”替换成空值</p><p>2.选中第一列，使用快捷键Ctrl + G ，点击“定位条件”，选择“空值”，定位空值的单元格</p><p>3.点击上方的内容输入列，输入第一个空值单元格中的公式（“=上一个单元格”）（等会需要用来给后面的数据填充使用）。如图：</p><img src="C:\Users\R_F\AppData\Roaming\Typora\typora-user-images\image-20250723110943426.png" alt="image-20250723110943426" style="zoom:50%;" /><p>4.然后使用<strong>Ctrl + D</strong>快捷键 进行<strong>填充</strong>就完成填充数据（此时所有的空的单元格的数据会指向上一个单元格的内容）</p><p>5.（额外的）<strong>如果不想要公式</strong>，可以将这列的数据复制到别的行，然后在通过数值粘贴以达到纯数据的形式。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Excel-批量填充单元格&quot;&gt;Excel 批量填充单元格&lt;/h3&gt;
+&lt;p&gt;软件：Microsoft Office Excel&lt;/p&gt;
+&lt;p&gt;关于在Excel中进行批量填充单元格的操作&lt;/p&gt;
+&lt;p&gt;在Excel表格操作时，我们通常会遇到一列中许多连续数据需要填充，</summary>
+      
+    
+    
+    
+    <category term="小知识" scheme="https://stars-at-dawn.github.io/categories/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    
+    <category term="小知识" scheme="https://stars-at-dawn.github.io/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+    
+    <category term="Excel" scheme="https://stars-at-dawn.github.io/tags/Excel/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Excel 批量合成单元格</title>
-    <link href="https://stars-at-dawn.github.io/posts/62924"/>
-    <id>https://stars-at-dawn.github.io/posts/62924</id>
+    <link href="https://stars-at-dawn.github.io/posts/61000"/>
+    <id>https://stars-at-dawn.github.io/posts/61000</id>
     <published>2025-07-21T01:32:57.000Z</published>
-    <updated>2025-07-21T08:00:07.451Z</updated>
+    <updated>2025-07-23T03:24:27.489Z</updated>
     
     <content type="html"><![CDATA[<h3 id="批量合并一列的相同单元格">批量合并一列的相同单元格</h3><p>软件：Microsoft Office Excel</p><p>关于在Excel中进行批量合并单元格的操作</p><p>在Excel表格操作时，我们通常会遇到许多数据连续一致，这时我们需要合并这些单元格，例如下面的表格我们需要合并人员相同的单元格，同时将工作单位一并合并。</p><img src="https://pic1.zhimg.com/80/v2-7c217aaf8acfd1a9c2287ac27b54652a_1440w.webp?source=d16d100b" style="zoom:50%;" /><ol><li>此时只需要选中人员列（不包括标题）</li><li>选择 <strong>“数据”–&gt;“分类汇总”</strong></li><li>得到如下图表<br><img src="https://picx.zhimg.com/80/v2-2173ba5d7904fb5a98352614c5fac203_1440w.webp?source=d16d100b" style="zoom:50%;" /></li><li>接着选中最左列，通过<strong>Ctrl + G快捷键</strong>，选择<strong>空值</strong>查找，如图所示：<img src="https://picx.zhimg.com/80/v2-81df44c302ef065d76db673714240739_1440w.webp?source=d16d100b" alt="image-20250721151656784" style="zoom: 33%;" /></li><li>筛选出对应的<strong>空值单元格</strong>（即要合并的列）</li><li>同时点击**“开始”–&gt;“合并后居中”**</li><li>再次选择最左列，此时再点击**“开始”–&gt;“格式刷”**，将格式刷到需要对应格式的列<img src="https://picx.zhimg.com/80/v2-e38c5b745fccd2fea6cbbab958889d37_1440w.webp?source=d16d100b" alt="image-20250721152043556" style="zoom:33%;" /></li><li>再次在最左列使用Ctrl + G快捷键，选择常量查找</li><li>此时右击选中的单元格，点击“删除”，选择整行，合并就算完成了，<strong>如有其它行需要，格式相同的可以使用格式刷</strong>，不同的则可以再次采用此方法。</li></ol>]]></content>
     
@@ -576,36 +605,6 @@
     
     
     <category term="小知识" scheme="https://stars-at-dawn.github.io/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>旅游地点记录</title>
-    <link href="https://stars-at-dawn.github.io/posts/62bf27e9"/>
-    <id>https://stars-at-dawn.github.io/posts/62bf27e9</id>
-    <published>2024-11-02T02:27:26.000Z</published>
-    <updated>2024-11-02T02:31:13.880Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="村寨">村寨</h2><p><strong>安徽 西递村</strong>   ☆☆☆☆</p><p>建议时间：2-5月份</p><p>徽派建筑 画画圣地 有许多过来画画的学生</p><p><strong>四川甘孜 丹巴藏寨</strong> ☆☆☆</p><p>一般 景点少50一张票自己开进去 路不好开 风景挺好看的</p><p><strong>西江 千户苗寨</strong> ☆☆</p><p>民风不纯朴，宰客严重！<br>票价也不值得，没有宣传的那样好！建议不要来<br>老年人免费的可以来看，年轻人这个票价不值得<br>其它的商业化严重什么的，大家都知道了。旺季住半山民宿一晚1500</p><p><strong>湖南 皇都侗寨</strong></p><p><strong>福建 田螺坑村</strong> ☆☆☆☆</p><p>客家土楼 值得一去的</p><p><strong>福建 永定 集庆楼/承启楼</strong> ☆☆☆☆</p><p>客家土楼 值得一去的</p><p><strong>山西洪洞 大槐树</strong> ☆☆</p><p>寻根问祖（对同一个姓的人说的客套话：<strong>五百年前是一家</strong>。一说出处就是在这里）<br><strong>情怀价值无限</strong><br>但<strong>旅游游玩价值无</strong>，就是引诱外地人 来此参观现代建设的情怀建筑<br>成人门票80，儿童，60岁老人半价 军人，1.2米以下，65岁以上免费 洪洞本地身份10元，开年3 4月淡季有免费的</p><p><strong>陕西 青木川古镇</strong> ☆☆☆☆☆</p><p>休闲游的好地方，安静，环境好，适合散心，就是没有高速，山路过去有点距离<br>就是卖东西的特别多！翟家大院可以看看！魏氏宅院也行！游客服务中心旁边有个旅拍店价格合适服务很好！<br>从游客中心停车场后面可以爬个小山头，回龙寺（全程木栈道500米左右，爬升约50米）老少皆宜。车子只能停到游客中心停车场，步行二百米就进去小镇了。<br>套票网购54元，是三个地方：老宅、烟馆、荣盛魁），老宅单独参观是30元。</p><p><strong>山西 碛口古镇</strong> ☆☆☆</p><p>“九曲黄河第一镇”<br>商业化太严重到处是客栈民宿 真正的古建筑没多少 没啥看的<br>无门票停车场免费，景区免费公交接送</p><p><strong>西藏 嘎拉桃花村</strong>  ☆☆☆☆</p><p>素享“西藏江南”美誉<br>盛开时间最早，从三月中旬到四月上旬。<br>驱车沿318国道往东南方向行驶十几分钟，就来到了嘎拉村</p><p><strong>四川 曾达村</strong></p><p>特别好看的梨花</p><p><strong>山西 王家大院</strong> ☆☆☆☆</p><p>“民间故宫”、“山西紫禁城”等美誉<br>总面积就达到25万平方米，据说是中国最大的私人豪宅之一，其规模之大令人叹为观止。<br>院内房屋密集，布局有序，整体呈上坡状，气势恢宏<br>一砖一瓦，处处都是历史；一匾一联，字字皆为文化。注意避开旅游旺季，不然举步维艰</p><p><strong>浙江 诸葛八卦村</strong> ☆☆☆☆</p><p>名人加持<br>带有古风，具有江南风味的建筑</p><p><strong>浙江 南浔古镇</strong> ☆☆☆☆☆</p><p>景区不要门票。9点钟到，刚好南门有表演。个别参观要门票，看自愿。<br>停车场停7个小时，25块钱。还可以。<br>吃的东西不少，下午到晚上，人山人海。下午两点多，去买3块钱的船票，</p><p><strong>浙江南浔 小莲庄</strong> ☆☆☆☆</p><p>南浔古镇门票免费，可以坐水上巴士游览，还可以在水上游览，<br>古镇里有很多美食，定胜糕和梅花糕口味不错。还有百间楼-丝绸码头头。</p><p><strong>浙江 乌镇</strong> ☆☆☆☆</p><p>江南六大古镇<br>特色菜可以但要花很多钱。除了逛街，其他活动很费钱。<br>白天、晚上各有各的特色</p><p><strong>浙江温岭 石塘镇</strong></p><p>渔村</p><p>**浙江温州 永嘉 苍坡古村 **☆☆☆☆<br>正在装修中，古建筑数量有限，水体污染严重，且大部分设施未开放，建议免费停车后从旁门进入，但需注意安全卫生问题。<br>苍坡古镇景色非常漂亮，大晴天拍照特别好看，基本上30分钟就能逛完，如果走走拍拍照，1个小时也足够了。<br>村子以文房四宝作为型来构建村子</p><p><strong>浙江长兴 方一村</strong></p><p><strong>浙江富阳 龙门古镇</strong> ☆☆</p><p>70门票太贵了<br>没必要门票，全是小路能进，村子里也能进，一些要门票的小房间没啥看点<br>商业化没有那么严重的一个小镇，去的人不多，小镇本身得人也不多。</p><p><strong>浙江丽水市松阳县 杨家堂村</strong></p><p>**浙江武义 郭洞村景区 **☆☆</p><p>车比人多。门票30￥，还有小收费点<br>值得去一下，顺便尝竹筒饭。<strong>下去五分钟车程有个水库，那里很好</strong></p><p><strong>安徽 黄山 宏村镇</strong>☆☆☆☆</p><p>绝对超级美丽的一个地方，一半是诗情画意，一半是人间烟火，要好好保护好这个村落，不输土耳其的任何一个小镇，中国的古镇那是真正的古镇，马头墙，青砖灰瓦的特色房屋，到处都是服装写生的学生和艺术家，没事去这里住两天，发发呆，看看山景，让生活慢下来，虽然不可避免的商业化，但随处可见的原住居民的日常劳作与游客的旅途漫游是如此的和协与相得益彰。</p><p><strong>广西 黄姚古镇</strong> ☆☆☆</p><p>门票价格太贵（88￥），商业味道太浓，没有文化气息。<br>黄姚古镇依山傍水，山水相映成趣，让人心旷神怡。 风景不错</p><p><strong>福建 龙海 埭美古村</strong> ☆☆</p><p><strong>河南 陕州 地坑院</strong> ☆☆☆</p><p>“没有建筑的建筑”（地坑）<br>去了一个坑一个坑看，变成小饰品步行街了。<br>没意思。啥也没有。商业化太严重。晚上看灯有特色，不带无人机不要去了。<br>交通挺便利，历史建筑，门边不贵，周边餐饮配套很多</p><p><strong>福建龙海 埭美古村</strong></p><p><strong>湖南 勾蓝瑶寨</strong> ☆☆☆</p><p>适合养老的优美环境</p><p><strong>云南 丽江束河古镇</strong> ☆☆☆☆</p><p>除了丽江古城外，每次我都会来这里，它没有丽江大研喧嚣，商业化更少一些，慵懒是这里的代名词，小桥流水，石板小道，它却一样都不少。束河古镇一直给我一种宁静舒适，一幅我所向往生活的模样。这里不必跟随着人们的脚步去走，随心便是最好的生活模式，早上在古城里逛逛，看看繁花盛开的静谧街巷，中午的一碗米线，人间至味仅仅不过是古镇里不起眼的米线小店。阳光正好的午后随便找一家咖啡店，让书本、音乐和浓郁的咖啡香陪伴一下午，晚上去看看四方街的篝火晚会，与纳西人围着篝火载歌载舞的欢乐，伴随着繁星点点的星空，束河的夜也是醉人。<br>📍地址：云南丽江束河古镇  💰门票：0元  🕐开放时间：全天开放<br>👉🏻束河古镇游玩推荐：<br>📍哈里谷：这个片区都是一些仿古建筑，亭台楼阁，小桥流水很适合拍中式风格。<br>📍四方听音广场：晚上有篝火表演，广场一旁有一个雪山观景台，走上去可以看到雪山。<br>📍飞花触水：这里聚集了很多餐厅、酒吧。<br>📍聚宝山：可以打卡束河古镇全貌</p><p><strong>吉林图们 白龙村</strong></p><p>边境</p><p>北京市门头沟区斋堂镇 爨柏景区（<strong>爨底下村</strong>）☆☆☆</p><p>景区比较小游玩时间一小时左右，可以了解一下明清时期的山里民居，但大部分的房子都改民宿了。<br>目前雁翅镇到景区的路正在施工路况不好，驾车出游多注意安全。（2024-03-15）</p><p><strong>新疆布尔津 乔木村</strong> ☆☆☆☆</p><p>05月01日至10月15日 08:00-22:00<br>早穿棉袄午穿纱，早上只有10度以下了，羽绒服真的得安排<br>夏天晚上8点半都还没有天黑，温度不冷不热刚刚好，风景很好，远远看村子确实有种中国小瑞士的感觉</p><p><strong>广东 千年瑶寨（连南瑶寨）</strong> ☆</p><p>巴掌大一块地方全是卖东西的门票一百多就连演出也是卖字画的真的太不值了</p><p><strong>辽宁沈阳 东陵公园</strong> ☆☆☆☆<br>清福陵，东陵公园内，是清太祖努尔哈赤和皇太极生母叶赫那拉氏的陵墓，另有努尔哈赤的后妃叶赫那拉氏、乌拉那拉氏等人葬于此处。 福陵是清太祖努尔哈赤及其孝慈高皇后叶赫纳喇氏的陵墓。<br>与沈阳市的昭陵、新宾县永陵合称“关外三陵”、“盛京三陵”。<br>东陵公园始建于公元1629年(天聪三年)，到公元1651年基本建成。后经清朝顺治、康熙、乾隆年间的多次修建，形成了规模宏大、设施完备的古代帝王陵墓建筑群。距今已有三百六十余年历史。崇德元年(公元1636年)大清建国，定陵号为“福陵”，1929年被当时奉天当局辟福陵为东陵公园。</p><p><strong>辽宁沈阳 盘古台村</strong></p><hr><h2 id="公园-景区">公园 景区</h2><p><strong>浙江桐庐 瑶琳国家森林公园</strong> ☆☆☆☆</p><p>溶洞，人少，游览路线也非常舒服</p><p><strong>浙江桐庐 瑶琳仙境</strong> ☆☆☆☆</p><p>溶洞</p><p><strong>浙江桐庐 垂云通天河景区</strong> ☆</p><p>管理非常混乱 面积很小 很贵<br>玻璃栈道现场感受并不好 高度并不高 玻璃很脏 下方的景色很差<br>拍照免费，实际20元带走<br>所谓的漂流，并不是天然的河道，而是一个带水的人造滑梯。</p><p><strong>浙江桐庐 大奇山国家森林公园</strong> ☆☆☆</p><p>人多 路少 风景还可以</p><p><strong>浙江桐庐 严子陵钓台景区</strong> ☆</p><p>125元的门票(含摆渡船票)，简直就是在抢钱！完全不值。<br>而且，满是铜臭的门票经济，对于自由脱俗的严子陵，实在就是莫大的讽刺</p><p><strong>浙江桐庐 芦茨湾</strong> ☆☆☆☆</p><p>（接上一段）<strong>果断开车掉头，开车十多分钟就能到芦茨湾，顺着著名的马岭古道，逛吃到茆坪村、深奥古村、石舍村，景色好、人文佳、还免费，那才是旅游该有的感觉</strong></p><p><strong>浙江温州 江心屿</strong> ☆☆☆☆☆</p><p>南宋开国皇 帝在江心屿避过难。民族英雄文天祥也在此地逗留过一段时间。<br>浙江省温州市鹿城区江心屿，有一旅游景点，四面环水，乘游轮可达，名曰江心寺，历史悠久。<br>进入景点，但见水光山色，宝刹庄严，金碧辉煌，一派佛光普照。<br>大门立柱上有一对长联： <strong>云朝朝朝朝朝朝朝朝散， 潮长长长长长长长长消。</strong> 此联是南宋温州状元王十朋所撰，具有深厚的文化底蕴和禅意。 重字联中“朝”和“长”为多音字，跌宕起伏，灵活互动，妙趣横生，实为古今一大奇联。 据说，能读懂了的都是高人。</p><p><strong>浙江 莫干山风景区</strong> ☆☆☆☆</p><p>国内四大避暑胜地之一。<br><strong>附近有车的可以去，外地的就别去了，就是普通度假村</strong>，而且当地网约车和出租车都要加价30多才载你<br>风景不错，空气新鲜，都是山里人家和民宿，度假放松好去外！</p><p><strong>浙江 雁荡山</strong> ☆☆☆</p><p><strong>景点分散还很小。</strong><br>各景点停车虽然免费，但门票价太贵。<br>如果开车路过大龙湫的瀑布还值得一看。<br>去过黄山，华山或泰山的，这里完全可以不用来了。神农架也秒杀这里。</p><p><strong>浙江 千岛湖</strong> ☆☆☆☆</p><p>被誉为“天下第一秀水”<br>又称新安江水库，我国最大的人工湖，其水质为国家一级水体<br>千岛湖很大，水非常干净，湖面上星罗棋布着很多小岛，青山绿水，很美，<br>商业气息严重，处处消费，不尊重历史古迹，不过自然风光可以，去了的话可以<strong>步行环岛观光风景（路线在下面），不建议消费</strong></p><p><strong>崇左中越边境 德天跨国瀑布</strong> ☆☆</p><p>能做竹排 雨季瀑布挺好看<br>其它没东西看 瀑布非雨季水很小<br>115￥太贵 坐摆渡车太长</p><hr><h2 id="自然风景">自然风景</h2><p><strong>靖西 三叠岭瀑布 ☆☆☆☆</strong></p><p>野生瀑布 无门票 路边 可接近</p><p><strong>云南金平县 勐拉温泉</strong><br>G219<br>天然野温泉，一棵大榕树伸出茂密的枝叶把温泉整个盖住，温泉含有特殊矿物（有利健身），温泉边上有傣族MM伺候你烧烤、小酒，甚是享受</p><p><strong>云南 金平蝴蝶谷</strong><br>G219<br>每年3~10月是游览佳期。7月份那真是漫天蝴蝶</p><p><strong>浙江 朱家尖风景名胜区</strong> ☆☆☆☆<br>大青山100，观音圣坛，南沙70RMB，都不错<br>乌石塘40 东沙35 白山20<br>去普陀山一定要从这里经过 打卡沙雕</p><hr><h2 id="游玩路线"><strong>游玩路线</strong></h2><h3 id="自驾游路线">自驾游路线</h3><p><strong>浙东沿海之旅：</strong><br>盐官古镇—杭州湾跨海大桥—宁波—朱家尖景区—东钱湖—象山石浦—<a href="https://www.zhihu.com/search?q=%E5%89%8D%E7%AB%A5%E5%8F%A4%E9%95%87&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3473056091%7D">前童古镇</a>—温岭石塘—雁荡山—<a href="https://www.zhihu.com/search?q=%E6%A5%A0%E6%BA%AA%E6%B1%9F&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3473056091%7D">楠溪江</a></p><p><strong>千岛湖环湖游：</strong><br>千岛湖大桥—<a href="https://www.zhihu.com/search?q=%E5%A4%A9%E5%B1%BF%E5%B1%B1%E8%A7%82%E6%99%AF%E5%8F%B0&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3473056091%7D">天屿山观景台</a>—温馨岛—骑龙巷—啤酒小镇—洲际灯塔—石林火车公园—下姜村—千岛湖大峡谷—<a href="https://www.zhihu.com/search?q=%E8%8A%B9%E5%B7%9D%E5%8F%A4%E6%9D%91&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22%3A%22answer%22%2C%22sourceId%22%3A3473056091%7D">芹川古村</a>—文渊狮城—千岛湖大桥</p><p>G219：<br>云南段 <strong>河口</strong>—<strong>云南金平县 勐拉温泉</strong>—<strong>云南 金平蝴蝶谷</strong>—接着再往铜厂乡走去往元阳梯田，一路美景。</p><h3 id="其它">其它</h3><p><a href="https://space.bilibili.com/297136">@孙探长笔记</a>离开河口还走G219的话，一定要去一下金平县的勐拉温泉，天然野温泉，一棵大榕树伸出茂密的枝叶把温泉整个盖住，温泉含有特殊矿物（有利健身），温泉边上有傣族MM伺候你烧烤、小酒，甚是享受！扎营就在温泉边。另外还有金平蝴蝶谷，每年3~10月是游览佳期。7月份那真是漫天蝴蝶，现在去嗨能赶个尾巴吧（不确定）。<br>接着再往铜厂乡走去往元阳梯田，一路美景。</p><hr><h2 id="备注">备注</h2><p>无评分的 即部分非旅游景点或者比较冷门的景点 且没什么评价的</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;村寨&quot;&gt;村寨&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;安徽 西递村&lt;/strong&gt;   ☆☆☆☆&lt;/p&gt;
-&lt;p&gt;建议时间：2-5月份&lt;/p&gt;
-&lt;p&gt;徽派建筑 画画圣地 有许多过来画画的学生&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;四川甘孜 丹巴藏寨&lt;/strong&gt; ☆☆☆&lt;/p</summary>
-      
-    
-    
-    
-    <category term="推荐" scheme="https://stars-at-dawn.github.io/categories/%E6%8E%A8%E8%8D%90/"/>
-    
-    
-    <category term="推荐" scheme="https://stars-at-dawn.github.io/tags/%E6%8E%A8%E8%8D%90/"/>
-    
-    <category term="旅游" scheme="https://stars-at-dawn.github.io/tags/%E6%97%85%E6%B8%B8/"/>
     
   </entry>
   
