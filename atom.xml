@@ -321,31 +321,6 @@
   </entry>
   
   <entry>
-    <title>着色器检测触发</title>
-    <link href="https://stars-at-dawn.github.io/posts/fc0d1fe4"/>
-    <id>https://stars-at-dawn.github.io/posts/fc0d1fe4</id>
-    <published>2025-10-27T08:03:07.000Z</published>
-    <updated>2025-10-29T08:08:35.753Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="着色器检测触发"><strong>着色器检测触发</strong></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 着色器代码 ---------------------------------------------------------------</span></span><br><span class="line"><span class="comment">// 注册变量“ACTIVE”在第160的位置上（只有一个x组件）</span></span><br><span class="line">#define <span class="variable constant_">ACTIVE</span> <span class="title class_">IniParams</span>[<span class="number">160</span>].<span class="property">x</span> </span><br><span class="line"><span class="comment">// 注意main方法的位置</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">main</span>(</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line"><span class="comment">// 最底下（要在return的前面）</span></span><br><span class="line">  <span class="keyword">if</span> (<span class="variable constant_">ACTIVE</span> == <span class="number">0</span>)&#123;</span><br><span class="line">  <span class="comment">// 根据你想要的输出参数来写</span></span><br><span class="line">o0.<span class="property">xyzw</span> = <span class="title function_">float4</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">  &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">o0.<span class="property">xyzw</span> = <span class="title function_">float4</span>(<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span>;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">;模组<span class="variable constant_">INI</span>代码 ---------------------------------------------------------------</span><br><span class="line">[<span class="title class_">Constants</span>]</span><br><span class="line">;特效着色器检测键</span><br><span class="line"><span class="variable language_">global</span> $ShaderKey = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">[<span class="title class_">ShaderOverride</span>]</span><br><span class="line">;你的着色器的<span class="title class_">Hash</span>（如 55ee3565231ff874-ps_replace <span class="title class_">Hash</span>就是前面那串字符）</span><br><span class="line">hash = 55ee3565231ff874</span><br><span class="line">;刚才你注册的变量位置</span><br><span class="line">x160 = $ShaderKey</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;着色器检测触发&quot;&gt;&lt;strong&gt;着色器检测触发&lt;/strong&gt;&lt;/h3&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;</summary>
-      
-    
-    
-    
-    <category term="鸣潮模组" scheme="https://stars-at-dawn.github.io/categories/%E9%B8%A3%E6%BD%AE%E6%A8%A1%E7%BB%84/"/>
-    
-    
-    <category term="INI制作" scheme="https://stars-at-dawn.github.io/tags/INI%E5%88%B6%E4%BD%9C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>着色器指定dump</title>
     <link href="https://stars-at-dawn.github.io/posts/2ad80c13"/>
     <id>https://stars-at-dawn.github.io/posts/2ad80c13</id>
@@ -359,6 +334,31 @@
       
     <summary type="html">&lt;h3 id=&quot;着色器指定dump&quot;&gt;&lt;strong&gt;着色器指定dump&lt;/strong&gt;&lt;/h3&gt;
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line</summary>
+      
+    
+    
+    
+    <category term="鸣潮模组" scheme="https://stars-at-dawn.github.io/categories/%E9%B8%A3%E6%BD%AE%E6%A8%A1%E7%BB%84/"/>
+    
+    
+    <category term="INI制作" scheme="https://stars-at-dawn.github.io/tags/INI%E5%88%B6%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>着色器检测触发</title>
+    <link href="https://stars-at-dawn.github.io/posts/fc0d1fe4"/>
+    <id>https://stars-at-dawn.github.io/posts/fc0d1fe4</id>
+    <published>2025-10-27T08:03:07.000Z</published>
+    <updated>2025-10-29T08:08:35.753Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="着色器检测触发"><strong>着色器检测触发</strong></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 着色器代码 ---------------------------------------------------------------</span></span><br><span class="line"><span class="comment">// 注册变量“ACTIVE”在第160的位置上（只有一个x组件）</span></span><br><span class="line">#define <span class="variable constant_">ACTIVE</span> <span class="title class_">IniParams</span>[<span class="number">160</span>].<span class="property">x</span> </span><br><span class="line"><span class="comment">// 注意main方法的位置</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">main</span>(</span><br><span class="line">……</span><br><span class="line"></span><br><span class="line"><span class="comment">// 最底下（要在return的前面）</span></span><br><span class="line">  <span class="keyword">if</span> (<span class="variable constant_">ACTIVE</span> == <span class="number">0</span>)&#123;</span><br><span class="line">  <span class="comment">// 根据你想要的输出参数来写</span></span><br><span class="line">o0.<span class="property">xyzw</span> = <span class="title function_">float4</span>(<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0</span>);</span><br><span class="line">  &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">o0.<span class="property">xyzw</span> = <span class="title function_">float4</span>(<span class="number">1</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">1</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span>;</span><br><span class="line">  </span><br><span class="line">  </span><br><span class="line">;模组<span class="variable constant_">INI</span>代码 ---------------------------------------------------------------</span><br><span class="line">[<span class="title class_">Constants</span>]</span><br><span class="line">;特效着色器检测键</span><br><span class="line"><span class="variable language_">global</span> $ShaderKey = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">[<span class="title class_">ShaderOverride</span>]</span><br><span class="line">;你的着色器的<span class="title class_">Hash</span>（如 55ee3565231ff874-ps_replace <span class="title class_">Hash</span>就是前面那串字符）</span><br><span class="line">hash = 55ee3565231ff874</span><br><span class="line">;刚才你注册的变量位置</span><br><span class="line">x160 = $ShaderKey</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;着色器检测触发&quot;&gt;&lt;strong&gt;着色器检测触发&lt;/strong&gt;&lt;/h3&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;</summary>
       
     
     
@@ -479,9 +479,9 @@
     <category term="知识梳理" scheme="https://stars-at-dawn.github.io/categories/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
     
     
-    <category term="知识梳理" scheme="https://stars-at-dawn.github.io/tags/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
-    
     <category term="MySQL" scheme="https://stars-at-dawn.github.io/tags/MySQL/"/>
+    
+    <category term="知识梳理" scheme="https://stars-at-dawn.github.io/tags/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
     
   </entry>
   
@@ -544,9 +544,9 @@
     <category term="知识梳理" scheme="https://stars-at-dawn.github.io/categories/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
     
     
-    <category term="JVM" scheme="https://stars-at-dawn.github.io/tags/JVM/"/>
-    
     <category term="知识梳理" scheme="https://stars-at-dawn.github.io/tags/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
+    
+    <category term="JVM" scheme="https://stars-at-dawn.github.io/tags/JVM/"/>
     
   </entry>
   
