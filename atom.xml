@@ -6,7 +6,7 @@
   <link href="https://stars-at-dawn.github.io/atom.xml" rel="self"/>
   
   <link href="https://stars-at-dawn.github.io/"/>
-  <updated>2025-10-29T08:07:16.751Z</updated>
+  <updated>2025-10-29T08:11:52.674Z</updated>
   <id>https://stars-at-dawn.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>模型大小</title>
+    <link href="https://stars-at-dawn.github.io/posts/349a3673"/>
+    <id>https://stars-at-dawn.github.io/posts/349a3673</id>
+    <published>2025-10-29T08:11:49.000Z</published>
+    <updated>2025-10-29T08:11:52.674Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="模型大小"><strong>模型大小</strong></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">;<span class="variable constant_">WWMI</span> 的核心机制之一: 模型是通过骨架合并，在 <span class="variable constant_">GPU</span> 中统一缩放到对应的顶点位置</span><br><span class="line"></span><br><span class="line">[<span class="title class_">TextureOverrideMyCharacter</span>]</span><br><span class="line">;需要放大物品的 <span class="title class_">Hash</span></span><br><span class="line">hash = c7aae00c</span><br><span class="line">;放大倍率</span><br><span class="line">$\<span class="title class_">WWMIv1</span>\custom_mesh_scale = <span class="number">0.5</span></span><br><span class="line">run = $\<span class="title class_">WWMIv1</span>\<span class="title class_">CustomShaderSkeletonMerger</span></span><br><span class="line"></span><br><span class="line">;记得把这里的这句话删掉</span><br><span class="line">[<span class="title class_">CommandListMergeSkeleton</span>]</span><br><span class="line">;$\<span class="title class_">WWMIv1</span>\custom_mesh_scale = <span class="number">1</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;模型大小&quot;&gt;&lt;strong&gt;模型大小&lt;/strong&gt;&lt;/h3&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;</summary>
+      
+    
+    
+    
+    <category term="鸣潮模组" scheme="https://stars-at-dawn.github.io/categories/%E9%B8%A3%E6%BD%AE%E6%A8%A1%E7%BB%84/"/>
+    
+    
+    <category term="INI制作" scheme="https://stars-at-dawn.github.io/tags/INI%E5%88%B6%E4%BD%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>按键切换模型</title>
@@ -296,31 +321,6 @@
   </entry>
   
   <entry>
-    <title>着色器指定dump</title>
-    <link href="https://stars-at-dawn.github.io/posts/2ad80c13"/>
-    <id>https://stars-at-dawn.github.io/posts/2ad80c13</id>
-    <published>2025-10-27T08:03:07.000Z</published>
-    <updated>2025-10-29T08:08:40.606Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="着色器指定dump"><strong>着色器指定dump</strong></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">;在\<span class="variable constant_">XXMI</span> <span class="title class_">Launcher</span>\<span class="variable constant_">WWMI</span>\d3dx.<span class="property">ini</span>文件中将下面这行话注释掉</span><br><span class="line">;这句话是转储所有的纹理和缓冲</span><br><span class="line">;analyse_options = dump_rt dump_tex dump_cb dump_vb dump_ib buf txt</span><br><span class="line"></span><br><span class="line">;在<span class="title class_">Mod</span>文件夹任意位置中创建一个<span class="variable constant_">INI</span></span><br><span class="line">[<span class="title class_">ShaderOverrideGlider</span>]</span><br><span class="line">;通过小键盘<span class="number">0</span> 开启狩猎模式 <span class="number">1</span> / <span class="number">2</span> 控制着色器 <span class="number">3</span> 复制着色器<span class="title class_">Hash</span></span><br><span class="line">;获取到你需要的着色器（对应的物体消失，或是没有贴图）</span><br><span class="line">hash = 7191d68ad7775895</span><br><span class="line">;加上转储的语句，就会将此着色器影响的物体dump下来</span><br><span class="line">analyse_options = dump_rt dump_tex dump_cb dump_vb dump_ib buf txt dds</span><br><span class="line">;如果发现dump都不完整，可以将多个着色器一起启用</span><br><span class="line">;或者直接恢复d3dx文件的语句执;行全dump</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h3 id=&quot;着色器指定dump&quot;&gt;&lt;strong&gt;着色器指定dump&lt;/strong&gt;&lt;/h3&gt;
-&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line</summary>
-      
-    
-    
-    
-    <category term="鸣潮模组" scheme="https://stars-at-dawn.github.io/categories/%E9%B8%A3%E6%BD%AE%E6%A8%A1%E7%BB%84/"/>
-    
-    
-    <category term="INI制作" scheme="https://stars-at-dawn.github.io/tags/INI%E5%88%B6%E4%BD%9C/"/>
-    
-  </entry>
-  
-  <entry>
     <title>着色器检测触发</title>
     <link href="https://stars-at-dawn.github.io/posts/fc0d1fe4"/>
     <id>https://stars-at-dawn.github.io/posts/fc0d1fe4</id>
@@ -334,6 +334,31 @@
       
     <summary type="html">&lt;h3 id=&quot;着色器检测触发&quot;&gt;&lt;strong&gt;着色器检测触发&lt;/strong&gt;&lt;/h3&gt;
 &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;</summary>
+      
+    
+    
+    
+    <category term="鸣潮模组" scheme="https://stars-at-dawn.github.io/categories/%E9%B8%A3%E6%BD%AE%E6%A8%A1%E7%BB%84/"/>
+    
+    
+    <category term="INI制作" scheme="https://stars-at-dawn.github.io/tags/INI%E5%88%B6%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>着色器指定dump</title>
+    <link href="https://stars-at-dawn.github.io/posts/2ad80c13"/>
+    <id>https://stars-at-dawn.github.io/posts/2ad80c13</id>
+    <published>2025-10-27T08:03:07.000Z</published>
+    <updated>2025-10-29T08:08:40.606Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="着色器指定dump"><strong>着色器指定dump</strong></h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">;在\<span class="variable constant_">XXMI</span> <span class="title class_">Launcher</span>\<span class="variable constant_">WWMI</span>\d3dx.<span class="property">ini</span>文件中将下面这行话注释掉</span><br><span class="line">;这句话是转储所有的纹理和缓冲</span><br><span class="line">;analyse_options = dump_rt dump_tex dump_cb dump_vb dump_ib buf txt</span><br><span class="line"></span><br><span class="line">;在<span class="title class_">Mod</span>文件夹任意位置中创建一个<span class="variable constant_">INI</span></span><br><span class="line">[<span class="title class_">ShaderOverrideGlider</span>]</span><br><span class="line">;通过小键盘<span class="number">0</span> 开启狩猎模式 <span class="number">1</span> / <span class="number">2</span> 控制着色器 <span class="number">3</span> 复制着色器<span class="title class_">Hash</span></span><br><span class="line">;获取到你需要的着色器（对应的物体消失，或是没有贴图）</span><br><span class="line">hash = 7191d68ad7775895</span><br><span class="line">;加上转储的语句，就会将此着色器影响的物体dump下来</span><br><span class="line">analyse_options = dump_rt dump_tex dump_cb dump_vb dump_ib buf txt dds</span><br><span class="line">;如果发现dump都不完整，可以将多个着色器一起启用</span><br><span class="line">;或者直接恢复d3dx文件的语句执;行全dump</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;着色器指定dump&quot;&gt;&lt;strong&gt;着色器指定dump&lt;/strong&gt;&lt;/h3&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line</summary>
       
     
     
@@ -522,36 +547,6 @@
     <category term="JVM" scheme="https://stars-at-dawn.github.io/tags/JVM/"/>
     
     <category term="知识梳理" scheme="https://stars-at-dawn.github.io/tags/%E7%9F%A5%E8%AF%86%E6%A2%B3%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>力扣45跳跃游戏 II</title>
-    <link href="https://stars-at-dawn.github.io/posts/leetcode45"/>
-    <id>https://stars-at-dawn.github.io/posts/leetcode45</id>
-    <published>2025-04-20T08:00:20.000Z</published>
-    <updated>2025-04-20T08:06:42.782Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>题目描述：</strong></p><p>给定一个长度为 <code>n</code> 的 <strong>0 索引</strong>整数数组 <code>nums</code>。初始位置为 <code>nums[0]</code>。</p><p>每个元素 <code>nums[i]</code> 表示从索引 <code>i</code> 向后跳转的最大长度。换句话说，如果你在 <code>nums[i]</code> 处，你可以跳转到任意 <code>nums[i + j]</code> 处:</p><ul><li><code>0 &lt;= j &lt;= nums[i]</code></li><li><code>i + j &lt; n</code></li></ul><p>返回到达 <code>nums[n - 1]</code> 的最小跳跃次数。生成的测试用例可以到达 <code>nums[n - 1]</code>。</p><hr><p>与另一个（力扣55）十分相似，最短的跳跃距离，<strong>依旧是贪心</strong>，只要让位置跳的尽量远即可<br>真就贪心，想不到那就做不出来，无语，这种题目是真没意思，不过得注意不像上一题只要维护最大值，现在还要维护最大步长</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码如下</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">jump</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (nums.length == <span class="number">1</span>) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">max</span> <span class="operator">=</span> <span class="number">0</span>;<span class="comment">//当前步长能走的最大值，也即下次的步长</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">step</span> <span class="operator">=</span> <span class="number">1</span>;<span class="comment">//当前步数</span></span><br><span class="line">        <span class="type">int</span> <span class="variable">stepMax</span> <span class="operator">=</span> nums[<span class="number">0</span>];<span class="comment">//最大步长</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="comment">//超过步长则意味着一步已经走完了</span></span><br><span class="line">            <span class="keyword">if</span> (i &gt; stepMax) &#123;</span><br><span class="line">                step++;</span><br><span class="line">                stepMax = max;</span><br><span class="line">                max = Math.max(nums[i] + i, max);</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="comment">//没走完则接着找当前步长能走的最远距离</span></span><br><span class="line">                max = Math.max(nums[i] + i, max);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> step;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><hr><p><strong>改动态规划实现</strong>：</p><p>突发奇想改了个动态规划，不过可惜，超时了，感觉有优化空间，不过懒得管了</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//代码如下</span></span><br><span class="line"><span class="keyword">public</span> <span class="type">int</span> <span class="title function_">jump2</span><span class="params">(<span class="type">int</span>[] nums)</span> &#123;</span><br><span class="line">        <span class="type">int</span> <span class="variable">n</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        <span class="comment">//横坐标索引 纵坐标剩余步数 </span></span><br><span class="line">        <span class="comment">//剩余步数其实大小也不应该是n，不过我也不知道写啥</span></span><br><span class="line">        <span class="type">boolean</span>[][] dp = <span class="keyword">new</span> <span class="title class_">boolean</span>[n][n];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            dp[n - <span class="number">1</span>][i] = <span class="literal">true</span>;<span class="comment">//到达位置，即 剩余步数为0</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">step</span> <span class="operator">=</span> <span class="number">1</span>; step &lt; n; step++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">index</span> <span class="operator">=</span> n - <span class="number">2</span>; index &gt;= <span class="number">0</span>; index--) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt;= nums[index]; i++) &#123;</span><br><span class="line">                    <span class="comment">//这里应该可以优化赋值阶段的工作</span></span><br><span class="line">                    <span class="keyword">if</span> (dp[index + i][step - <span class="number">1</span>]) &#123;</span><br><span class="line">                        dp[index][step] = <span class="literal">true</span>;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (dp[<span class="number">0</span>][i]) <span class="keyword">return</span> i;<span class="comment">//从上到下返回第一个（最小步数）可以到达的位置</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><hr>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;strong&gt;题目描述：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;给定一个长度为 &lt;code&gt;n&lt;/code&gt; 的 &lt;strong&gt;0 索引&lt;/strong&gt;整数数组 &lt;code&gt;nums&lt;/code&gt;。初始位置为 &lt;code&gt;nums[0]&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;每个元</summary>
-      
-    
-    
-    
-    <category term="力扣" scheme="https://stars-at-dawn.github.io/categories/%E5%8A%9B%E6%89%A3/"/>
-    
-    
-    <category term="算法" scheme="https://stars-at-dawn.github.io/tags/%E7%AE%97%E6%B3%95/"/>
-    
-    <category term="力扣" scheme="https://stars-at-dawn.github.io/tags/%E5%8A%9B%E6%89%A3/"/>
-    
-    <category term="数组" scheme="https://stars-at-dawn.github.io/tags/%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
