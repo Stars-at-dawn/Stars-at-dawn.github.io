@@ -9,6 +9,15 @@ https://vlink.cc/morning_star
 
 
 
+### 锁暝-序列065-果
+
+链接①: https://pan.baidu.com/s/1oquFiYG2XxbTpjVtrKocUg?pwd=jqgt 提取码: jqgt 
+
+链接②: https://workupload.com/file/vPfhZT86xgu 提取码: star
+
+---
+
+
 ### 心月狐-惊鸿-序列066
 
 部分组件切换功能
