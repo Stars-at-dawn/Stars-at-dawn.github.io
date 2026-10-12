@@ -7,7 +7,27 @@ https://vlink.cc/morning_star
 
 ---
 
+### 今汐-白龙吟-序列037 
 
+
+
+链接①: https://pan.baidu.com/s/1d-Pw7C50mdA-lB4YcJ3lkg?pwd=rvjj 提取码: rvjj 
+
+链接②: https://workupload.com/file/Y2Pu3dM329f 提取码: star
+
+
+
+### 菲比-魔法少女-序列041 
+
+
+
+链接①: https://pan.baidu.com/s/1FUErFQTIR6GsAHZtibhN0A?pwd=vdam 提取码: vdam 
+
+链接②: https://workupload.com/file/mu59XqrBTv7 提取码: star 
+
+
+
+---
 
 ### 守岸人-国韵·金翎-序列035
 
@@ -21,7 +41,7 @@ https://vlink.cc/morning_star
 
 
 
-### 珂莱塔-蝶-序列033 未开放
+### 珂莱塔-蝶-序列033 
 
 颜色切换功能
 
@@ -33,7 +53,7 @@ https://vlink.cc/morning_star
 
 
 
-### 嘉贝莉娜-恶魔猎者-序列032 未开放
+### 嘉贝莉娜-恶魔猎者-序列032 
 
 脱衣服功能
 
