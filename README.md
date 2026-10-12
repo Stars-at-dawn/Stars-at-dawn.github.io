@@ -9,10 +9,48 @@ https://vlink.cc/morning_star
 
 
 
+### 守岸人-国韵·金翎-序列035
+
+多种颜色切换
+
+湿身效果（目前有BUG）
+
+链接①: https://pan.baidu.com/s/1KSOvO_qxJzVmCo6KxmiBUw?pwd=afwh 提取码: afwh 
+
+链接②: https://workupload.com/file/gmBvLC8TPzY 提取码: star 
+
+
+
+### 珂莱塔-蝶-序列033 未开放
+
+颜色切换功能
+
+脱衣服功能
+
+链接①: https://pan.baidu.com/s/1xdOz3gJ_odh4IJbL_XCQEg?pwd=rca1 提取码: rca1 
+
+链接②: https://workupload.com/file/CNe7dQr6euM 提取码: star 
+
+
+
+### 嘉贝莉娜-恶魔猎者-序列032 未开放
+
+脱衣服功能
+
+部分组件切换细化
+
+链接①: https://pan.baidu.com/s/1oP6eLvfoWnfzGkitLoQxtw?pwd=g16g 提取码: g16g 
+
+链接②: https://workupload.com/file/JrQhURy78jV 提取码: star 
+
+
+
+---
 
 ### 千咲-甜心巧克力-序列030 
 
 巧克力酱滴落动画
+
 脱衣服功能
 
 链接①: https://pan.baidu.com/s/1ZhqvYI2j1Fe9c4m9eWXqmw?pwd=imw9 提取码: imw9 
@@ -24,6 +62,7 @@ https://vlink.cc/morning_star
 ### 爱弥斯-机甲-大天使-序列029 （待优化）
 
 NSFW切换功能
+
 待优化，这个有问题，做的也不是很好，而且需要使用修复器
 
 链接①: https://pan.baidu.com/s/17b-mxfs9FbItkuAAilTpdw?pwd=nma7 提取码: nma7
@@ -35,9 +74,12 @@ NSFW切换功能
 ### 女主-良辰佳节-序列028 （待优化）
 
 脱衣服功能
+
 待优化，这个有问题，做的也不是很好，而且需要使用修复器
 
 链接①: https://pan.baidu.com/s/1biqNzH_SLjGR8OpumRJqoA?pwd=wvxg 提取码: wvxg 
 
 链接②: https://workupload.com/file/MgCaXbQ4EzN 提取码: star 
+
+
 
