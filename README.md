@@ -7,13 +7,14 @@ https://vlink.cc/morning_star
 
 ---
 
+
 ### 千咲-蜜桃啵啵冰-序列054
 
 体型调整功能
 
 颜色切换功能
 
-链接①: https://pan.baidu.com/s/1hTRj3eKkUThKE-nP7vECAQ?pwd=79vi 提取码: 79vi 
+链接①: https://pan.baidu.com/s/1f5N3YHVmq-P6KASuS5pHXg?pwd=svud 提取码: svud 
 
 链接②: https://workupload.com/file/XNtgb3smhpk 提取码: star
 
@@ -25,9 +26,9 @@ https://vlink.cc/morning_star
 
 湿身（目前有BUG）
 
-链接①: 
+链接①: https://pan.baidu.com/s/1J0Xnb3lBaJ-3biUfUzF16A?pwd=4rsc 提取码: 4rsc 
 
-链接②: 
+链接②: https://workupload.com/file/HZjKLM8frZC 提取码: star
 
 
 
@@ -37,7 +38,7 @@ https://vlink.cc/morning_star
 
 湿身（目前有BUG）
 
-链接①: https://pan.baidu.com/s/1OZKehF3oXGpxkzXBx5lnrg?pwd=6936 提取码: 6936 
+链接①: https://pan.baidu.com/s/1Ufy0pjMUBK1ot4O8ezrHPg?pwd=g34u 提取码: g34u 
 
 链接②: https://workupload.com/file/FYAKVs4bpFb 提取码: star
 
@@ -47,11 +48,9 @@ https://vlink.cc/morning_star
 
 部分组件切换功能
 
-链接①: 
+链接①: https://pan.baidu.com/s/1FcSHmH7NYFzX9FFg5rO_-Q?pwd=iinb 提取码: iinb 
 
-链接②: 
-
-
+链接②: https://workupload.com/file/RPcWDEFDBy8 提取码: star
 
 
 
