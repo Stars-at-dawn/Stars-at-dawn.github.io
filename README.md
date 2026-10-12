@@ -8,6 +8,18 @@ https://vlink.cc/morning_star
 ---
 
 
+### 爱弥斯-誓约-序列☆026
+
+
+
+链接①: https://pan.baidu.com/s/1NV1m4Cvm_dcpyMbUfG1_kw?pwd=x6vf 提取码: x6vf 
+
+链接②: https://workupload.com/file/ktZCdM47xnA 提取码: star
+
+
+
+---
+
 ### 千咲-蜜桃啵啵冰-序列054
 
 体型调整功能
@@ -161,6 +173,8 @@ NSFW切换功能
 链接①: https://pan.baidu.com/s/1biqNzH_SLjGR8OpumRJqoA?pwd=wvxg 提取码: wvxg 
 
 链接②: https://workupload.com/file/MgCaXbQ4EzN 提取码: star 
+
+
 
 
 
