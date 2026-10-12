@@ -7,9 +7,71 @@ https://vlink.cc/morning_star
 
 ---
 
+### 千咲-蜜桃啵啵冰-序列054
+
+体型调整功能
+
+颜色切换功能
+
+链接①: https://pan.baidu.com/s/1hTRj3eKkUThKE-nP7vECAQ?pwd=79vi 提取码: 79vi 
+
+链接②: https://workupload.com/file/XNtgb3smhpk 提取码: star
+
+
+
+### 清宵-夏日清风-序列058
+
+体型调整功能
+
+湿身（目前有BUG）
+
+链接①: 
+
+链接②: 
+
+
+
+### 清宵 - 邪 · 剑仙 - 序列060
+
+体型调整功能
+
+湿身（目前有BUG）
+
+链接①: https://pan.baidu.com/s/1OZKehF3oXGpxkzXBx5lnrg?pwd=6936 提取码: 6936 
+
+链接②: https://workupload.com/file/FYAKVs4bpFb 提取码: star
+
+
+
+### 穗穗 - 琳琅 - 序列055
+
+部分组件切换功能
+
+链接①: 
+
+链接②: 
+
+
+
+
+
+---
+
+### 秧秧·玄翎-序列049
+
+部分组件切换功能
+
+链接①:  https://pan.baidu.com/s/1u8aCgI8_TgdBAO8lkLEG2w?pwd=dqi3 提取码: dqi3 
+
+链接②: https://workupload.com/file/tQcGeKXB9EY 提取码: star
+
+
+
+---
+
 ### 今汐-白龙吟-序列037 
 
-
+脱衣服功能
 
 链接①: https://pan.baidu.com/s/1d-Pw7C50mdA-lB4YcJ3lkg?pwd=rvjj 提取码: rvjj 
 
@@ -19,7 +81,7 @@ https://vlink.cc/morning_star
 
 ### 菲比-魔法少女-序列041 
 
-
+NSFW切换功能
 
 链接①: https://pan.baidu.com/s/1FUErFQTIR6GsAHZtibhN0A?pwd=vdam 提取码: vdam 
 
@@ -100,6 +162,8 @@ NSFW切换功能
 链接①: https://pan.baidu.com/s/1biqNzH_SLjGR8OpumRJqoA?pwd=wvxg 提取码: wvxg 
 
 链接②: https://workupload.com/file/MgCaXbQ4EzN 提取码: star 
+
+
 
 
 
