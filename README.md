@@ -8,9 +8,22 @@ https://vlink.cc/morning_star
 ---
 
 
+
+### 心月狐-惊鸿-序列066
+
+部分组件切换功能
+
+链接①: https://pan.baidu.com/s/1_eqw1E9OenH2OjoP5qU8Pw?pwd=796s 提取码: 796s 
+
+链接②: https://workupload.com/file/RXjuWL8HVtw 提取码: star
+
+
+
+---
+
 ### 爱弥斯-誓约-序列☆026
 
-
+部分组件切换功能
 
 链接①: https://pan.baidu.com/s/1NV1m4Cvm_dcpyMbUfG1_kw?pwd=x6vf 提取码: x6vf 
 
