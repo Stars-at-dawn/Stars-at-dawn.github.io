@@ -37,7 +37,10 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 
 
+
 ### 锁暝-序列065-果
+
+剧情向模组
 
 链接①: https://pan.baidu.com/s/1oquFiYG2XxbTpjVtrKocUg?pwd=jqgt 提取码: jqgt 
 
@@ -45,8 +48,9 @@ r.Streaming.UsingNewKuroStreaming=0
 
 ---
 
-
 ### 心月狐-惊鸿-序列066
+
+预览图：https://gamebanana.com/mods/726463
 
 部分组件切换功能
 
@@ -60,6 +64,8 @@ r.Streaming.UsingNewKuroStreaming=0
 
 ### 爱弥斯-誓约-序列☆026
 
+预览图：https://gamebanana.com/mods/719725
+
 部分组件切换功能
 
 链接①: https://pan.baidu.com/s/1NV1m4Cvm_dcpyMbUfG1_kw?pwd=x6vf 提取码: x6vf 
@@ -71,6 +77,8 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 
 ### 千咲-蜜桃啵啵冰-序列054
+
+预览图：https://gamebanana.com/mods/700053
 
 体型调整功能
 
@@ -84,6 +92,8 @@ r.Streaming.UsingNewKuroStreaming=0
 
 ### 清宵-夏日清风-序列058
 
+预览图：https://gamebanana.com/mods/707567
+
 体型调整功能
 
 湿身（目前有BUG）
@@ -95,6 +105,8 @@ r.Streaming.UsingNewKuroStreaming=0
 
 
 ### 清宵 - 邪 · 剑仙 - 序列060
+
+预览图：https://gamebanana.com/mods/710761
 
 体型调整功能
 
@@ -108,6 +120,8 @@ r.Streaming.UsingNewKuroStreaming=0
 
 ### 穗穗 - 琳琅 - 序列055
 
+预览图：https://gamebanana.com/mods/704126
+
 部分组件切换功能
 
 链接①: https://pan.baidu.com/s/1FcSHmH7NYFzX9FFg5rO_-Q?pwd=iinb 提取码: iinb 
@@ -120,7 +134,9 @@ r.Streaming.UsingNewKuroStreaming=0
 
 ### 秧秧·玄翎-序列049
 
-部分组件切换功能
+预览图：https://gamebanana.com/mods/693148
+
+部分组件切换功能（废稿，未做完）
 
 链接①:  https://pan.baidu.com/s/1u8aCgI8_TgdBAO8lkLEG2w?pwd=dqi3 提取码: dqi3 
 
@@ -132,6 +148,8 @@ r.Streaming.UsingNewKuroStreaming=0
 
 ### 今汐-白龙吟-序列037 
 
+预览图：https://gamebanana.com/mods/666135
+
 脱衣服功能
 
 链接①: https://pan.baidu.com/s/1d-Pw7C50mdA-lB4YcJ3lkg?pwd=rvjj 提取码: rvjj 
@@ -141,6 +159,8 @@ r.Streaming.UsingNewKuroStreaming=0
 
 
 ### 菲比-魔法少女-序列041 
+
+预览图：https://gamebanana.com/mods/671505
 
 NSFW切换功能
 
@@ -154,6 +174,8 @@ NSFW切换功能
 
 ### 守岸人-国韵·金翎-序列035
 
+预览图：https://gamebanana.com/mods/664253
+
 多种颜色切换
 
 湿身效果（目前有BUG）
@@ -166,6 +188,8 @@ NSFW切换功能
 
 ### 珂莱塔-蝶-序列033 
 
+预览图：https://gamebanana.com/mods/659247
+
 颜色切换功能
 
 脱衣服功能
@@ -177,6 +201,8 @@ NSFW切换功能
 
 
 ### 嘉贝莉娜-恶魔猎者-序列032 
+
+预览图：https://gamebanana.com/mods/657601
 
 脱衣服功能
 
@@ -192,6 +218,8 @@ NSFW切换功能
 
 ### 千咲-甜心巧克力-序列030 
 
+预览图：https://gamebanana.com/mods/655880
+
 巧克力酱滴落动画
 
 脱衣服功能
@@ -204,6 +232,8 @@ NSFW切换功能
 
 ### 爱弥斯-机甲-大天使-序列029 （待优化）
 
+预览图：https://gamebanana.com/mods/654221
+
 NSFW切换功能
 
 待优化，这个有问题，做的也不是很好，而且需要使用修复器
@@ -215,6 +245,8 @@ NSFW切换功能
 
 
 ### 女主-良辰佳节-序列028 （待优化）
+
+预览图：https://gamebanana.com/mods/651451
 
 脱衣服功能
 
