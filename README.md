@@ -27,10 +27,16 @@ https://vlink.cc/morning_star
 
 ---
 
-**大世界贴图错误问题：Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor\Engine.ini**
-添加下面内容
+**大世界贴图错误问题：**
+
+**Wuthering Waves Game\Client\Saved\Config\WindowsNoEditor\Engine.ini**
+
+**添加下面内容**
+
 [SystemSettings]
+
 r.Streaming.HiddenPrimitiveScale=25
+
 r.Streaming.UsingNewKuroStreaming=0
 
 ---
