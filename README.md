@@ -60,9 +60,9 @@ r.Streaming.UsingNewKuroStreaming=0
 
 部分组件切换功能
 
-链接①: https://pan.baidu.com/s/1h4sf2Ib1yBe7AcKipVZmJQ?pwd=9hg5 提取码: 9hg5 
+链接①: https://pan.baidu.com/s/1km-VIzH3WWDnGvsU98GubA?pwd=zvgn 提取码: zvgn 
 
-链接②: https://workupload.com/file/6fQur3GHk5y 提取码: star
+链接②: https://workupload.com/file/d3AYWayqWYp 提取码: star
 
 
 
