@@ -44,9 +44,9 @@ r.Streaming.UsingNewKuroStreaming=0
 
 ### 心月狐-艳色灼人-周本-序列067
 
-链接①: https://pan.baidu.com/s/1-8f4Z5k7MniIuWqrU8f7CA?pwd=rb1e 提取码: rb1e 
+链接①: https://pan.baidu.com/s/1JxLedDwzcdxNUq0GFxJI5A?pwd=mfph 提取码: mfph 
 
-链接②: https://workupload.com/file/YJSW4d85tqD 提取码: star
+链接②: https://workupload.com/file/rWpZ4zMuvXr 提取码: star
 
 
 ### 锁暝-序列065-果
