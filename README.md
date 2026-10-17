@@ -54,6 +54,8 @@ r.Streaming.UsingNewKuroStreaming=0
 
 ### 心月狐-艳色灼人-周本-序列067
 
+预览图：https://gamebanana.com/mods/728027
+
 **部分衣服切换键（上下左右）**
 
 链接①: https://pan.baidu.com/s/1JxLedDwzcdxNUq0GFxJI5A?pwd=mfph 提取码: mfph 
