@@ -47,9 +47,10 @@ r.Streaming.UsingNewKuroStreaming=0
 
 **大幅重构** 
 
-链接①: https://pan.baidu.com/s/1-T54dcwAOJaFhiQXIt9UIQ?pwd=6kev 提取码: 6kev 
+链接①: https://pan.baidu.com/s/1-k-5WAD0XJnDWQgFQVRH-A?pwd=fyim 提取码: fyim 
 
-链接②: https://workupload.com/file/8jfVKY9ffgs 提取码: star
+链接②: https://workupload.com/file/WWYWJvRWkuM 提取码: star
+
 
 
 ### 心月狐-艳色灼人-周本-序列067
