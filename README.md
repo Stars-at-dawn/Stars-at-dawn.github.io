@@ -43,6 +43,16 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 
 
+### 锁暝-序列065-小师妹-V0.9
+
+就先这样吧，太晚了，面板明天优化了 预览图什么的也明天弄了
+
+链接①: https://pan.baidu.com/s/17vZHiv7zRNtHDY4gDtREwA?pwd=15x4 提取码: 15x4
+
+链接②: https://workupload.com/file/GHSESzh6v2r 提取码: star
+
+
+
 ### 绯雪-国韵·云岚-序列☆030-V3.7
 
 **大幅重构** 
