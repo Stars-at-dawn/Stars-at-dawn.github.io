@@ -43,13 +43,13 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 
 
-### 锁暝-序列065-小师妹-V0.9
+### 锁暝-序列065-小师妹 - 国风·鸿韵 -V1.0
 
-就先这样吧，太晚了，面板明天优化了 预览图什么的也明天弄了
+胸部大小切换键
 
-链接①: https://pan.baidu.com/s/17vZHiv7zRNtHDY4gDtREwA?pwd=15x4 提取码: 15x4
+链接①: https://pan.baidu.com/s/1Lsofa2F2YDK93qlHzKbtZA?pwd=ibip 提取码: ibip
 
-链接②: https://workupload.com/file/GHSESzh6v2r 提取码: star
+链接②: https://workupload.com/file/6ChnSyXKx5A 提取码: star
 
 
 
@@ -73,14 +73,6 @@ r.Streaming.UsingNewKuroStreaming=0
 
 链接②: https://workupload.com/file/rWpZ4zMuvXr 提取码: star
 
-
-### 锁暝-序列065-果
-
-剧情向模组
-
-链接①: https://pan.baidu.com/s/1oquFiYG2XxbTpjVtrKocUg?pwd=jqgt 提取码: jqgt 
-
-链接②: https://workupload.com/file/vPfhZT86xgu 提取码: star
 
 ---
 
