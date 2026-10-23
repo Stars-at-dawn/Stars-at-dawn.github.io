@@ -92,14 +92,7 @@ r.Streaming.UsingNewKuroStreaming=0
 
 ### 爱弥斯-誓约-序列☆026
 
-预览图：https://gamebanana.com/mods/719725
-
-部分组件切换功能
-
-链接①: https://pan.baidu.com/s/1NV1m4Cvm_dcpyMbUfG1_kw?pwd=x6vf 提取码: x6vf 
-
-链接②: https://workupload.com/file/ktZCdM47xnA 提取码: star
-
+免费 去香蕉网/群文件
 
 
 ---
