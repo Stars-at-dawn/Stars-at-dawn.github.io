@@ -71,11 +71,11 @@ r.Streaming.UsingNewKuroStreaming=0
 
 预览图：https://gamebanana.com/mods/726463
 
-部分组件切换功能
+V2 大幅重构
 
-链接①: https://pan.baidu.com/s/1PCMnw_AD3s5DDHlrkzq9mg?pwd=42pb 提取码: 42pb
+链接①: https://pan.baidu.com/s/12I86R0pREiLhVPhiqokXDw?pwd=2jst 提取码: 2jst
 
-链接②: https://workupload.com/file/d3AYWayqWYp 提取码: star
+链接②:  提取码: star
 
 
 
