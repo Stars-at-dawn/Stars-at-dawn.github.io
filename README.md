@@ -54,17 +54,6 @@ r.Streaming.UsingNewKuroStreaming=0
 链接②: https://workupload.com/file/6ChnSyXKx5A 提取码: star
 
 
-
-### 绯雪-国韵·云岚-序列☆030-V3.7
-
-**大幅重构** 
-
-链接①: https://pan.baidu.com/s/1N9jErK6B4DI119BSMK72YQ?pwd=9v9r 提取码: 9v9r
-
-链接②: https://workupload.com/file/scsr5afryPW 提取码: star
-
-
-
 ### 心月狐-艳色灼人-周本-序列067
 
 预览图：https://gamebanana.com/mods/728027
