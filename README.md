@@ -71,12 +71,11 @@ r.Streaming.UsingNewKuroStreaming=0
 
 预览图：https://gamebanana.com/mods/726463
 
-V2 大幅重构
+V2.2(修复累充腿饰冲突) 大幅重构
 
-链接①: https://pan.baidu.com/s/12I86R0pREiLhVPhiqokXDw?pwd=2jst 提取码: 2jst
+链接①: https://pan.baidu.com/s/1AACdA6UEaOUakJ810UANfw?pwd=yvk2 提取码: yvk2
 
 链接②: https://workupload.com/archive/WMsmMCv6Eb 提取码: star
-
 
 
 ---
