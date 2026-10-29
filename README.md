@@ -79,7 +79,15 @@ V2.2(修复累充腿饰冲突) 大幅重构
 
 
 ---
+### 爱弥斯-誓约-序列☆026
 
+预览图：https://gamebanana.com/mods/719725
+
+部分组件切换功能
+
+链接①: https://pan.baidu.com/s/1k5sABu_PG9rjpHyauQ6_8A?pwd=tbv2 提取码: tbv2
+
+链接②: https://workupload.com/file/rxAuwzNzePE 提取码: star
 
 ---
 
