@@ -46,6 +46,15 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 ---
 
+### 爱弥斯-隧者兵装-恶堕-序列064-V1.0
+
+修复贴图错误(完整版新增能量管颜色以及部分组件切换)
+
+链接①: https://pan.baidu.com/s/1HmDpU5CxQaBb5x615btTDA?pwd=bv48 提取码: bv48
+
+链接②: https://workupload.com/file/Ad5Eru3pecy 提取码: star
+
+
 
 ### 锁暝-序列065-小师妹 - 国风·鸿韵 -V1.0
 
