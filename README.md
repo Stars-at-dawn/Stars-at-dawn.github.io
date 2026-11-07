@@ -46,6 +46,16 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 ---
 
+### 琳奈-清凉薄荷糖-序列069-V1.1
+
+身体贴图优化、完整版切换
+
+链接①: https://pan.baidu.com/s/1AErN6p_7n8I1VV694DRG_g?pwd=mhvj 提取码: mhvj
+
+链接②: https://workupload.com/file/EwhuWFmAVJc 提取码: star
+
+
+
 ### 爱弥斯-隧者兵装-恶堕-序列064-V1.0
 
 修复贴图错误(完整版新增能量管颜色以及部分组件切换)
