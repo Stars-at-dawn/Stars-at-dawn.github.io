@@ -160,9 +160,9 @@ V2.2(修复累充腿饰冲突) 大幅重构
 
 部分组件切换功能
 
-链接①: https://pan.baidu.com/s/1FcSHmH7NYFzX9FFg5rO_-Q?pwd=iinb 提取码: iinb 
+链接①: https://pan.baidu.com/s/1bhojJRjKNtmaci1u-T_whw?pwd=dntd 提取码: dntd
 
-链接②: https://workupload.com/file/RPcWDEFDBy8 提取码: star
+链接②: https://workupload.com/archive/yAR9T9GZwL 提取码: star
 
 
 
