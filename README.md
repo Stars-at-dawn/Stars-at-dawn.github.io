@@ -154,16 +154,17 @@ V2.2(修复累充腿饰冲突) 大幅重构
 
 
 
-### 穗穗 - 琳琅 - 序列055-V3.7
+### 穗穗 - 琳琅 - 序列055-V3.7.1
 
 预览图：https://gamebanana.com/mods/704126
 
 V3.7(大幅重构)
 几乎完美修复强化E技能导致的贴图错误（高清下制作，极致可能会有问题）
+V3.7.1: 部分组件材质优化（衣服、鞋子、其它饰品等）
 
-链接①: https://pan.baidu.com/s/1bhojJRjKNtmaci1u-T_whw?pwd=dntd 提取码: dntd
+链接①: https://pan.baidu.com/s/1LvWko12zSVoxTuoIHHQMzQ?pwd=24hg 提取码: 24hg
 
-链接②: https://workupload.com/archive/yAR9T9GZwL 提取码: star
+链接②: https://workupload.com/archive/s5f9HaDTa8 提取码: star
 
 
 
