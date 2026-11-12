@@ -46,13 +46,15 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 ---
 
-### 莉莉-梦-序列070-V0.0.1
+### 莉莉-梦-序列070-V0.6
 
-身体权重优化
+V0.6 切换键 上下左右
 
-链接①: https://pan.baidu.com/s/1hPsQkfdWZjFsRWp2VudJoQ?pwd=wcy7 提取码: wcy7
+V0.1（果） 身体权重优化
 
-链接②: https://workupload.com/file/rhJWTWfdWsn 提取码: star
+链接①:  https://pan.baidu.com/s/1063kfLhLOefIiQIQxISVvA?pwd=mnut 提取码: mnut
+
+链接②: https://workupload.com/archive/aw7kduqZXh 提取码: star
 
 
 
