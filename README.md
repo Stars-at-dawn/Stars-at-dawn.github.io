@@ -46,6 +46,16 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 ---
 
+### 莉莉-梦-序列070-V0.0.1
+
+身体权重优化
+
+链接①: https://pan.baidu.com/s/1hPsQkfdWZjFsRWp2VudJoQ?pwd=wcy7 提取码: wcy7
+
+链接②: https://workupload.com/file/rhJWTWfdWsn 提取码: star
+
+
+
 ### 琳奈-清凉薄荷糖-序列069-V1.1
 
 身体贴图优化、完整版切换
