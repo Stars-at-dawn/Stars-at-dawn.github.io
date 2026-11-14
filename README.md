@@ -123,17 +123,15 @@ V2.2(修复累充腿饰冲突) 大幅重构
 
 ---
 
-### 千咲-蜜桃啵啵冰-序列054
+### 千咲-蜜桃啵啵冰-序列054-V3.8
 
 预览图：https://gamebanana.com/mods/700053
 
-体型调整功能
+体型调整功能、颜色切换功能、修复身体水珠异常高亮问题
 
-颜色切换功能
+链接①: https://pan.baidu.com/s/1BTSzxyognXTT_NGKadqdHA?pwd=k3du 提取码: k3du
 
-链接①: https://pan.baidu.com/s/1f5N3YHVmq-P6KASuS5pHXg?pwd=svud 提取码: svud 
-
-链接②: https://workupload.com/file/XNtgb3smhpk 提取码: star
+链接②: https://workupload.com/file/aQkxjWJz9c5 提取码: star
 
 
 
