@@ -229,7 +229,7 @@ NSFW切换功能
 
 链接①: https://pan.baidu.com/s/1KSOvO_qxJzVmCo6KxmiBUw?pwd=afwh 提取码: afwh 
 
-链接②: https://workupload.com/file/gmBvLC8TPzY 提取码: star 
+链接②: https://workupload.com/file/AAfgz8kYtZx 提取码: star 
 
 
 
