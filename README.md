@@ -46,13 +46,14 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 ---
 
-### 莉莉-梦-序列070-V1.0
+### 莉莉-梦-序列070-V1.1
 
-V1.0 完整版发布，来不及测试了，可能有问题
+V1.1
+**面板多预设保存功能制作（ALT + 数字键 可以做到快速切换保存的预设）**
 
-链接①:  https://pan.baidu.com/s/1QAlNjWRQFgJIsoWjT28yUg?pwd=bs5m 提取码: bs5m
+链接①:  https://pan.baidu.com/s/1oUuCfPu7RUb5MVuKqO_G8w?pwd=rmnu 提取码: rmnu
 
-链接②: https://workupload.com/file/X6TEqdqyHVC 提取码: star
+链接②: https://workupload.com/file/M2gDYTrpsBD 提取码: star
 
 
 
