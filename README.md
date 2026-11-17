@@ -93,15 +93,6 @@ V1.1
 链接②: https://workupload.com/file/6ChnSyXKx5A 提取码: star
 
 
-### 心月狐-艳色灼人-周本-序列067
-
-预览图：https://gamebanana.com/mods/728027
-
-**部分衣服切换键（上下左右）**
-
-链接①: https://pan.baidu.com/s/1JxLedDwzcdxNUq0GFxJI5A?pwd=mfph 提取码: mfph 
-
-链接②: https://workupload.com/file/rWpZ4zMuvXr 提取码: star
 
 
 ---
@@ -170,17 +161,16 @@ V2.2(修复累充腿饰冲突) 大幅重构
 
 
 
-### 穗穗 - 琳琅 - 序列055-V3.7.1
+### 穗穗 - 琳琅 - 序列055-V3.8
 
 预览图：https://gamebanana.com/mods/704126
 
-V3.7(大幅重构)
-几乎完美修复强化E技能导致的贴图错误（高清下制作，极致可能会有问题）
-V3.7.1: 部分组件材质优化（衣服、鞋子、其它饰品等）
+V3.8:
+强化E技能贴图完美修复、面板多预设保存功能制作（ALT + 数字键 可以做到快速切换保存的预设）
 
-链接①: https://pan.baidu.com/s/1LvWko12zSVoxTuoIHHQMzQ?pwd=24hg 提取码: 24hg
+链接①: https://pan.baidu.com/s/1NPP0QyzPH78PcHq3Bj_YZw?pwd=2a52 提取码: 2a52
 
-链接②: https://workupload.com/archive/s5f9HaDTa8 提取码: star
+链接②: https://workupload.com/file/8dasmaKrs9r 提取码: star
 
 
 
