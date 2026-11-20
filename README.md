@@ -45,13 +45,15 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 ---
 
-### 序列071-绯雪-月浮霜-V1.0
+### 序列071-绯雪-月浮霜-V1.1
 
 预览图：https://gamebanana.com/mods/743180
 
-链接①: https://pan.baidu.com/s/1Ouvg4ahms2BGgsGIdwO_gw?pwd=eu6k 提取码:eu6k
+**V1.1: 修复敞开外套背部穿模问题**
 
-链接②: https://workupload.com/file/XqHyVmB6QXD 提取码: star
+链接①: https://pan.baidu.com/s/1BDHJF4LCUXLD_n-0K624Wg?pwd=qp77 提取码: qp77
+
+链接②: https://workupload.com/file/XnphfDNjPj3 提取码: star
 
 
 
