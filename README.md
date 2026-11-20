@@ -45,9 +45,9 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 ---
 
-### 序列071-绯雪-月沉霜-V1.0
+### 序列071-绯雪-月浮霜-V1.0
 
-预览图：
+预览图：https://gamebanana.com/mods/743180
 
 链接①: https://pan.baidu.com/s/1Ouvg4ahms2BGgsGIdwO_gw?pwd=eu6k 提取码:eu6k
 
