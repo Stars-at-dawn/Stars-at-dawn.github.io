@@ -45,6 +45,16 @@ r.Streaming.UsingNewKuroStreaming=0
 ---
 ---
 
+### 序列071-绯雪-月沉霜-V1.0
+
+预览图：
+
+链接①: https://pan.baidu.com/s/1Ouvg4ahms2BGgsGIdwO_gw?pwd=eu6k 提取码:eu6k
+
+链接②: https://workupload.com/file/XqHyVmB6QXD 提取码: star
+
+
+
 ### 莉莉-梦-序列070-V1.1
 
 预览图：https://gamebanana.com/mods/740305
